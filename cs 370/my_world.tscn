@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://djgirt4513m8p"]
+
+[ext_resource type="Script" path="res://Start.gd" id="1_poiht"]
+[ext_resource type="Script" path="res://Button2.gd" id="1_qt705"]
+
+[node name="MyWorld" type="Node2D"]
+
+[node name="Start" type="Button" parent="."]
+offset_left = 455.0
+offset_top = 201.0
+offset_right = 635.0
+offset_bottom = 326.0
+text = "Start"
+script = ExtResource("1_poiht")
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 456.0
+offset_top = 424.0
+offset_right = 644.0
+offset_bottom = 539.0
+text = "Exit"
+script = ExtResource("1_qt705")
+
+[connection signal="button_down" from="Start" to="Start" method="_on_button_down"]
+[connection signal="button_down" from="Exit" to="Exit" method="_on_button_down"]

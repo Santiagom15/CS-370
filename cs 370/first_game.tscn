@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://jv66pco7nh2x"]
+
+[ext_resource type="Texture2D" uid="uid://cehedy2l2c2km" path="res://icon.svg" id="1_gse3t"]
+[ext_resource type="Script" path="res://BacktoHome.gd" id="2_uam63"]
+
+[sub_resource type="Theme" id="Theme_lu5b6"]
+
+[node name="FirstGame" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 383.0
+offset_top = 182.0
+offset_right = 677.0
+offset_bottom = 343.0
+text = "They call me papi chulo In the house"
+
+[node name="BacktoHome" type="Button" parent="."]
+offset_left = 49.0
+offset_top = 23.0
+offset_right = 242.0
+offset_bottom = 159.0
+theme = SubResource("Theme_lu5b6")
+text = "exit"
+icon = ExtResource("1_gse3t")
+script = ExtResource("2_uam63")
+
+[connection signal="button_down" from="BacktoHome" to="BacktoHome" method="_on_button_down"]
