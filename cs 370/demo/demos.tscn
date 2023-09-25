@@ -20,3 +20,5 @@ texture = ExtResource("2_2hdly")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_a7fq2")]
 position = Vector2(446, 248)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
