@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cai5mcmsd0b0x"]
+
+[ext_resource type="Texture2D" uid="uid://ca28yvg20sy3j" path="res://assets/Modern_Interiors_Free_v2.2/plant.png" id="1_jg26s"]
+[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="2_vsapb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_os1jm"]
+size = Vector2(98, 181)
+
+[node name="demos" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(697, 260.5)
+shape = SubResource("RectangleShape2D_os1jm")
+
+[node name="Plant" type="Sprite2D" parent="."]
+position = Vector2(698, 260)
+texture = ExtResource("1_jg26s")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_vsapb")]
+position = Vector2(446, 248)
+
+[node name="Return home" type="Button" parent="CharacterBody2D"]
+offset_left = 268.0
+offset_top = -248.0
+offset_right = 466.0
+offset_bottom = -158.0
+text = "Return to home page"
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[connection signal="button_down" from="CharacterBody2D/Return home" to="CharacterBody2D" method="_on_return_home_button_down"]
