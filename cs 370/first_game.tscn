@@ -35,5 +35,13 @@ text = "Test world
 "
 script = ExtResource("3_hp70g")
 
+[node name="TestNoBg" type="Button" parent="."]
+offset_left = 510.0
+offset_top = 380.0
+offset_right = 730.0
+offset_bottom = 450.0
+text = "Test world (no background)"
+
 [connection signal="button_down" from="BacktoHome" to="BacktoHome" method="_on_button_down"]
 [connection signal="button_down" from="Test" to="BacktoHome" method="_on_test_button_down"]
+[connection signal="button_down" from="TestNoBg" to="BacktoHome" method="_on_test_no_bg_button_down"]
