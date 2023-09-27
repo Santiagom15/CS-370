@@ -1,0 +1,51 @@
+[gd_scene load_steps=10 format=3 uid="uid://datyj1ghnmx25"]
+
+[ext_resource type="Script" path="res://character/character_body_2d.gd" id="1_bm0up"]
+[ext_resource type="Texture2D" uid="uid://clo1ewl2igc1" path="res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (3).png" id="1_fcwii"]
+[ext_resource type="Texture2D" uid="uid://c2t0yyt2d17c3" path="res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (4).png" id="2_8u6kp"]
+[ext_resource type="Texture2D" uid="uid://b7fjpff0gdi6b" path="res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (5).png" id="3_um4dp"]
+[ext_resource type="Texture2D" uid="uid://dt7ih53bn7m7" path="res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy.png" id="4_w8ckk"]
+[ext_resource type="Texture2D" uid="uid://tpmaxibjjpm7" path="res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored.png" id="5_alq8i"]
+[ext_resource type="Script" path="res://character/AnimatedSprite2D.gd" id="7_ojxgm"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ow5k6"]
+radius = 27.0
+height = 76.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6wkp0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fcwii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8u6kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_um4dp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w8ckk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_alq8i")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Test2dbody" type="CharacterBody2D"]
+script = ExtResource("1_bm0up")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CapsuleShape2D_ow5k6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3, 5)
+scale = Vector2(0.793689, 0.666262)
+sprite_frames = SubResource("SpriteFrames_6wkp0")
+animation = &"run"
+speed_scale = 1.3
+script = ExtResource("7_ojxgm")
