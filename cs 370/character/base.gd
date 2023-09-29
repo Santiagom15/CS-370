@@ -45,7 +45,7 @@ func _process(_delta):
 	elif Input.is_action_pressed("ui_down"):
 		_animated_sprite.play("walk_forward")
 	else:
-		_animated_sprite.stop()
+		_animated_sprite.play('default')
 	
 	
 
