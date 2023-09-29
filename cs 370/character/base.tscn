@@ -5,8 +5,8 @@
 [ext_resource type="Script" path="res://character/AnimatedSprite2D.gd" id="3_ttx7g"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jimy5"]
-radius = 27.0
-height = 94.0
+radius = 19.0
+height = 74.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8pvex"]
 atlas = ExtResource("1_notqu")
