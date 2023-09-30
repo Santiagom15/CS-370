@@ -24,6 +24,7 @@ func _physics_process(_delta):
 	var directionY = Input.get_axis("ui_up","ui_down")
 	if directionX and !directionY:
 		velocity.x = directionX * SPEED
+		_animated_sprite.play()
 	elif directionY and !directionX:
 		velocity.y=directionY * SPEED
 	elif directionY and directionX:
@@ -45,7 +46,7 @@ func _process(_delta):
 	elif Input.is_action_pressed("ui_down"):
 		_animated_sprite.play("walk_forward")
 	else:
-		_animated_sprite.play('default')
+		_animated_sprite.pause()
 	
 	
 
