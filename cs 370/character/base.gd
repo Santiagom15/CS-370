@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 @export var speed = 300
 @onready var _animated_sprite = $AnimatedSprite2D
 
@@ -25,9 +24,5 @@ func _process(_delta):
 		_animated_sprite.stop()
 
 
-func _on_button_button_down():
-	get_tree().change_scene_to_file("res://first_game.tscn")
 
 
-func _on_return_home_button_down():
-	get_tree().change_scene_to_file("res://first_game.tscn")
