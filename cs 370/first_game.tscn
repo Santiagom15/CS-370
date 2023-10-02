@@ -43,11 +43,25 @@ text = "Demo
 script = ExtResource("3_hp70g")
 
 [node name="TestNoBg" type="Button" parent="."]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d062bfc8f1d346d498741bc3f9d6504f75c64318
 offset_left = 507.0
 offset_top = 430.0
 offset_right = 727.0
 offset_bottom = 500.0
 text = "Demo (no background)"
+<<<<<<< HEAD
+=======
+=======
+offset_left = 510.0
+offset_top = 380.0
+offset_right = 730.0
+offset_bottom = 450.0
+text = "Test world (no background)"
+>>>>>>> e84b4c03314b9fb0716ab11130121d1f943c9d5b
+>>>>>>> d062bfc8f1d346d498741bc3f9d6504f75c64318
 
 [connection signal="button_down" from="BacktoHome" to="BacktoHome" method="_on_button_down"]
 [connection signal="button_down" from="Level 1" to="BacktoHome" method="_on_level_1_button_down"]
