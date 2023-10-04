@@ -2,8 +2,11 @@ extends CharacterBody2D
 
 @export var speed = 300
 @onready var _animated_sprite = $AnimatedSprite2D
+@onready var healthbar = $Healthbar
 
-const Max_Health = 100;
+const Max_Health = 100
+
+
 
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
@@ -28,3 +31,6 @@ func _process(_delta):
 
 
 
+func update_health():
+	var healthbar = $Healthbar
+	

@@ -426,10 +426,16 @@ offset_left = -552.0
 offset_top = -299.0
 offset_right = -482.0
 offset_bottom = -232.0
-value = 50.0
+value = 66.0
 nine_patch_stretch = true
 texture_under = ExtResource("5_ss6p8")
 texture_over = ExtResource("6_ngjut")
 texture_progress = ExtResource("5_ss6p8")
 tint_under = Color(0.0352941, 0.0352941, 0.0352941, 1)
 tint_over = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Healthbar"]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="value_changed" from="Healthbar" to="." method="_on_healthbar_value_changed"]
