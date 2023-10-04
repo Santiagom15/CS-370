@@ -1,6 +1,39 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctypkgd2j5r7t"]
+[gd_scene load_steps=8 format=3 uid="uid://c8om272at6wu1"]
 
-[ext_resource type="Script" path="res://heart_animated.gd" id="1_vohg2"]
+[ext_resource type="Script" path="res://heart.gd" id="1_gsjdp"]
+[ext_resource type="Texture2D" uid="uid://dcngf7bo7s3se" path="res://heart.png" id="2_hwv0j"]
+[ext_resource type="Texture2D" uid="uid://dd8es430hs0tg" path="res://heartnew.png" id="3_nnqpk"]
+[ext_resource type="Script" path="res://AnimatedSprite2D.gd" id="4_2pkxe"]
+[ext_resource type="AudioStream" uid="uid://c6sl5dj2bw2k7" path="res://Music/Metronomy.mp3" id="5_8s3j6"]
+[ext_resource type="Script" path="res://syncaudio.gd" id="5_jov2n"]
 
-[node name="heart" type="Node2D"]
-script = ExtResource("1_vohg2")
+[sub_resource type="SpriteFrames" id="SpriteFrames_i0j84"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hwv0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nnqpk")
+}],
+"loop": false,
+"name": &"beat",
+"speed": 2.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_gsjdp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(352, 238)
+sprite_frames = SubResource("SpriteFrames_i0j84")
+animation = &"beat"
+frame = 1
+frame_progress = 0.850098
+speed_scale = 2.0
+script = ExtResource("4_2pkxe")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_8s3j6")
+autoplay = true
+script = ExtResource("5_jov2n")

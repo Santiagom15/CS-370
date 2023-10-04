@@ -4,7 +4,6 @@
 [ext_resource type="Script" path="res://Game.gd" id="2_i4niy"]
 [ext_resource type="Script" path="res://Conductor.gd" id="2_xyetu"]
 [ext_resource type="Texture2D" uid="uid://dcngf7bo7s3se" path="res://heart.png" id="4_bhp57"]
-[ext_resource type="Script" path="res://AnimationPlayer.gd" id="4_f2i8n"]
 [ext_resource type="Script" path="res://Heart.gd" id="5_2csw4"]
 
 [sub_resource type="Animation" id="Animation_rr8og"]
@@ -28,6 +27,12 @@ _data = {
 "heart": SubResource("Animation_rr8og")
 }
 
+[sub_resource type="GDScript" id="GDScript_dtuvv"]
+script/source = "extends AnimationPlayer
+
+
+"
+
 [node name="boss battle demo" type="Node2D"]
 
 [node name="Conductor" type="AudioStreamPlayer2D" parent="."]
@@ -43,7 +48,7 @@ speed_scale = 1.07753
 libraries = {
 "": SubResource("AnimationLibrary_5k4hr")
 }
-script = ExtResource("4_f2i8n")
+script = SubResource("GDScript_dtuvv")
 
 [node name="Heart" type="Sprite2D" parent="."]
 position = Vector2(408, 306)
