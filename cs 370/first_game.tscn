@@ -26,22 +26,30 @@ mouse_filter = 2
 texture = ExtResource("2_u5ucp")
 expand_mode = 1
 
+[node name="Level 1" type="Button" parent="."]
+offset_left = 503.0
+offset_top = 206.0
+offset_right = 728.0
+offset_bottom = 278.0
+text = "Level 1: Floor 5"
+
 [node name="Test" type="Button" parent="."]
-offset_left = 525.0
-offset_top = 264.0
-offset_right = 721.0
-offset_bottom = 333.0
-text = "Test world
+offset_left = 506.0
+offset_top = 319.0
+offset_right = 727.0
+offset_bottom = 388.0
+text = "Demo
 "
 script = ExtResource("3_hp70g")
 
 [node name="TestNoBg" type="Button" parent="."]
-offset_left = 510.0
-offset_top = 380.0
-offset_right = 730.0
-offset_bottom = 450.0
-text = "Test world (no background)"
+offset_left = 507.0
+offset_top = 430.0
+offset_right = 727.0
+offset_bottom = 500.0
+text = "Demo (no background)"
 
 [connection signal="button_down" from="BacktoHome" to="BacktoHome" method="_on_button_down"]
+[connection signal="button_down" from="Level 1" to="BacktoHome" method="_on_level_1_button_down"]
 [connection signal="button_down" from="Test" to="BacktoHome" method="_on_test_button_down"]
 [connection signal="button_down" from="TestNoBg" to="BacktoHome" method="_on_test_no_bg_button_down"]
