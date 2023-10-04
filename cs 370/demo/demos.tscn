@@ -20626,7 +20626,7 @@ offset_right = 524.0
 offset_bottom = -194.0
 text = "Return to home page"
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
 
 [node name="Ghost furniture no collision infront" type="TileMap" parent="."]
 scale = Vector2(4, 4)

@@ -56343,7 +56343,7 @@ offset_right = 466.0
 offset_bottom = -158.0
 text = "Return to home page"
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
 
 [node name="Doorway" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_uv57d")

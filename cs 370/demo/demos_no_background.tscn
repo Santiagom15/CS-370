@@ -28,6 +28,6 @@ offset_right = 466.0
 offset_bottom = -158.0
 text = "Return to home page"
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
 
 [connection signal="button_down" from="CharacterBody2D/Return home" to="CharacterBody2D" method="_on_return_home_button_down"]
