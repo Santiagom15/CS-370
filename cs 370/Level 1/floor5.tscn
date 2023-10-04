@@ -56350,8 +56350,12 @@ offset_right = 466.0
 offset_bottom = -158.0
 text = "Return to home page"
 
+<<<<<<< HEAD
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-8, 0)
+=======
+[node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
+>>>>>>> b396010fad47817f55ce7b7af391f2f31e0f77c8
 
 [node name="Doorway" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_uv57d")
