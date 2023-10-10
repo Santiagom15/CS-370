@@ -1,26 +1,14 @@
-[gd_scene load_steps=291 format=3 uid="uid://bgkfmqsltr2aj"]
+[gd_scene load_steps=283 format=3 uid="uid://bgkfmqsltr2aj"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
-[ext_resource type="Script" path="res://Level 1/Animated blood drip.gd" id="3_3q4o1"]
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="3_eevib"]
 [ext_resource type="Texture2D" uid="uid://c4psf6kv0mxg5" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/11_Halloween_16x16.png" id="3_mrhk3"]
 [ext_resource type="Texture2D" uid="uid://b0nawqlma58gn" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_butchershop_carcass.png" id="4_nvu84"]
 [ext_resource type="Texture2D" uid="uid://dpxguycn7exuo" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/3_Bathroom_16x16.png" id="4_s5jh1"]
-[ext_resource type="Script" path="res://Level 1/Animated blue drawer empty.gd" id="5_2iv32"]
-[ext_resource type="Script" path="res://Level 1/Animated haunted mirror 1.gd" id="5_4ypnd"]
-[ext_resource type="Script" path="res://Level 1/Animated blue drawer.gd" id="5_7e6bh"]
-[ext_resource type="Script" path="res://Level 1/Animated blood splatter.gd" id="5_32nc4"]
-[ext_resource type="Script" path="res://Level 1/Animated xray tv right.gd" id="5_ey7cw"]
-[ext_resource type="Script" path="res://Level 1/Animated object Haunted painting.gd" id="5_j3g3n"]
-[ext_resource type="Script" path="res://Level 1/Animated vertical fridge.gd" id="5_k0qiy"]
 [ext_resource type="Texture2D" uid="uid://1pfdnbbkvtgu" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_head.png" id="5_l8cnp"]
-[ext_resource type="Script" path="res://Level 1/Animated sink.gd" id="5_ndtd2"]
 [ext_resource type="Texture2D" uid="uid://h6xw2v2aqp4t" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/aniamted_haunted_mirror.png" id="5_nt45a"]
-[ext_resource type="Script" path="res://Level 1/Animated haunted mirror.gd" id="5_pcykp"]
 [ext_resource type="Texture2D" uid="uid://4376utguxmuv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_arm.png" id="5_v0qy0"]
-[ext_resource type="Script" path="res://Level 1/Animated xray machine.gd" id="5_vm113"]
-[ext_resource type="Script" path="res://Level 1/Animated xray tv left.gd" id="5_w5ebo"]
 [ext_resource type="Texture2D" uid="uid://dv2q0p67lrydp" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_painting_doll_1.png" id="5_yt6uo"]
 [ext_resource type="Texture2D" uid="uid://ckb4ja5ocbgnm" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_full.png" id="6_c3omn"]
 [ext_resource type="Texture2D" uid="uid://drbvmbors5uxv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_right.png" id="6_i8hy6"]
@@ -28,19 +16,14 @@
 [ext_resource type="Texture2D" uid="uid://cwl7odqgh6i5x" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror.png" id="6_vbod5"]
 [ext_resource type="Texture2D" uid="uid://bye32i8ybd7m6" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_empty.png" id="6_wqapt"]
 [ext_resource type="Texture2D" uid="uid://bc7yomw0w3532" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_sink_new_2_3-10 loop.png" id="6_yuj1v"]
-[ext_resource type="Script" path="res://Level 1/Animated sensor.gd" id="7_37fdf"]
-[ext_resource type="Script" path="res://Level 1/Animated bath tub.gd" id="7_fseyh"]
-[ext_resource type="Script" path="res://Level 1/Animated vertical fridge 1.gd" id="7_olmj2"]
 [ext_resource type="Texture2D" uid="uid://bote30ouq70j" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathtub_2.png" id="7_ovnr8"]
-[ext_resource type="Script" path="res://Level 1/Animated vertical fridge right.gd" id="7_rc6yw"]
-[ext_resource type="Script" path="res://Level 1/Animated blue drawer 1.gd" id="7_suhh7"]
-[ext_resource type="Script" path="res://Level 1/Animated object Old TV.gd" id="7_ynruy"]
 [ext_resource type="Texture2D" uid="uid://d3ng0ce47d54y" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_left.png" id="8_0cefy"]
 [ext_resource type="Texture2D" uid="uid://4xcd7q6v2co6" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_old_tv.png" id="8_n8eh6"]
 [ext_resource type="Texture2D" uid="uid://k6b1yukgsh33" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_ticket_machine.png" id="8_yhetw"]
+[ext_resource type="Script" path="res://Level 1/Animated Idle.gd" id="10_kkunq"]
+[ext_resource type="Script" path="res://Level 1/Animated Interact.gd" id="23_1uvg8"]
+[ext_resource type="Texture2D" uid="uid://cd0nbgye3yh7u" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="23_u8hcn"]
 [ext_resource type="Texture2D" uid="uid://df4ksnwncongf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
-[ext_resource type="Script" path="res://Level 1/Animated screen.gd" id="35_rtbra"]
-[ext_resource type="Script" path="res://Level 1/Animated haunted mirror 2.gd" id="37_oehc2"]
 [ext_resource type="Texture2D" uid="uid://blurtqdn6gseh" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
 [ext_resource type="Script" path="res://Level 1/Button.gd" id="43_072me"]
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
@@ -28108,7 +28091,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_v07t4")
 }],
 "loop": true,
-"name": &"Blood",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -28165,7 +28148,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_k1xtv")
 }],
 "loop": true,
-"name": &"Blood",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -28264,7 +28247,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_m7jbq")
 }],
 "loop": true,
-"name": &"Blood",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -28300,7 +28283,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_sodhl")
 }],
 "loop": true,
-"name": &"Blood",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -28322,7 +28305,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_lo10h")
 }],
 "loop": true,
-"name": &"Blood",
+"name": &"Idle",
 "speed": 1.0
 }]
 
@@ -39580,7 +39563,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_evhqj")
 }],
 "loop": true,
-"name": &"Haunted mirror 1",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -39630,7 +39613,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_7ek7m")
 }],
 "loop": true,
-"name": &"Sensor",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -39694,7 +39677,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ptalu")
 }],
 "loop": true,
-"name": &"Fridge vertical",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -39758,7 +39741,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_hi3y6")
 }],
 "loop": true,
-"name": &"Fridge vertical 1",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -39822,7 +39805,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3dc5l")
 }],
 "loop": true,
-"name": &"Fridge vertical right",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -39900,7 +39883,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_knlnu")
 }],
 "loop": true,
-"name": &"Blue cabinet",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -39978,7 +39961,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_kbsl1")
 }],
 "loop": true,
-"name": &"Blue cabinet 1",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40056,7 +40039,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_g400a")
 }],
 "loop": true,
-"name": &"Blue cabinet empty",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40148,7 +40131,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3yaj5")
 }],
 "loop": true,
-"name": &"Haunted mirror",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40177,7 +40160,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_34g32")
 }],
 "loop": true,
-"name": &"Xray machine",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40269,7 +40252,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_tjluc")
 }],
 "loop": true,
-"name": &"Xray right",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40333,7 +40316,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_1kwxa")
 }],
 "loop": true,
-"name": &"Xray left",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40439,7 +40422,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_vc5wa")
 }],
 "loop": true,
-"name": &"Sink",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40475,7 +40458,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_nhdhh")
 }],
 "loop": true,
-"name": &"Bath tub",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40609,7 +40592,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ffgs3")
 }],
 "loop": true,
-"name": &"Haunted painting",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40659,7 +40642,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_yn7fj")
 }],
 "loop": true,
-"name": &"Old TV",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40702,7 +40685,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_jofvr")
 }],
 "loop": true,
-"name": &"Screen",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -40836,9 +40819,66 @@ animations = [{
 "texture": SubResource("AtlasTexture_jcyqu")
 }],
 "loop": true,
-"name": &"Haunted mirror 2",
+"name": &"Idle",
 "speed": 5.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqrug"]
+size = Vector2(20, 178)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gvecj"]
+atlas = ExtResource("23_u8hcn")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1iws4"]
+atlas = ExtResource("23_u8hcn")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mcf2p"]
+atlas = ExtResource("23_u8hcn")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwx2x"]
+atlas = ExtResource("23_u8hcn")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ho6dv"]
+atlas = ExtResource("23_u8hcn")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mywvb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gvecj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1iws4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mcf2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwx2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ho6dv")
+}],
+"loop": false,
+"name": &"Interact",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pot04"]
+size = Vector2(3.44271, 37.9783)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4o5v"]
+size = Vector2(102, 28.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_743vx"]
 texture = ExtResource("1_mqcgy")
@@ -55969,166 +56009,166 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-262144, 3538945, 56, -196608, 3538945, 56, -131072, 3538945, 56, -65536, 3538945, 56, 0, 3538945, 56, 65536, 3538945, 56, 131072, 3538945, 56, 196608, 3538945, 56, 262144, 3538945, 56, 327680, 3538945, 56, -262134, 3735553, 56, -196598, 3735553, 56, -131062, 3735553, 56, -65526, 3735553, 56, 10, 3735553, 56, 65546, 3735553, 56, 131082, 3735553, 56, 196618, 3735553, 56, 262154, 3735553, 56, 327690, 3735553, 56, -458749, 3670017, 56, -458748, 3670017, 56, -458747, 3670017, 56, -458746, 3670017, 56, -458745, 3670017, 56, -458744, 3670017, 56, -458743, 3670017, 56, -458742, 3801089, 55, -393206, 3801089, 56, -327670, 3801089, 57, -393207, 3670017, 58, -393208, 3670017, 58, -393209, 3670017, 58, -393210, 3670017, 58, -393211, 3670017, 58, -393212, 3670017, 58, -393213, 3670017, 58, -327671, 3670017, 57, -327672, 3670017, 57, -327673, 3670017, 57, -327674, 3670017, 57, -327675, 3670017, 57, -327676, 3670017, 57, -327677, 3670017, 57, 393216, 3538945, 56, 458752, 3538945, 56, 524288, 3538945, 56, 589824, 3538945, 56, 589834, 3801089, 59, 393225, 2818049, 5, 458761, 2818049, 5, 851978, 3735553, 56, 917514, 3735553, 56, 983050, 3735553, 56, 851968, 3538945, 56, 917504, 3538945, 56, 983040, 3538945, 56, 1048576, 3538945, 56, 1114112, 3473409, 59, 1179648, 3473409, 59, 1245184, 3473409, 59, 1245194, 3735553, 56, 1310720, 3473409, 55, 1310730, 3407873, 57, 1310721, 3604481, 56, 1310722, 3604481, 56, 1310723, 3604481, 56, 1310724, 3604481, 56, 1310725, 3604481, 56, 1310726, 3604481, 56, 1310727, 3604481, 56, 1310728, 3604481, 56, 1310729, 3604481, 56, 524297, 2818049, 5, 1179657, 2818049, 5, 1114121, 2818049, 5, 1048585, 2818049, 5, -327679, 3670017, 57, -327678, 3670017, 57, -458752, 3473409, 55, -393216, 3473409, 56, -327680, 3473409, 57, -458751, 3670017, 56, -393215, 3670017, 58, -458750, 3670017, 56, -393214, 3670017, 58, -458736, 3473409, 55, -393200, 3473409, 56, -327664, 3473409, 57, -458735, 3670017, 56, -393199, 3670017, 58, -327663, 3670017, 57, 1310737, 3604481, 56, -458734, 3670017, 56, -393198, 3670017, 58, -327662, 3670017, 57, 1310738, 3604481, 56, -458733, 3670017, 56, -393197, 3670017, 58, -327661, 3670017, 57, 1310739, 3604481, 56, -458732, 3670017, 56, -393196, 3670017, 58, -327660, 3670017, 57, 1310740, 3604481, 56, -458731, 3670017, 56, -393195, 3670017, 58, -327659, 3670017, 57, 1310741, 3604481, 56, -458730, 3670017, 56, -393194, 3670017, 58, -327658, 3670017, 57, 1310742, 3604481, 56, -458729, 3670017, 56, -393193, 3670017, 58, -327657, 3670017, 57, 1310743, 3604481, 56, -458728, 3670017, 56, -393192, 3670017, 58, -327656, 3670017, 57, 1310744, 3604481, 56, -458727, 3670017, 56, -393191, 3670017, 58, -327655, 3670017, 57, 1310745, 3604481, 56, -262128, 3538945, 56, -196592, 3538945, 56, 262160, 3473409, 57, 327696, 3538945, 56, 589840, 2818049, 5, 917520, 3538945, 56, 983056, 3538945, 56, 1245200, 3473409, 59, -458726, 3801089, 55, -393190, 3801089, 56, -327654, 3801089, 57, -262118, 3735553, 56, -196582, 3735553, 56, -131046, 3735553, 56, -65510, 3735553, 56, 26, 3735553, 56, 262170, 3801089, 57, 327706, 3735553, 56, 589850, 3801089, 59, 917530, 3735553, 56, 983066, 3735553, 56, 1245210, 3735553, 56, 1310746, 3801089, 55, -458741, 3604481, 56, -458740, 3604481, 56, -458739, 3604481, 56, -458738, 3604481, 56, -458737, 3604481, 56, -393205, 3670017, 58, -393204, 3670017, 58, -393203, 3670017, 58, -393202, 3670017, 58, -393201, 3670017, 58, -327669, 3604481, 57, -327668, 3604481, 57, -327667, 3604481, 57, -327666, 3604481, 57, -327665, 3604481, 57, 655360, 3473409, 55, 720896, 3473409, 56, 786432, 3473409, 57, 655361, 3604481, 56, 720897, 3670017, 58, 786433, 3604481, 57, 655362, 3604481, 56, 720898, 3670017, 58, 786434, 3604481, 57, 655363, 3604481, 56, 720899, 3670017, 58, 786435, 3604481, 57, 655364, 3604481, 56, 720900, 3670017, 58, 786436, 3604481, 57, 655365, 3604481, 56, 720901, 3670017, 58, 786437, 3604481, 57, 655366, 3604481, 56, 720902, 3670017, 58, 786438, 3604481, 57, 655367, 3604481, 56, 720903, 3670017, 58, 786439, 3604481, 57, 655368, 3604481, 56, 720904, 3670017, 58, 786440, 3604481, 57, 655369, 3604481, 56, 720905, 3670017, 58, 786441, 3604481, 57, 655370, 3801089, 55, 720906, 3801089, 56, 786442, 3801089, 57, 1048602, 3735553, 56, 1114138, 3735553, 56, 1179674, 3735553, 56, 1048592, 2818049, 5, 1114128, 2818049, 5, 1179664, 2818049, 5, 393242, 3735553, 56, 458778, 3735553, 56, 524314, 3735553, 56, 720921, 3604481, 56, 786457, 3670017, 58, 851993, 3604481, 57, 720922, 3801089, 55, 786458, 3801089, 56, 851994, 3801089, 57, 655376, 3538945, 56, 655386, 3735553, 56, 131088, 3473409, 55, 196624, 3473409, 56, 131089, 3604481, 56, 196625, 3670017, 58, 131090, 3604481, 56, 196626, 3670017, 58, 131091, 3604481, 56, 196627, 3670017, 58, 131092, 3604481, 56, 196628, 3670017, 58, 131093, 3604481, 56, 196629, 3670017, 58, 131094, 3604481, 56, 196630, 3670017, 58, 131095, 3604481, 56, 196631, 3670017, 58, 131096, 3604481, 56, 196632, 3670017, 58, 131097, 3604481, 56, 196633, 3670017, 58, 131098, 3801089, 55, 196634, 3801089, 56, 262161, 3604481, 57, 262162, 3604481, 57, 262163, 3604481, 57, 262164, 3604481, 57, 262165, 3604481, 57, 262166, 3604481, 57, 262167, 3604481, 57, 262168, 3604481, 57, 262169, 3604481, 57, 65552, 3538945, 56, 65562, 3735553, 56, 458768, 2818049, 5, 524304, 2818049, 5, -65520, 2818049, 5, 16, 2818049, 5, -131056, 2818049, 5, 393232, 3538945, 56, 1376256, 3473409, 56, 1441792, 3473409, 57, 1376257, 3670017, 58, 1441793, 3604481, 57, 1376258, 3670017, 58, 1441794, 3604481, 57, 1376259, 3670017, 58, 1441795, 3604481, 57, 1376260, 3670017, 58, 1441796, 3604481, 57, 1376261, 3670017, 58, 1441797, 3604481, 57, 1376262, 3670017, 58, 1441798, 3604481, 57, 1376263, 3670017, 58, 1441799, 3604481, 57, 1376264, 3670017, 58, 1441800, 3604481, 57, 1376265, 3670017, 58, 1441801, 3604481, 57, 1507328, 3538945, 56, 1572864, 3538945, 56, 1376266, 3407873, 59, 1441802, 3407873, 58, 1376273, 3670017, 58, 1441809, 3604481, 57, 1376274, 3670017, 58, 1441810, 3604481, 57, 1376275, 3670017, 58, 1441811, 3604481, 57, 1376276, 3670017, 58, 1441812, 3604481, 57, 1376277, 3670017, 58, 1441813, 3604481, 57, 1376278, 3670017, 58, 1441814, 3604481, 57, 1376279, 3670017, 58, 1441815, 3604481, 57, 1376280, 3670017, 58, 1441816, 3604481, 57, 1376281, 3670017, 58, 1441817, 3604481, 57, 1376282, 3801089, 56, 1441818, 3801089, 57, 1507354, 3735553, 56, 1572890, 3735553, 56, 1703936, 3538945, 56, 1703962, 3735553, 56, 1638400, 3538945, 56, 1638426, 3735553, 56, 1769498, 3604481, 56, 1769472, 3473409, 55, 1835008, 3473409, 56, 1900544, 3473409, 57, 1966080, 3538945, 56, 2031616, 3538945, 56, 2097152, 3538945, 56, 2162688, 3538945, 56, 2228224, 3538945, 56, 2293760, 3538945, 56, 2359296, 3538945, 56, 1769473, 3604481, 56, 1835009, 3670017, 58, 1900545, 3604481, 57, 1769474, 3604481, 56, 1835010, 3670017, 58, 1900546, 3604481, 57, 1769475, 3604481, 56, 1835011, 3670017, 58, 1900547, 3604481, 57, 1769476, 3604481, 56, 1835012, 3670017, 58, 1900548, 3604481, 57, 1769477, 3604481, 56, 1835013, 3670017, 58, 1900549, 3604481, 57, 1769478, 3604481, 56, 1835014, 3670017, 58, 1900550, 3604481, 57, 1769479, 3604481, 56, 1835015, 3670017, 58, 1900551, 3604481, 57, 1769481, 3604481, 56, 1835017, 3670017, 58, 1900553, 3604481, 57, 1900569, 3604481, 57, 1835034, 3670017, 58, 1900570, 3604481, 57, 1769497, 3604481, 56, 1835033, 3670017, 58, 1900560, 3801089, 57, 1900561, 2162689, 4, 1900562, 2162689, 4, 1900563, 2162689, 4, 1900564, 2162689, 4, 1769494, 3407873, 54, 1835030, 3407873, 56, 1900566, 3407873, 55, 1769495, 3604481, 56, 1835031, 3670017, 58, 1900567, 3604481, 57, 1769496, 3604481, 56, 1835032, 3670017, 58, 1900568, 3604481, 57, 1769482, 3604481, 56, 1835018, 3670017, 58, 1900554, 3604481, 57, 1769486, 3604481, 56, 1835022, 3670017, 58, 1900558, 3604481, 57, 1769485, 3604481, 56, 1835021, 3670017, 58, 1900557, 3604481, 57, 1769484, 3604481, 56, 1835020, 3670017, 58, 1900556, 3604481, 57, 1769483, 3604481, 56, 1835019, 3670017, 58, 1900555, 3604481, 57, 1769480, 3604481, 56, 1835016, 3670017, 58, 1900552, 3604481, 57, 1769488, 3801089, 55, 1835024, 3801089, 56, 1966096, 3735553, 56, 2031632, 3735553, 56, 2293776, 3735553, 56, 2359312, 3735553, 56, 1769487, 3604481, 56, 1835023, 3670017, 58, 1900559, 3604481, 57, 2097167, 2818049, 5, 2162703, 2818049, 5, 2228239, 2818049, 5, 1900565, 2162689, 4, 2293777, 3604481, 56, 2359313, 3670017, 58, 2424849, 3604481, 57, 2293780, 3604481, 56, 2359316, 3670017, 58, 2424852, 3604481, 57, 2293781, 3604481, 56, 2359317, 3670017, 58, 2424853, 3604481, 57, 2293782, 3604481, 56, 2359318, 3670017, 58, 2424854, 3604481, 57, 2293783, 3604481, 56, 2359319, 3670017, 58, 2424855, 3604481, 57, 2293784, 3604481, 56, 2359320, 3670017, 58, 2424856, 3604481, 57, 2293785, 3801089, 55, 2359321, 3801089, 56, 2424857, 3801089, 57, 2293786, 3604481, 56, 2359322, 3670017, 58, 2424858, 3604481, 57, 2293789, 3604481, 56, 2359325, 3670017, 58, 2424861, 3604481, 57, 2293790, 3604481, 56, 2359326, 3670017, 58, 2424862, 3604481, 57, 2293791, 3604481, 56, 2359327, 3670017, 58, 2424863, 3604481, 57, 2293792, 3604481, 56, 2359328, 3670017, 58, 2424864, 3604481, 57, 2293793, 3604481, 56, 2359329, 3670017, 58, 2424865, 3604481, 57, 2293794, 3801089, 55, 2359330, 3801089, 56, 2424866, 3801089, 57, 2293795, 3604481, 56, 2359331, 3670017, 58, 2424867, 3604481, 57, 2293798, 3604481, 56, 2359334, 3670017, 58, 2424870, 3604481, 57, 2293799, 3604481, 56, 2359335, 3670017, 58, 2424871, 3604481, 57, 2293800, 3604481, 56, 2359336, 3670017, 58, 2424872, 3604481, 57, 2293801, 3604481, 56, 2359337, 3670017, 58, 2424873, 3604481, 57, 2293803, 3801089, 55, 2359339, 3801089, 56, 2424875, 3801089, 57, 2293804, 3604481, 56, 2359340, 3670017, 58, 2424876, 3604481, 57, 2293807, 3604481, 56, 2359343, 3670017, 58, 2424879, 3604481, 57, 2293808, 3604481, 56, 2359344, 3670017, 58, 2424880, 3604481, 57, 2293809, 3604481, 56, 2359345, 3670017, 58, 2424881, 3604481, 57, 2293810, 3604481, 56, 2359346, 3670017, 58, 2424882, 3604481, 57, 2293811, 3604481, 56, 2359347, 3670017, 58, 2424883, 3604481, 57, 1769499, 3604481, 56, 1835035, 3670017, 58, 1900571, 3604481, 57, 1769505, 3604481, 56, 1835041, 3670017, 58, 1900577, 3604481, 57, 1769506, 3604481, 56, 1835042, 3670017, 58, 1900578, 3604481, 57, 1769507, 3604481, 56, 1835043, 3670017, 58, 1900579, 3604481, 57, 1769508, 3604481, 56, 1835044, 3670017, 58, 1900580, 3604481, 57, 1769509, 3604481, 56, 1835045, 3670017, 58, 1900581, 3604481, 57, 1769510, 3604481, 56, 1835046, 3670017, 58, 1900582, 3604481, 57, 1769511, 3604481, 56, 1835047, 3670017, 58, 1900583, 3604481, 57, 1769512, 3604481, 56, 1835048, 3670017, 58, 1900584, 3604481, 57, 1769513, 3604481, 56, 1835049, 3670017, 58, 1900585, 3604481, 57, 1769514, 3604481, 56, 1835050, 3670017, 58, 1900586, 3604481, 57, 1769515, 3604481, 56, 1835051, 3670017, 58, 1900587, 3604481, 57, 1769516, 3604481, 56, 1835052, 3670017, 58, 1900588, 3604481, 57, 1769517, 3604481, 56, 1835053, 3670017, 58, 1900589, 3604481, 57, 1769518, 3604481, 56, 1835054, 3670017, 58, 1900590, 3604481, 57, 1769519, 3604481, 56, 1835055, 3670017, 58, 1900591, 3604481, 57, 1769520, 3604481, 56, 1835056, 3670017, 58, 1900592, 3604481, 57, 1769521, 3604481, 56, 1835057, 3670017, 58, 1900593, 3604481, 57, 1769522, 3604481, 56, 1835058, 3670017, 58, 1900594, 3604481, 57, 1769523, 3604481, 56, 1835059, 3670017, 58, 1900595, 3604481, 57, 1769524, 3801089, 55, 1835060, 3801089, 56, 1900596, 3801089, 57, 2293812, 3801089, 55, 2359348, 3801089, 56, 2424884, 3801089, 57, 2490420, 3735553, 56, 2555956, 3735553, 56, 2621492, 3735553, 56, 2687028, 3735553, 56, 2752564, 3735553, 56, 2818100, 3735553, 59, 1310736, 3407873, 54, 1376272, 3407873, 56, 1441808, 3407873, 55, 1966132, 3735553, 56, 2228276, 3735553, 56, 1769527, 3604481, 56, 1769526, 3604481, 56, 1769525, 3604481, 56, 1835061, 3670017, 58, 1900597, 3604481, 57, 2490393, 3735553, 56, 2555929, 3735553, 56, 2621465, 3735553, 56, 2687001, 3735553, 56, 2752537, 3735553, 56, 2818073, 3735553, 59, 2490402, 3735553, 56, 2555938, 3735553, 56, 2621474, 3735553, 56, 2687010, 3735553, 56, 2752546, 3735553, 56, 2818082, 3735553, 59, 2490411, 3735553, 56, 2555947, 3735553, 56, 2621483, 3735553, 56, 2687019, 3735553, 56, 2752555, 3735553, 56, 2818091, 3735553, 59, 2293802, 3604481, 56, 2359338, 3670017, 58, 2424874, 3604481, 57, 720912, 3473409, 55, 786448, 3473409, 56, 851984, 3473409, 57, 720913, 3604481, 56, 786449, 3670017, 58, 851985, 3604481, 57, 720914, 3604481, 56, 786450, 3670017, 58, 851986, 3604481, 57, 720915, 3604481, 56, 786451, 3670017, 58, 851987, 3604481, 57, 720916, 3604481, 56, 786452, 3670017, 58, 851988, 3604481, 57, 720917, 3604481, 56, 786453, 3670017, 58, 851989, 3604481, 57, 720918, 3604481, 56, 786454, 3670017, 58, 851990, 3604481, 57, 720919, 3604481, 56, 786455, 3670017, 58, 851991, 3604481, 57, 720920, 3604481, 56, 786456, 3670017, 58, 851992, 3604481, 57, 458806, 3604481, 56, 458807, 3604481, 56, 458808, 3801089, 55, 458800, 3473409, 55, 524336, 3473409, 56, 589872, 3473409, 57, 458801, 3604481, 56, 524337, 3670017, 58, 589873, 3604481, 57, 458802, 3604481, 56, 524338, 3670017, 58, 589874, 3604481, 57, 458803, 3604481, 56, 524339, 3670017, 58, 589875, 3604481, 57, 458804, 3604481, 56, 524340, 3670017, 58, 589876, 3604481, 57, 458805, 3604481, 56, 524341, 3670017, 58, 589877, 3604481, 57, 655408, 3538945, 56, 720944, 3538945, 56, 786480, 3538945, 56, 852016, 3538945, 56, 917552, 3538945, 56, 983088, 3538945, 56, 1048624, 3538945, 56, 2424832, 3473409, 55, 2490368, 3473409, 56, 2555904, 3473409, 57, 2621440, 3538945, 56, 2686976, 3538945, 56, 2752512, 3538945, 56, 2818048, 3538945, 59, 2490369, 3670017, 58, 2555905, 3604481, 57, 2490370, 3670017, 58, 2555906, 3604481, 57, 2490371, 3670017, 58, 2555907, 3604481, 57, 2490372, 3670017, 58, 2555908, 3604481, 57, 2490373, 3670017, 58, 2555909, 3604481, 57, 2490374, 3670017, 58, 2555910, 3604481, 57, 2490378, 3670017, 58, 2555914, 3604481, 57, 2490379, 3670017, 58, 2555915, 3604481, 57, 2490380, 3670017, 58, 2555916, 3604481, 57, 2490381, 3670017, 58, 2555917, 3604481, 57, 2490382, 3670017, 58, 2555918, 3604481, 57, 2490383, 3670017, 58, 2555919, 3604481, 57, 2424848, 3801089, 55, 2490384, 3801089, 56, 2555920, 3801089, 57, 2621456, 3735553, 56, 2686992, 3735553, 56, 2752528, 3735553, 56, 2818064, 3735553, 59, 2424833, 3604481, 56, 2818049, 3604481, 59, 2424834, 3604481, 56, 2818050, 3604481, 59, 2424835, 3604481, 56, 2818051, 3604481, 59, 2424836, 3604481, 56, 2818052, 3604481, 59, 2424837, 3604481, 56, 2818053, 3604481, 59, 2424838, 3604481, 56, 2818054, 3604481, 59, 2555911, 2162689, 4, 2818055, 3604481, 59, 2555912, 2162689, 4, 2818056, 3604481, 59, 2555913, 2162689, 4, 2818057, 3604481, 59, 2424842, 3604481, 56, 2818058, 3604481, 59, 2424843, 3604481, 56, 2818059, 3604481, 59, 2424844, 3604481, 56, 2818060, 3604481, 59, 2424845, 3604481, 56, 2818061, 3604481, 59, 2424846, 3604481, 56, 2818062, 3604481, 59, 2424847, 3604481, 56, 2818063, 3604481, 59, 2818065, 3604481, 59, 2818066, 3604481, 59, 2818067, 3604481, 59, 2818068, 3604481, 59, 2818069, 3604481, 59, 2818070, 3604481, 59, 2818071, 3604481, 59, 2818072, 3604481, 59, 2818074, 3604481, 59, 2818075, 3604481, 59, 2818076, 3604481, 59, 2818077, 3604481, 59, 2818078, 3604481, 59, 2818079, 3604481, 59, 2818080, 3604481, 59, 2818081, 3604481, 59, 2818083, 3604481, 59, 2818084, 3604481, 59, 2818085, 3604481, 59, 2818086, 3604481, 59, 2818087, 3604481, 59, 2818088, 2949121, 0, 2818089, 2949121, 0, 2818090, 3604481, 59, 2818092, 3604481, 59, 2818093, 3604481, 59, 2818094, 3604481, 59, 2818095, 3604481, 59, 2818096, 3604481, 59, 2818097, 3604481, 59, 2818098, 3604481, 59, 2818099, 3604481, 59, 2818101, 3604481, 59, 2818102, 3604481, 59, 2818103, 3604481, 59, 2424850, 2162689, 4, 2424851, 2162689, 4, 2424859, 2162689, 4, 2424860, 2162689, 4, 2424868, 2162689, 4, 2424869, 2162689, 4, 2424877, 2162689, 4, 2424878, 2162689, 4, 1900576, 2162689, 4, 1900575, 2162689, 4, 1900574, 2162689, 4, 1900573, 2162689, 4, 1900572, 2162689, 4, 1114139, 3604481, 56, 1179675, 3670017, 58, 1245211, 3604481, 57, 1114140, 3604481, 56, 1179676, 3670017, 58, 1245212, 3604481, 57, 1114141, 3604481, 56, 1179677, 3670017, 58, 1245213, 3604481, 57, 1114142, 3604481, 56, 1179678, 3670017, 58, 1245214, 3604481, 57, 1114143, 3604481, 56, 1179679, 3670017, 58, 1245215, 3604481, 57, 1114144, 3604481, 56, 1179680, 3670017, 58, 1245216, 3604481, 57, 1114145, 3604481, 56, 1179681, 3670017, 58, 1245217, 3604481, 57, 1114146, 3604481, 56, 1179682, 3670017, 58, 1245218, 3604481, 57, 1114147, 3604481, 56, 1179683, 3670017, 58, 1245219, 3604481, 57, 1114148, 3604481, 56, 1179684, 3670017, 58, 1245220, 3604481, 57, 1114149, 3604481, 56, 1179685, 3670017, 58, 1245221, 3604481, 57, 1114150, 3604481, 56, 1179686, 3670017, 58, 1245222, 3604481, 57, 1114151, 3604481, 56, 1179687, 3670017, 58, 1245223, 3604481, 57, 1114152, 3604481, 56, 1179688, 3670017, 58, 1245224, 3604481, 57, 1114153, 3604481, 56, 1179689, 3670017, 58, 1245225, 3604481, 57, 1114154, 3604481, 56, 1179690, 3670017, 58, 1245226, 3604481, 57, 1114155, 3604481, 56, 1179691, 3670017, 58, 1245227, 3604481, 57, 1114156, 3604481, 56, 1179692, 3670017, 58, 1245228, 3604481, 57, 1114157, 3604481, 56, 1179693, 3670017, 58, 1245229, 3604481, 57, 1114158, 3604481, 56, 1179694, 3670017, 58, 1245230, 3604481, 57, 1114159, 3604481, 56, 1179695, 3670017, 58, 1245231, 3604481, 57, 1114160, 3407873, 54, 1179696, 3407873, 56, 1245232, 3407873, 55, 1114161, 3604481, 56, 1179697, 3670017, 58, 1245233, 3604481, 57, 1114162, 3604481, 56, 1179698, 3670017, 58, 1245234, 3604481, 57, 1245235, 2162689, 4, 1245236, 2162689, 4, 1245237, 2162689, 4, 2031667, 2818049, 5, 2097203, 2818049, 5, 2162739, 2818049, 5, 524342, 3670017, 58, 589878, 3604481, 57, 1179702, 3670017, 58, 1245238, 3604481, 57, 1835062, 3670017, 58, 1900598, 3604481, 57, 524343, 3670017, 58, 589879, 3604481, 57, 1179703, 3670017, 58, 1245239, 3604481, 57, 1835063, 3670017, 58, 1900599, 3604481, 57, 524344, 3801089, 56, 589880, 3801089, 57, 655416, 3735553, 56, 720952, 3735553, 56, 786488, 3735553, 56, 852024, 3735553, 56, 917560, 3735553, 56, 983096, 3735553, 56, 1048632, 3735553, 56, 1114168, 3801089, 55, 1179704, 3801089, 56, 1245240, 3801089, 57, 1310776, 3735553, 56, 1376312, 3735553, 56, 1441848, 3735553, 56, 1507384, 3735553, 56, 1572920, 3735553, 56, 1638456, 3735553, 56, 1703992, 3735553, 56, 1769528, 3801089, 55, 1835064, 3801089, 56, 1900600, 3801089, 57, 1966136, 3735553, 56, 2031672, 3735553, 56, 2097208, 3735553, 56, 2162744, 3735553, 56, 2228280, 3735553, 56, 2293816, 3735553, 56, 2359352, 3735553, 56, 2424888, 3735553, 56, 2490424, 3735553, 56, 2555960, 3735553, 56, 2621496, 3735553, 56, 2687032, 3735553, 56, 2752568, 3735553, 56, 2818104, 3735553, 59, 1114166, 3604481, 56, 1114167, 3604481, 56)
 
 [node name="Animated blood drip" type="CharacterBody2D" parent="."]
-script = ExtResource("3_3q4o1")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood drip"]
 position = Vector2(1096, 924.5)
 scale = Vector2(6.5, 8.875)
 sprite_frames = SubResource("SpriteFrames_cx70t")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood drip 1" type="CharacterBody2D" parent="."]
-script = ExtResource("3_3q4o1")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood drip 1"]
 position = Vector2(720, 1952)
 scale = Vector2(7.25, 11.75)
 sprite_frames = SubResource("SpriteFrames_cuf2o")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood drip 2" type="CharacterBody2D" parent="."]
-script = ExtResource("3_3q4o1")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood drip 2"]
 position = Vector2(1656, 960)
 scale = Vector2(6.5, 10.75)
 sprite_frames = SubResource("SpriteFrames_6h7ed")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood drip 4" type="CharacterBody2D" parent="."]
-script = ExtResource("3_3q4o1")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood drip 4"]
 position = Vector2(656, -184)
 scale = Vector2(4.82143, 6.75)
 sprite_frames = SubResource("SpriteFrames_by1kg")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter"]
 position = Vector2(1002, 189.75)
 scale = Vector2(4.74999, 4.1875)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 1" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 1"]
 position = Vector2(2120, 872)
 scale = Vector2(5.5, 4.375)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 2" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 2"]
 position = Vector2(2224, 888)
 scale = Vector2(5.5, 6.1875)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 3" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 3"]
 position = Vector2(1448, 912)
 scale = Vector2(8.75, 7.42708)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 4" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 4"]
 position = Vector2(2000.5, 1487.72)
 scale = Vector2(6.93749, 6.02343)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 5" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 5"]
 position = Vector2(928, 1936)
 scale = Vector2(7.87499, 6.71354)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 6" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 6"]
 position = Vector2(920, 2024)
 scale = Vector2(8.43749, 11)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 7" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 7"]
 position = Vector2(688, 1936)
 scale = Vector2(5.21874, 9.16667)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 8" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 8"]
 position = Vector2(968, 856)
 scale = Vector2(5.21874, 5.25)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 9" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 9"]
 position = Vector2(168, 392)
 scale = Vector2(6.30469, 4.91667)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 10" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 10"]
 position = Vector2(1208, 488)
 scale = Vector2(5.80468, 6.25)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 11" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 11"]
 position = Vector2(696, -272)
 scale = Vector2(5.80468, 4.125)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 12" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 12"]
 position = Vector2(704.781, -177.5)
 scale = Vector2(4.90234, 4.79167)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Animated blood splatter 13" type="CharacterBody2D" parent="."]
-script = ExtResource("5_32nc4")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blood splatter 13"]
 position = Vector2(2607.1, 2017.81)
 scale = Vector2(4.11279, 5.18229)
 sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Blood"
+animation = &"Idle"
 
 [node name="Furniture" type="TileMap" parent="."]
 scale = Vector2(4, 4)
@@ -56159,175 +56199,201 @@ layer_3/z_index = 0
 layer_3/tile_data = PackedInt32Array(-196607, 65536, 20, 786433, 262144, 19, -196590, 983040, 69, -131054, 983040, 70, 18, 65536, 20, -327670, 196608, 14, -262134, 196608, 15, -196598, 196608, 16, -327669, 262144, 14, -262133, 262144, 15, -196597, 262144, 16, -262135, 65536, 15, -196599, 65536, 16, 720897, 131072, 80, 393233, 458752, 39, 458769, 458752, 40, 524305, 458752, 41, 393234, 524288, 39, 458770, 524288, 40, 524306, 524288, 41, 458768, 65536, 42, 524304, 65536, 43, 458767, 655360, 30, 458766, 524288, 31, 262161, 65536, 27, 327697, 65536, 28, 589837, 589824, 50, 655373, 655360, 50, 786447, 655360, 97, 851984, 262144, 58, 327681, 655360, 97, 327682, 589824, 96, 327684, 655360, 97, 393217, 131072, 27, 458753, 131072, 28, 393218, 196608, 27, 458754, 196608, 28, 458755, 131072, 30, 458756, 196608, 30, 1376264, 589824, 96, 1114115, 458752, 19, 1114116, 458752, 19, 1114117, 458752, 19, 1114118, 458752, 19, 1114129, 720896, 41, 1769481, 655360, 97, 1966081, 720898, 31, 2031617, 917506, 0, 2031618, 983042, 0, 2031624, 65538, 6, 1835017, 589826, 18, 1900553, 589826, 19, 1835018, 655362, 18, 1900554, 655362, 19, 1048579, 458752, 18, 1048580, 458752, 18, 1048581, 458752, 18, 1048582, 458752, 18, 1048578, 458752, 18, 1114114, 458752, 19, 1441820, 786432, 29, 1048588, 917504, 13, 1114124, 917504, 14, 1048589, 983040, 13, 1114125, 983040, 14, 1179664, 786432, 87, 1245200, 786432, 88, 1179665, 851968, 87, 1245201, 851968, 88, 1376282, 0, 4, 1769496, 720896, 67, 1835032, 720896, 68, 1376285, 589824, 74, 1376286, 589825, 12, 2031633, 65536, 20, 1703951, 589824, 96, 1769487, 589824, 97, 2031652, 65536, 20, 1769510, 720896, 67, 1835046, 720896, 68, 1769501, 458753, 10, 1835037, 458753, 11, 1769502, 524289, 10, 1835038, 524289, 11, 1835039, 131072, 19, 1900575, 131072, 20, 2031629, 589824, 97, 2031630, 655360, 97, 1966093, 589824, 96, 1114133, 589824, 18, 1179669, 589824, 19, 1179687, 65536, 20, 1048616, 655360, 30, 1179688, 786432, 28, 852004, 262144, 41, 852005, 327680, 41, 8, 131072, 79, 65544, 131072, 80, 655371, 0, 79, 655361, 131072, 79, 720907, 0, 80, 2031643, 917504, 55, 2031644, 655360, 30, 1507335, 131074, 28, 1572871, 131074, 29, 1507336, 196610, 28, 1572872, 196610, 29, 1769473, 65538, 6, 2031637, 65536, 20)
 
 [node name="Animated haunted mirror 1" type="CharacterBody2D" parent="."]
-script = ExtResource("5_4ypnd")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated haunted mirror 1"]
 position = Vector2(736, 1880)
 scale = Vector2(4, 5.375)
 sprite_frames = SubResource("SpriteFrames_gjndw")
-animation = &"Haunted mirror 1"
+animation = &"Idle"
 
 [node name="Animated sensor" type="CharacterBody2D" parent="."]
-script = ExtResource("7_37fdf")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated sensor"]
 position = Vector2(1160, 212)
 scale = Vector2(4.5, 3.25)
 sprite_frames = SubResource("SpriteFrames_0klsx")
-animation = &"Sensor"
+animation = &"Idle"
 
 [node name="Animated vertical fridge" type="CharacterBody2D" parent="."]
 scale = Vector2(4, 4)
-script = ExtResource("5_k0qiy")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated vertical fridge"]
 position = Vector2(333, 291)
 scale = Vector2(0.6875, 1.125)
 sprite_frames = SubResource("SpriteFrames_osn8i")
-animation = &"Fridge vertical"
+animation = &"Idle"
 
 [node name="Animated vertical fridge 1" type="CharacterBody2D" parent="."]
 position = Vector2(1504, 1800)
 scale = Vector2(4, 4)
-script = ExtResource("7_olmj2")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated vertical fridge 1"]
 position = Vector2(-54, 33.5)
 scale = Vector2(0.75, 1.1875)
 sprite_frames = SubResource("SpriteFrames_co7gj")
-animation = &"Fridge vertical 1"
+animation = &"Idle"
 
 [node name="Animated vertical fridge right" type="CharacterBody2D" parent="."]
 position = Vector2(1504, 1800)
 scale = Vector2(4, 4)
-script = ExtResource("7_rc6yw")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated vertical fridge right"]
 position = Vector2(24, 33)
 scale = Vector2(0.625, 1.125)
 sprite_frames = SubResource("SpriteFrames_vtmga")
-animation = &"Fridge vertical right"
+animation = &"Idle"
 
 [node name="Animated blue drawer" type="CharacterBody2D" parent="."]
 scale = Vector2(4, 4)
-script = ExtResource("5_7e6bh")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blue drawer"]
 position = Vector2(660, 236)
 sprite_frames = SubResource("SpriteFrames_s1tr5")
-animation = &"Blue cabinet"
+animation = &"Idle"
 
 [node name="Animated blue drawer 1" type="CharacterBody2D" parent="."]
-script = ExtResource("7_suhh7")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blue drawer 1"]
 position = Vector2(952, 1120)
 scale = Vector2(6, 3.125)
 sprite_frames = SubResource("SpriteFrames_m3ihl")
-animation = &"Blue cabinet 1"
+animation = &"Idle"
 
 [node name="Animated blue drawer empty" type="CharacterBody2D" parent="."]
 scale = Vector2(4, 4)
-script = ExtResource("5_2iv32")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated blue drawer empty"]
 position = Vector2(56, 159)
 scale = Vector2(1, 0.6875)
 sprite_frames = SubResource("SpriteFrames_4e55s")
-animation = &"Blue cabinet empty"
+animation = &"Idle"
 
 [node name="Animated haunted mirror" type="CharacterBody2D" parent="."]
 scale = Vector2(4, 4)
-script = ExtResource("5_pcykp")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated haunted mirror"]
 position = Vector2(34, -66)
 sprite_frames = SubResource("SpriteFrames_ybwbg")
-animation = &"Haunted mirror"
+animation = &"Idle"
 
 [node name="Animated xray machine" type="CharacterBody2D" parent="."]
 scale = Vector2(4, 4)
-script = ExtResource("5_vm113")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated xray machine"]
 position = Vector2(246, -56)
 sprite_frames = SubResource("SpriteFrames_lfpiq")
-animation = &"Xray machine"
+animation = &"Idle"
 
 [node name="Animated xray tv right" type="CharacterBody2D" parent="."]
 scale = Vector2(4, 4)
-script = ExtResource("5_ey7cw")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated xray tv right"]
 position = Vector2(88, 152)
 sprite_frames = SubResource("SpriteFrames_n1nkn")
-animation = &"Xray right"
+animation = &"Idle"
 
 [node name="Animated xray tv left" type="CharacterBody2D" parent="."]
 scale = Vector2(4, 4)
-script = ExtResource("5_w5ebo")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated xray tv left"]
 position = Vector2(72, 152)
 sprite_frames = SubResource("SpriteFrames_305el")
-animation = &"Xray left"
+animation = &"Idle"
 
 [node name="Animated sink" type="CharacterBody2D" parent="."]
 scale = Vector2(2, 2)
-script = ExtResource("5_ndtd2")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated sink"]
 position = Vector2(256, 736)
 scale = Vector2(2.0625, 2)
 sprite_frames = SubResource("SpriteFrames_lau2e")
-animation = &"Sink"
+animation = &"Idle"
 
 [node name="Animated bath tub" type="CharacterBody2D" parent="."]
 scale = Vector2(4, 4)
-script = ExtResource("7_fseyh")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated bath tub"]
 position = Vector2(160, 488)
 sprite_frames = SubResource("SpriteFrames_5cgej")
-animation = &"Bath tub"
+animation = &"Idle"
 
 [node name="Animated haunted painting" type="CharacterBody2D" parent="."]
 scale = Vector2(2, 2)
-script = ExtResource("5_j3g3n")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated haunted painting"]
 position = Vector2(496, 512)
 scale = Vector2(2.625, 2.0625)
 sprite_frames = SubResource("SpriteFrames_ascwu")
-animation = &"Haunted painting"
+animation = &"Idle"
 
 [node name="Animated old TV" type="CharacterBody2D" parent="."]
 scale = Vector2(2, 2)
-script = ExtResource("7_ynruy")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated old TV"]
 position = Vector2(960, 894)
 scale = Vector2(2.1875, 1.875)
 sprite_frames = SubResource("SpriteFrames_m6lvf")
-animation = &"Old TV"
+animation = &"Idle"
 
 [node name="Animated screen" type="CharacterBody2D" parent="."]
-script = ExtResource("35_rtbra")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated screen"]
 position = Vector2(1848, 896)
 scale = Vector2(3.75001, 3.25)
 sprite_frames = SubResource("SpriteFrames_3eopg")
-animation = &"Screen"
+animation = &"Idle"
 
 [node name="Animated haunted mirror 2" type="CharacterBody2D" parent="."]
-script = ExtResource("37_oehc2")
+script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated haunted mirror 2"]
 position = Vector2(2136, 1760)
 scale = Vector2(3, 3.375)
 sprite_frames = SubResource("SpriteFrames_lhjcy")
-animation = &"Haunted mirror 2"
+animation = &"Idle"
+
+[node name="Animated door vertical right" type="CharacterBody2D" parent="."]
+script = ExtResource("23_1uvg8")
+
+[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical right"]
+position = Vector2(504, 360)
+shape = SubResource("RectangleShape2D_tqrug")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animated door vertical right"]
+position = Vector2(530, 348)
+scale = Vector2(5.20313, 3.57292)
+sprite_frames = SubResource("SpriteFrames_mywvb")
+animation = &"Interact"
+
+[node name="PlayerDetection" type="Area2D" parent="Animated door vertical right"]
+position = Vector2(536, 352)
+scale = Vector2(6, 3.83333)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical right/PlayerDetection"]
+position = Vector2(-5.38802, 2.34782)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_pot04")
+
+[node name="CollDorr_top" type="CollisionShape2D" parent="Animated door vertical right"]
+position = Vector2(547, 304.75)
+shape = SubResource("RectangleShape2D_p4o5v")
 
 [node name="Outter floor 2" type="TileMap" parent="."]
 scale = Vector2(2, 2)
@@ -56342,7 +56408,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 131090, 3604481, 56, 131091, 3604481, 56, 131092, 3604481, 56, 131093, 3604481, 56, 131094, 3604481, 56, 131095, 3604481, 56, 131096, 3604481, 56, 131097, 3604481, 56, 131098, 3801089, 55, 655360, 3473409, 55, 655361, 3604481, 56, 655363, 3604481, 56, 655364, 3604481, 56, 655365, 3604481, 56, 655366, 3604481, 56, 655367, 3604481, 56, 655368, 3604481, 56, 655369, 3604481, 56, 655370, 3801089, 55, 720912, 3473409, 55, 720913, 3604481, 56, 720914, 3604481, 56, 720915, 3604481, 56, 720916, 3604481, 56, 720917, 3604481, 56, 720918, 3604481, 56, 720919, 3604481, 56, 720920, 3604481, 56, 720921, 3604481, 56, 720922, 3801089, 55, 1769473, 3604481, 56, 1769474, 3604481, 56, 1769475, 3604481, 56, 1769476, 3604481, 56, 1769477, 3604481, 56, 1769478, 3604481, 56, 1769479, 3604481, 56, 1769480, 3604481, 56, 1769494, 3604481, 56, 1769495, 3604481, 56, 1769484, 3604481, 56, 1769485, 3604481, 56, 1769486, 3604481, 56, 1769487, 3604481, 56, 1769481, 3604481, 56, 1769482, 3604481, 56, 1769483, 3604481, 56, 655362, 3604481, 56, 2424832, 3473409, 55, 2424833, 3604481, 56, 2424835, 3604481, 56, 2424836, 3604481, 56, 2424837, 3604481, 56, 2424838, 3604481, 56, 2424842, 3604481, 56, 2424843, 3145729, 101, 2424844, 3604481, 56, 2424845, 3145729, 101, 2424846, 3145729, 101, 2424847, 3604481, 56, 2424848, 3801089, 55, 1769496, 3145729, 101, 1769497, 3145729, 101, 1769498, 3735553, 59, 1769499, 3145729, 101, 1769505, 3145729, 101, 1769506, 3145729, 101, 1769507, 3145729, 101, 1769508, 3145729, 101, 1769509, 3145729, 101, 1769510, 3145729, 101, 1769511, 3145729, 101, 1769512, 3145729, 101, 1769513, 3145729, 101, 1769514, 3145729, 101, 1769515, 3145729, 101, 1769516, 3145729, 101, 1769517, 3145729, 101, 1769518, 3145729, 101, 1769519, 3145729, 101, 1769520, 3145729, 101, 1769521, 3145729, 101, 1769522, 3145729, 101, 1769523, 3735553, 59, 2424834, 3604481, 56, 2293784, 3604481, 56, 2293789, 3604481, 56, 2293790, 3604481, 56, 2293791, 3604481, 56, 2293792, 3604481, 56, 2293793, 3604481, 56, 2293798, 3604481, 56, 2293799, 3604481, 56, 2293800, 3604481, 56, 2293801, 3604481, 56, 2293802, 3604481, 56, 2293807, 3604481, 56, 2293808, 3604481, 56, 2293809, 3604481, 56, 2293810, 3604481, 56, 2293811, 3670017, 56, 2293794, 3801089, 55, 2293803, 3801089, 55, 2293780, 3145729, 101, 2293781, 3145729, 101, 2818065, 3145729, 101, 2818067, 3145729, 101, 2818068, 3145729, 101, 2818069, 3145729, 101, 2818070, 3145729, 101, 2818071, 3145729, 101, 2818072, 3145729, 101, 2818080, 3145729, 101, 2818079, 3145729, 101, 2818078, 3145729, 101, 2818077, 3145729, 101, 2818076, 3145729, 101, 2818088, 3145729, 101, 2818089, 3145729, 101, 2818090, 3145729, 101, 2818094, 3145729, 101, 2818095, 3145729, 101, 2818096, 3145729, 101, 2818097, 3145729, 101, 2818098, 3145729, 101, 2818099, 3735553, 59, 2621474, 3735553, 56, 2687010, 3735553, 56, 2752546, 3735553, 56, 2555938, 3735553, 56, 2490402, 3735553, 56, 2818087, 3145729, 101, 2818086, 3145729, 101, 2818085, 3145729, 101, 2818083, 3145729, 101, 2818082, 3735553, 59, 2818081, 3145729, 101, 2818084, 3145729, 101, 2818091, 3735553, 59, 2818092, 3145729, 101, 2818093, 3145729, 101, 2818075, 3145729, 101, 2818073, 3735553, 59, 2818063, 3145729, 101, 2818062, 3145729, 101, 2818061, 3145729, 101, 2818060, 3145729, 101, 2818059, 3145729, 101, 2818058, 3145729, 101, 2818057, 3145729, 101, 2818056, 3145729, 101, 2818055, 3145729, 101, 2818054, 3145729, 101, 2818053, 3145729, 101, 2818052, 3145729, 101, 2818051, 3145729, 101, 2818050, 3145729, 101, 2818049, 3145729, 101, 2818074, 3670017, 59, 1507354, 3735553, 56, 1572890, 3735553, 56, 1638426, 3735553, 56, 1703962, 3735553, 56, 1441818, 3801089, 57, 1376282, 3801089, 56, 1310746, 3801089, 55, 1114139, 3145729, 101, 1114140, 3145729, 101, 1114141, 3145729, 101, 1114142, 3145729, 101, 1114143, 3145729, 101, 1114144, 3145729, 101, 1114145, 3145729, 101, 1114146, 3145729, 101, 1114147, 3145729, 101, 1114148, 3145729, 101, 1114149, 3145729, 101, 1114150, 3145729, 101, 1114151, 3145729, 101, 1114152, 3145729, 101, 1114153, 3145729, 101, 1114154, 3145729, 101, 1114155, 3145729, 101, 1114156, 3145729, 101, 1114157, 3145729, 101, 1114158, 3145729, 101, 1114159, 3145729, 101, 1114160, 3014657, 101, 2818064, 3735553, 59, 2818066, 3670017, 59, 2818048, 3538945, 59, 1769472, 3538945, 59, -458741, 3604481, 59, -458740, 3604481, 59, -458739, 3604481, 59, -458738, 3604481, 59, -458735, 3604481, 59, -458734, 3604481, 59, -458733, 3604481, 59, -458732, 3604481, 59, -458731, 3604481, 59, -458730, 3604481, 59, -458729, 3604481, 59, -458728, 3604481, 59, -458727, 3604481, 59, -458743, 3604481, 59, -458744, 3604481, 59, -458745, 3604481, 59, -458746, 3604481, 59, -458747, 3604481, 59, -458748, 3604481, 59, -458749, 3604481, 59, -458750, 3604481, 59, -458751, 3604481, 59, -458752, 3538945, 59, -458736, 3538945, 59, -458726, 3735553, 59, -458742, 3735553, 59)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(176, -48)
+position = Vector2(288, 216)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 
@@ -56372,6 +56438,8 @@ shape = SubResource("RectangleShape2D_f2oco")
 position = Vector2(2616, 2088)
 shape = SubResource("RectangleShape2D_aueg4")
 
+[connection signal="body_entered" from="Animated door vertical right/PlayerDetection" to="Animated door vertical right" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="Animated door vertical right/PlayerDetection" to="Animated door vertical right" method="_on_player_detection_body_exited"]
 [connection signal="button_down" from="Player/Camera2D2/Button" to="Player/Camera2D2/Button" method="_on_button_down"]
 [connection signal="body_entered" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_exited"]
