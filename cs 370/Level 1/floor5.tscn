@@ -40824,9 +40824,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqrug"]
-size = Vector2(20, 178)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_agr52"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(128, 0, 32, 48)
@@ -40993,11 +40990,14 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqrug"]
+size = Vector2(20, 178)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pot04"]
-size = Vector2(8.94271, 37.9783)
+size = Vector2(16.5, 37.9783)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tnt0g"]
-size = Vector2(8.16667, 37.8261)
+size = Vector2(17, 37.8261)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p4o5v"]
 size = Vector2(22, 28.5)
@@ -56494,10 +56494,6 @@ animation = &"Idle"
 [node name="Animated door vertical right" type="CharacterBody2D" parent="."]
 script = ExtResource("23_1uvg8")
 
-[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical right"]
-position = Vector2(504, 360)
-shape = SubResource("RectangleShape2D_tqrug")
-
 [node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical right"]
 position = Vector2(530, 348)
 scale = Vector2(5.20313, 3.57292)
@@ -56505,17 +56501,21 @@ sprite_frames = SubResource("SpriteFrames_mywvb")
 animation = &"OpenRight"
 
 [node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Animated door vertical right"]
-position = Vector2(477, 348)
+position = Vector2(478, 348)
 scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_15kui")
 animation = &"OpenLeft"
+
+[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical right"]
+position = Vector2(504, 360)
+shape = SubResource("RectangleShape2D_tqrug")
 
 [node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical right"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical right/PlayerDetectionFromLeft"]
-position = Vector2(-2.63802, 2.34782)
+position = Vector2(0.916664, 2.34782)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_pot04")
 one_way_collision_margin = 0.0
@@ -56526,7 +56526,7 @@ position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical right/PlayerDetectionFromRight"]
-position = Vector2(-7.91666, 2.21739)
+position = Vector2(-11.6667, 2.21739)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_tnt0g")
 
