@@ -5,6 +5,8 @@ extends CharacterBody2D
 @onready var detectRight = $PlayerDetectionFromRight/CollisionShape2D
 @onready var animRight = $AnimatedDoorRight
 @onready var animLeft = $AnimatedDoorLeft
+@onready var collTopLeft = $CollTopDoorLeft
+@onready var collTopRight = $CollTopDoorRight
 
 var play_open = false
 var play_close = false
@@ -16,6 +18,10 @@ var right_open = false
 var stack_approach_side : Array = []
 var len : int
 var curr_side : int
+
+func _ready():
+	collTopLeft.set_deferred("disabled", true)
+	collTopRight.set_deferred("disabled", true)
  
 
 func _process(delta):
@@ -25,22 +31,17 @@ func _process(delta):
 		if curr_side == 0 && right_open == false:
 			animRight.play("OpenRight")
 			collDoor.set_deferred("disabled", true)  # Disable the CollisionShape2D
+			collTopRight.set_deferred("disabled", false)
 			play_open = false
 			play_close = true
 			left_open = true
-			print("Process")
-			print("   play_open: ", play_open, "   play_close: ", play_close)
-			print("   right_open: ", right_open, "   left_open: ", left_open)
 		elif curr_side == 1 && left_open == false:
 			animLeft.play("OpenLeft")
 			collDoor.set_deferred("disabled", true)  # Disable the CollisionShape2D
+			collTopLeft.set_deferred("disabled", false)
 			play_open = false
 			play_close = true
 			right_open = true
-			print("Process")
-			print("   play_open: ", play_open, "   play_close: ", play_close)
-			print("   right_open: ", right_open, "   left_open: ", left_open)
-	
 
 func _on_PlayerDetectionFromLeft_body_entered(body):
 	print("Entered from left")
@@ -57,9 +58,9 @@ func _on_PlayerDetectionFromLeft_body_entered(body):
 	print("   stack elems:", result)
 	print("   play_open: ", play_open, "   play_close: ", play_close)
 	print("   right_open: ", right_open, "   left_open: ", left_open)
-		
+
+
 func _on_PlayerDetectionFromRight_body_entered(body):
-	print("Entered from right")
 	if body.name == "Player":  # Check if the colliding body is the player
 		if !play_close:
 			play_open = true
@@ -76,13 +77,13 @@ func _on_PlayerDetectionFromRight_body_entered(body):
 
 
 func _on_PlayerDetectionFromLeft_body_exited(body):
-	print("Exited from left")
 	if body.name == "Player":
 		curr_side = stack_approach_side[stack_approach_side.size() - 1]
 		if curr_side == 0:
 			if play_close:
-				animRight.play("CloseRight")
 				collDoor.set_deferred("disabled", false)  # Disable the CollisionShape2D
+				collTopRight.set_deferred("disabled", true)
+				animRight.play("CloseRight")
 				play_close = false
 				left_open = false
 			stack_approach_side.pop_back() 
@@ -97,13 +98,13 @@ func _on_PlayerDetectionFromLeft_body_exited(body):
 
 
 func _on_PlayerDetectionFromRight_body_exited(body):
-	print("Exited from right")
 	if body.name == "Player":
 		curr_side = stack_approach_side[stack_approach_side.size() - 1]
 		if curr_side == 1:
 			if play_close:
-				animLeft.play("CloseLeft")
 				collDoor.set_deferred("disabled", false)
+				collTopLeft.set_deferred("disabled", true)
+				animLeft.play("CloseLeft")
 				play_close = false
 				right_open = false
 			stack_approach_side.pop_back() 
