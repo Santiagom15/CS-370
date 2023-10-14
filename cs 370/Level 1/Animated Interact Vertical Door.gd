@@ -44,7 +44,7 @@ func _process(delta):
 			right_open = true
 
 func _on_PlayerDetectionFromLeft_body_entered(body):
-	print("Entered from left")
+#	print("Entered from left")
 	if body.name == "Player":  # Check if the colliding body is the player
 		if !play_close:
 			play_open = true
@@ -52,12 +52,12 @@ func _on_PlayerDetectionFromLeft_body_entered(body):
 			stack_approach_side.insert(0,0)
 		else:
 			stack_approach_side.append(0)
-	var result = ""
-	for element in stack_approach_side:
-		result += str(element) + " "
-	print("   stack elems:", result)
-	print("   play_open: ", play_open, "   play_close: ", play_close)
-	print("   right_open: ", right_open, "   left_open: ", left_open)
+#	var result = ""
+#	for element in stack_approach_side:
+#		result += str(element) + " "
+#	print("   stack elems:", result)
+#	print("   play_open: ", play_open, "   play_close: ", play_close)
+#	print("   right_open: ", right_open, "   left_open: ", left_open)
 
 
 func _on_PlayerDetectionFromRight_body_entered(body):
@@ -68,12 +68,12 @@ func _on_PlayerDetectionFromRight_body_entered(body):
 			stack_approach_side.insert(0,1)
 		else:
 			stack_approach_side.append(1)
-	var result = ""
-	for element in stack_approach_side:
-		result += str(element) + " "
-	print("   stack elems:", result)
-	print("   play_open: ", play_open, "   play_close: ", play_close)
-	print("   right_open: ", right_open, "   left_open: ", left_open)
+#	var result = ""
+#	for element in stack_approach_side:
+#		result += str(element) + " "
+#	print("   stack elems:", result)
+#	print("   play_open: ", play_open, "   play_close: ", play_close)
+#	print("   right_open: ", right_open, "   left_open: ", left_open)
 
 
 func _on_PlayerDetectionFromLeft_body_exited(body):
@@ -89,12 +89,12 @@ func _on_PlayerDetectionFromLeft_body_exited(body):
 			stack_approach_side.pop_back() 
 		elif curr_side == 1:
 			stack_approach_side.pop_front()
-	var result = ""
-	for element in stack_approach_side:
-		result += str(element) + " "
-	print("   stack elems:", result)
-	print("   play_open: ", play_open, "   play_close: ", play_close)
-	print("   right_open: ", right_open, "   left_open: ", left_open)
+#	var result = ""
+#	for element in stack_approach_side:
+#		result += str(element) + " "
+#	print("   stack elems:", result)
+#	print("   play_open: ", play_open, "   play_close: ", play_close)
+#	print("   right_open: ", right_open, "   left_open: ", left_open)
 
 
 func _on_PlayerDetectionFromRight_body_exited(body):
@@ -110,9 +110,9 @@ func _on_PlayerDetectionFromRight_body_exited(body):
 			stack_approach_side.pop_back() 
 		elif curr_side == 0:
 			stack_approach_side.pop_front()
-	var result = ""
-	for element in stack_approach_side:
-		result += str(element) + " "
-	print("   stack elems:", result)
-	print("   play_open: ", play_open, "   play_close: ", play_close)
-	print("   right_open: ", right_open, "   left_open: ", left_open)
+#	var result = ""
+#	for element in stack_approach_side:
+#		result += str(element) + " "
+#	print("   stack elems:", result)
+#	print("   play_open: ", play_open, "   play_close: ", play_close)
+#	print("   right_open: ", right_open, "   left_open: ", left_open)
