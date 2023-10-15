@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c15viyffob8xn" path="res://assets/aisha/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_notqu"]
 [ext_resource type="Script" path="res://character/base.gd" id="1_qqij5"]
-[ext_resource type="Texture2D" path="res://assets/aisha/More_aishastuff/POOKIE BEAR/finished_v1.png" id="3_1wpu5"]
+[ext_resource type="Texture2D" uid="uid://8xh20m4bo5v3" path="res://assets/aisha/More_aishastuff/POOKIE BEAR/finished_v1.png" id="3_1wpu5"]
 [ext_resource type="Script" path="res://character/AnimatedSprite2D.gd" id="3_ttx7g"]
 [ext_resource type="Texture2D" uid="uid://bn68xlaj4h08m" path="res://character/Items/healthbar/Hearts/PNG/basic/background.png" id="5_pngm5"]
 [ext_resource type="Texture2D" uid="uid://cwo1golk810g0" path="res://character/Items/healthbar/Hearts/PNG/basic/border.png" id="6_jagtm"]
