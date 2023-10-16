@@ -1,4 +1,4 @@
-[gd_scene load_steps=340 format=3 uid="uid://bgkfmqsltr2aj"]
+[gd_scene load_steps=344 format=3 uid="uid://bgkfmqsltr2aj"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
@@ -52569,11 +52569,23 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8a6kr"]
-size = Vector2(248, 119)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lqyg"]
+size = Vector2(302, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mog4g"]
+size = Vector2(304, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54wqa"]
+size = Vector2(252, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8l43d"]
+size = Vector2(254, 102)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgqmf"]
+size = Vector2(252, 116)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oqypt"]
-size = Vector2(247.5, 117)
+size = Vector2(247.5, 34)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_412cn"]
 texture = ExtResource("1_mqcgy")
@@ -57155,7 +57167,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 131090, 3604481, 56, 131091, 3604481, 56, 131092, 3604481, 56, 131093, 3604481, 56, 131094, 3604481, 56, 131095, 3604481, 56, 131096, 3604481, 56, 131097, 3604481, 56, 131098, 3801089, 55, 655360, 3473409, 55, 655361, 3604481, 56, 655363, 3604481, 56, 655364, 3604481, 56, 655365, 3604481, 56, 655366, 3604481, 56, 655367, 3604481, 56, 655368, 3604481, 56, 655369, 3604481, 56, 655370, 3801089, 55, 720912, 3473409, 55, 720913, 3604481, 56, 720914, 3604481, 56, 720915, 3604481, 56, 720916, 3604481, 56, 720917, 3604481, 56, 720918, 3604481, 56, 720919, 3604481, 56, 720920, 3604481, 56, 720921, 3604481, 56, 720922, 3801089, 55, 1769473, 3604481, 56, 1769474, 3604481, 56, 1769475, 3604481, 56, 1769476, 3604481, 56, 1769477, 3604481, 56, 1769478, 3604481, 56, 1769479, 3604481, 56, 1769480, 3604481, 56, 1769495, 3604481, 56, 1769484, 3604481, 56, 1769485, 3604481, 56, 1769486, 3604481, 56, 1769487, 3604481, 56, 1769481, 3604481, 56, 1769482, 3604481, 56, 1769483, 3604481, 56, 655362, 3604481, 56, 2424832, 3473409, 55, 2424833, 3604481, 56, 2424835, 3604481, 56, 2424836, 3604481, 56, 2424837, 3604481, 56, 2424843, 3145729, 101, 2424844, 3604481, 56, 2424845, 3145729, 101, 2424846, 3145729, 101, 2424847, 3604481, 56, 2424848, 3801089, 55, 1769496, 3145729, 101, 1769497, 3145729, 101, 1769498, 3735553, 59, 1769499, 3145729, 101, 1769505, 3145729, 101, 1769506, 3145729, 101, 1769507, 3145729, 101, 1769508, 3145729, 101, 1769509, 3145729, 101, 1769510, 3145729, 101, 1769511, 3145729, 101, 1769512, 3145729, 101, 1769513, 3145729, 101, 1769514, 3145729, 101, 1769515, 3145729, 101, 1769516, 3145729, 101, 1769517, 3145729, 101, 1769518, 3145729, 101, 1769519, 3145729, 101, 1769520, 3145729, 101, 1769521, 3145729, 101, 1769522, 3145729, 101, 1769523, 3735553, 59, 2424834, 3604481, 56, 2293784, 3604481, 56, 2293789, 3604481, 56, 2293790, 3604481, 56, 2293791, 3604481, 56, 2293792, 3604481, 56, 2293793, 3604481, 56, 2293798, 3604481, 56, 2293799, 3604481, 56, 2293800, 3604481, 56, 2293801, 3604481, 56, 2293802, 3604481, 56, 2293807, 3604481, 56, 2293808, 3604481, 56, 2293809, 3604481, 56, 2293810, 3604481, 56, 2293811, 3670017, 56, 2293794, 3801089, 55, 2293803, 3801089, 55, 2293780, 3145729, 101, 2293781, 3145729, 101, 2818065, 3145729, 101, 2818067, 3145729, 101, 2818068, 3145729, 101, 2818069, 3145729, 101, 2818070, 3145729, 101, 2818071, 3145729, 101, 2818072, 3145729, 101, 2818080, 3145729, 101, 2818079, 3145729, 101, 2818078, 3145729, 101, 2818077, 3145729, 101, 2818076, 3145729, 101, 2818088, 3145729, 101, 2818089, 3145729, 101, 2818090, 3145729, 101, 2818094, 3145729, 101, 2818095, 3145729, 101, 2818096, 3145729, 101, 2818097, 3145729, 101, 2818098, 3145729, 101, 2818099, 3735553, 59, 2621474, 3735553, 56, 2687010, 3735553, 56, 2752546, 3735553, 56, 2555938, 3735553, 56, 2490402, 3735553, 56, 2818087, 3145729, 101, 2818086, 3145729, 101, 2818085, 3145729, 101, 2818083, 3145729, 101, 2818082, 3735553, 59, 2818081, 3145729, 101, 2818084, 3145729, 101, 2818091, 3735553, 59, 2818092, 3145729, 101, 2818093, 3145729, 101, 2818075, 3145729, 101, 2818073, 3735553, 59, 2818063, 3145729, 101, 2818062, 3145729, 101, 2818061, 3145729, 101, 2818060, 3145729, 101, 2818059, 3145729, 101, 2818058, 3145729, 101, 2818057, 3145729, 101, 2818056, 3145729, 101, 2818055, 3145729, 101, 2818054, 3145729, 101, 2818053, 3145729, 101, 2818052, 3145729, 101, 2818051, 3145729, 101, 2818050, 3145729, 101, 2818049, 3145729, 101, 2818074, 3670017, 59, 1507354, 3735553, 56, 1572890, 3735553, 56, 1638426, 3735553, 56, 1703962, 3735553, 56, 1441818, 3801089, 57, 1376282, 3801089, 56, 1310746, 3801089, 55, 1114139, 3145729, 101, 1114140, 3145729, 101, 1114141, 3145729, 101, 1114142, 3145729, 101, 1114143, 3145729, 101, 1114144, 3145729, 101, 1114145, 3145729, 101, 1114146, 3145729, 101, 1114147, 3145729, 101, 1114148, 3145729, 101, 1114149, 3145729, 101, 1114150, 3145729, 101, 1114151, 3145729, 101, 1114152, 3145729, 101, 1114153, 3145729, 101, 1114154, 3145729, 101, 1114155, 3145729, 101, 1114156, 3145729, 101, 1114157, 3145729, 101, 1114158, 3145729, 101, 1114159, 3145729, 101, 1114160, 3014657, 101, 2818064, 3735553, 59, 2818066, 3670017, 59, 2818048, 3538945, 59, 1769472, 3538945, 59, -458741, 3604481, 59, -458740, 3604481, 59, -458739, 3604481, 59, -458738, 3604481, 59, -458735, 3604481, 59, -458734, 3604481, 59, -458733, 3604481, 59, -458732, 3604481, 59, -458731, 3604481, 59, -458730, 3604481, 59, -458729, 3604481, 59, -458728, 3604481, 59, -458727, 3604481, 59, -458743, 3604481, 59, -458744, 3604481, 59, -458745, 3604481, 59, -458746, 3604481, 59, -458747, 3604481, 59, -458748, 3604481, 59, -458749, 3604481, 59, -458750, 3604481, 59, -458751, 3604481, 59, -458752, 3538945, 59, -458736, 3538945, 59, -458726, 3735553, 59, -458742, 3735553, 59)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(662, 1216)
+position = Vector2(629, 1194)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 
@@ -57176,18 +57188,44 @@ scale = Vector2(7.8125, 4.66407)
 sprite_frames = SubResource("SpriteFrames_qjag6")
 animation = &"SlideOpen"
 
-[node name="PlayerDectectionLayering" type="Area2D" parent="Animated glass sliding door"]
+[node name="CollDoor1" type="CollisionShape2D" parent="Animated glass sliding door"]
+position = Vector2(948, 1439.5)
+shape = SubResource("RectangleShape2D_7lqyg")
+debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated glass sliding door/PlayerDectectionLayering"]
-position = Vector2(940, 1487.5)
-shape = SubResource("RectangleShape2D_8a6kr")
+[node name="CollDoor2" type="CollisionShape2D" parent="Animated glass sliding door"]
+position = Vector2(949, 1379)
+shape = SubResource("RectangleShape2D_mog4g")
+debug_color = Color(0.466667, 0, 0, 0.419608)
+
+[node name="PlayerDetectionLayering" type="Area2D" parent="Animated glass sliding door"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated glass sliding door/PlayerDetectionLayering"]
+position = Vector2(940, 1473)
+shape = SubResource("RectangleShape2D_54wqa")
+debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
+
+[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated glass sliding door"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated glass sliding door/PlayerDetectAnimCloseTop"]
+position = Vector2(942, 1387)
+shape = SubResource("RectangleShape2D_8l43d")
+debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
+
+[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated glass sliding door"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated glass sliding door/PlayerDetectAnimCloseBottom"]
+position = Vector2(941, 1496)
+shape = SubResource("RectangleShape2D_mgqmf")
+debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 
 [node name="PlayerDetectionAnimation" type="Area2D" parent="Animated glass sliding door"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated glass sliding door/PlayerDetectionAnimation"]
-position = Vector2(940.25, 1451)
+position = Vector2(941, 1435)
 shape = SubResource("RectangleShape2D_oqypt")
-debug_color = Color(0.560784, 0.415686, 0.952941, 0.419608)
+debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Doorway" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_uv57d")
@@ -57237,8 +57275,12 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door vertical right 6/PlayerDetectionFromRight" to="Animated door vertical right 6" method="_on_PlayerDetectionFromRight_body_exited"]
 [connection signal="button_down" from="Player/Camera2D2/Button" to="Player/Camera2D2/Button" method="_on_button_down"]
 [connection signal="animation_finished" from="Animated glass sliding door/AnimatedSlideDoor" to="Animated glass sliding door" method="_on_animated_slide_door_animation_finished"]
-[connection signal="body_entered" from="Animated glass sliding door/PlayerDectectionLayering" to="Animated glass sliding door" method="_on_PlayerDectectionLayering_body_entered"]
-[connection signal="body_exited" from="Animated glass sliding door/PlayerDectectionLayering" to="Animated glass sliding door" method="_on_PlayerDectectionLayering_body_exited"]
+[connection signal="body_entered" from="Animated glass sliding door/PlayerDetectionLayering" to="Animated glass sliding door" method="_on_PlayerDectectionLayering_body_entered"]
+[connection signal="body_exited" from="Animated glass sliding door/PlayerDetectionLayering" to="Animated glass sliding door" method="_on_PlayerDetectionLayering_body_exited"]
+[connection signal="body_entered" from="Animated glass sliding door/PlayerDetectAnimCloseTop" to="Animated glass sliding door" method="_on_PlayerDetectAnimCloseTop_body_entered"]
+[connection signal="body_exited" from="Animated glass sliding door/PlayerDetectAnimCloseTop" to="Animated glass sliding door" method="_on_PlayerDetectionAnimCloseTop_body_exited"]
+[connection signal="body_entered" from="Animated glass sliding door/PlayerDetectAnimCloseBottom" to="Animated glass sliding door" method="_on_PlayerDetectAnimCloseBottom_body_entered"]
+[connection signal="body_exited" from="Animated glass sliding door/PlayerDetectAnimCloseBottom" to="Animated glass sliding door" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
 [connection signal="body_entered" from="Animated glass sliding door/PlayerDetectionAnimation" to="Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Animated glass sliding door/PlayerDetectionAnimation" to="Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_exited"]
 [connection signal="body_entered" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_entered"]
