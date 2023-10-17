@@ -52566,7 +52566,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"SlideOpen",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7lqyg"]
@@ -52579,10 +52579,10 @@ size = Vector2(304, 11)
 size = Vector2(252, 54)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8l43d"]
-size = Vector2(254, 102)
+size = Vector2(254, 165)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mgqmf"]
-size = Vector2(252, 116)
+size = Vector2(252, 126)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oqypt"]
 size = Vector2(247.5, 34)
@@ -57209,14 +57209,14 @@ debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
 [node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated glass sliding door"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated glass sliding door/PlayerDetectAnimCloseTop"]
-position = Vector2(942, 1387)
+position = Vector2(942, 1355.5)
 shape = SubResource("RectangleShape2D_8l43d")
 debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
 
 [node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated glass sliding door"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated glass sliding door/PlayerDetectAnimCloseBottom"]
-position = Vector2(941, 1496)
+position = Vector2(941, 1501)
 shape = SubResource("RectangleShape2D_mgqmf")
 debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 

@@ -35,11 +35,12 @@ func _ready():
 	
 func _process(delta):
 	if play_open == true && Input.is_action_pressed("ui_accept"):
-		#curr_frame = anim.get_frame()
-		#print(curr_frame)
+		if anim.is_playing():
+			curr_frame = 7 - anim.get_frame()
+		else: 
+			curr_frame = 0
 		anim.play("SlideOpen")
-		#curr_frame = anim.get_frame()
-		#print(curr_frame)
+		anim.set_frame(curr_frame)
 		collDoor1.set_deferred("disabled", true)  # Disable the CollisionShape2D
 		collDoor2.set_deferred("disabled", true)
 		play_open = false
@@ -76,7 +77,12 @@ func _on_PlayerDetectAnimCloseTop_body_entered(body):
 func _on_PlayerDetectionAnimCloseTop_body_exited(body):
 	if body.name == "Player":
 		if play_close && !in_bottom:
+			if anim.is_playing():
+				curr_frame = 7 - anim.get_frame()
+			else: 
+				curr_frame = 0
 			anim.play("SlideClosed")
+			anim.set_frame(curr_frame)
 			collDoor1.set_deferred("disabled", false)
 			play_close = false
 		in_top = false
@@ -96,7 +102,12 @@ func _on_PlayerDetectAnimCloseBottom_body_entered(body):
 func _on_PlayerDetectAnimCloseBottom_body_exited(body):
 	if body.name == "Player":
 		if play_close && !in_top:
+			if anim.is_playing():
+				curr_frame = 7 - anim.get_frame()
+			else: 
+				curr_frame = 0
 			anim.play("SlideClosed")
+			anim.set_frame(curr_frame)
 			collDoor2.set_deferred("disabled", false)
 			play_close = false
 		in_bottom = false
