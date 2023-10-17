@@ -1,11 +1,11 @@
-[gd_scene load_steps=58 format=3 uid="uid://whkxyoo3p723"]
+[gd_scene load_steps=59 format=3 uid="uid://whkxyoo3p723"]
 
 [ext_resource type="Texture2D" uid="uid://c15viyffob8xn" path="res://assets/aisha/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_notqu"]
 [ext_resource type="Script" path="res://character/base.gd" id="1_qqij5"]
 [ext_resource type="Texture2D" uid="uid://8xh20m4bo5v3" path="res://assets/aisha/More_aishastuff/POOKIE BEAR/finished_v1.png" id="3_1wpu5"]
 [ext_resource type="Script" path="res://character/AnimatedSprite2D.gd" id="3_ttx7g"]
 [ext_resource type="Texture2D" uid="uid://bn68xlaj4h08m" path="res://character/Items/healthbar/Hearts/PNG/basic/background.png" id="5_pngm5"]
-[ext_resource type="Texture2D" uid="uid://cwo1golk810g0" path="res://character/Items/healthbar/Hearts/PNG/basic/border.png" id="6_jagtm"]
+[ext_resource type="Texture2D" uid="uid://c7txgpwtamctd" path="res://character/Items/healthbar/Hearts/PNG/basic/heart.png" id="6_pveis"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jimy5"]
 radius = 27.0
@@ -402,6 +402,20 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_wbl4x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_pveis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pngm5")
+}],
+"loop": true,
+"name": &"heartBeat",
+"speed": 5.0
+}]
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_qqij5")
 
@@ -413,29 +427,19 @@ shape = SubResource("CapsuleShape2D_jimy5")
 position = Vector2(12, -10)
 scale = Vector2(0.875164, 0.815837)
 sprite_frames = SubResource("SpriteFrames_5pl86")
-animation = &"walk_fowardAisha"
+animation = &"walk_backAisha"
 speed_scale = 1.3
 script = ExtResource("3_ttx7g")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 enabled = false
 
-[node name="Healthbar" type="TextureProgressBar" parent="."]
-offset_left = -552.0
-offset_top = -299.0
-offset_right = -482.0
-offset_bottom = -232.0
-value = 50.0
-fill_mode = 4
-nine_patch_stretch = true
-texture_under = ExtResource("5_pngm5")
-texture_over = ExtResource("6_jagtm")
-texture_progress = ExtResource("5_pngm5")
-tint_under = Color(0.0352941, 0.0352941, 0.0352941, 1)
-tint_over = Color(0, 0, 0, 1)
+[node name="Heart" type="AnimatedSprite2D" parent="Camera2D"]
+position = Vector2(-503, 255)
+scale = Vector2(7.54412, 7.33823)
+sprite_frames = SubResource("SpriteFrames_wbl4x")
+animation = &"heartBeat"
+frame_progress = 0.84644
+script = ExtResource("3_ttx7g")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Healthbar"]
-
-[node name="Timer" type="Timer" parent="."]
-
-[connection signal="value_changed" from="Healthbar" to="." method="_on_healthbar_value_changed"]
+[connection signal="animation_looped" from="Camera2D/Heart" to="." method="_on_heart_animation_looped"]
