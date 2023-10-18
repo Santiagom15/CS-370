@@ -20647,4 +20647,8 @@ layer_0/tile_data = PackedInt32Array(-5636093, 983041, 3, -5570557, 983041, 3, -
 stream = ExtResource("4_l6j0k")
 autoplay = true
 
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.94
+blend_mode = 1
+
 [connection signal="button_down" from="CharacterBody2D/Return to home" to="CharacterBody2D" method="_on_button_button_down"]
