@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bt5btl02jlgym"]
+[gd_scene load_steps=33 format=3 uid="uid://whkxyoo3p723"]
 
 [ext_resource type="Texture2D" uid="uid://c15viyffob8xn" path="res://assets/aisha/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_notqu"]
 [ext_resource type="Script" path="res://character/base.gd" id="1_qqij5"]
