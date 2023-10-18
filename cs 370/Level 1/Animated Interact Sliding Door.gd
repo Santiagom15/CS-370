@@ -58,26 +58,26 @@ func _on_animated_slide_door_frame_changed():
 	curr_frame = anim.get_frame()  # Get the current frame index
 
 	if curr_frame % 2 == 0:   # Collision shapes 0,2,4,6 correspond to animation frames (0,1),(2,3),(4,5),(6,7) respectively
-		
+
 		# Note: There are $CollDoor1 and $CollDoor2 nodes. Both are a parent to a set of collision shape nodes which are identical besides their y-axis/height
 		#       placement within the scene. CollDoor1 animations are for when the door is approached from above/behind, and CollDoor2 when approached from below/in-front.
 		#       This allows the player to stand in-front or behind the door in realistic ways 
 		if use_coll1: door_name = "1"
 		else: door_name = "2"
-		
+
 		# Disable collision on previous frame
 		curr_coll = get_node(str("CollDoor", door_name, "/Coll", prev_frame, "a"))
 		# Note: there are pairs of colision shapes (for example, $CollDoor1/Coll0a and $CollDoor1/Coll0a) for the right and left doors in the sliding door
 		curr_coll.set_deferred("disabled", true)
 		curr_coll = get_node(str("CollDoor", door_name, "/Coll", prev_frame, "b"))
 		curr_coll.set_deferred("disabled", true)
-		
+
 		# Enable collision on current frame
 		curr_coll = get_node(str("CollDoor", door_name, "/Coll", curr_frame, "a"))
 		curr_coll.set_deferred("disabled", false)
 		curr_coll = get_node(str("CollDoor", door_name, "/Coll", curr_frame, "b"))
 		curr_coll.set_deferred("disabled", false)
-		
+
 		# Update the previous frame index
 		prev_frame = curr_frame
 
