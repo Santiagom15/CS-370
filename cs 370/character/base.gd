@@ -5,10 +5,10 @@ extends CharacterBody2D
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var heart = $Camera2D/Heart
 var heartbeat = 0.5
-var heartFrame = 1
-
+var heartFrame = 1.0
+var space = false
 var moving = false
-	
+var isFrame: bool
 
 
 func get_input():
@@ -17,10 +17,16 @@ func get_input():
 		moving = true
 	else: 
 		moving = false
+		
+	var Space= Input.is_action_pressed("space")
+	if Space :
+		space = true 
+	else:
+		space = false
 	velocity = input_direction * speed
 
 func _physics_process(_delta):
-	print(get_position_delta())
+ 
 	get_input()
 	move_and_slide()
 
@@ -39,22 +45,29 @@ func _process(_delta):
 		_animated_sprite.pause()
 
 
-  
-func _on_heart_animation_looped():# might nee to use three inputs 
-	print(heartbeat)
+
+func _on_heart_animation_looped():# having problems with wanting the right frame 
+
+	print(heart.get_frame_progress()==heartFrame)
+
+	
+
 	if heart.get_playing_speed() >3:
 		global_position = Vector2(10,10)# moves to previous save in the future 
-		
-	var space = Input.is_action_just_pressed("space")
-	
-	if moving and heartFrame==heart.get_frame():
+		heartbeat==0.5
 		heart.play("heartBeat",heartbeat)
-	elif moving and heartFrame!=heart.get_frame():
+	if moving and heartFrame==heart.get_frame() and space:  
+		heart.play("heartBeat",heartbeat)
+		
+	elif moving and heartFrame!=heart.get_frame() and !space:
 		heartbeat = heartbeat + 0.1                    
 		heart.play("heartBeat",heartbeat)
 	else:
 		if heartbeat >0.5:
 			heartbeat = heartbeat - 0.1
 		heart.play("heartBeat",heartbeat)
+		
+		
+
 	
 		
