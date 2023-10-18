@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bwd4w27swp6t7" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="3_mpgr5"]
 [ext_resource type="Script" path="res://demo/Return to home.gd" id="4_1a0hj"]
 [ext_resource type="Texture2D" uid="uid://cavefsfsw871w" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png" id="4_ex2yv"]
-[ext_resource type="AudioStream" path="res://Theme_1.mp3" id="4_l6j0k"]
+[ext_resource type="AudioStream" uid="uid://rh88dcspefks" path="res://Theme_1.mp3" id="4_l6j0k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7k8nq"]
 texture = ExtResource("4_ex2yv")
