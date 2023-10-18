@@ -8,7 +8,7 @@ extends CharacterBody2D
 # GoDot note: @onready means this line is called when the scene loads and only then
 # Retrieve the animated door and character body Player nodes
 @onready var anim = get_node("AnimatedSlideDoor")
-@onready var player = get_parent().get_node("Player")
+@onready var player = get_parent().get_parent().get_node("Player")
 
 # Value of 0 mean no collision boxes for this door have been entered
 # Value of 1 means either PlayerDetectionAnimCloseTop or PlayerDetectionAnimCloseBottom has been entered
@@ -115,7 +115,6 @@ func _on_PlayerDetectAnimCloseTop_body_entered(body):
 			for i in range(2,7,2):
 				curr_coll = get_node(str("CollDoor1/Coll", i, "a"))
 				curr_coll.set_deferred("disabled", true)
-				curr_coll.disabled = true
 				curr_coll = get_node(str("CollDoor1/Coll", i, "b"))
 				curr_coll.set_deferred("disabled", true)
 			# Disable collision on all CollDoor2 child nodes
@@ -167,7 +166,6 @@ func _on_PlayerDetectAnimCloseBottom_body_entered(body):
 			
 			use_coll1 = false
 			FIRST_CHECK = 1
-
 
 # Play door closing animation when requirements are met
 func _on_PlayerDetectAnimCloseBottom_body_exited(body):
