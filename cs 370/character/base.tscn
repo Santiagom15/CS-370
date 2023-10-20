@@ -439,7 +439,7 @@ position = Vector2(-503, 255)
 scale = Vector2(7.54412, 7.33823)
 sprite_frames = SubResource("SpriteFrames_wbl4x")
 animation = &"heartBeat"
-frame_progress = 0.493994
+frame_progress = 0.0978615
 script = ExtResource("3_ttx7g")
 
-[connection signal="animation_looped" from="Camera2D/Heart" to="." method="_on_heart_animation_looped"]
+[connection signal="animation_changed" from="Camera2D/Heart" to="." method="_on_heart_animation_changed"]

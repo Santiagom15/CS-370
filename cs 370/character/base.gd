@@ -46,28 +46,30 @@ func _process(_delta):
 
 
 
-func _on_heart_animation_looped():# having problems with wanting the right frame 
 
-	print(heart.get_frame_progress()==heartFrame)
+
+		
+		
 
 	
+		
 
-	if heart.get_playing_speed() >3:
+
+func _on_heart_animation_changed():
+	print(heart.get_frame_progress()==heartFrame)
+	if heart.get_playing_speed() > 3:
 		global_position = Vector2(10,10)# moves to previous save in the future 
 		heartbeat==0.5
 		heart.play("heartBeat",heartbeat)
+		
 	if moving and heartFrame==heart.get_frame() and space:  
 		heart.play("heartBeat",heartbeat)
 		
-	elif moving and heartFrame!=heart.get_frame() and !space:
+	elif moving and heartFrame!=heart.get_frame():
 		heartbeat = heartbeat + 0.1                    
 		heart.play("heartBeat",heartbeat)
+		
 	else:
 		if heartbeat >0.5:
 			heartbeat = heartbeat - 0.1
 		heart.play("heartBeat",heartbeat)
-		
-		
-
-	
-		
