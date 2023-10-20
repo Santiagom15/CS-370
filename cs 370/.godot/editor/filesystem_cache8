@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697603047
+::res://::1697840401
 BacktoHome.gd::GDScript::-1::1696998893::0::1::::<>Button<>::
 Button2.gd::GDScript::-1::1696998893::0::1::::<>Button<>::
-first_game.tscn::PackedScene::676989903583598577::1697338246::0::1::::<><>::uid://c3lxttphkgl5g
+first_game.tscn::PackedScene::676989903583598577::1697603992::0::1::::<><>::uid://c3lxttphkgl5g::::res://assets/BackGrounds/StartScrene.png<>res://BacktoHome.gd<>res://Test.gd
 icon.svg::CompressedTexture2D::5068296914375634220::1696998893::1696998893::1::::<><>::
-my_world.tscn::PackedScene::7803865048926372001::1697338246::0::1::::<><>::res://Start.gd<>res://Button2.gd<>uid://c3lxttphkgl5g
+my_world.tscn::PackedScene::7803865048926372001::1697603992::0::1::::<><>::res://Start.gd<>res://Button2.gd<>uid://c3lxttphkgl5g::::res://assets/BackGrounds/StartScrene.png
 player.tscn::PackedScene::4772027566725969576::1696998893::0::1::::<><>::
 Start.gd::GDScript::-1::1696998893::0::1::::<>Button<>::
 Test.gd::GDScript::-1::1696998893::0::1::::<>Button<>::
@@ -261,12 +261,12 @@ Tileset_48x48_16.png::CompressedTexture2D::1231133606670931874::1696998893::1696
 Character_2_16x16_RPGMAKER.png::CompressedTexture2D::5668668654690955307::1696998893::1696998893::1::::<><>::
 Character_2_32x32_RPGMAKER.png::CompressedTexture2D::7963290725250646534::1696998893::1696998893::1::::<><>::
 Character_2_48x48_RPGMAKER.png::CompressedTexture2D::5224941311365646267::1696998893::1696998893::1::::<><>::
-::res://character/::1697338853
+::res://character/::1697603993
 AnimatedSprite2D.gd::GDScript::-1::1696998893::0::1::::<>AnimatedSprite2D<>::
 base.gd::GDScript::-1::1696998893::0::1::::<>CharacterBody2D<>::
-base.tscn::PackedScene::3782035310130654684::1697338853::0::1::::<><>::uid://c15viyffob8xn::::res://assets/aisha/char_a_p1/char_a_p1_0bas_humn_v01.png<>res://character/base.gd<>res://character/AnimatedSprite2D.gd
+base.tscn::PackedScene::3782035310130654684::1697603993::0::1::::<><>::uid://c15viyffob8xn::::res://assets/aisha/char_a_p1/char_a_p1_0bas_humn_v01.png<>res://character/base.gd<>res://character/AnimatedSprite2D.gd
 character_body_2d.gd::GDScript::-1::1696998893::0::1::::<>CharacterBody2D<>::
-character_body_2d.tscn::PackedScene::7199959883589827872::1697338852::0::1::::<><>::res://character/character_body_2d.gd<>uid://clo1ewl2igc1::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (3).png<>uid://c2t0yyt2d17c3::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (4).png<>uid://b7fjpff0gdi6b::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (5).png<>uid://dt7ih53bn7m7::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy.png<>uid://tpmaxibjjpm7::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored.png<>res://character/AnimatedSprite2D.gd
+character_body_2d.tscn::PackedScene::7199959883589827872::1697603993::0::1::::<><>::res://character/character_body_2d.gd<>uid://clo1ewl2igc1::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (3).png<>uid://c2t0yyt2d17c3::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (4).png<>uid://b7fjpff0gdi6b::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy (5).png<>uid://dt7ih53bn7m7::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored - Copy.png<>uid://tpmaxibjjpm7::::res://assets/aisha/More_aishastuff/POOKIE BEAR/main_character_colored.png<>res://character/AnimatedSprite2D.gd
 ::res://character/Modern tiles_Free/::1697316843
 free_overview.png::CompressedTexture2D::2357082489094627956::1696998893::1697316843::1::::<><>::
 LICENSE.txt::TextFile::-1::1696998893::0::1::::<><>::
@@ -342,6 +342,6 @@ Tileset_48x48_16.png::CompressedTexture2D::7279147103641501056::1696998893::1697
 Character_2_16x16_RPGMAKER.png::CompressedTexture2D::5323283393311230545::1696998893::1697316843::1::::<><>::
 Character_2_32x32_RPGMAKER.png::CompressedTexture2D::1012722833654390938::1696998893::1697316843::1::::<><>::
 Character_2_48x48_RPGMAKER.png::CompressedTexture2D::6335500399965739296::1696998893::1697316843::1::::<><>::
-::res://demo/::1697338840
-demos.tscn::PackedScene::6429340051097193767::1697338840::0::1::::<><>::uid://bt5btl02jlgym::::res://character/base.tscn<>uid://bwd4w27swp6t7::::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png<>uid://cavefsfsw871w::::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png<>uid://rh88dcspefks::::res://Theme_1.mp3
+::res://demo/::1697603993
+demos.tscn::PackedScene::6429340051097193767::1697603993::0::1::::<><>::uid://bt5btl02jlgym::::res://character/base.tscn<>uid://bwd4w27swp6t7::::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png<>uid://cavefsfsw871w::::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png<>uid://rh88dcspefks::::res://Theme_1.mp3
 demos_no_background.tscn::PackedScene::4791199453135717541::1696998893::0::1::::<><>::uid://ca28yvg20sy3j
