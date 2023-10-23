@@ -1,36 +1,39 @@
-[gd_scene load_steps=362 format=3 uid="uid://poixchn2uksq"]
+[gd_scene load_steps=391 format=3 uid="uid://poixchn2uksq"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="3_eevib"]
 [ext_resource type="Texture2D" uid="uid://c4psf6kv0mxg5" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/11_Halloween_16x16.png" id="3_mrhk3"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_butchershop_carcass.png" id="4_nvu84"]
+[ext_resource type="Texture2D" uid="uid://b0nawqlma58gn" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_butchershop_carcass.png" id="4_nvu84"]
 [ext_resource type="Texture2D" uid="uid://dpxguycn7exuo" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/3_Bathroom_16x16.png" id="4_s5jh1"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_head.png" id="5_l8cnp"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/aniamted_haunted_mirror.png" id="5_nt45a"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_arm.png" id="5_v0qy0"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_painting_doll_1.png" id="5_yt6uo"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_full.png" id="6_c3omn"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_right.png" id="6_i8hy6"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xraymachine_screen.png" id="6_tku2f"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror.png" id="6_vbod5"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_empty.png" id="6_wqapt"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_sink_new_2_3-10 loop.png" id="6_yuj1v"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathtub_2.png" id="7_ovnr8"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_left.png" id="8_0cefy"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_old_tv.png" id="8_n8eh6"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_ticket_machine.png" id="8_yhetw"]
+[ext_resource type="Texture2D" uid="uid://1pfdnbbkvtgu" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_head.png" id="5_l8cnp"]
+[ext_resource type="Texture2D" uid="uid://h6xw2v2aqp4t" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/aniamted_haunted_mirror.png" id="5_nt45a"]
+[ext_resource type="Texture2D" uid="uid://4376utguxmuv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_arm.png" id="5_v0qy0"]
+[ext_resource type="Texture2D" uid="uid://dv2q0p67lrydp" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_painting_doll_1.png" id="5_yt6uo"]
+[ext_resource type="Texture2D" uid="uid://ckb4ja5ocbgnm" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_full.png" id="6_c3omn"]
+[ext_resource type="Texture2D" uid="uid://drbvmbors5uxv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_right.png" id="6_i8hy6"]
+[ext_resource type="Texture2D" uid="uid://b4q0knbvu7wf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xraymachine_screen.png" id="6_tku2f"]
+[ext_resource type="Texture2D" uid="uid://cwl7odqgh6i5x" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror.png" id="6_vbod5"]
+[ext_resource type="Texture2D" uid="uid://bye32i8ybd7m6" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_empty.png" id="6_wqapt"]
+[ext_resource type="Texture2D" uid="uid://bc7yomw0w3532" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_sink_new_2_3-10 loop.png" id="6_yuj1v"]
+[ext_resource type="Texture2D" uid="uid://bote30ouq70j" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathtub_2.png" id="7_ovnr8"]
+[ext_resource type="Texture2D" uid="uid://d3ng0ce47d54y" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_left.png" id="8_0cefy"]
+[ext_resource type="Texture2D" uid="uid://4xcd7q6v2co6" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_old_tv.png" id="8_n8eh6"]
+[ext_resource type="Texture2D" uid="uid://k6b1yukgsh33" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_ticket_machine.png" id="8_yhetw"]
 [ext_resource type="Script" path="res://Level 1/Animated Idle.gd" id="10_kkunq"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door.gd" id="23_2yr2n"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="23_u8hcn"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_left_1.png" id="25_ad4ki"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="26_eu261"]
+[ext_resource type="Texture2D" uid="uid://cd0nbgye3yh7u" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="23_u8hcn"]
+[ext_resource type="Texture2D" uid="uid://ba0onicitg6jt" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_left_1.png" id="25_ad4ki"]
+[ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="26_eu261"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="26_xyf23"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Horizontal Door.gd" id="28_pc87l"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="29_0ygv0"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_big_1.png" id="29_adnfa"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
+[ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door Need Item.gd" id="28_s0rtn"]
+[ext_resource type="Texture2D" uid="uid://bdw58iw7s5jvd" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="29_0ygv0"]
+[ext_resource type="Texture2D" uid="uid://difda4krhim5h" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_big_1.png" id="29_adnfa"]
+[ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="29_nb3ye"]
+[ext_resource type="Texture2D" uid="uid://de4qpekfy6jiv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_rattle_2_edittedAlisa.png" id="31_6aeo5"]
+[ext_resource type="Texture2D" uid="uid://df4ksnwncongf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
+[ext_resource type="Texture2D" uid="uid://blurtqdn6gseh" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
 [ext_resource type="Script" path="res://Level 1/Button.gd" id="43_072me"]
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
 
@@ -41114,6 +41117,191 @@ size = Vector2(17.0833, 37.8261)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_40rx6"]
 size = Vector2(59, 7)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvocg"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02iyj"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3bl6"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66cbq"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvlui"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hupux"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5jra"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1t3m"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdtju"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pcpk"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q1k7j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvocg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02iyj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3bl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66cbq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvlui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hupux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5jra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1t3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdtju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pcpk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvocg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02iyj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3bl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66cbq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvlui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hupux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5jra")
+}],
+"loop": false,
+"name": &"Key",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evrj0"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3ccs"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phwl6"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtgid"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gr7fw"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qa1dp"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5n5j0"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(192, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24rl0"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(224, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppglu"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(256, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_elu61"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evrj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3ccs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phwl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mtgid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gr7fw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qa1dp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5n5j0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24rl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppglu")
+}],
+"loop": false,
+"name": &"DoorRattle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pitd8"]
+size = Vector2(43, 178)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6383n"]
+size = Vector2(17.1041, 37.9783)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4b54t"]
+size = Vector2(18.9166, 37.8261)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fcq5d"]
+size = Vector2(59, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x08dl"]
+size = Vector2(59, 7)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_743vx"]
 texture = ExtResource("1_mqcgy")
 5:0/0 = 0
@@ -57100,8 +57288,7 @@ debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
 [node name="Animated door vertical right 6" type="CharacterBody2D" parent="Animated door vertical nodes"]
 position = Vector2(2030, 1205)
-script = ExtResource("23_2yr2n")
-metadata/_edit_group_ = true
+script = ExtResource("28_s0rtn")
 
 [node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
 position = Vector2(530, 348)
@@ -57115,37 +57302,56 @@ scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_15kui")
 animation = &"OpenLeft"
 
+[node name="AnimatedKey" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
+position = Vector2(508, 327)
+scale = Vector2(6.69531, 7.25)
+sprite_frames = SubResource("SpriteFrames_q1k7j")
+animation = &"Key"
+frame = 11
+frame_progress = 1.0
+
+[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
+position = Vector2(486, 353)
+scale = Vector2(2.97461, 3.70312)
+sprite_frames = SubResource("SpriteFrames_elu61")
+animation = &"DoorRattle"
+frame = 8
+frame_progress = 1.0
+
 [node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
-position = Vector2(504, 360)
-shape = SubResource("RectangleShape2D_tqrug")
+visible = false
+position = Vector2(503.5, 360)
+shape = SubResource("RectangleShape2D_pitd8")
 debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
 
 [node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
+visible = false
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromLeft"]
-position = Vector2(-0.416656, 2.34778)
-shape = SubResource("RectangleShape2D_pot04")
+position = Vector2(-1.61456, 2.34772)
+shape = SubResource("RectangleShape2D_6383n")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
 
 [node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
+visible = false
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromRight"]
-position = Vector2(-11.3749, 2.21735)
-shape = SubResource("RectangleShape2D_tnt0g")
+position = Vector2(-10.4583, 2.21735)
+shape = SubResource("RectangleShape2D_4b54t")
 
 [node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
 position = Vector2(544.5, 292)
-shape = SubResource("RectangleShape2D_40rx6")
+shape = SubResource("RectangleShape2D_fcq5d")
 debug_color = Color(0.670588, 0.505882, 0.164706, 0.419608)
 
 [node name="CollTopDoorLeft" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
 position = Vector2(457, 292)
-shape = SubResource("RectangleShape2D_40rx6")
+shape = SubResource("RectangleShape2D_x08dl")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
 [node name="Outter floor 2" type="TileMap" parent="."]
@@ -57161,7 +57367,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 131090, 3604481, 56, 131091, 3604481, 56, 131092, 3604481, 56, 131093, 3604481, 56, 131094, 3604481, 56, 131095, 3604481, 56, 131096, 3604481, 56, 131097, 3604481, 56, 131098, 3801089, 55, 655360, 3473409, 55, 655361, 3604481, 56, 655363, 3604481, 56, 655364, 3604481, 56, 655365, 3604481, 56, 655366, 3604481, 56, 655367, 3604481, 56, 655368, 3604481, 56, 655369, 3604481, 56, 655370, 3801089, 55, 720912, 3473409, 55, 720913, 3604481, 56, 720914, 3604481, 56, 720915, 3604481, 56, 720916, 3604481, 56, 720917, 3604481, 56, 720918, 3604481, 56, 720919, 3604481, 56, 720920, 3604481, 56, 720921, 3604481, 56, 720922, 3801089, 55, 1769473, 3604481, 56, 1769474, 3604481, 56, 1769475, 3604481, 56, 1769476, 3604481, 56, 1769477, 3604481, 56, 1769478, 3604481, 56, 1769479, 3604481, 56, 1769480, 3604481, 56, 1769495, 3604481, 56, 1769484, 3604481, 56, 1769485, 3604481, 56, 1769486, 3604481, 56, 1769487, 3604481, 56, 1769481, 3604481, 56, 1769482, 3604481, 56, 1769483, 3604481, 56, 655362, 3604481, 56, 2424832, 3473409, 55, 2424833, 3604481, 56, 2424835, 3604481, 56, 2424836, 3604481, 56, 2424837, 3604481, 56, 2424843, 3145729, 101, 2424844, 3604481, 56, 2424845, 3145729, 101, 2424846, 3145729, 101, 2424847, 3604481, 56, 2424848, 3801089, 55, 1769496, 3145729, 101, 1769497, 3145729, 101, 1769498, 3735553, 59, 1769499, 3145729, 101, 1769505, 3145729, 101, 1769506, 3145729, 101, 1769507, 3145729, 101, 1769508, 3145729, 101, 1769509, 3145729, 101, 1769510, 3145729, 101, 1769511, 3145729, 101, 1769512, 3145729, 101, 1769513, 3145729, 101, 1769514, 3145729, 101, 1769515, 3145729, 101, 1769516, 3145729, 101, 1769517, 3145729, 101, 1769518, 3145729, 101, 1769519, 3145729, 101, 1769520, 3145729, 101, 1769521, 3145729, 101, 1769522, 3145729, 101, 1769523, 3735553, 59, 2424834, 3604481, 56, 2293784, 3604481, 56, 2293789, 3604481, 56, 2293790, 3604481, 56, 2293791, 3604481, 56, 2293792, 3604481, 56, 2293793, 3604481, 56, 2293798, 3604481, 56, 2293799, 3604481, 56, 2293800, 3604481, 56, 2293801, 3604481, 56, 2293802, 3604481, 56, 2293807, 3604481, 56, 2293808, 3604481, 56, 2293809, 3604481, 56, 2293810, 3604481, 56, 2293811, 3670017, 56, 2293794, 3801089, 55, 2293803, 3801089, 55, 2293780, 3145729, 101, 2293781, 3145729, 101, 2818065, 3145729, 101, 2818067, 3145729, 101, 2818068, 3145729, 101, 2818069, 3145729, 101, 2818070, 3145729, 101, 2818071, 3145729, 101, 2818072, 3145729, 101, 2818080, 3145729, 101, 2818079, 3145729, 101, 2818078, 3145729, 101, 2818077, 3145729, 101, 2818076, 3145729, 101, 2818088, 3145729, 101, 2818089, 3145729, 101, 2818090, 3145729, 101, 2818094, 3145729, 101, 2818095, 3145729, 101, 2818096, 3145729, 101, 2818097, 3145729, 101, 2818098, 3145729, 101, 2818099, 3735553, 59, 2621474, 3735553, 56, 2687010, 3735553, 56, 2752546, 3735553, 56, 2555938, 3735553, 56, 2490402, 3735553, 56, 2818087, 3145729, 101, 2818086, 3145729, 101, 2818085, 3145729, 101, 2818083, 3145729, 101, 2818082, 3735553, 59, 2818081, 3145729, 101, 2818084, 3145729, 101, 2818091, 3735553, 59, 2818092, 3145729, 101, 2818093, 3145729, 101, 2818075, 3145729, 101, 2818073, 3735553, 59, 2818063, 3145729, 101, 2818062, 3145729, 101, 2818061, 3145729, 101, 2818060, 3145729, 101, 2818059, 3145729, 101, 2818058, 3145729, 101, 2818057, 3145729, 101, 2818056, 3145729, 101, 2818055, 3145729, 101, 2818054, 3145729, 101, 2818053, 3145729, 101, 2818052, 3145729, 101, 2818051, 3145729, 101, 2818050, 3145729, 101, 2818049, 3145729, 101, 2818074, 3670017, 59, 1507354, 3735553, 56, 1572890, 3735553, 56, 1638426, 3735553, 56, 1703962, 3735553, 56, 1441818, 3801089, 57, 1376282, 3801089, 56, 1310746, 3801089, 55, 1114139, 3145729, 101, 1114140, 3145729, 101, 1114141, 3145729, 101, 1114142, 3145729, 101, 1114143, 3145729, 101, 1114144, 3145729, 101, 1114145, 3145729, 101, 1114146, 3145729, 101, 1114147, 3145729, 101, 1114148, 3145729, 101, 1114149, 3145729, 101, 1114150, 3145729, 101, 1114151, 3145729, 101, 1114152, 3145729, 101, 1114153, 3145729, 101, 1114154, 3145729, 101, 1114155, 3145729, 101, 1114156, 3145729, 101, 1114157, 3145729, 101, 1114158, 3145729, 101, 1114159, 3145729, 101, 1114160, 3014657, 101, 2818064, 3735553, 59, 2818066, 3670017, 59, 2818048, 3538945, 59, 1769472, 3538945, 59, -458741, 3604481, 59, -458740, 3604481, 59, -458739, 3604481, 59, -458738, 3604481, 59, -458735, 3604481, 59, -458734, 3604481, 59, -458733, 3604481, 59, -458732, 3604481, 59, -458731, 3604481, 59, -458730, 3604481, 59, -458729, 3604481, 59, -458728, 3604481, 59, -458727, 3604481, 59, -458743, 3604481, 59, -458744, 3604481, 59, -458745, 3604481, 59, -458746, 3604481, 59, -458747, 3604481, 59, -458748, 3604481, 59, -458749, 3604481, 59, -458750, 3604481, 59, -458751, 3604481, 59, -458752, 3538945, 59, -458736, 3538945, 59, -458726, 3735553, 59, -458742, 3735553, 59)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(203, -49)
+position = Vector2(1779, 1574)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -57941,6 +58147,7 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="frame_changed" from="Animated door vertical nodes/Animated door vertical right 6/AnimatedKey" to="Animated door vertical nodes/Animated door vertical right 6" method="_on_animated_key_frame_changed"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 6" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 6" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 6" method="_on_PlayerDetectionFromRight_body_entered"]
