@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var speed = 300
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var heart = $Camera2D/Heart
+@onready var timer =$Camera2D/Heart/Timer
 var heartbeat = 0.5
 var heartFrame = 1.0
 var space = false
@@ -11,6 +12,10 @@ var moving = false
 var isFrame: bool
 
 
+
+func _ready():
+	_onTime()
+	
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")	
 	if input_direction:
@@ -26,7 +31,7 @@ func get_input():
 	velocity = input_direction * speed
 
 func _physics_process(_delta):
- 
+	_onTime()
 	get_input()
 	move_and_slide()
 
@@ -47,18 +52,10 @@ func _process(_delta):
 
 
 
-
-		
-		
-
-	
-		
-
-
-func _on_heart_animation_changed():
-	print(heart.get_frame_progress()==heartFrame)
-	if heart.get_playing_speed() > 3:
-		global_position = Vector2(10,10)# moves to previous save in the future 
+func _onTime():
+	#print(heart.get_frame()==heartFrame)
+	print(heart.get_playing_speed())
+	if heart.get_playing_speed() > 3: # moves to previous save in the future 
 		heartbeat==0.5
 		heart.play("heartBeat",heartbeat)
 		
@@ -73,3 +70,9 @@ func _on_heart_animation_changed():
 		if heartbeat >0.5:
 			heartbeat = heartbeat - 0.1
 		heart.play("heartBeat",heartbeat)
+		
+	
+		
+
+func _on_heart_animation_looped():
+	pass # Replace with function body.

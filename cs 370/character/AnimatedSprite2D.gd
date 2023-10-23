@@ -2,7 +2,8 @@ extends AnimatedSprite2D
 
 @onready var animatedSprite = $AnimatedSprite2D
 var fear = 1
-@export var test= frame
+
+
 
 
 # Called when the node enters the scene tree for the first time.

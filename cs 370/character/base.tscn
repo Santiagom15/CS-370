@@ -442,4 +442,6 @@ animation = &"heartBeat"
 frame_progress = 0.0978615
 script = ExtResource("3_ttx7g")
 
-[connection signal="animation_changed" from="Camera2D/Heart" to="." method="_on_heart_animation_changed"]
+[node name="Timer" type="Timer" parent="Camera2D/Heart"]
+
+[connection signal="animation_looped" from="Camera2D/Heart" to="." method="_on_heart_animation_looped"]
