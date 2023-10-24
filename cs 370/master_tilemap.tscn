@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://4m4pafehvrkx"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2jhf8"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kdwjq"]
 load_path = "res://.godot/imported/19_Hospital_16x16.png-52b705add28f40660711c8894483d31f.ctex"
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i4am8"]
-texture = SubResource("CompressedTexture2D_2jhf8")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_du0tc"]
+texture = SubResource("CompressedTexture2D_kdwjq")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -6054,11 +6054,11 @@ texture = SubResource("CompressedTexture2D_2jhf8")
 6:106/0/physics_layer_0/angular_velocity = 0.0
 6:106/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_184xw"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hgh2k"]
 load_path = "res://.godot/imported/11_Halloween_16x16.png-c6ef5a9d79400410cf55cd7c9efc75b5.ctex"
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ddud6"]
-texture = SubResource("CompressedTexture2D_184xw")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f0mb5"]
+texture = SubResource("CompressedTexture2D_hgh2k")
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
@@ -8704,11 +8704,11 @@ texture = SubResource("CompressedTexture2D_184xw")
 10:60/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:60/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gc3lk"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rmjtl"]
 load_path = "res://.godot/imported/3_Bathroom_16x16.png-9586a718c8a837374c83d6d33155ad8f.ctex"
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ch4h6"]
-texture = SubResource("CompressedTexture2D_gc3lk")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fns1f"]
+texture = SubResource("CompressedTexture2D_rmjtl")
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
@@ -11162,17 +11162,17 @@ texture = SubResource("CompressedTexture2D_gc3lk")
 6:54/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:54/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSet" id="TileSet_8g7f5"]
+[sub_resource type="TileSet" id="TileSet_q6ad3"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_i4am8")
-sources/1 = SubResource("TileSetAtlasSource_ddud6")
-sources/2 = SubResource("TileSetAtlasSource_ch4h6")
+sources/0 = SubResource("TileSetAtlasSource_du0tc")
+sources/1 = SubResource("TileSetAtlasSource_f0mb5")
+sources/2 = SubResource("TileSetAtlasSource_fns1f")
 
 [node name="Master Tilemap Update Physics" type="Node2D"]
 
-[node name="Furniture2" type="TileMap" parent="."]
+[node name="Furniture" type="TileMap" parent="."]
 scale = Vector2(4, 4)
-tile_set = SubResource("TileSet_8g7f5")
+tile_set = SubResource("TileSet_q6ad3")
 format = 2
 layer_0/name = "Outside"
 layer_0/tile_data = PackedInt32Array(917539, 393217, 24, 852001, 655361, 16, 917537, 655361, 17, 852000, 589825, 12, 852003, 589825, 12, 851990, 589825, 12, 851992, 589824, 97, 983066, 524289, 12, 983065, 1, 59)
