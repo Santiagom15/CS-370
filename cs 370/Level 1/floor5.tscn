@@ -1,11 +1,10 @@
-[gd_scene load_steps=390 format=3 uid="uid://poixchn2uksq"]
+[gd_scene load_steps=392 format=3 uid="uid://poixchn2uksq"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="3_eevib"]
 [ext_resource type="Texture2D" uid="uid://c4psf6kv0mxg5" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/11_Halloween_16x16.png" id="3_mrhk3"]
 [ext_resource type="Texture2D" uid="uid://b0nawqlma58gn" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_butchershop_carcass.png" id="4_nvu84"]
-[ext_resource type="Texture2D" uid="uid://dpxguycn7exuo" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/3_Bathroom_16x16.png" id="4_s5jh1"]
 [ext_resource type="Texture2D" uid="uid://1pfdnbbkvtgu" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_head.png" id="5_l8cnp"]
 [ext_resource type="Texture2D" uid="uid://h6xw2v2aqp4t" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/aniamted_haunted_mirror.png" id="5_nt45a"]
 [ext_resource type="Texture2D" uid="uid://4376utguxmuv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_arm.png" id="5_v0qy0"]
@@ -28426,8 +28425,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vlhk8"]
 size = Vector2(20, 32)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c6acq"]
-texture = ExtResource("2_hj83g")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2d6b2"]
+load_path = "res://.godot/imported/19_Hospital_16x16.png-52b705add28f40660711c8894483d31f.ctex"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7iu3k"]
+texture = SubResource("CompressedTexture2D_2d6b2")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -34477,8 +34479,11 @@ texture = ExtResource("2_hj83g")
 6:106/0/physics_layer_0/angular_velocity = 0.0
 6:106/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qk737"]
-texture = ExtResource("3_mrhk3")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kiy2y"]
+load_path = "res://.godot/imported/11_Halloween_16x16.png-c6ef5a9d79400410cf55cd7c9efc75b5.ctex"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7d8go"]
+texture = SubResource("CompressedTexture2D_kiy2y")
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
@@ -37124,8 +37129,11 @@ texture = ExtResource("3_mrhk3")
 10:60/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:60/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jb3hb"]
-texture = ExtResource("4_s5jh1")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6la0g"]
+load_path = "res://.godot/imported/3_Bathroom_16x16.png-9586a718c8a837374c83d6d33155ad8f.ctex"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gwm5p"]
+texture = SubResource("CompressedTexture2D_6la0g")
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
@@ -39579,11 +39587,11 @@ texture = ExtResource("4_s5jh1")
 6:54/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:54/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSet" id="TileSet_0w78g"]
+[sub_resource type="TileSet" id="TileSet_itv30"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_c6acq")
-sources/1 = SubResource("TileSetAtlasSource_qk737")
-sources/2 = SubResource("TileSetAtlasSource_jb3hb")
+sources/0 = SubResource("TileSetAtlasSource_7iu3k")
+sources/1 = SubResource("TileSetAtlasSource_7d8go")
+sources/2 = SubResource("TileSetAtlasSource_gwm5p")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_atnop"]
 atlas = ExtResource("7_ovnr8")
@@ -56775,7 +56783,7 @@ shape = SubResource("RectangleShape2D_vlhk8")
 
 [node name="Furniture" type="TileMap" parent="."]
 scale = Vector2(4, 4)
-tile_set = SubResource("TileSet_0w78g")
+tile_set = SubResource("TileSet_itv30")
 format = 2
 layer_0/name = "Outside"
 layer_0/tile_data = PackedInt32Array(917539, 393217, 24, 852001, 655361, 16, 917537, 655361, 17, 852000, 589825, 12, 852003, 589825, 12, 851990, 589825, 12, 851992, 589824, 97, 983066, 524289, 12, 983065, 1, 59)
@@ -57319,7 +57327,6 @@ scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromLeft"]
 position = Vector2(2.58337, 2.34772)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6383n")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
@@ -57330,7 +57337,6 @@ scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromRight"]
 position = Vector2(-12.8333, 2.21735)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_4b54t")
 
 [node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
