@@ -3,18 +3,33 @@ extends CharacterBody2D
 # what you can do is  create global or non global variable that stays true as long as the farme you want is activated and false when it isn't
 @export var speed = 300
 @onready var _animated_sprite = $AnimatedSprite2D
-@onready var heart = $Camera2D/Heart
+@onready var heart = $Camera2D/press/Heart
 @onready var timer =$Camera2D/Heart/Timer
-var heartbeat = 0.1
+@onready var press =$Camera2D/press
+var heartbeat = 0.5
 var heartFrame = 1.0
 var space = false
 var moving = false
-var isFrame: bool
+var state:bool
 
-var accuracy = 1.0
+
+
 
 func _ready():
-	heart.play("heartBeat")
+	heart.play("heartBeat",heartbeat)
+
+func getState():
+	if heart.get_frame()==1:
+		return true
+	else:
+		return false
+		
+func _on_heart_frame_changed():
+	print(getState())
+	
+	
+
+
 	
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")	
@@ -32,7 +47,6 @@ func get_input():
 
 func _physics_process(_delta):
 	get_input()
-	_onTime()
 	move_and_slide()
 
 func _process(_delta):
@@ -47,33 +61,4 @@ func _process(_delta):
 	else:
 		_animated_sprite.pause()
 
-func _onTime():# check different scnarios 
-	
-	isFrame = heartFrame==heart.get_frame()
-	heart.play("heartBeat",heartbeat)
-	#print(heart.get_playing_speed())
-	print(accuracy)
-	#need to figureout how to make the heartbeat seperate and constant 
-	#updating accuracy based on player input
-	if moving and isFrame and space:
-		heart.play("heartBeat",heartbeat)
-		accuracy = 1.0
-	elif moving and not isFrame and space:
-		heart.play("heartBeat",heartbeat)
-		accuracy -= 0.1
-	elif moving and isFrame and not space:
-		heart.play("heartBeat",heartbeat)
-		accuracy -= 0.1
-	else:
-		heart.play("heartBeat",heartbeat)
-		if accuracy < 0.5:
-			accuracy += 0.1
-	calcAccuracy(accuracy)
-		
-func calcAccuracy (accuracy: float):
-	var minAccToDarken = 0.5
-	#should change from self.molduate to the scene but idk
-	if accuracy < minAccToDarken:
-		self.modulate = Color(0,0,0,1)
-	else:
-		self.modulate = Color(1,1,1,1)
+
