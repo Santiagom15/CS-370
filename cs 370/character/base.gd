@@ -71,9 +71,8 @@ func _onTime():# check different scnarios
 	elif moving and !isFrame and space:# your moving and presing space on the wrong time
 		heartbeat = heartbeat + 0.1                    
 		heart.play("heartBeat",heartbeat)	
-
-		
 	else:
+		pass
 		
 		
 	
