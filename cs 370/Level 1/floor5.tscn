@@ -1,4 +1,4 @@
-[gd_scene load_steps=391 format=3 uid="uid://poixchn2uksq"]
+[gd_scene load_steps=390 format=3 uid="uid://poixchn2uksq"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
@@ -33,6 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="29_nb3ye"]
 [ext_resource type="Texture2D" uid="uid://de4qpekfy6jiv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_rattle_2_edittedAlisa.png" id="31_6aeo5"]
 [ext_resource type="Texture2D" uid="uid://df4ksnwncongf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
+[ext_resource type="Script" path="res://Level 1/AnimatedKey.gd" id="37_lo3jl"]
 [ext_resource type="Texture2D" uid="uid://blurtqdn6gseh" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
 [ext_resource type="Script" path="res://Level 1/Button.gd" id="43_072me"]
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
@@ -29075,23 +29076,18 @@ texture = ExtResource("2_hj83g")
 4:11/0 = 0
 4:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:11/0/physics_layer_0/angular_velocity = 0.0
-4:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.125, 1.59375, 2.1875, 2.21875, 8, -8, 8)
 5:11/0 = 0
 5:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:11/0/physics_layer_0/angular_velocity = 0.0
-5:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.6875, -8, 4.8125)
 6:11/0 = 0
 6:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:11/0/physics_layer_0/angular_velocity = 0.0
-6:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.6875, -8, 4.8125)
 7:11/0 = 0
 7:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:11/0/physics_layer_0/angular_velocity = 0.0
-7:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.6875, -8, 4.8125)
 8:11/0 = 0
 8:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:11/0/physics_layer_0/angular_velocity = 0.0
-8:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.6875, -8, 4.8125)
 10:11/0 = 0
 10:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:11/0/physics_layer_0/angular_velocity = 0.0
@@ -31548,11 +31544,11 @@ texture = ExtResource("2_hj83g")
 12:54/0 = 0
 12:54/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 12:54/0/physics_layer_0/angular_velocity = 0.0
-12:54/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.28125, 8, -6.65625, -0.5, 8, -0.875, 8, 8)
+12:54/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.65625, -0.75, 8, -0.5625, 8, 5, -6.78125, 5.25)
 13:54/0 = 0
 13:54/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 13:54/0/physics_layer_0/angular_velocity = 0.0
-13:54/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, -0.875, 3.84375, -1.1875, 3.90625, 8)
+13:54/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1, 3.78125, -0.9375, 4.03125, 4.9375, -8, 4.875, -8, 4.6875)
 14:54/0 = 0
 14:54/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 14:54/0/physics_layer_0/angular_velocity = 0.0
@@ -31596,11 +31592,9 @@ texture = ExtResource("2_hj83g")
 12:55/0 = 0
 12:55/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 12:55/0/physics_layer_0/angular_velocity = 0.0
-12:55/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.59375, -1.9375, -6.84375, -8, 8, -8, 8, -1.8125)
 13:55/0 = 0
 13:55/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 13:55/0/physics_layer_0/angular_velocity = 0.0
-13:55/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.8125, -8, -8, 4.03125, -8, 4.34375, -2.0625)
 14:55/0 = 0
 14:55/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 14:55/0/physics_layer_0/angular_velocity = 0.0
@@ -41220,22 +41214,6 @@ animations = [{
 atlas = ExtResource("31_6aeo5")
 region = Rect2(0, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_y3ccs"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(32, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_phwl6"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(64, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mtgid"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(96, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gr7fw"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(128, 0, 32, 48)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_qa1dp"]
 atlas = ExtResource("31_6aeo5")
 region = Rect2(160, 0, 32, 48)
@@ -41244,9 +41222,17 @@ region = Rect2(160, 0, 32, 48)
 atlas = ExtResource("31_6aeo5")
 region = Rect2(192, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_24rl0"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gr7fw"]
 atlas = ExtResource("31_6aeo5")
-region = Rect2(224, 0, 32, 48)
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3ccs"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phwl6"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(64, 0, 32, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ppglu"]
 atlas = ExtResource("31_6aeo5")
@@ -41259,13 +41245,19 @@ animations = [{
 "texture": SubResource("AtlasTexture_evrj0")
 }, {
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_qa1dp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5n5j0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gr7fw")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_y3ccs")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_phwl6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mtgid")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gr7fw")
@@ -41275,9 +41267,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5n5j0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_24rl0")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ppglu")
@@ -41291,10 +41280,10 @@ animations = [{
 size = Vector2(43, 178)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6383n"]
-size = Vector2(17.1041, 37.9783)
+size = Vector2(25.4999, 37.9783)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b54t"]
-size = Vector2(18.9166, 37.8261)
+size = Vector2(23.6667, 37.8261)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcq5d"]
 size = Vector2(59, 7)
@@ -57303,8 +57292,9 @@ sprite_frames = SubResource("SpriteFrames_15kui")
 animation = &"OpenLeft"
 
 [node name="AnimatedKey" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
-position = Vector2(508, 327)
-scale = Vector2(6.69531, 7.25)
+position = Vector2(-63.7348, -190)
+rotation = -6.28319
+scale = Vector2(2.87906, 3.10791)
 sprite_frames = SubResource("SpriteFrames_q1k7j")
 animation = &"Key"
 frame = 11
@@ -57319,29 +57309,28 @@ frame = 8
 frame_progress = 1.0
 
 [node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
-visible = false
 position = Vector2(503.5, 360)
 shape = SubResource("RectangleShape2D_pitd8")
 debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
 
 [node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
-visible = false
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromLeft"]
-position = Vector2(-1.61456, 2.34772)
+position = Vector2(2.58337, 2.34772)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6383n")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
 
 [node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
-visible = false
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6/PlayerDetectionFromRight"]
-position = Vector2(-10.4583, 2.21735)
+position = Vector2(-12.8333, 2.21735)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_4b54t")
 
 [node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 6"]
@@ -57367,7 +57356,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 131090, 3604481, 56, 131091, 3604481, 56, 131092, 3604481, 56, 131093, 3604481, 56, 131094, 3604481, 56, 131095, 3604481, 56, 131096, 3604481, 56, 131097, 3604481, 56, 131098, 3801089, 55, 655360, 3473409, 55, 655361, 3604481, 56, 655363, 3604481, 56, 655364, 3604481, 56, 655365, 3604481, 56, 655366, 3604481, 56, 655367, 3604481, 56, 655368, 3604481, 56, 655369, 3604481, 56, 655370, 3801089, 55, 720912, 3473409, 55, 720913, 3604481, 56, 720914, 3604481, 56, 720915, 3604481, 56, 720916, 3604481, 56, 720917, 3604481, 56, 720918, 3604481, 56, 720919, 3604481, 56, 720920, 3604481, 56, 720921, 3604481, 56, 720922, 3801089, 55, 1769473, 3604481, 56, 1769474, 3604481, 56, 1769475, 3604481, 56, 1769476, 3604481, 56, 1769477, 3604481, 56, 1769478, 3604481, 56, 1769479, 3604481, 56, 1769480, 3604481, 56, 1769495, 3604481, 56, 1769484, 3604481, 56, 1769485, 3604481, 56, 1769486, 3604481, 56, 1769487, 3604481, 56, 1769481, 3604481, 56, 1769482, 3604481, 56, 1769483, 3604481, 56, 655362, 3604481, 56, 2424832, 3473409, 55, 2424833, 3604481, 56, 2424835, 3604481, 56, 2424836, 3604481, 56, 2424837, 3604481, 56, 2424843, 3145729, 101, 2424844, 3604481, 56, 2424845, 3145729, 101, 2424846, 3145729, 101, 2424847, 3604481, 56, 2424848, 3801089, 55, 1769496, 3145729, 101, 1769497, 3145729, 101, 1769498, 3735553, 59, 1769499, 3145729, 101, 1769505, 3145729, 101, 1769506, 3145729, 101, 1769507, 3145729, 101, 1769508, 3145729, 101, 1769509, 3145729, 101, 1769510, 3145729, 101, 1769511, 3145729, 101, 1769512, 3145729, 101, 1769513, 3145729, 101, 1769514, 3145729, 101, 1769515, 3145729, 101, 1769516, 3145729, 101, 1769517, 3145729, 101, 1769518, 3145729, 101, 1769519, 3145729, 101, 1769520, 3145729, 101, 1769521, 3145729, 101, 1769522, 3145729, 101, 1769523, 3735553, 59, 2424834, 3604481, 56, 2293784, 3604481, 56, 2293789, 3604481, 56, 2293790, 3604481, 56, 2293791, 3604481, 56, 2293792, 3604481, 56, 2293793, 3604481, 56, 2293798, 3604481, 56, 2293799, 3604481, 56, 2293800, 3604481, 56, 2293801, 3604481, 56, 2293802, 3604481, 56, 2293807, 3604481, 56, 2293808, 3604481, 56, 2293809, 3604481, 56, 2293810, 3604481, 56, 2293811, 3670017, 56, 2293794, 3801089, 55, 2293803, 3801089, 55, 2293780, 3145729, 101, 2293781, 3145729, 101, 2818065, 3145729, 101, 2818067, 3145729, 101, 2818068, 3145729, 101, 2818069, 3145729, 101, 2818070, 3145729, 101, 2818071, 3145729, 101, 2818072, 3145729, 101, 2818080, 3145729, 101, 2818079, 3145729, 101, 2818078, 3145729, 101, 2818077, 3145729, 101, 2818076, 3145729, 101, 2818088, 3145729, 101, 2818089, 3145729, 101, 2818090, 3145729, 101, 2818094, 3145729, 101, 2818095, 3145729, 101, 2818096, 3145729, 101, 2818097, 3145729, 101, 2818098, 3145729, 101, 2818099, 3735553, 59, 2621474, 3735553, 56, 2687010, 3735553, 56, 2752546, 3735553, 56, 2555938, 3735553, 56, 2490402, 3735553, 56, 2818087, 3145729, 101, 2818086, 3145729, 101, 2818085, 3145729, 101, 2818083, 3145729, 101, 2818082, 3735553, 59, 2818081, 3145729, 101, 2818084, 3145729, 101, 2818091, 3735553, 59, 2818092, 3145729, 101, 2818093, 3145729, 101, 2818075, 3145729, 101, 2818073, 3735553, 59, 2818063, 3145729, 101, 2818062, 3145729, 101, 2818061, 3145729, 101, 2818060, 3145729, 101, 2818059, 3145729, 101, 2818058, 3145729, 101, 2818057, 3145729, 101, 2818056, 3145729, 101, 2818055, 3145729, 101, 2818054, 3145729, 101, 2818053, 3145729, 101, 2818052, 3145729, 101, 2818051, 3145729, 101, 2818050, 3145729, 101, 2818049, 3145729, 101, 2818074, 3670017, 59, 1507354, 3735553, 56, 1572890, 3735553, 56, 1638426, 3735553, 56, 1703962, 3735553, 56, 1441818, 3801089, 57, 1376282, 3801089, 56, 1310746, 3801089, 55, 1114139, 3145729, 101, 1114140, 3145729, 101, 1114141, 3145729, 101, 1114142, 3145729, 101, 1114143, 3145729, 101, 1114144, 3145729, 101, 1114145, 3145729, 101, 1114146, 3145729, 101, 1114147, 3145729, 101, 1114148, 3145729, 101, 1114149, 3145729, 101, 1114150, 3145729, 101, 1114151, 3145729, 101, 1114152, 3145729, 101, 1114153, 3145729, 101, 1114154, 3145729, 101, 1114155, 3145729, 101, 1114156, 3145729, 101, 1114157, 3145729, 101, 1114158, 3145729, 101, 1114159, 3145729, 101, 1114160, 3014657, 101, 2818064, 3735553, 59, 2818066, 3670017, 59, 2818048, 3538945, 59, 1769472, 3538945, 59, -458741, 3604481, 59, -458740, 3604481, 59, -458739, 3604481, 59, -458738, 3604481, 59, -458735, 3604481, 59, -458734, 3604481, 59, -458733, 3604481, 59, -458732, 3604481, 59, -458731, 3604481, 59, -458730, 3604481, 59, -458729, 3604481, 59, -458728, 3604481, 59, -458727, 3604481, 59, -458743, 3604481, 59, -458744, 3604481, 59, -458745, 3604481, 59, -458746, 3604481, 59, -458747, 3604481, 59, -458748, 3604481, 59, -458749, 3604481, 59, -458750, 3604481, 59, -458751, 3604481, 59, -458752, 3538945, 59, -458736, 3538945, 59, -458726, 3735553, 59, -458742, 3735553, 59)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(1779, 1574)
+position = Vector2(1747, 1176)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -58123,6 +58112,15 @@ shape = SubResource("RectangleShape2D_f2oco")
 position = Vector2(2616, 2088)
 shape = SubResource("RectangleShape2D_aueg4")
 
+[node name="AnimatedKey" type="AnimatedSprite2D" parent="."]
+position = Vector2(5946.91, 3927.5)
+scale = Vector2(44.8272, 52.5625)
+sprite_frames = SubResource("SpriteFrames_q1k7j")
+animation = &"Key"
+frame = 11
+frame_progress = 1.0
+script = ExtResource("37_lo3jl")
+
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromRight_body_entered"]
@@ -58218,3 +58216,4 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 2/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door 2" method="_on_PlayerDetectionAnimation_body_exited"]
 [connection signal="body_entered" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_exited"]
+[connection signal="frame_changed" from="AnimatedKey" to="Animated door vertical nodes/Animated door vertical right 6" method="_on_animated_key_frame_changed"]

@@ -1,4 +1,6 @@
 # This script give functionality to the opening/closing vertical door.
+# There is additional functionality where the a door rattle and key floating animation will play
+# and the door will not open unless the play has the key collectible item when trying to open the door.
 # This is an interactable animation. The door opens when the player presses the spacebar
 # when close enough, and the player can walk through. When the door is approached by the
 # player from the left, the door opens to the right, and when approached from the right the
@@ -6,15 +8,6 @@
 # when the player has walked far enough away.
 
 extends CharacterBody2D
-
-# This is a placeholder (testing) variable for indicating if a player has the key item needed to open the door
-var has_key = false
-# Logical flag for if the door has been opened with the key yet (true) or not (false)
-var opened_key = false
-@onready var animKey = $AnimatedKey
-@onready var animKeyFrames = animKey.get_sprite_frames()
-@onready var total_num_key_frames = animKeyFrames.get_frame_count("Key")
-@onready var animRattle = $AnimatedDoorRattle
 
 # Get the node of the collision shape for the closed door
 @onready var collDoor = $CollDoor
@@ -40,17 +33,27 @@ var stack_approach_side : Array = []
 var len : int   # Used to track length of the stack
 var curr_side : int   # Used to store top of stack (current side player is on)
 
+# This is a placeholder (testing) variable for indicating if a player has the key item needed to open the door
+var has_key = false
+# Logical flag for if the door has been opened with the key yet (true) or not (false)
+var opened_key = false
+@onready var animKey = $AnimatedKey
+@onready var animKeyFrames = animKey.get_sprite_frames()
+@onready var total_num_key_frames = animKeyFrames.get_frame_count("Key")
+@onready var animRattle = $AnimatedDoorRattle
+
 
 # As soon as scene loads, disable the collision shapes for when door is open 
 func _ready():
-	print("total_num_key_frames: ", total_num_key_frames)
-	animKey.hide()
+	#animKey.hide()
 	collTopLeft.set_deferred("disabled", true)
 	collTopRight.set_deferred("disabled", true)
 	
+	# Start all animations at initial frame
 	animKey.set_frame(0)
 	animRight.set_frame(0)
 	animLeft.set_frame(0)
+	animRattle.set_frame(0)
  
 
 # When requirements are met, open the door to the correct side
@@ -87,22 +90,25 @@ func _process(delta):
 				play_close = true
 				right_open = true
 		
-		elif !animKey.is_playing():
+		# Play door rattle and key floating animation when player tries to open door without having the key
+		elif !animKey.is_playing() && opened_key == false:
 			animKey.show()
 			animKey.z_index = 1
 			animKey.play("Key")
-			
 			animRattle.play("DoorRattle")
-
 
 
 func _on_animated_key_frame_changed():
 	print("current actual frame: ", animKey.get_frame())
 	print("current modulation: ", 1.0 - (animKey.get_frame() / float(total_num_key_frames - 1)))
+	# As animation plays, increase transparency of current frame to create a fading away visual affect
 	animKey.modulate.a = 1.0 - (animKey.get_frame() / float(total_num_key_frames - 1))
+	
+	# When on the last frame, reset the animation to hidden and fully non-transparent
 	if animKey.get_frame() == total_num_key_frames-1:
 		animKey.hide()
 		animKey.modulate.a = 1
+		#has_key = true
 
 
 # Update door state when player enters the left detection shape
