@@ -13,37 +13,38 @@ var moving = false
 var state:bool
 
 
-
-
 func _ready():
 	heart.play("heartBeat",heartbeat)
 
 func getState():
-	if heart.get_frame()==1:
+	var isFrame=heart.get_frame()==1
+	while isFrame:
+		if isSpacePressed():
+			return true
+	return false
+		
+func isSpacePressed()->bool:
+	var Space= Input.is_action_pressed("space")
+	if Space :
 		return true
 	else:
 		return false
+	
 		
 func _on_heart_frame_changed():
-	print(getState())
-	
+		print(getState())
+	#if getState() and isSpacePressed():
+		#print("State: ",getState(), " Space: ",isSpacePressed())
 	
 
-
-	
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")	
 	if input_direction:
 		moving = true
 	else: 
 		moving = false
-		
-	var Space= Input.is_action_pressed("space")
-	if Space :
-		space = true 
-	else:
-		space = false
 	velocity = input_direction * speed
+	
 
 func _physics_process(_delta):
 	get_input()
