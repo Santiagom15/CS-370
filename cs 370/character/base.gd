@@ -5,13 +5,13 @@ extends CharacterBody2D
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var heart = $Camera2D/Heart
 @onready var timer =$Camera2D/Heart/Timer
-var heartbeat = 0.5
+var heartbeat = 0.1
 var heartFrame = 1.0
 var space = false
 var moving = false
 var isFrame: bool
 
-
+var accuracy = 1.0
 
 func _ready():
 	heart.play("heartBeat")
@@ -35,8 +35,6 @@ func _physics_process(_delta):
 	_onTime()
 	move_and_slide()
 
-
-
 func _process(_delta):
 	if Input.is_action_pressed("ui_right"):
 		_animated_sprite.play("walkright_aisha")
@@ -49,33 +47,33 @@ func _process(_delta):
 	else:
 		_animated_sprite.pause()
 
-
-
-
 func _onTime():# check different scnarios 
 	
 	isFrame = heartFrame==heart.get_frame()
-	print(heart.get_playing_speed())
+	heart.play("heartBeat",heartbeat)
 	#print(heart.get_playing_speed())
-	if heart.get_playing_speed() > 3: # moves to previous save in the future 
-		heartbeat==0.5
+	print(accuracy)
+	#need to figureout how to make the heartbeat seperate and constant 
+	#updating accuracy based on player input
+	if moving and isFrame and space:
 		heart.play("heartBeat",heartbeat)
-		
-	if moving and isFrame and space:  #in this case you are doing everything right
-		heart.play("heartBeat",heartbeat)	
-	elif moving and !isFrame and space:# your moving and presing space on the wrong time
-		heartbeat = heartbeat + 0.1                    
-		heart.play("heartBeat",heartbeat)	
-	elif moving and isFrame and !space:
-		heartbeat = heartbeat + 0.1                    
-		heart.play("heartBeat",heartbeat)	
+		accuracy = 1.0
+	elif moving and not isFrame and space:
+		heart.play("heartBeat",heartbeat)
+		accuracy -= 0.1
+	elif moving and isFrame and not space:
+		heart.play("heartBeat",heartbeat)
+		accuracy -= 0.1
 	else:
-		if heartbeat >0.5:
-			heartbeat = heartbeat-1
 		heart.play("heartBeat",heartbeat)
+		if accuracy < 0.5:
+			accuracy += 0.1
+	calcAccuracy(accuracy)
 		
-		
-	
-		
-
-	
+func calcAccuracy (accuracy: float):
+	var minAccToDarken = 0.5
+	#should change from self.molduate to the scene but idk
+	if accuracy < minAccToDarken:
+		self.modulate = Color(0,0,0,1)
+	else:
+		self.modulate = Color(1,1,1,1)

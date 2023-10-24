@@ -57207,6 +57207,8 @@ shape = SubResource("RectangleShape2D_f2oco")
 position = Vector2(2616, 2088)
 shape = SubResource("RectangleShape2D_aueg4")
 
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
 [connection signal="body_entered" from="Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical right/PlayerDetectionFromRight" to="Animated door vertical right" method="_on_PlayerDetectionFromRight_body_entered"]
