@@ -62,18 +62,17 @@ func _onTime():# check different scnarios
 		heart.play("heartBeat",heartbeat)
 		
 	if moving and isFrame and space:  #in this case you are doing everything right
-		heart.play("heartBeat",heartbeat)
-	elif !moving:
-		if heartbeat >0.5:
-			heartbeat = heartbeat - 0.1
-		heart.play("heartBeat",heartbeat)
-		
+		heart.play("heartBeat",heartbeat)	
 	elif moving and !isFrame and space:# your moving and presing space on the wrong time
 		heartbeat = heartbeat + 0.1                    
 		heart.play("heartBeat",heartbeat)	
-
-		
+	elif moving and isFrame and !space:
+		heartbeat = heartbeat + 0.1                    
+		heart.play("heartBeat",heartbeat)	
 	else:
+		if heartbeat >0.5:
+			heartbeat = heartbeat-1
+		heart.play("heartBeat",heartbeat)
 		
 		
 	

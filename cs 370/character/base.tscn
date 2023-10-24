@@ -418,7 +418,6 @@ animations = [{
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_qqij5")
-speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, -3)
@@ -444,5 +443,3 @@ frame_progress = 0.0978615
 script = ExtResource("3_ttx7g")
 
 [node name="Timer" type="Timer" parent="Camera2D/Heart"]
-
-[connection signal="animation_looped" from="Camera2D/Heart" to="." method="_on_heart_animation_looped"]
