@@ -68873,7 +68873,7 @@ position = Vector2(1957, 1023)
 shape = SubResource("RectangleShape2D_yooji")
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(2294, 1559)
+position = Vector2(2268, 1561)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 

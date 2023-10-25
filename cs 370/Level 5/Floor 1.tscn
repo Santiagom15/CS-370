@@ -56166,7 +56166,6 @@ scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft"]
 position = Vector2(0.458313, 2.34784)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_1x1wi")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
@@ -56217,7 +56216,6 @@ scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 1/PlayerDetectionFromLeft"]
 position = Vector2(0.458313, 2.34784)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_1x1wi")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
@@ -56283,7 +56281,6 @@ scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromLeft"]
 position = Vector2(3.16672, 2.34772)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_j8pqe")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
@@ -56295,7 +56292,6 @@ scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight"]
 position = Vector2(-12.8333, 2.21735)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_jr0i1")
 
 [node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
@@ -56350,7 +56346,6 @@ scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromLeft"]
 position = Vector2(3.16672, 2.34772)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_j8pqe")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
@@ -56362,7 +56357,6 @@ scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromRight"]
 position = Vector2(-12.8333, 2.21735)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_jr0i1")
 
 [node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
