@@ -443,3 +443,11 @@ frame_progress = 0.0978615
 script = ExtResource("3_ttx7g")
 
 [node name="Timer" type="Timer" parent="Camera2D/Heart"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+custom_minimum_size = Vector2(1000, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.596078, 0.698039, 0.94902, 0.678431)

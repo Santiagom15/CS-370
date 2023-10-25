@@ -5,12 +5,12 @@ extends CharacterBody2D
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var heart = $Camera2D/Heart
 @onready var timer =$Camera2D/Heart/Timer
+@onready var background = $CanvasLayer/ColorRect
 var heartbeat = 0.1
 var heartFrame = 1.0
 var space = false
 var moving = false
 var isFrame: bool
-
 var accuracy = 1.0
 
 func _ready():
@@ -74,6 +74,7 @@ func calcAccuracy (accuracy: float):
 	var minAccToDarken = 0.5
 	#should change from self.molduate to the scene but idk
 	if accuracy < minAccToDarken:
-		self.modulate = Color(0,0,0,1)
+		var darkenColor = Color(0,0,0,1 - accuracy)
+		background.modulate = darkenColor
 	else:
-		self.modulate = Color(1,1,1,1)
+		background.modulate = Color(1,1,1,1)
