@@ -68886,8 +68886,7 @@ position = Vector2(1957, 1023)
 shape = SubResource("RectangleShape2D_yooji")
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(1747, 1176)
-metadata/_edit_group_ = true
+position = Vector2(2294, 1559)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 
@@ -69255,6 +69254,7 @@ debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Animated glass sliding door" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
 script = ExtResource("26_xyf23")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door"]
 position = Vector2(940, 1374.37)
@@ -69596,7 +69596,6 @@ shape = SubResource("RectangleShape2D_vuxav")
 debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
 
 [node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2"]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/PlayerDetectionLayering"]
 position = Vector2(940, 1473)

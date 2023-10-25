@@ -1,6 +1,6 @@
 # This script give functionality to the opening/closing vertical door.
 # There is additional functionality where the a door rattle and key floating animation will play
-# and the door will not open unless the play has the key collectible item when trying to open the door.
+# and the door will not open unless the player has the key collectible item when trying to open the door.
 # This is an interactable animation. The door opens when the player presses the spacebar
 # when close enough, and the player can walk through. When the door is approached by the
 # player from the left, the door opens to the right, and when approached from the right the

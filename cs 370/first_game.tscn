@@ -33,6 +33,13 @@ offset_right = 728.0
 offset_bottom = 278.0
 text = "Level 1: Floor 5"
 
+[node name="Level 5" type="Button" parent="."]
+offset_left = 776.0
+offset_top = 198.0
+offset_right = 995.0
+offset_bottom = 274.0
+text = "Level 5: Floor 1"
+
 [node name="Test" type="Button" parent="."]
 offset_left = 506.0
 offset_top = 319.0
@@ -51,5 +58,6 @@ text = "Demo (no background)"
 
 [connection signal="button_down" from="BacktoHome" to="BacktoHome" method="_on_button_down"]
 [connection signal="button_down" from="Level 1" to="BacktoHome" method="_on_level_1_button_down"]
+[connection signal="button_down" from="Level 5" to="BacktoHome" method="_on_level_5_button_down"]
 [connection signal="button_down" from="Test" to="BacktoHome" method="_on_test_button_down"]
 [connection signal="button_down" from="TestNoBg" to="BacktoHome" method="_on_test_no_bg_button_down"]
