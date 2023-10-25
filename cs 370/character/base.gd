@@ -45,7 +45,7 @@ func get_input():
 	
   
 func _physics_process(_delta):
-	get_input()      								  
+	get_input()     
 	move_and_slide()
 
 func _process(_delta):
