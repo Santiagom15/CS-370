@@ -447,7 +447,6 @@ frame_progress = 0.0978615
 
 [node name="Timer" type="Timer" parent="Camera2D/press"]
 process_callback = 0
-wait_time = 0.5
 autostart = true
 
 [connection signal="frame_changed" from="Camera2D/press/Heart" to="." method="_on_heart_frame_changed"]

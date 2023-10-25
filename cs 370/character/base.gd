@@ -4,24 +4,21 @@ extends CharacterBody2D
 @export var speed = 300
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var heart = $Camera2D/press/Heart
-@onready var timer =$Camera2D/Heart/Timer
+@onready var timer =$Camera2D/press/Timer
 @onready var press =$Camera2D/press
 var heartbeat = 0.5
 var heartFrame = 1.0
 var space = false
 var moving = false
 var state:bool
+var frame1 = 1
+var frame0 = 0
 
 
 func _ready():
-	heart.play("heartBeat",heartbeat)
+	heart.play("heartBeat",0)
+	heart.set_frame(0)
 
-func getState():
-	var isFrame=heart.get_frame()==1
-	while isFrame:
-		if isSpacePressed():
-			return true
-	return false
 		
 func isSpacePressed()->bool:
 	var Space= Input.is_action_pressed("space")
@@ -32,11 +29,14 @@ func isSpacePressed()->bool:
 	
 		
 func _on_heart_frame_changed():
-		print(getState())
+	print("Moving: ",moving," space: ",isSpacePressed()," stat: ",state)
 	#if getState() and isSpacePressed():
 		#print("State: ",getState(), " Space: ",isSpacePressed())
 	
-
+func test():
+	print("Moving: ",moving," space: ",isSpacePressed()," stat: ",state)
+	
+	
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")	
 	if input_direction:
@@ -47,7 +47,7 @@ func get_input():
 	
 
 func _physics_process(_delta):
-	get_input()
+	get_input()                                          
 	move_and_slide()
 
 func _process(_delta):
@@ -62,4 +62,10 @@ func _process(_delta):
 	else:
 		_animated_sprite.pause()
 
-
+func _on_timer_timeout():
+	if heart.get_frame() == 0:
+		heart.set_frame(1)
+		state = true
+	elif heart.get_frame() == 1:
+		heart.set_frame(0)
+		state = false
