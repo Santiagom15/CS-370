@@ -11,8 +11,6 @@ var heartFrame = 1.0
 var space = false
 var moving = false
 var state:bool
-var frame1 = 1
-var frame0 = 0
 
 
 func _ready():
@@ -45,9 +43,9 @@ func get_input():
 		moving = false
 	velocity = input_direction * speed
 	
-
+  
 func _physics_process(_delta):
-	get_input()                                          
+	get_input()      								  
 	move_and_slide()
 
 func _process(_delta):
@@ -64,8 +62,8 @@ func _process(_delta):
 
 func _on_timer_timeout():
 	if heart.get_frame() == 0:
-		heart.set_frame(1)
-		state = true
-	elif heart.get_frame() == 1:
-		heart.set_frame(0)
+		heart.set_frame(1)# 1 is the light 
 		state = false
+	elif heart.get_frame() == 1:
+		heart.set_frame(0)# is dark 
+		state = true
