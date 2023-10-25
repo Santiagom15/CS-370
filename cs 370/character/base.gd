@@ -12,7 +12,7 @@ var heartFrame = 1.0
 var space = false
 var moving = false
 var state:bool
-var time = 5.0
+var accuracy = 1.0
 
 
 func _ready():
@@ -66,18 +66,17 @@ func _process(_delta):
 func checkingConditions():
 	if moving:
 		if space:
-			if time < 5.0:
-				time += 1.0
+			accuracy = 2.0
 		else:
-			time -= 0.1
+			accuracy -= 0.05
 	else:
 		if state == false and space == false:
-			time += .05
+			accuracy += 0.15
 		else:
-			if time < 0.5:
-				time += 0.1
+			if accuracy < 0.5:
+				accuracy += 0.1
 	
-	calcAccuracy(time)
+	calcAccuracy(accuracy)
 
 
 func _on_timer_timeout():
