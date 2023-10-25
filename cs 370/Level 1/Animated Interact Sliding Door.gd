@@ -28,6 +28,7 @@ var in_bottom = false
 var curr_coll : CollisionShape2D
 
 var use_coll1 = true   # True when we want to use CollDoor1 child collision nodes, false when using CollDoor2 child collisions
+var switch_anims = false   # True then we just switched from CollDoor1 -> CollDoor2 collisions or vice verse, false otherwise
 var door_name : String 
 
 # The current and previous frame index of the playing or played animation
@@ -62,8 +63,14 @@ func _on_animated_slide_door_frame_changed():
 		# Note: There are $CollDoor1 and $CollDoor2 nodes. Both are a parent to a set of collision shape nodes which are identical besides their y-axis/height
 		#       placement within the scene. CollDoor1 animations are for when the door is approached from above/behind, and CollDoor2 when approached from below/in-front.
 		#       This allows the player to stand in-front or behind the door in realistic ways 
-		if use_coll1: door_name = "1"
-		else: door_name = "2"
+		
+		if switch_anims:
+			switch_anims = false
+			if use_coll1: door_name = "2"
+			else: door_name = "1"
+		else:
+			if use_coll1: door_name = "1"
+			else: door_name = "2"
 
 		# Disable collision on previous frame
 		curr_coll = get_node(str("CollDoor", door_name, "/Coll", prev_frame, "a"))
@@ -71,6 +78,9 @@ func _on_animated_slide_door_frame_changed():
 		curr_coll.set_deferred("disabled", true)
 		curr_coll = get_node(str("CollDoor", door_name, "/Coll", prev_frame, "b"))
 		curr_coll.set_deferred("disabled", true)
+		
+		if use_coll1: door_name = "1"
+		else: door_name = "2"
 
 		# Enable collision on current frame
 		curr_coll = get_node(str("CollDoor", door_name, "/Coll", curr_frame, "a"))
@@ -141,6 +151,7 @@ func _on_PlayerDetectionAnimCloseTop_body_exited(body):
 			anim.set_frame(curr_frame)
 			use_coll1 = true
 			play_close = false
+			switch_anims = true
 		in_top = false   # Since player has exited the top area, set to false
 
 
@@ -179,4 +190,5 @@ func _on_PlayerDetectAnimCloseBottom_body_exited(body):
 			anim.set_frame(curr_frame)
 			use_coll1 = false
 			play_close = false
+			switch_anims = true
 		in_bottom = false

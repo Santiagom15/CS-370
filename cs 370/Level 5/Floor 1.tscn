@@ -47799,10 +47799,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_23ve3"]
-size = Vector2(133, 13)
+size = Vector2(130.5, 13)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0lscf"]
-size = Vector2(126.5, 13)
+size = Vector2(124, 13)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dynue"]
 size = Vector2(102.75, 12.5)
@@ -47951,14 +47951,15 @@ sprite_frames = SubResource("SpriteFrames_m13a8")
 animation = &"SlideOpen"
 
 [node name="CollDoor1" type="CharacterBody2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+metadata/_edit_group_ = true
 
 [node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
-position = Vector2(872, 1439.5)
+position = Vector2(874.75, 1439)
 shape = SubResource("RectangleShape2D_23ve3")
 debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
 
 [node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
-position = Vector2(1005.5, 1439)
+position = Vector2(1003, 1439)
 shape = SubResource("RectangleShape2D_0lscf")
 debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
 
@@ -47993,7 +47994,8 @@ shape = SubResource("RectangleShape2D_5vi1p")
 debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
 
 [node name="CollDoor2" type="CharacterBody2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
-position = Vector2(0, -60)
+position = Vector2(2, -68)
+metadata/_edit_group_ = true
 
 [node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
 position = Vector2(874.5, 1439)
@@ -48036,6 +48038,7 @@ shape = SubResource("RectangleShape2D_v2hoy")
 debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
 
 [node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionLayering"]
 position = Vector2(940.5, 1472)
@@ -48043,6 +48046,7 @@ shape = SubResource("RectangleShape2D_xcupg")
 debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
 
 [node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseTop"]
 position = Vector2(939.5, 1339)
@@ -48050,6 +48054,7 @@ shape = SubResource("RectangleShape2D_3ego0")
 debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
 
 [node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseBottom"]
 position = Vector2(939, 1499)
@@ -48057,6 +48062,7 @@ shape = SubResource("RectangleShape2D_datki")
 debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 
 [node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionAnimation"]
 position = Vector2(939, 1438)
