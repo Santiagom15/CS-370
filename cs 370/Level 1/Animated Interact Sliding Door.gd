@@ -14,20 +14,18 @@ func _ready():
 func _on_PlayerDectectionLayering_body_entered(body):
 	print("entered")
 	print("    player.z_index: ", player.z_index, ",   anim.z_index: ", anim.z_index)
-	if body.name == "Player":
+	if body.name == "Player" and player != null and anim != null:
 		player.z_index = anim.z_index + 1
 		print("    changed")
 		print("       player.z_index: ", player.z_index, ",   anim.z_index: ", anim.z_index)
 
-
 func _on_PlayerDectectionLayering_body_exited(body):
-	print("exitted")
+	print("exited")
 	print("    player.z_index: ", player.z_index, ",   anim.z_index: ", anim.z_index)
-	if body.name == "Player":
+	if body.name == "Player" and player != null and anim != null:
 		player.z_index = initialPlayerZIndex
 		print("    changed")
 		print("       player.z_index: ", player.z_index, ",   anim.z_index: ", anim.z_index)
-
 
 
 func _on_PlayerDetectionAnimation_body_entered(body):
