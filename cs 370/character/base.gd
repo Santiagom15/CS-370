@@ -12,7 +12,7 @@ var heartFrame = 1.0
 var space = false
 var moving = false
 var state:bool
-var accuracy = 1.0
+var time = 5.0
 
 
 func _ready():
@@ -66,17 +66,19 @@ func _process(_delta):
 func checkingConditions():
 	if moving:
 		if space:
-			accuracy = 1.0
+			if time < 5.0:
+				time += 1.0
 		else:
-			accuracy -= 0.05
+			time -= 0.1
 	else:
 		if state == false and space == false:
-			accuracy += 0.5
+			time += .05
 		else:
-			if accuracy < 0.5:
-				accuracy += 0.05
+			if time < 0.5:
+				time += 0.1
 	
-	calcAccuracy(accuracy)
+	calcAccuracy(time)
+
 
 func _on_timer_timeout():
 	if heart.get_frame() == 0:
@@ -87,7 +89,7 @@ func _on_timer_timeout():
 		state = true
 
 func calcAccuracy(accuracy:float):
-	var minAccToDarken = 0.5
+	var minAccToDarken = 0.0
 	#should change from self.molduate to the scene but idk
 	if accuracy < minAccToDarken:
 		var darkenColor = Color(0,0,0,1 - accuracy)
