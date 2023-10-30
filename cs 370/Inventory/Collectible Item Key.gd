@@ -11,7 +11,7 @@ var key_collected = false  # True when key has been collected, false otherwise
 @onready var animSparkle = $AnimatedSparkle
 
 # Retrieve the game collectible items inventory 
-@onready var inventory = get_node("res://Inventory/Inventory.gd")
+@onready var inventory = get_node("/root/Inventory")
 
 
 func _ready():
@@ -23,7 +23,7 @@ func _ready():
 	animSparkle.set_frame(0)
 
 
-func _process(delta):
+func _process(_delta):
 	
 	# Collect the key when player is in the key detection shape and presses the space bar
 	if player_detected == true && key_collected == false && Input.is_action_pressed("ui_accept"):

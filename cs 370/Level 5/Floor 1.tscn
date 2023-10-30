@@ -1,4 +1,4 @@
-[gd_scene load_steps=151 format=3 uid="uid://ct1o7yij42v38"]
+[gd_scene load_steps=131 format=3 uid="uid://ct1o7yij42v38"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_jxkdu"]
 [ext_resource type="Texture2D" uid="uid://ji4kgvlmmcdm" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/1_Generic_16x16.png" id="2_hl1kv"]
@@ -19,8 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="13_pubki"]
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="14_whdub"]
 [ext_resource type="Texture2D" uid="uid://de4qpekfy6jiv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_rattle_2_edittedAlisa.png" id="15_t2ngu"]
-[ext_resource type="Script" path="res://Level 1/Collectible Item Key.gd" id="20_csu0t"]
-[ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="21_q2fi5"]
+[ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="20_3bbwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ojpds"]
 texture = ExtResource("1_jxkdu")
@@ -55930,139 +55929,6 @@ texture = ExtResource("1_jxkdu")
 [sub_resource type="TileSet" id="TileSet_0eggs"]
 sources/0 = SubResource("TileSetAtlasSource_pbgo0")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_y0drv"]
-atlas = ExtResource("21_q2fi5")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2dpot"]
-atlas = ExtResource("21_q2fi5")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e4tn8"]
-atlas = ExtResource("21_q2fi5")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8vmen"]
-atlas = ExtResource("21_q2fi5")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ihjey"]
-atlas = ExtResource("21_q2fi5")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tkpe3"]
-atlas = ExtResource("21_q2fi5")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5e0qb"]
-atlas = ExtResource("21_q2fi5")
-region = Rect2(256, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rokle"]
-atlas = ExtResource("21_q2fi5")
-region = Rect2(288, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_07kmn"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_y0drv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2dpot")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e4tn8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8vmen")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ihjey")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tkpe3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5e0qb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rokle")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5e0qb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tkpe3")
-}],
-"loop": false,
-"name": &"Sparkle",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eywlw"]
-atlas = ExtResource("14_whdub")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s8dpx"]
-atlas = ExtResource("14_whdub")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kmlny"]
-atlas = ExtResource("14_whdub")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7rjyg"]
-atlas = ExtResource("14_whdub")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sy45g"]
-atlas = ExtResource("14_whdub")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ue45"]
-atlas = ExtResource("14_whdub")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b5qdp"]
-atlas = ExtResource("14_whdub")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mfstx"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eywlw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s8dpx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kmlny")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7rjyg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sy45g")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1ue45")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b5qdp")
-}],
-"loop": false,
-"name": &"Key",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nitg4"]
-size = Vector2(132.5, 96)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1x14n"]
-size = Vector2(128, 100)
-
 [node name="Floor 1" type="Node2D"]
 
 [node name="Floors" type="TileMap" parent="."]
@@ -56519,51 +56385,11 @@ tile_set = SubResource("TileSet_0eggs")
 format = 2
 layer_0/tile_data = PackedInt32Array(1376268, 1900544, 1, 1376264, 1966080, 1, 1376265, 2228224, 1, 1376266, 2228224, 1, 1376267, 2228224, 1, 2228281, 2162688, 2, 2293817, 2162688, 2, 2359353, 2162688, 2, 2687033, 2162688, 2, 2752569, 2162688, 2, 2818105, 2162688, 2, 589867, 2293760, 2, 655403, 2293760, 2, 720939, 2293760, 2, 1114126, 2162688, 2, 1179662, 2162688, 2, 1245198, 2162688, 2)
 
-[node name="Collectible item key" type="CharacterBody2D" parent="."]
-position = Vector2(-1621, 807)
-script = ExtResource("20_csu0t")
-metadata/_edit_group_ = true
-
-[node name="AnimatedSparkle" type="AnimatedSprite2D" parent="Collectible item key"]
-position = Vector2(1964, 1027)
-scale = Vector2(6.64844, 6.35156)
-sprite_frames = SubResource("SpriteFrames_07kmn")
-animation = &"Sparkle"
-
-[node name="AnimatedKey" type="AnimatedSprite2D" parent="Collectible item key"]
-position = Vector2(1966, 1014)
-scale = Vector2(3.06292, 3.297)
-sprite_frames = SubResource("SpriteFrames_mfstx")
-animation = &"Key"
-
-[node name="PlayerDetectionKey" type="Area2D" parent="Collectible item key"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Collectible item key/PlayerDetectionKey"]
-position = Vector2(1972.75, 1012)
-shape = SubResource("RectangleShape2D_nitg4")
-
-[node name="Collectible item key 1" type="CharacterBody2D" parent="."]
+[node name="Collectible item key" parent="." instance=ExtResource("20_3bbwf")]
 position = Vector2(-1709, -430)
-script = ExtResource("20_csu0t")
-metadata/_edit_group_ = true
 
-[node name="AnimatedSparkle" type="AnimatedSprite2D" parent="Collectible item key 1"]
-position = Vector2(1964, 1027)
-scale = Vector2(6.64844, 6.35156)
-sprite_frames = SubResource("SpriteFrames_07kmn")
-animation = &"Sparkle"
-
-[node name="AnimatedKey" type="AnimatedSprite2D" parent="Collectible item key 1"]
-position = Vector2(1966, 1014)
-scale = Vector2(3.06292, 3.297)
-sprite_frames = SubResource("SpriteFrames_mfstx")
-animation = &"Key"
-
-[node name="PlayerDetectionKey" type="Area2D" parent="Collectible item key 1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Collectible item key 1/PlayerDetectionKey"]
-position = Vector2(1956, 1021)
-shape = SubResource("RectangleShape2D_1x14n")
+[node name="Collectible item key 1" parent="." instance=ExtResource("20_3bbwf")]
+position = Vector2(-1618, 808)
 
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_exited"]
@@ -56593,11 +56419,3 @@ shape = SubResource("RectangleShape2D_1x14n")
 [connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
 [connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionAnimation" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionAnimation" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_exited"]
-[connection signal="animation_finished" from="Collectible item key/AnimatedSparkle" to="Collectible item key" method="_on_animated_sparkle_animation_finished"]
-[connection signal="animation_finished" from="Collectible item key/AnimatedKey" to="Collectible item key" method="_on_animated_key_animation_finished"]
-[connection signal="body_entered" from="Collectible item key/PlayerDetectionKey" to="Collectible item key" method="_on_player_detection_key_body_entered"]
-[connection signal="body_exited" from="Collectible item key/PlayerDetectionKey" to="Collectible item key" method="_on_player_detection_key_body_exited"]
-[connection signal="animation_finished" from="Collectible item key 1/AnimatedSparkle" to="Collectible item key 1" method="_on_animated_sparkle_animation_finished"]
-[connection signal="animation_finished" from="Collectible item key 1/AnimatedKey" to="Collectible item key 1" method="_on_animated_key_animation_finished"]
-[connection signal="body_entered" from="Collectible item key 1/PlayerDetectionKey" to="Collectible item key 1" method="_on_player_detection_key_body_entered"]
-[connection signal="body_exited" from="Collectible item key 1/PlayerDetectionKey" to="Collectible item key 1" method="_on_player_detection_key_body_exited"]

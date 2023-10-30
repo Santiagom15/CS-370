@@ -1,59 +1,125 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2i5yoxljl4ss"]
+[gd_scene load_steps=4 format=3 uid="uid://d2i5yoxljl4ss"]
 
-[sub_resource type="GDScript" id="GDScript_7dl7c"]
-script/source = "# Script for collectible items and powerups inventory for the entire game.
-# This script uses a GoDot singleton to hold, update, and maintain global data
-# that is accessible from any scene or script in the entire game.
+[ext_resource type="Texture2D" uid="uid://do51j1jtajk0e" path="res://assets/Inventory/black_square_6.jpeg" id="1_kyrdk"]
+[ext_resource type="Texture2D" uid="uid://bgqlivcvjegjy" path="res://assets/Inventory/blue-square-image-3.png" id="2_d7e0v"]
 
-# Inventory is implemented with a dictionary object and items are defined by string names.
-# Current inventory items:
-#      \"Key\"
-
-extends Node
-
-# Singleton instance
-var instance = null
-
-# Dictionary to store inventory items
-var inventory = {}
-
-# Function to get the singleton instance
-func _get_instance():
-	print(\"get_instance called, Instance: \", instance)
-	if instance == null:
-		instance = preload(\"res://Inventory/Inventory.gd\").new()
-		print(\"get_instance preload finished, Instance: \", instance)
-	return instance
-
-# Function to add an item to the inventory
-func add_item(item_id, count = 1):
-	if inventory.has(item_id):
-		inventory[item_id] += count
-	else:
-		inventory[item_id] = count
-
-# Function to remove an item from the inventory
-func remove_item(item_id, count = 1):
-	if inventory.has(item_id):
-		inventory[item_id] -= count
-		if inventory[item_id] <= 0:
-			inventory.erase(item_id)
-
-# Function to check if an item is in the inventory
-func has_item(item_id):
-	return inventory.has(item_id)
-
-# Function to get the count of an item in the inventory
-func get_item_count(item_id):
-	return inventory.get(item_id, 0)
-
-func get_inventory():
-	return inventory
-
-
-"
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_khwff"]
+texture = ExtResource("2_d7e0v")
 
 [node name="Inventory" type="Node2D"]
 
-[node name="Inventory backend" type="Node2D" parent="."]
-script = SubResource("GDScript_7dl7c")
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 657.0
+texture = ExtResource("1_kyrdk")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 425.0
+offset_top = 114.0
+offset_right = 833.0
+offset_bottom = 538.0
+tooltip_text = "
+"
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 40
+columns = 5
+
+[node name="Slot1" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot2" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot3" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot4" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot5" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot6" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot7" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot8" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot9" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot10" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot11" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot12" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot13" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot14" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot15" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot16" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot17" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot18" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot19" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+
+[node name="Slot20" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")

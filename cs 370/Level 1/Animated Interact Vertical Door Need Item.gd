@@ -34,7 +34,8 @@ var len : int   # Used to track length of the stack
 var curr_side : int   # Used to store top of stack (current side player is on)
 
 # Get the node for the inventory, which will have the key item data
-@onready var inventory = get_node("res://Inventory/Inventory.gd")
+@onready var inventory = get_node("/root/Inventory")
+
 # Logical flag for if the door has been opened with the key yet (true) or not (false)
 var opened_key = false
 @onready var animKey = $AnimatedKey
