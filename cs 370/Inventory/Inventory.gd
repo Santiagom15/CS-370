@@ -17,7 +17,7 @@ var inventory = {}
 # Function to get the singleton instance
 func _get_instance():
 	if instance == null:
-		instance = preload("res://Inventory.gd").new()
+		instance = preload("res://Inventory/Inventory.gd").new()
 	return instance
 
 # Function to add an item to the inventory

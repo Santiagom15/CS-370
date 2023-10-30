@@ -11,9 +11,11 @@ var key_collected = false  # True when key has been collected, false otherwise
 @onready var animSparkle = $AnimatedSparkle
 
 # Retrieve the game collectible items inventory 
-@onready var inventory = get_node("/root/Inventory")
+@onready var inventory = get_node("res://Inventory/Inventory.gd")
+
 
 func _ready():
+	print("In key script with get node: inventory: ", inventory)
 	animKey.show()  # Show (enable visibility of) the Key node
 	animKey.set_frame(0)  # Make the initial animation frame the first frame
 	
