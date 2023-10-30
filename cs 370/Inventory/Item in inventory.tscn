@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5ppeedcmaxjb"]
+
+[ext_resource type="Texture2D" uid="uid://bfxpbnmgvquhm" path="res://assets/Inventory/Key1.png" id="1_hqc8o"]
+[ext_resource type="Script" path="res://Inventory/Item in inventory.gd" id="1_nlos4"]
+
+[node name="Item" type="Node2D"]
+script = ExtResource("1_nlos4")
+
+[node name="ItemTexture" type="TextureRect" parent="."]
+offset_left = -2.0
+offset_top = 12.0
+offset_right = 67.0
+offset_bottom = 61.0
+texture = ExtResource("1_hqc8o")
