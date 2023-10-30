@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0is1bydgyr16"]
+
+[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="2_e4byw"]
+[ext_resource type="PackedScene" uid="uid://dt1ymtq6cxmda" path="res://Level 2/boss_abttle.tscn" id="3_8hgdl"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="boss abttle" parent="." instance=ExtResource("3_8hgdl")]
+z_as_relative = false
+position = Vector2(800, -83)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_e4byw")]
+position = Vector2(616, 336)
+
+[node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
