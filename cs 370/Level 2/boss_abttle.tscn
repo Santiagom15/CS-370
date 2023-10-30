@@ -1,11 +1,12 @@
-[gd_scene load_steps=26 format=3 uid="uid://dt1ymtq6cxmda"]
+[gd_scene load_steps=27 format=3 uid="uid://dt1ymtq6cxmda"]
 
 [ext_resource type="Texture2D" uid="uid://c4y4byl1rprxr" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png" id="1_7kc8y"]
-[ext_resource type="Script" path="res://character/base.gd" id="1_xqdha"]
+[ext_resource type="Script" path="res://Level 2/boss_abttle.gd" id="1_gms7e"]
 [ext_resource type="Texture2D" uid="uid://2xdc6p7sugbd" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png" id="2_3lp72"]
 [ext_resource type="Texture2D" uid="uid://c8wcmw6fg2qib" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Jump.png" id="3_gb48f"]
 [ext_resource type="Script" path="res://Level 2/FiniteStateMachine.gd" id="4_elpor"]
 [ext_resource type="Script" path="res://Level 2/Idle.gd" id="6_vile7"]
+[ext_resource type="Script" path="res://Level 2/Attack1.gd" id="7_bw07v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a2rbp"]
 atlas = ExtResource("1_7kc8y")
@@ -148,15 +149,21 @@ animations = [{
 radius = 31.0
 height = 128.0
 
-[node name="boss abttle" type="CharacterBody2D"]
-script = ExtResource("1_xqdha")
+[node name="boss battle2" type="CharacterBody2D"]
+script = ExtResource("1_gms7e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(23, -130)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_tsyjc")
 animation = &"idle"
-frame_progress = 0.540788
+frame_progress = 0.441566
+
+[node name="debug" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
 
 [node name="FiniteStateMachine" type="Node2D" parent="."]
 script = ExtResource("4_elpor")
@@ -165,6 +172,7 @@ script = ExtResource("4_elpor")
 script = ExtResource("6_vile7")
 
 [node name="Attack1" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("7_bw07v")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 

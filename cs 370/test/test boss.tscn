@@ -9,7 +9,8 @@
 z_as_relative = false
 position = Vector2(800, -83)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_e4byw")]
+[node name="player" parent="." instance=ExtResource("2_e4byw")]
 position = Vector2(616, 336)
 
-[node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D2" type="Camera2D" parent="player"]
+position = Vector2(0, 4)

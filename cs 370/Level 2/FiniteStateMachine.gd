@@ -6,7 +6,7 @@ var previous_state: State
 
 
 func _ready():
-	print(get_child(0) as State)
+	print(get_child(0).get_index())
 	current_state = get_child(0) as State 
 	previous_state = current_state
 	current_state.enter()
