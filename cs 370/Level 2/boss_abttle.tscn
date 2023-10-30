@@ -92,7 +92,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_cfxsn")
 }],
 "loop": true,
-"name": &"attack ",
+"name": &"attack",
 "speed": 5.0
 }, {
 "frames": [{
@@ -152,13 +152,6 @@ height = 128.0
 [node name="boss battle2" type="CharacterBody2D"]
 script = ExtResource("1_gms7e")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(23, -130)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_tsyjc")
-animation = &"idle"
-frame_progress = 0.441566
-
 [node name="debug" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
@@ -173,6 +166,12 @@ script = ExtResource("6_vile7")
 
 [node name="Attack1" type="Node2D" parent="FiniteStateMachine"]
 script = ExtResource("7_bw07v")
+
+[node name="Animations" type="AnimatedSprite2D" parent="FiniteStateMachine"]
+position = Vector2(23, -130)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_tsyjc")
+animation = &"attack"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
