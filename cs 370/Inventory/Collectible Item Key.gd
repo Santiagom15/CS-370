@@ -13,9 +13,11 @@ var key_collected = false  # True when key has been collected, false otherwise
 # Retrieve the game collectible items inventory 
 @onready var inventory = get_node("/root/Inventory")
 
+# Signal for when key has been collected
+signal keyCollected
+
 
 func _ready():
-	print("In key script with get node: inventory: ", inventory)
 	animKey.show()  # Show (enable visibility of) the Key node
 	animKey.set_frame(0)  # Make the initial animation frame the first frame
 	
@@ -37,6 +39,9 @@ func _process(_delta):
 		
 		# Add the key to the game inventory so its count can be used elsewhere
 		inventory.add_item("Key")
+		
+		# Emit signal for level script to retrieve to update collectible item data for scene
+		keyCollected.emit()
 
 
 # Hide the key animation/node when the key floating animation has finished 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d2i5yoxljl4ss"]
+[gd_scene load_steps=6 format=3 uid="uid://d2i5yoxljl4ss"]
 
 [ext_resource type="Texture2D" uid="uid://do51j1jtajk0e" path="res://assets/Inventory/black_square_6.jpeg" id="1_kyrdk"]
 [ext_resource type="Texture2D" uid="uid://bgqlivcvjegjy" path="res://assets/Inventory/blue-square-image-3.png" id="2_d7e0v"]
 [ext_resource type="Script" path="res://Inventory/InventorySlot.gd" id="3_xvo36"]
+[ext_resource type="Script" path="res://Inventory/Inventory buttons.gd" id="4_pb3f3"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_khwff"]
 texture = ExtResource("2_d7e0v")
@@ -10,15 +11,16 @@ texture = ExtResource("2_d7e0v")
 [node name="Inventory" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 5.0
 offset_right = 1152.0
-offset_bottom = 657.0
+offset_bottom = 662.0
 texture = ExtResource("1_kyrdk")
 
 [node name="GridContainer" type="GridContainer" parent="."]
-offset_left = 425.0
-offset_top = 114.0
-offset_right = 833.0
-offset_bottom = 538.0
+offset_left = 436.0
+offset_top = 119.0
+offset_right = 844.0
+offset_bottom = 543.0
 tooltip_text = "
 "
 theme_override_constants/h_separation = 14
@@ -144,3 +146,23 @@ custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
 script = ExtResource("3_xvo36")
+
+[node name="Bottons" type="Node2D" parent="."]
+script = ExtResource("4_pb3f3")
+
+[node name="Level" type="Button" parent="Bottons"]
+offset_left = 937.0
+offset_top = 35.0
+offset_right = 1081.0
+offset_bottom = 112.0
+text = "Return to level"
+
+[node name="Home" type="Button" parent="Bottons"]
+offset_left = 935.0
+offset_top = 137.0
+offset_right = 1081.0
+offset_bottom = 219.0
+text = "Home Page"
+
+[connection signal="button_down" from="Bottons/Level" to="Bottons" method="_on_level_button_down"]
+[connection signal="button_down" from="Bottons/Home" to="Bottons" method="_on_home_button_down"]
