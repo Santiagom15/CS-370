@@ -1,14 +1,64 @@
-[gd_scene load_steps=3 format=3 uid="uid://c5ppeedcmaxjb"]
+[gd_scene load_steps=10 format=3 uid="uid://c5ppeedcmaxjb"]
 
 [ext_resource type="Texture2D" uid="uid://bfxpbnmgvquhm" path="res://assets/Inventory/Key1.png" id="1_hqc8o"]
 [ext_resource type="Script" path="res://Inventory/Item in inventory.gd" id="1_nlos4"]
+[ext_resource type="Texture2D" uid="uid://dm24mk4k8453i" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1.png" id="3_tyxpg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fseot"]
+atlas = ExtResource("3_tyxpg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrks4"]
+atlas = ExtResource("3_tyxpg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irenr"]
+atlas = ExtResource("3_tyxpg")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48a88"]
+atlas = ExtResource("3_tyxpg")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwscv"]
+atlas = ExtResource("3_tyxpg")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ccr37"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fseot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrks4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_irenr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48a88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwscv")
+}],
+"loop": true,
+"name": &"Key",
+"speed": 5.0
+}]
 
 [node name="Item" type="Node2D"]
 script = ExtResource("1_nlos4")
 
 [node name="ItemTexture" type="TextureRect" parent="."]
-offset_left = 24.0
-offset_top = 32.0
-offset_right = 130.0
-offset_bottom = 115.0
+offset_left = 17.0
+offset_top = 35.0
+offset_right = 123.0
+offset_bottom = 118.0
 texture = ExtResource("1_hqc8o")
+
+[node name="ItemAnimation" type="AnimatedSprite2D" parent="."]
+position = Vector2(77, 72)
+scale = Vector2(4.69922, 6.43848)
+sprite_frames = SubResource("SpriteFrames_ccr37")
+animation = &"Key"
