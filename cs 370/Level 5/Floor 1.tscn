@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="9_c6a1d"]
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="10_0cc3k"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door.gd" id="10_8r4cu"]
-[ext_resource type="Script" path="res://Level 1/Button.gd" id="11_g01am"]
+[ext_resource type="Script" path="res://character/PlayerButtons.gd" id="11_g01am"]
 [ext_resource type="Texture2D" uid="uid://cd0nbgye3yh7u" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="11_r6vb1"]
 [ext_resource type="Texture2D" uid="uid://ba0onicitg6jt" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_left_1.png" id="12_6omkf"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="12_t14l1"]
@@ -56236,17 +56236,29 @@ shape = SubResource("RectangleShape2D_yn13o")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
 [node name="Player" parent="." instance=ExtResource("10_0cc3k")]
-position = Vector2(363, 195)
+position = Vector2(371, 157)
+metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 
-[node name="Button" type="Button" parent="Player"]
+[node name="Buttons" type="Node2D" parent="Player"]
+script = ExtResource("11_g01am")
+
+[node name="Home" type="Button" parent="Player/Buttons"]
 offset_left = 317.0
 offset_top = -291.0
 offset_right = 504.0
 offset_bottom = -211.0
-text = "Exit"
-script = ExtResource("11_g01am")
+text = "Home Page"
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventory" type="Button" parent="Player/Buttons"]
+offset_left = 316.0
+offset_top = -179.0
+offset_right = 501.0
+offset_bottom = -96.0
+text = "Inventory"
+metadata/_edit_use_anchors_ = true
 
 [node name="Animated door horizontal and sliding node" type="Node2D" parent="."]
 
@@ -56409,7 +56421,8 @@ position = Vector2(-1618, 808)
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right locked 1" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked 1" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked 1" method="_on_PlayerDetectionFromRight_body_exited"]
-[connection signal="button_down" from="Player/Button" to="Player/Button" method="_on_button_down"]
+[connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
+[connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
 [connection signal="frame_changed" from="Animated door horizontal and sliding node/Animated glass sliding door/AnimatedSlideDoor" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_animated_slide_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionLayering" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionLayering" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionLayering_body_exited"]

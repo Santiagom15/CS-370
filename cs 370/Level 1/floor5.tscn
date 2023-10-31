@@ -1,6 +1,7 @@
-[gd_scene load_steps=395 format=3 uid="uid://d0rp3r6rsqjj7"]
+[gd_scene load_steps=396 format=3 uid="uid://d0rp3r6rsqjj7"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
+[ext_resource type="Script" path="res://LevelData.gd" id="1_nmc80"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="3_eevib"]
 [ext_resource type="Texture2D" uid="uid://c4psf6kv0mxg5" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/11_Halloween_16x16.png" id="3_mrhk3"]
@@ -32,9 +33,9 @@
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="29_nb3ye"]
 [ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="30_ycgyi"]
 [ext_resource type="Texture2D" uid="uid://de4qpekfy6jiv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_rattle_2_edittedAlisa.png" id="31_6aeo5"]
+[ext_resource type="Script" path="res://character/PlayerButtons.gd" id="32_62thx"]
 [ext_resource type="Texture2D" uid="uid://df4ksnwncongf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
 [ext_resource type="Texture2D" uid="uid://blurtqdn6gseh" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
-[ext_resource type="Script" path="res://Level 1/Button.gd" id="43_072me"]
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acfsb"]
@@ -67918,7 +67919,8 @@ size = Vector2(149, 64)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aueg4"]
 size = Vector2(144, 49)
 
-[node name="demos" type="Node2D"]
+[node name="Floor 5" type="Node2D"]
+script = ExtResource("1_nmc80")
 
 [node name="Floor" type="TileMap" parent="."]
 scale = Vector2(6, 6)
@@ -68722,18 +68724,29 @@ layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 1
 position = Vector2(-2, 4)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(2314, 1556)
+position = Vector2(1809, 1187)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 
-[node name="Button" type="Button" parent="Player"]
+[node name="Buttons" type="Node2D" parent="Player"]
+script = ExtResource("32_62thx")
+
+[node name="Home" type="Button" parent="Player/Buttons"]
 offset_left = 317.0
 offset_top = -291.0
 offset_right = 504.0
 offset_bottom = -211.0
-text = "Exit"
-script = ExtResource("43_072me")
+text = "Home Page"
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventory" type="Button" parent="Player/Buttons"]
+offset_left = 316.0
+offset_top = -179.0
+offset_right = 501.0
+offset_bottom = -96.0
+text = "Inventory"
+metadata/_edit_use_anchors_ = true
 
 [node name="Animated door horizontal and sliding nodes" type="Node2D" parent="."]
 
@@ -69508,7 +69521,8 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromRight_body_exited"]
-[connection signal="button_down" from="Player/Button" to="Player/Button" method="_on_button_down"]
+[connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
+[connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
 [connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/AnimatedDoor" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_animated_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDetectionLayering_body_exited"]

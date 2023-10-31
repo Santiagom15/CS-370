@@ -6,6 +6,10 @@
 # Current inventory items:
 #      "Key"
 
+# Additionally, inventory singleton stores a string containing the path of the current level scene
+# or previous level if player is in a non-level scene (like home or inventory page).
+
+
 extends Node
 
 # Singleton instance
@@ -13,6 +17,17 @@ var instance = null
 
 # Dictionary to store inventory items
 var inventory = {}
+
+# Directory/path of the current level scene (used when returning to level from inventory)
+var currLevel = ""
+
+# Current/previous position of the player in a level scene
+var playerPosition: Vector2 = Vector2()
+# Check if a level has been left prematurely (like entering inventory) 
+var transport = false
+
+# Array of strings tracking specific items collected in current scene
+var levelItems = []
 
 # Function to get the singleton instance
 func _get_instance():
@@ -42,7 +57,44 @@ func has_item(item_id):
 func get_item_count(item_id):
 	return inventory.get(item_id, 0)
 
+# Function to return the dictionary of items and counts
 func get_inventory():
 	return inventory
 
+# Function to update the path of the current level (or previous level, if player is in inventory)
+func update_current_level(curr_path):
+	currLevel = curr_path
 
+# Function to return the path of the current level (or previous level, if player is in inventory)
+func get_current_level():
+	return currLevel
+
+# Function to set the player's position
+func update_player_position(position: Vector2):
+	playerPosition = position
+	update_transport(true)
+
+# Function to get the player's position
+func get_player_position() -> Vector2:
+	return playerPosition
+
+# Update transport
+func update_transport(inBool):
+	transport = inBool
+
+# Get transport
+func get_transport():
+	return transport
+
+# Add item to the list of current items in the level
+func update_level_items(item_id):
+	levelItems.append(item_id)
+
+# Check if an item is in the list of current items in the level
+func has_level_item(item_id):
+	if item_id in levelItems: return true
+	else: return false
+
+# Clear the level items list
+func clear_level_items():
+	levelItems = []

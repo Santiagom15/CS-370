@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cehedy2l2c2km" path="res://icon.svg" id="1_4dbb7"]
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="2_ywj48"]
 [ext_resource type="Script" path="res://Level 2/Exit level 2 to level 3.gd" id="3_pq1vm"]
-[ext_resource type="Script" path="res://Level 1/Button.gd" id="3_wgfgf"]
+[ext_resource type="Script" path="res://character/PlayerButtons.gd" id="3_wgfgf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rg4fm"]
 size = Vector2(224, 152)
@@ -16,17 +16,29 @@ scale = Vector2(4.0625, 3.6875)
 texture = ExtResource("1_4dbb7")
 
 [node name="Player" parent="." instance=ExtResource("2_ywj48")]
-position = Vector2(64, 312)
+position = Vector2(100, 327)
+metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 
-[node name="Button" type="Button" parent="Player"]
+[node name="Buttons" type="Node2D" parent="Player"]
+script = ExtResource("3_wgfgf")
+
+[node name="Home" type="Button" parent="Player/Buttons"]
 offset_left = 317.0
 offset_top = -291.0
 offset_right = 504.0
 offset_bottom = -211.0
-text = "Exit"
-script = ExtResource("3_wgfgf")
+text = "Home Page"
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventory" type="Button" parent="Player/Buttons"]
+offset_left = 316.0
+offset_top = -179.0
+offset_right = 501.0
+offset_bottom = -96.0
+text = "Inventory"
+metadata/_edit_use_anchors_ = true
 
 [node name="Exit level 2 to level 5" type="CharacterBody2D" parent="."]
 script = ExtResource("3_pq1vm")
@@ -40,5 +52,6 @@ shape = SubResource("RectangleShape2D_rg4fm")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Exit level 2 to level 5/PlayerDetection"]
 polygon = PackedVector2Array(528, 128, 552, 168, 592, 168, 608, 136, 656, 152, 656, 192, 688, 208, 720, 200, 752, 232, 736, 272, 736, 384, 712, 432, 640, 464, 512, 456, 440, 432, 400, 392, 408, 264, 376, 224, 416, 200, 432, 208, 480, 184, 480, 144, 528, 128)
 
-[connection signal="button_down" from="Player/Button" to="Player/Button" method="_on_button_down"]
+[connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
+[connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
 [connection signal="body_entered" from="Exit level 2 to level 5/PlayerDetection" to="Exit level 2 to level 5" method="_on_player_detection_body_entered"]

@@ -7,7 +7,6 @@ extends CharacterBody2D
 const Max_Health = 100
 
 
-
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = input_direction * speed
