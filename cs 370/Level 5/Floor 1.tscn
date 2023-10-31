@@ -1,6 +1,7 @@
-[gd_scene load_steps=137 format=3 uid="uid://ct1o7yij42v38"]
+[gd_scene load_steps=138 format=3 uid="uid://ct1o7yij42v38"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_jxkdu"]
+[ext_resource type="Script" path="res://LevelData.gd" id="1_vngvv"]
 [ext_resource type="Texture2D" uid="uid://cgxvwm7nsmtns" path="res://assets/Solaria Demo Update 01.png" id="2_r72m1"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="9_c6a1d"]
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="10_0cc3k"]
@@ -40557,7 +40558,6 @@ texture = SubResource("CompressedTexture2D_0apyg")
 9:49/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0s0vf"]
-load_path = "res://.godot/imported/22_Museum.png-6bc922d68d423eb771c67dbd0e3e94e5.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ixfsk"]
 texture = SubResource("CompressedTexture2D_0s0vf")
@@ -62158,6 +62158,7 @@ texture = ExtResource("1_jxkdu")
 sources/0 = SubResource("TileSetAtlasSource_pbgo0")
 
 [node name="Floor 1" type="Node2D"]
+script = ExtResource("1_vngvv")
 
 [node name="Floors" type="TileMap" parent="."]
 scale = Vector2(6, 6)

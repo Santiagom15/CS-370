@@ -2,11 +2,16 @@
 extends Node2D
 
 @onready var inventory = get_node("/root/Inventory")
-@onready var key_scene = $"Collectible item key"
-@onready var key = key_scene.get_child(0)
 @onready var player = $Player 
 
+@onready var key_scene = $"Collectible item key"
+@onready var key = key_scene.get_child(0)
 signal keyCollected
+signal keyDisabled
+
+@onready var door = $"Animated door vertical nodes/Animated door vertical right locked"
+signal doorUnlocked
+signal doorLockDisabled
 
 # If the player was prematurely moved from current scene, place them where they were previously
 func _ready():
@@ -16,10 +21,14 @@ func _ready():
 		
 	# Connect the signal emitted from key node to function in this script
 	key.keyCollected.connect(_on_key_collected)
-	
 	if inventory.has_level_item("Key"):
-		key_scene.set_deferred("visible", false)
-		#key.visible = false
+		print("LevelData keyDisbaled emitted")
+		keyDisabled.emit()
+	
+	door.doorUnlocked.connect(_on_door_unlocked)
+	if inventory.has_level_unlock("Door"):
+		print("LevelData doorLockDisabled emitted")
+		doorLockDisabled.emit()
 
 # Update the player's position in the game data
 func _process(delta):
@@ -29,5 +38,9 @@ func _process(delta):
 func _on_key_collected():
 	print("Key collected!")
 	inventory.update_level_items("Key")
-	
+
+# When door has already been opened and doorUnlocked signal emitted, update door to stay unlocked
+func _on_door_unlocked():
+	print("Door unlocked!")
+	inventory.update_level_unlocks("Door")
 

@@ -141,6 +141,10 @@ metadata/_edit_group_ = true
 [node name="Key" type="CharacterBody2D" parent="."]
 script = ExtResource("1_1345i")
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Key"]
+position = Vector2(1957, 1015)
+polygon = PackedVector2Array(35, -5, 35, 10, 27, 12, -17, 13, -26, 5, -26, -5, -16, -18, -10, -17, 2, -6)
+
 [node name="AnimatedKey" type="AnimatedSprite2D" parent="Key"]
 position = Vector2(1966, 1014)
 scale = Vector2(3.06292, 3.297)

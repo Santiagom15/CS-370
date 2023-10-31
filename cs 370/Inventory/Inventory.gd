@@ -29,6 +29,9 @@ var transport = false
 # Array of strings tracking specific items collected in current scene
 var levelItems = []
 
+# Array storing the item_id of unlocked interactible items in current scene
+var levelUnlocks = []
+
 # Function to get the singleton instance
 func _get_instance():
 	if instance == null:
@@ -98,3 +101,16 @@ func has_level_item(item_id):
 # Clear the level items list
 func clear_level_items():
 	levelItems = []
+
+# Add item to list of unlocked object/interactions in the level
+func update_level_unlocks(item_id):
+	levelUnlocks.append(item_id)
+	
+# Check if an object/interaction is in the current level list
+func has_level_unlock(item_id):
+	if item_id in levelUnlocks: return true
+	else: return false
+
+# Clear the level items list
+func clear_level_unlocks():
+	levelUnlocks = []

@@ -37,12 +37,15 @@ var curr_side : int   # Used to store top of stack (current side player is on)
 @onready var inventory = get_node("/root/Inventory")
 
 # Logical flag for if the door has been opened with the key yet (true) or not (false)
-var opened_key = false
+var unlocked = false
 @onready var animKey = $AnimatedKey
 @onready var animKeyFrames = animKey.get_sprite_frames()
 @onready var total_num_key_frames = animKeyFrames.get_frame_count("Key")
 @onready var animRattle = $AnimatedDoorRattle
 
+signal doorUnlocked
+@onready var levelRoot = get_parent().get_parent()
+signal doorLockDisabled
 
 # As soon as scene loads, disable the collision shapes for when door is open 
 func _ready():
@@ -55,6 +58,9 @@ func _ready():
 	animRight.set_frame(0)
 	animLeft.set_frame(0)
 	animRattle.set_frame(0)
+	
+	print("collectible item key leveRoot: ", levelRoot)
+	levelRoot.doorLockDisabled.connect(_on_door_lock_disabled)
  
 
 # When requirements are met, open the door to the correct side
@@ -65,12 +71,13 @@ func _process(delta):
 	if play_open == true && len == 2 && Input.is_action_pressed("ui_accept"):
 		
 		# Case when play has the key or has already used the key
-		if inventory.has_item("Key") == true || opened_key == true:
+		if inventory.has_item("Key") == true || unlocked == true:
 		
 			# If the player still has the key, remove it from inventory and use it here
-			if opened_key == false:
-				opened_key = true
+			if unlocked == false:
+				unlocked = true
 				inventory.remove_item("Key")
+				doorUnlocked.emit()
 			
 			curr_side = stack_approach_side[len - 1]  # Get current side of the door the player is on
 			
@@ -101,6 +108,10 @@ func _process(delta):
 			animKey.z_index = 1
 			animKey.play("Key")
 			animRattle.play("DoorRattle")
+
+
+func _on_door_lock_disabled():
+	unlocked = true
 
 
 func _on_animated_key_frame_changed():

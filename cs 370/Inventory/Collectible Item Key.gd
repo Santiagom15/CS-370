@@ -15,6 +15,9 @@ var key_collected = false  # True when key has been collected, false otherwise
 
 # Signal for when key has been collected
 signal keyCollected
+@onready var levelRoot = get_parent().get_parent()
+# Signal for when scene has been entered mid-level and key was previously collected 
+signal keyDisabled
 
 
 func _ready():
@@ -23,6 +26,9 @@ func _ready():
 	
 	animSparkle.hide()   # Hide (disable visibility of) the sparkle animation
 	animSparkle.set_frame(0)
+	
+	print("collectible item key leveRoot: ", levelRoot)
+	levelRoot.keyDisabled.connect(_on_key_disabled)
 
 
 func _process(_delta):
@@ -63,3 +69,9 @@ func _on_player_detection_key_body_entered(body):
 func _on_player_detection_key_body_exited(body):
 	if body.name == "Player":
 		player_detected = false
+
+# Disable the collection of the key since it was previously collected in this level
+func _on_key_disabled():
+	key_collected = true
+	animKey.hide()
+	animSparkle.hide()
