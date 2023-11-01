@@ -1,8 +1,32 @@
-[gd_scene load_steps=10 format=3 uid="uid://c5ppeedcmaxjb"]
+[gd_scene load_steps=16 format=3 uid="uid://c5ppeedcmaxjb"]
 
-[ext_resource type="Texture2D" uid="uid://bfxpbnmgvquhm" path="res://assets/Inventory/Key1.png" id="1_hqc8o"]
 [ext_resource type="Script" path="res://Inventory/Item in inventory.gd" id="1_nlos4"]
+[ext_resource type="Texture2D" uid="uid://bmayfqtxqqpmq" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_idle.png" id="3_gl6mr"]
 [ext_resource type="Texture2D" uid="uid://dm24mk4k8453i" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1.png" id="3_tyxpg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c87ci"]
+atlas = ExtResource("3_gl6mr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1tvg"]
+atlas = ExtResource("3_gl6mr")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bquxc"]
+atlas = ExtResource("3_gl6mr")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wcser"]
+atlas = ExtResource("3_gl6mr")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gv76v"]
+atlas = ExtResource("3_gl6mr")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8c3xm"]
+atlas = ExtResource("3_gl6mr")
+region = Rect2(80, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fseot"]
 atlas = ExtResource("3_tyxpg")
@@ -26,6 +50,29 @@ region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ccr37"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c87ci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w1tvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bquxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wcser")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gv76v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8c3xm")
+}],
+"loop": true,
+"name": &"Frog",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fseot")
@@ -55,10 +102,9 @@ offset_left = 17.0
 offset_top = 35.0
 offset_right = 123.0
 offset_bottom = 118.0
-texture = ExtResource("1_hqc8o")
 
 [node name="ItemAnimation" type="AnimatedSprite2D" parent="."]
 position = Vector2(77, 72)
 scale = Vector2(4.69922, 6.43848)
 sprite_frames = SubResource("SpriteFrames_ccr37")
-animation = &"Key"
+animation = &"Frog"

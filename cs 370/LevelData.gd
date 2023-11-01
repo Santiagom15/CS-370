@@ -9,6 +9,8 @@ extends Node2D
 signal keyCollected
 signal keyDisabled
 
+signal frogDisabled
+
 @onready var door = $"Animated door vertical nodes/Animated door vertical right locked"
 signal doorUnlocked
 signal doorLockDisabled

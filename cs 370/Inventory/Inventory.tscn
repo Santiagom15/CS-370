@@ -1,12 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://d2i5yoxljl4ss"]
+[gd_scene load_steps=8 format=3 uid="uid://d2i5yoxljl4ss"]
 
 [ext_resource type="Texture2D" uid="uid://do51j1jtajk0e" path="res://assets/Inventory/black_square_6.jpeg" id="1_kyrdk"]
-[ext_resource type="Texture2D" uid="uid://bgqlivcvjegjy" path="res://assets/Inventory/blue-square-image-3.png" id="2_d7e0v"]
+[ext_resource type="Script" path="res://Inventory/Slot Handling.gd" id="3_d56ge"]
 [ext_resource type="Script" path="res://Inventory/InventorySlot.gd" id="3_xvo36"]
 [ext_resource type="Script" path="res://Inventory/Inventory buttons.gd" id="4_pb3f3"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2gjyf"]
+load_path = "res://.godot/imported/blue-square-image-3.png-1cafda38d7d7c76604f2a8ebc99a11e0.ctex"
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_khwff"]
-texture = ExtResource("2_d7e0v")
+texture = SubResource("CompressedTexture2D_2gjyf")
 
 [sub_resource type="FontFile" id="FontFile_svskj"]
 cache/0/16/0/ascent = 0.0
@@ -223,61 +226,70 @@ offset_bottom = 662.0
 texture = ExtResource("1_kyrdk")
 
 [node name="GridContainer" type="GridContainer" parent="."]
-offset_left = 399.0
-offset_top = 101.0
-offset_right = 877.0
-offset_bottom = 525.0
+offset_left = 384.0
+offset_top = 100.0
+offset_right = 864.0
+offset_bottom = 562.0
 tooltip_text = "
 "
-theme_override_constants/h_separation = 10
-theme_override_constants/v_separation = 7
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 6
 columns = 3
 script = ExtResource("3_xvo36")
 
 [node name="Slot1" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(120, 120)
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Slot2" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(120, 120)
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Slot3" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Slot4" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Slot5" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Slot6" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Slot7" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Slot8" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Slot9" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_khwff")
+script = ExtResource("3_d56ge")
 
 [node name="Item description" type="Label" parent="."]
 offset_left = 43.0
@@ -308,6 +320,14 @@ offset_right = 1081.0
 offset_bottom = 219.0
 text = "Home Page"
 
-[connection signal="gui_input" from="GridContainer/Slot1" to="GridContainer" method="_on_slot_1_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot1" to="GridContainer/Slot1" method="_on_slot_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot2" to="GridContainer/Slot2" method="_on_slot_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot3" to="GridContainer/Slot3" method="_on_slot_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot4" to="GridContainer/Slot4" method="_on_slot_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot5" to="GridContainer/Slot5" method="_on_slot_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot6" to="GridContainer/Slot6" method="_on_slot_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot7" to="GridContainer/Slot7" method="_on_slot_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot8" to="GridContainer/Slot8" method="_on_slot_gui_input"]
+[connection signal="gui_input" from="GridContainer/Slot9" to="GridContainer/Slot9" method="_on_slot_gui_input"]
 [connection signal="button_down" from="Bottons/Level" to="Bottons" method="_on_level_button_down"]
 [connection signal="button_down" from="Bottons/Home" to="Bottons" method="_on_home_button_down"]
