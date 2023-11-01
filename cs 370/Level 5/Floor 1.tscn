@@ -1,4 +1,4 @@
-[gd_scene load_steps=139 format=3 uid="uid://ct1o7yij42v38"]
+[gd_scene load_steps=142 format=3 uid="uid://ct1o7yij42v38"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_jxkdu"]
 [ext_resource type="Script" path="res://LevelData.gd" id="1_vngvv"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="13_pubki"]
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="14_whdub"]
 [ext_resource type="Texture2D" uid="uid://de4qpekfy6jiv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_rattle_2_edittedAlisa.png" id="15_t2ngu"]
+[ext_resource type="Script" path="res://Level 5/Floor1 to Boss.gd" id="16_6emu4"]
 [ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="20_3bbwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ojpds"]
@@ -62171,6 +62172,12 @@ texture = ExtResource("1_jxkdu")
 [sub_resource type="TileSet" id="TileSet_0eggs"]
 sources/0 = SubResource("TileSetAtlasSource_pbgo0")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o2wj3"]
+size = Vector2(36.5, 143)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c7b7j"]
+size = Vector2(40.5, 129)
+
 [node name="Floor 1" type="Node2D"]
 script = ExtResource("1_vngvv")
 
@@ -62687,6 +62694,19 @@ position = Vector2(-1709, -430)
 [node name="Collectible item key 1" parent="." instance=ExtResource("20_3bbwf")]
 position = Vector2(-1618, 808)
 
+[node name="Floor1 to Boss" type="CharacterBody2D" parent="."]
+script = ExtResource("16_6emu4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1 to Boss"]
+position = Vector2(742.75, 890.5)
+shape = SubResource("RectangleShape2D_o2wj3")
+
+[node name="Player Detection" type="Area2D" parent="Floor1 to Boss"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1 to Boss/Player Detection"]
+position = Vector2(742, 885)
+shape = SubResource("RectangleShape2D_c7b7j")
+
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromRight_body_entered"]
@@ -62716,3 +62736,4 @@ position = Vector2(-1618, 808)
 [connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
 [connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionAnimation" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionAnimation" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_exited"]
+[connection signal="body_entered" from="Floor1 to Boss/Player Detection" to="Floor1 to Boss" method="_on_player_detection_body_entered"]
