@@ -62693,7 +62693,7 @@ layer_0/tile_data = PackedInt32Array(1376268, 1900544, 1, 1376264, 1966080, 1, 1
 position = Vector2(-1709, -430)
 
 [node name="Collectible item key 1" parent="." instance=ExtResource("20_3bbwf")]
-position = Vector2(-1618, 808)
+position = Vector2(-1492, -239)
 
 [node name="Collectible item frog" parent="." instance=ExtResource("16_te3xe")]
 position = Vector2(346, 490)
