@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
-[ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="3_eevib"]
+[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="3_eevib"]
 [ext_resource type="Texture2D" uid="uid://c4psf6kv0mxg5" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/11_Halloween_16x16.png" id="3_mrhk3"]
 [ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_butchershop_carcass.png" id="4_nvu84"]
 [ext_resource type="Texture2D" uid="uid://dpxguycn7exuo" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/3_Bathroom_16x16.png" id="4_s5jh1"]
