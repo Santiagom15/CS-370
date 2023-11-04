@@ -24,12 +24,10 @@ func _ready():
 	# Connect the signal emitted from key node to function in this script
 	key.keyCollected.connect(_on_key_collected)
 	if inventory.has_level_item("Key"):
-		print("LevelData keyDisbaled emitted")
 		keyDisabled.emit()
 	
 	door.doorUnlocked.connect(_on_door_unlocked)
 	if inventory.has_level_unlock("Door"):
-		print("LevelData doorLockDisabled emitted")
 		doorLockDisabled.emit()
 
 # Update the player's position in the game data
@@ -38,11 +36,9 @@ func _process(delta):
 
 # When key is collected and keyCollected signal is emitted, update key data for file
 func _on_key_collected():
-	print("Key collected!")
 	inventory.update_level_items("Key")
 
 # When door has already been opened and doorUnlocked signal emitted, update door to stay unlocked
 func _on_door_unlocked():
-	print("Door unlocked!")
 	inventory.update_level_unlocks("Door")
 

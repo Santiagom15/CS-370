@@ -27,7 +27,6 @@ func _ready():
 	animSparkle.hide()   # Hide (disable visibility of) the sparkle animation
 	animSparkle.set_frame(0)
 	
-	print("collectible item frog leveRoot: ", levelRoot)
 	levelRoot.frogDisabled.connect(_on_frog_disabled)
 
 

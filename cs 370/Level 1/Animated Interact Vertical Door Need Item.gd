@@ -59,7 +59,6 @@ func _ready():
 	animLeft.set_frame(0)
 	animRattle.set_frame(0)
 	
-	print("collectible item key leveRoot: ", levelRoot)
 	levelRoot.doorLockDisabled.connect(_on_door_lock_disabled)
  
 

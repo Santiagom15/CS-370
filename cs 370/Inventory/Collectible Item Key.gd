@@ -27,7 +27,6 @@ func _ready():
 	animSparkle.hide()   # Hide (disable visibility of) the sparkle animation
 	animSparkle.set_frame(0)
 	
-	print("collectible item key leveRoot: ", levelRoot)
 	levelRoot.keyDisabled.connect(_on_key_disabled)
 
 

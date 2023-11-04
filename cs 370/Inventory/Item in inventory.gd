@@ -16,16 +16,13 @@ func _ready():
 	grid.itemCurrent.connect(_on_item_current)
 	grid.itemAnimPlay.connect(_on_item_anim_play)
 
+
 func _on_item_current(item_id):
-	print("Item in inventory slot: ", item_id)
 	if item_id == "Key":
-		print("    key")
 		item.texture = load("res://assets/Inventory/Key_yellow.png")
 	elif item_id == "Frog":
-		print("    frog")
 		item.texture = load("res://assets/Inventory/Frog_yellow.png")
 	else:
-		print("    null")
 		item.texture = null
 
 

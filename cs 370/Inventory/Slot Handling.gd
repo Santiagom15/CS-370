@@ -9,9 +9,7 @@ var idx: int
 func _on_slot_gui_input(event):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.button_index == MOUSE_BUTTON_LEFT:
-			print("Slot clicked")
 			panelName = get_name()
 			panelName = panelName[-1]
 			idx = int(panelName)
-			print("   Current panel number: ", idx)
 			panelClicked.emit(idx)

@@ -8,7 +8,6 @@ var child_node: Button
 func _ready():
 	
 	var path = inventory.get_current_level()
-	print("path: ", path)
 	
 	# Display/render the buttons above other elements in the environment
 	for i in range(get_child_count()):
