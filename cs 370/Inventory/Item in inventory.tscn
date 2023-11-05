@@ -1,8 +1,41 @@
-[gd_scene load_steps=22 format=3 uid="uid://c5ppeedcmaxjb"]
+[gd_scene load_steps=31 format=3 uid="uid://c5ppeedcmaxjb"]
 
 [ext_resource type="Script" path="res://Inventory/Item in inventory.gd" id="1_nlos4"]
 [ext_resource type="Texture2D" uid="uid://cqe6mh8u74l1x" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_idle_AlisaEditted.png" id="2_2sa70"]
+[ext_resource type="Texture2D" uid="uid://dmb8u1sxh5x7c" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_wall_candle_eddittedAlisa_inventory.png" id="2_khxq8"]
 [ext_resource type="Texture2D" uid="uid://cmtwxcv7v86vy" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_inventory_edittedAlisa.png" id="3_xpjfe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rpkbg"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(0, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvi8w"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(16, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_soloh"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(32, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5odsa"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(48, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8urk"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(64, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6od3"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(80, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw0xu"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(96, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itt64"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(112, 0, 16, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1816l"]
 atlas = ExtResource("2_2sa70")
@@ -76,6 +109,35 @@ region = Rect2(256, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_rpkbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvi8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_soloh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5odsa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8urk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6od3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw0xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itt64")
+}],
+"loop": true,
+"name": &"Candle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_1816l")
 }, {
 "duration": 1.0,
@@ -143,5 +205,4 @@ script = ExtResource("1_nlos4")
 position = Vector2(76, 78)
 scale = Vector2(7.40308, 7.69543)
 sprite_frames = SubResource("SpriteFrames_ccr37")
-animation = &"Frog"
-frame_progress = 0.725648
+animation = &"Key"

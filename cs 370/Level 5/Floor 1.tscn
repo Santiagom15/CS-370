@@ -1,4 +1,4 @@
-[gd_scene load_steps=143 format=3 uid="uid://ct1o7yij42v38"]
+[gd_scene load_steps=144 format=3 uid="uid://ct1o7yij42v38"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_jxkdu"]
 [ext_resource type="Script" path="res://LevelData.gd" id="1_vngvv"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://de4qpekfy6jiv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_rattle_2_edittedAlisa.png" id="15_t2ngu"]
 [ext_resource type="Script" path="res://Level 5/Floor1 to Boss.gd" id="16_6emu4"]
 [ext_resource type="PackedScene" uid="uid://uxeft12nwgge" path="res://Inventory/collectible_item_frog.tscn" id="16_te3xe"]
+[ext_resource type="PackedScene" uid="uid://dnu6a2albhgs2" path="res://Inventory/collectible_item_candle.tscn" id="17_b0g3y"]
 [ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="20_3bbwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ojpds"]
@@ -62695,6 +62696,9 @@ position = Vector2(-1492, -239)
 
 [node name="Collectible item frog 0" parent="Collectible items" instance=ExtResource("16_te3xe")]
 position = Vector2(346, 490)
+
+[node name="Collectible item candle 0" parent="Collectible items" instance=ExtResource("17_b0g3y")]
+position = Vector2(-1695, -754)
 metadata/_edit_group_ = true
 
 [node name="Floor1 to Boss" type="CharacterBody2D" parent="."]

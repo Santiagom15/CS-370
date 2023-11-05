@@ -10,16 +10,10 @@ extends Node2D
 func _ready():
 	anim.hide()
 
-
 func _on_item_current(item_id):
-	if item_id == "Key":
-		anim.set_animation(item_id)
-		anim.set_frame(0)
-		anim.show()
-	elif item_id == "Frog":
-		anim.set_animation(item_id)
-		anim.set_frame(0)
-		anim.show()
+	anim.set_animation(item_id)
+	anim.set_frame(0)
+	anim.show()
 
 func _on_item_anim_play(item_id):
 	anim.show()
