@@ -41112,186 +41112,6 @@ size = Vector2(17.0833, 37.8261)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_40rx6"]
 size = Vector2(59, 7)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vvocg"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_02iyj"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v3bl6"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_66cbq"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qvlui"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hupux"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l5jra"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x1t3m"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(288, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xdtju"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(352, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4pcpk"]
-atlas = ExtResource("29_nb3ye")
-region = Rect2(384, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_oljdu"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vvocg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_02iyj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v3bl6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_66cbq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qvlui")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hupux")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l5jra")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x1t3m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xdtju")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4pcpk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vvocg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_02iyj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v3bl6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_66cbq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qvlui")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hupux")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l5jra")
-}],
-"loop": false,
-"name": &"Key",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_evrj0"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(0, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qa1dp"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(160, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5n5j0"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(192, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gr7fw"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(128, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_y3ccs"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(32, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_phwl6"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(64, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ppglu"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(256, 0, 32, 48)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_elu61"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_evrj0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qa1dp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5n5j0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gr7fw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_y3ccs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_phwl6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gr7fw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qa1dp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5n5j0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ppglu")
-}],
-"loop": false,
-"name": &"DoorRattle",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pitd8"]
-size = Vector2(43, 178)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6383n"]
-size = Vector2(25.4999, 37.9783)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4b54t"]
-size = Vector2(23.6667, 37.8261)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fcq5d"]
-size = Vector2(59, 7)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x08dl"]
-size = Vector2(59, 7)
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_743vx"]
 texture = ExtResource("1_mqcgy")
 5:0/0 = 0
@@ -63977,6 +63797,186 @@ texture = ExtResource("1_mqcgy")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_duku6")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvocg"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02iyj"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3bl6"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66cbq"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvlui"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hupux"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5jra"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1t3m"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdtju"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pcpk"]
+atlas = ExtResource("29_nb3ye")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oljdu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvocg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02iyj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3bl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66cbq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvlui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hupux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5jra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1t3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdtju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pcpk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvocg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02iyj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3bl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66cbq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvlui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hupux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5jra")
+}],
+"loop": false,
+"name": &"Key",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evrj0"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qa1dp"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5n5j0"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(192, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gr7fw"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3ccs"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phwl6"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppglu"]
+atlas = ExtResource("31_6aeo5")
+region = Rect2(256, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_elu61"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evrj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qa1dp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5n5j0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gr7fw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3ccs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phwl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gr7fw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qa1dp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5n5j0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppglu")
+}],
+"loop": false,
+"name": &"DoorRattle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pitd8"]
+size = Vector2(43, 178)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6383n"]
+size = Vector2(25.4999, 37.9783)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4b54t"]
+size = Vector2(23.6667, 37.8261)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fcq5d"]
+size = Vector2(59, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x08dl"]
+size = Vector2(59, 7)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qcvg8"]
 size = Vector2(154, 13)
 
@@ -67949,11 +67949,11 @@ layer_0/tile_data = PackedInt32Array(-262144, 3538945, 56, -196608, 3538945, 56,
 [node name="Idle animation nodes behind furniture" type="Node2D" parent="."]
 position = Vector2(276, -384)
 
-[node name="Animated blood drip" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
+[node name="Animated blood drip 0" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip 0"]
 position = Vector2(1096, 924.5)
 scale = Vector2(6.5, 8.875)
 sprite_frames = SubResource("SpriteFrames_cx70t")
@@ -67989,11 +67989,11 @@ scale = Vector2(4.82143, 6.75)
 sprite_frames = SubResource("SpriteFrames_by1kg")
 animation = &"Idle"
 
-[node name="Animated blood splatter" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
+[node name="Animated blood splatter 0" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 0"]
 position = Vector2(1002, 189.75)
 scale = Vector2(4.74999, 4.1875)
 sprite_frames = SubResource("SpriteFrames_4pkle")
@@ -68179,11 +68179,11 @@ position = Vector2(160, 488)
 sprite_frames = SubResource("SpriteFrames_5cgej")
 animation = &"Idle"
 
-[node name="Animated blue drawer" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
+[node name="Animated blue drawer 0" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
 scale = Vector2(4, 4)
 script = ExtResource("10_kkunq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture/Animated blue drawer"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture/Animated blue drawer 0"]
 position = Vector2(660, 236)
 sprite_frames = SubResource("SpriteFrames_s1tr5")
 animation = &"Idle"
@@ -68207,11 +68207,11 @@ scale = Vector2(1, 0.6875)
 sprite_frames = SubResource("SpriteFrames_4e55s")
 animation = &"Idle"
 
-[node name="Animated haunted mirror" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
+[node name="Animated haunted mirror 0" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
 scale = Vector2(4, 4)
 script = ExtResource("10_kkunq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture/Animated haunted mirror"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture/Animated haunted mirror 0"]
 position = Vector2(34, -66)
 sprite_frames = SubResource("SpriteFrames_ybwbg")
 animation = &"Idle"
@@ -68282,11 +68282,11 @@ scale = Vector2(2.0625, 2)
 sprite_frames = SubResource("SpriteFrames_lau2e")
 animation = &"Idle"
 
-[node name="Animated vertical fridge" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
+[node name="Animated vertical fridge 0" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
 scale = Vector2(4, 4)
 script = ExtResource("10_kkunq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture/Animated vertical fridge"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture/Animated vertical fridge 0"]
 position = Vector2(333, 291)
 scale = Vector2(0.6875, 1.125)
 sprite_frames = SubResource("SpriteFrames_osn8i")
@@ -68343,52 +68343,52 @@ animation = &"Idle"
 
 [node name="Animated door vertical nodes" type="Node2D" parent="."]
 
-[node name="Animated door vertical right" type="CharacterBody2D" parent="Animated door vertical nodes"]
+[node name="Animated door vertical right 0" type="CharacterBody2D" parent="Animated door vertical nodes"]
 position = Vector2(12, 3)
 script = ExtResource("23_2yr2n")
 metadata/_edit_group_ = true
 
-[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(530, 348)
 scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_mywvb")
 animation = &"OpenRight"
 
-[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(478, 348)
 scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_15kui")
 animation = &"OpenLeft"
 
-[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(504, 360)
 shape = SubResource("RectangleShape2D_tqrug")
 debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
 
-[node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft"]
 position = Vector2(0.458336, 2.34782)
 shape = SubResource("RectangleShape2D_pot04")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
 
-[node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromRight"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromRight"]
 position = Vector2(-11.625, 2.21739)
 shape = SubResource("RectangleShape2D_tnt0g")
 
-[node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(550, 292)
 shape = SubResource("RectangleShape2D_40rx6")
 debug_color = Color(0.670588, 0.505882, 0.164706, 0.419608)
 
-[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(457, 292)
 shape = SubResource("RectangleShape2D_40rx6")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
@@ -68643,71 +68643,6 @@ position = Vector2(457, 292)
 shape = SubResource("RectangleShape2D_40rx6")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
-[node name="Animated door vertical right locked" type="CharacterBody2D" parent="Animated door vertical nodes"]
-position = Vector2(2030, 1205)
-script = ExtResource("28_s0rtn")
-metadata/_edit_group_ = true
-
-[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(530, 348)
-scale = Vector2(5.20313, 3.57292)
-sprite_frames = SubResource("SpriteFrames_mywvb")
-animation = &"OpenRight"
-
-[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(478, 348)
-scale = Vector2(5.20313, 3.57292)
-sprite_frames = SubResource("SpriteFrames_15kui")
-animation = &"OpenLeft"
-
-[node name="AnimatedKey" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(507, 333)
-rotation = -6.28319
-scale = Vector2(4.24076, 4.43559)
-sprite_frames = SubResource("SpriteFrames_oljdu")
-animation = &"Key"
-
-[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(486, 353)
-scale = Vector2(2.97461, 3.70312)
-sprite_frames = SubResource("SpriteFrames_elu61")
-animation = &"DoorRattle"
-frame = 8
-frame_progress = 1.0
-
-[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(503.5, 360)
-shape = SubResource("RectangleShape2D_pitd8")
-debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
-
-[node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(536, 352)
-scale = Vector2(6, 3.83333)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromLeft"]
-position = Vector2(2.58337, 2.34772)
-shape = SubResource("RectangleShape2D_6383n")
-one_way_collision_margin = 0.0
-debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
-
-[node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(536, 352)
-scale = Vector2(6, 3.83333)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight"]
-position = Vector2(-12.8333, 2.21735)
-shape = SubResource("RectangleShape2D_4b54t")
-
-[node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(544.5, 292)
-shape = SubResource("RectangleShape2D_fcq5d")
-debug_color = Color(0.670588, 0.505882, 0.164706, 0.419608)
-
-[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-position = Vector2(457, 292)
-shape = SubResource("RectangleShape2D_x08dl")
-debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
-
 [node name="Outter floor 2" type="TileMap" parent="."]
 scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_p8yt6")
@@ -68720,8 +68655,77 @@ tile_set = SubResource("TileSet_y4lxy")
 format = 2
 layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 131090, 3604481, 56, 131091, 3604481, 56, 131092, 3604481, 56, 131093, 3604481, 56, 131094, 3604481, 56, 131095, 3604481, 56, 131096, 3604481, 56, 131097, 3604481, 56, 131098, 3801089, 55, 655360, 3473409, 55, 655361, 3604481, 56, 655363, 3604481, 56, 655364, 3604481, 56, 655365, 3604481, 56, 655366, 3604481, 56, 655367, 3604481, 56, 655368, 3604481, 56, 655369, 3604481, 56, 655370, 3801089, 55, 720912, 3473409, 55, 720913, 3604481, 56, 720914, 3604481, 56, 720915, 3604481, 56, 720916, 3604481, 56, 720917, 3604481, 56, 720918, 3604481, 56, 720919, 3604481, 56, 720920, 3604481, 56, 720921, 3604481, 56, 720922, 3801089, 55, 1769473, 3604481, 56, 1769474, 3604481, 56, 1769475, 3604481, 56, 1769476, 3604481, 56, 1769477, 3604481, 56, 1769478, 3604481, 56, 1769479, 3604481, 56, 1769480, 3604481, 56, 1769495, 3604481, 56, 1769484, 3604481, 56, 1769485, 3604481, 56, 1769486, 3604481, 56, 1769487, 3604481, 56, 1769481, 3604481, 56, 1769482, 3604481, 56, 1769483, 3604481, 56, 655362, 3604481, 56, 2424832, 3473409, 55, 2424833, 3604481, 56, 2424835, 3604481, 56, 2424836, 3604481, 56, 2424837, 3604481, 56, 2424843, 3145729, 101, 2424844, 3604481, 56, 2424845, 3145729, 101, 2424846, 3145729, 101, 2424847, 3604481, 56, 2424848, 3801089, 55, 1769496, 3145729, 101, 1769497, 3145729, 101, 1769498, 3735553, 59, 1769499, 3145729, 101, 1769505, 3145729, 101, 1769506, 3145729, 101, 1769507, 3145729, 101, 1769508, 3145729, 101, 1769509, 3145729, 101, 1769510, 3145729, 101, 1769511, 3145729, 101, 1769512, 3145729, 101, 1769513, 3145729, 101, 1769514, 3145729, 101, 1769515, 3145729, 101, 1769516, 3145729, 101, 1769517, 3145729, 101, 1769518, 3145729, 101, 1769519, 3145729, 101, 1769520, 3145729, 101, 1769521, 3145729, 101, 1769522, 3145729, 101, 1769523, 3735553, 59, 2424834, 3604481, 56, 2293784, 3604481, 56, 2293789, 3604481, 56, 2293790, 3604481, 56, 2293791, 3604481, 56, 2293792, 3604481, 56, 2293793, 3604481, 56, 2293798, 3604481, 56, 2293799, 3604481, 56, 2293800, 3604481, 56, 2293801, 3604481, 56, 2293802, 3604481, 56, 2293807, 3604481, 56, 2293808, 3604481, 56, 2293809, 3604481, 56, 2293810, 3604481, 56, 2293811, 3670017, 56, 2293794, 3801089, 55, 2293803, 3801089, 55, 2293780, 3145729, 101, 2293781, 3145729, 101, 2818065, 3145729, 101, 2818067, 3145729, 101, 2818068, 3145729, 101, 2818069, 3145729, 101, 2818070, 3145729, 101, 2818071, 3145729, 101, 2818072, 3145729, 101, 2818080, 3145729, 101, 2818079, 3145729, 101, 2818078, 3145729, 101, 2818077, 3145729, 101, 2818076, 3145729, 101, 2818088, 3145729, 101, 2818089, 3145729, 101, 2818090, 3145729, 101, 2818094, 3145729, 101, 2818095, 3145729, 101, 2818096, 3145729, 101, 2818097, 3145729, 101, 2818098, 3145729, 101, 2818099, 3735553, 59, 2621474, 3735553, 56, 2687010, 3735553, 56, 2752546, 3735553, 56, 2555938, 3735553, 56, 2490402, 3735553, 56, 2818087, 3145729, 101, 2818086, 3145729, 101, 2818085, 3145729, 101, 2818083, 3145729, 101, 2818082, 3735553, 59, 2818081, 3145729, 101, 2818084, 3145729, 101, 2818091, 3735553, 59, 2818092, 3145729, 101, 2818093, 3145729, 101, 2818075, 3145729, 101, 2818073, 3735553, 59, 2818063, 3145729, 101, 2818062, 3145729, 101, 2818061, 3145729, 101, 2818060, 3145729, 101, 2818059, 3145729, 101, 2818058, 3145729, 101, 2818057, 3145729, 101, 2818056, 3145729, 101, 2818055, 3145729, 101, 2818054, 3145729, 101, 2818053, 3145729, 101, 2818052, 3145729, 101, 2818051, 3145729, 101, 2818050, 3145729, 101, 2818049, 3145729, 101, 2818074, 3670017, 59, 1507354, 3735553, 56, 1572890, 3735553, 56, 1638426, 3735553, 56, 1703962, 3735553, 56, 1441818, 3801089, 57, 1376282, 3801089, 56, 1310746, 3801089, 55, 1114139, 3145729, 101, 1114140, 3145729, 101, 1114141, 3145729, 101, 1114142, 3145729, 101, 1114143, 3145729, 101, 1114144, 3145729, 101, 1114145, 3145729, 101, 1114146, 3145729, 101, 1114147, 3145729, 101, 1114148, 3145729, 101, 1114149, 3145729, 101, 1114150, 3145729, 101, 1114151, 3145729, 101, 1114152, 3145729, 101, 1114153, 3145729, 101, 1114154, 3145729, 101, 1114155, 3145729, 101, 1114156, 3145729, 101, 1114157, 3145729, 101, 1114158, 3145729, 101, 1114159, 3145729, 101, 1114160, 3014657, 101, 2818064, 3735553, 59, 2818066, 3670017, 59, 2818048, 3538945, 59, 1769472, 3538945, 59, -458741, 3604481, 59, -458740, 3604481, 59, -458739, 3604481, 59, -458738, 3604481, 59, -458735, 3604481, 59, -458734, 3604481, 59, -458733, 3604481, 59, -458732, 3604481, 59, -458731, 3604481, 59, -458730, 3604481, 59, -458729, 3604481, 59, -458728, 3604481, 59, -458727, 3604481, 59, -458743, 3604481, 59, -458744, 3604481, 59, -458745, 3604481, 59, -458746, 3604481, 59, -458747, 3604481, 59, -458748, 3604481, 59, -458749, 3604481, 59, -458750, 3604481, 59, -458751, 3604481, 59, -458752, 3538945, 59, -458736, 3538945, 59, -458726, 3735553, 59, -458742, 3735553, 59)
 
-[node name="Collectible item key" parent="." instance=ExtResource("30_ycgyi")]
+[node name="Collectible items" type="Node2D" parent="."]
+
+[node name="Collectible item key 0" parent="Collectible items" instance=ExtResource("30_ycgyi")]
 position = Vector2(-2, 4)
+
+[node name="Locked interactable objects" type="Node2D" parent="."]
+
+[node name="Animated door vertical right locked 0" type="CharacterBody2D" parent="Locked interactable objects"]
+position = Vector2(2030, 1205)
+script = ExtResource("28_s0rtn")
+metadata/_edit_group_ = true
+
+[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(530, 348)
+scale = Vector2(5.20313, 3.57292)
+sprite_frames = SubResource("SpriteFrames_mywvb")
+animation = &"OpenRight"
+
+[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(478, 348)
+scale = Vector2(5.20313, 3.57292)
+sprite_frames = SubResource("SpriteFrames_15kui")
+animation = &"OpenLeft"
+
+[node name="AnimatedKey" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(507, 333)
+rotation = -6.28319
+scale = Vector2(4.24076, 4.43559)
+sprite_frames = SubResource("SpriteFrames_oljdu")
+animation = &"Key"
+
+[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(486, 353)
+scale = Vector2(2.97461, 3.70312)
+sprite_frames = SubResource("SpriteFrames_elu61")
+animation = &"DoorRattle"
+frame = 8
+frame_progress = 1.0
+
+[node name="CollDoor" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(503.5, 360)
+shape = SubResource("RectangleShape2D_pitd8")
+debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
+
+[node name="PlayerDetectionFromLeft" type="Area2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(536, 352)
+scale = Vector2(6, 3.83333)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromLeft"]
+position = Vector2(2.58337, 2.34772)
+shape = SubResource("RectangleShape2D_6383n")
+one_way_collision_margin = 0.0
+debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
+
+[node name="PlayerDetectionFromRight" type="Area2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(536, 352)
+scale = Vector2(6, 3.83333)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight"]
+position = Vector2(-12.8333, 2.21735)
+shape = SubResource("RectangleShape2D_4b54t")
+
+[node name="CollTopDoorRight" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(544.5, 292)
+shape = SubResource("RectangleShape2D_fcq5d")
+debug_color = Color(0.670588, 0.505882, 0.164706, 0.419608)
+
+[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+position = Vector2(457, 292)
+shape = SubResource("RectangleShape2D_x08dl")
+debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
 position = Vector2(1809, 1187)
@@ -68750,89 +68754,89 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Animated door horizontal and sliding nodes" type="Node2D" parent="."]
 
-[node name="Animated door horizontal wider" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
+[node name="Animated door horizontal wider 0" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
 position = Vector2(-530, 478)
 script = ExtResource("28_pc87l")
 metadata/_edit_group_ = true
 
-[node name="AnimatedDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider"]
+[node name="AnimatedDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0"]
 position = Vector2(939, 1378)
 scale = Vector2(7.10937, 4.12305)
 sprite_frames = SubResource("SpriteFrames_vawwv")
 animation = &"Open"
 
-[node name="CollDoor1" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider"]
+[node name="CollDoor1" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0"]
 position = Vector2(2, 8)
 metadata/_edit_group_ = true
 
-[node name="Coll0" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/CollDoor1"]
+[node name="Coll0" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/CollDoor1"]
 position = Vector2(938, 1400)
 shape = SubResource("RectangleShape2D_qcvg8")
 debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
 
-[node name="Coll2" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/CollDoor1"]
+[node name="Coll2" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/CollDoor1"]
 position = Vector2(913.25, 1400)
 shape = SubResource("RectangleShape2D_856oc")
 debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
 
-[node name="Coll4" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/CollDoor1"]
+[node name="Coll4" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/CollDoor1"]
 position = Vector2(892.125, 1400)
 shape = SubResource("RectangleShape2D_jb6pp")
 debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
 
-[node name="Coll6" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/CollDoor1"]
+[node name="Coll6" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/CollDoor1"]
 position = Vector2(871.5, 1400)
 shape = SubResource("RectangleShape2D_a18w3")
 debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
 
-[node name="CollDoor2" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider"]
+[node name="CollDoor2" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0"]
 position = Vector2(1, -18)
 metadata/_edit_group_ = true
 
-[node name="Coll0" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/CollDoor2"]
+[node name="Coll0" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/CollDoor2"]
 position = Vector2(938, 1400)
 shape = SubResource("RectangleShape2D_ecty4")
 debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
 
-[node name="Coll2" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/CollDoor2"]
+[node name="Coll2" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/CollDoor2"]
 position = Vector2(913.25, 1400)
 shape = SubResource("RectangleShape2D_1ixbn")
 debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
 
-[node name="Coll4" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/CollDoor2"]
+[node name="Coll4" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/CollDoor2"]
 position = Vector2(892.125, 1400)
 shape = SubResource("RectangleShape2D_ei1ol")
 debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
 
-[node name="Coll6" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/CollDoor2"]
+[node name="Coll6" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/CollDoor2"]
 position = Vector2(871.5, 1400)
 shape = SubResource("RectangleShape2D_bylhy")
 debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
 
-[node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider"]
+[node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectionLayering"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering"]
 position = Vector2(938, 1474)
 shape = SubResource("RectangleShape2D_6u4n5")
 debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
 
-[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider"]
+[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectAnimCloseTop"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectAnimCloseTop"]
 position = Vector2(938.562, 1337)
 shape = SubResource("RectangleShape2D_rj3tj")
 debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
 
-[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider"]
+[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectAnimCloseBottom"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectAnimCloseBottom"]
 position = Vector2(939, 1489)
 shape = SubResource("RectangleShape2D_awjkv")
 debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 
-[node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider"]
+[node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectionAnimation"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionAnimation"]
 position = Vector2(939, 1409)
 shape = SubResource("RectangleShape2D_yuc5o")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
@@ -69102,125 +69106,125 @@ position = Vector2(930, 1407.5)
 shape = SubResource("RectangleShape2D_7oy8l")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
-[node name="Animated glass sliding door" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
+[node name="Animated glass sliding door 0" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
 script = ExtResource("26_xyf23")
 metadata/_edit_group_ = true
 
-[node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door"]
+[node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 position = Vector2(940, 1374.37)
 scale = Vector2(7.8125, 4.66407)
 sprite_frames = SubResource("SpriteFrames_qjag6")
 animation = &"SlideOpen"
 
-[node name="CollDoor1" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door"]
+[node name="CollDoor1" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 
-[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor1"]
+[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(872, 1439.5)
 shape = SubResource("RectangleShape2D_7lqyg")
 debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
 
-[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor1"]
+[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(1005.5, 1439)
 shape = SubResource("RectangleShape2D_wjs67")
 debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
 
-[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor1"]
+[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(860, 1439.5)
 shape = SubResource("RectangleShape2D_wqd7e")
 debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
 
-[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor1"]
+[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(1020, 1439.5)
 shape = SubResource("RectangleShape2D_t6j0a")
 debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
 
-[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor1"]
+[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(842.5, 1439.5)
 shape = SubResource("RectangleShape2D_vxvug")
 debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
 
-[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor1"]
+[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(1037.5, 1439.5)
 shape = SubResource("RectangleShape2D_xbnk2")
 debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
 
-[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor1"]
+[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(821.375, 1439.5)
 shape = SubResource("RectangleShape2D_tm3aa")
 debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
 
-[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor1"]
+[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(1058.12, 1439.5)
 shape = SubResource("RectangleShape2D_vuxav")
 debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
 
-[node name="CollDoor2" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door"]
+[node name="CollDoor2" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 position = Vector2(0, -60)
 
-[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor2"]
+[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(874.5, 1439)
 shape = SubResource("RectangleShape2D_7lqyg")
 debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
 
-[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor2"]
+[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(1003.25, 1439)
 shape = SubResource("RectangleShape2D_wjs67")
 debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
 
-[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor2"]
+[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(859.625, 1439)
 shape = SubResource("RectangleShape2D_wqd7e")
 debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
 
-[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor2"]
+[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(1020, 1439)
 shape = SubResource("RectangleShape2D_t6j0a")
 debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
 
-[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor2"]
+[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(846.25, 1439)
 shape = SubResource("RectangleShape2D_vxvug")
 debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
 
-[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor2"]
+[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(1033.75, 1439)
 shape = SubResource("RectangleShape2D_xbnk2")
 debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
 
-[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor2"]
+[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(823, 1439)
 shape = SubResource("RectangleShape2D_tm3aa")
 debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
 
-[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/CollDoor2"]
+[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(1058, 1439)
 shape = SubResource("RectangleShape2D_vuxav")
 debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
 
-[node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door"]
+[node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectionLayering"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectionLayering"]
 position = Vector2(953, 1473)
 shape = SubResource("RectangleShape2D_54wqa")
 debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
 
-[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door"]
+[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectAnimCloseTop"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectAnimCloseTop"]
 position = Vector2(939.5, 1339)
 shape = SubResource("RectangleShape2D_8l43d")
 debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
 
-[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door"]
+[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectAnimCloseBottom"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectAnimCloseBottom"]
 position = Vector2(939, 1499)
 shape = SubResource("RectangleShape2D_mgqmf")
 debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 
-[node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door"]
+[node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectionAnimation"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectionAnimation"]
 position = Vector2(939, 1438)
 shape = SubResource("RectangleShape2D_oqypt")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
@@ -69492,10 +69496,10 @@ shape = SubResource("RectangleShape2D_f2oco")
 position = Vector2(2616, 2088)
 shape = SubResource("RectangleShape2D_aueg4")
 
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_exited"]
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromRight_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
+[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]
+[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromRight_body_entered"]
+[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromRight_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 1/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 1" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 1/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 1" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 1/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 1" method="_on_PlayerDetectionFromRight_body_entered"]
@@ -69516,22 +69520,22 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromRight_body_exited"]
-[connection signal="frame_changed" from="Animated door vertical nodes/Animated door vertical right locked/AnimatedKey" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_animated_key_frame_changed"]
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromLeft_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromLeft_body_exited"]
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromRight_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="frame_changed" from="Locked interactable objects/Animated door vertical right locked 0/AnimatedKey" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_animated_key_frame_changed"]
+[connection signal="body_entered" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromLeft" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromLeft_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromLeft" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromLeft_body_exited"]
+[connection signal="body_entered" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromRight_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromRight_body_exited"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
-[connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/AnimatedDoor" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_animated_door_frame_changed"]
-[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDectectionLayering_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDetectionLayering_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDetectAnimCloseTop_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDetectionAnimCloseTop_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDetectAnimCloseBottom_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDetectionAnimation_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated door horizontal wider" method="_on_PlayerDetectionAnimation_body_exited"]
+[connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/AnimatedDoor" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_animated_door_frame_changed"]
+[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDectectionLayering_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectionLayering_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectAnimCloseTop_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectionAnimCloseTop_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectAnimCloseBottom_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectionAnimation_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectionAnimation_body_exited"]
 [connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated door horizontal 1/AnimatedDoor" to="Animated door horizontal and sliding nodes/Animated door horizontal 1" method="_on_animated_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal 1/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal 1" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal 1/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal 1" method="_on_PlayerDetectionLayering_body_exited"]
@@ -69559,15 +69563,15 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal 3/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated door horizontal 3" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal 3/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated door horizontal 3" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal 3/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated door horizontal 3" method="_on_PlayerDetectionAnimation_body_exited"]
-[connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated glass sliding door/AnimatedSlideDoor" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_animated_slide_door_frame_changed"]
-[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_PlayerDectectionLayering_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_PlayerDetectionLayering_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_PlayerDetectAnimCloseTop_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_PlayerDetectionAnimCloseTop_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_PlayerDetectAnimCloseBottom_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_exited"]
+[connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/AnimatedSlideDoor" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_animated_slide_door_frame_changed"]
+[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDectectionLayering_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDetectionLayering_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseTop_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDetectionAnimCloseTop_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_exited"]
 [connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated glass sliding door 1/AnimatedSlideDoor" to="Animated door horizontal and sliding nodes/Animated glass sliding door 1" method="_on_animated_slide_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated glass sliding door 1" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated glass sliding door 1" method="_on_PlayerDetectionLayering_body_exited"]

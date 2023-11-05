@@ -1,31 +1,30 @@
+# There is anassumption that each animation in ItemAnimation node
+# will have names the exact (case-sensitive) to the names of items in inventory
 extends Node2D
 
-@onready var item = $ItemTexture
 @onready var anim = $ItemAnimation
 @onready var inventory = get_node("/root/Inventory")
 
 @onready var grid = get_parent().get_parent()
-signal itemCurrent(item_id)
-
-signal itemAnimPlay(item_id)
 
 func _ready():
-	
 	anim.hide()
-	
-	grid.itemCurrent.connect(_on_item_current)
-	grid.itemAnimPlay.connect(_on_item_anim_play)
 
 
 func _on_item_current(item_id):
 	if item_id == "Key":
-		item.texture = load("res://assets/Inventory/Key_yellow.png")
+		anim.set_animation(item_id)
+		anim.set_frame(0)
+		anim.show()
 	elif item_id == "Frog":
-		item.texture = load("res://assets/Inventory/Frog_yellow.png")
-	else:
-		item.texture = null
-
+		anim.set_animation(item_id)
+		anim.set_frame(0)
+		anim.show()
 
 func _on_item_anim_play(item_id):
 	anim.show()
 	anim.play(item_id)
+	
+func _on_item_anim_stop(item_id):
+	anim.pause()
+	anim.set_frame(0)

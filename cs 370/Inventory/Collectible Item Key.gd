@@ -9,15 +9,19 @@ var key_collected = false  # True when key has been collected, false otherwise
 
 @onready var animKey = $AnimatedKey
 @onready var animSparkle = $AnimatedSparkle
+@onready var collision = $CollisionPolygon2D
 
 # Retrieve the game collectible items inventory 
 @onready var inventory = get_node("/root/Inventory")
 
 # Signal for when key has been collected
-signal keyCollected
-@onready var levelRoot = get_parent().get_parent()
+signal keyCollected(keyIdx)
+@onready var levelRoot = get_parent().get_parent().get_parent()
 # Signal for when scene has been entered mid-level and key was previously collected 
-signal keyDisabled
+signal keyDisabled(keyIdx)
+
+@onready var keyName = str(get_parent().get_name())
+var keyIdx_curr : int
 
 
 func _ready():
@@ -41,12 +45,14 @@ func _process(_delta):
 		animSparkle.show()
 		animKey.play("Key")
 		animSparkle.play("Sparkle")
+		collision.set_deferred("disabled", true)
 		
 		# Add the key to the game inventory so its count can be used elsewhere
 		inventory.add_item("Key")
 		
 		# Emit signal for level script to retrieve to update collectible item data for scene
-		keyCollected.emit()
+		keyIdx_curr = int(keyName[-1])
+		keyCollected.emit(keyIdx_curr)
 
 
 # Hide the key animation/node when the key floating animation has finished 
@@ -64,13 +70,17 @@ func _on_player_detection_key_body_entered(body):
 	if body.name == "Player":
 		player_detected = true
 
+
 # Update detection flag to false when player has exited the key detection shape 
 func _on_player_detection_key_body_exited(body):
 	if body.name == "Player":
 		player_detected = false
 
+
 # Disable the collection of the key since it was previously collected in this level
-func _on_key_disabled():
-	key_collected = true
-	animKey.hide()
-	animSparkle.hide()
+func _on_key_disabled(keyIdx):
+	if keyIdx == int(keyName[-1]):
+		key_collected = true
+		animKey.hide()
+		animSparkle.hide()
+		collision.set_deferred("disabled", true)

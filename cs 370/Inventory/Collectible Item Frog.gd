@@ -9,13 +9,14 @@ var frog_collected = false  # True when frog has been collected, false otherwise
 
 @onready var animFrog = $AnimatedFrog
 @onready var animSparkle = $AnimatedSparkle
+@onready var collision = $CollisionPolygon2D
 
 # Retrieve the game collectible items inventory 
 @onready var inventory = get_node("/root/Inventory")
 
 # Signal for when frog has been collected
 signal frogCollected
-@onready var levelRoot = get_parent().get_parent()
+@onready var levelRoot = get_parent().get_parent().get_parent()
 # Signal for when scene has been entered mid-level and frog was previously collected 
 signal frogDisabled
 
@@ -41,6 +42,7 @@ func _process(_delta):
 		animSparkle.show()
 		animFrog.play("Frog")
 		animSparkle.play("Sparkle")
+		collision.set_deferred("disabled", true)
 		
 		# Add the frog to the game inventory so its count can be used elsewhere
 		inventory.add_item("Frog")
@@ -74,3 +76,4 @@ func _on_frog_disabled():
 	frog_collected = true
 	animFrog.hide()
 	animSparkle.hide()
+	collision.set_deferred("disabled", true)

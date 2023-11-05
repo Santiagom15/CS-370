@@ -98,6 +98,10 @@ func has_level_item(item_id):
 	if item_id in levelItems: return true
 	else: return false
 
+# Return list of items in current level
+func get_level_items():
+	return levelItems
+
 # Clear the level items list
 func clear_level_items():
 	levelItems = []
@@ -110,6 +114,10 @@ func update_level_unlocks(item_id):
 func has_level_unlock(item_id):
 	if item_id in levelUnlocks: return true
 	else: return false
+
+# Return the list of unlocked items in current level
+func get_unlocks():
+	return levelUnlocks
 
 # Clear the level items list
 func clear_level_unlocks():

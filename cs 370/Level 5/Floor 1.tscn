@@ -62283,7 +62283,6 @@ format = 2
 layer_0/tile_data = PackedInt32Array(720896, 3997697, 59, 786432, 3997697, 59, 851968, 3997697, 59, 917504, 3997697, 59, 983040, 3997697, 59, 1048576, 3997697, 59, 1114112, 3997697, 59, 1179648, 3997697, 59, 1245184, 3997697, 59, 1310720, 3997697, 59, 1376256, 3997697, 55, 1441792, 3997697, 56, 1507328, 3997697, 57, 1376257, 4194305, 56, 1376258, 4194305, 56, 1376259, 4194305, 56, 1376260, 4194305, 56, 1376261, 4194305, 56, 1376262, 4194305, 56, 1376263, 4194305, 56)
 
 [node name="Floor filler (TEMP)" type="TileMap" parent="."]
-visible = false
 scale = Vector2(3, 3.013)
 tile_set = SubResource("TileSet_a1y5m")
 format = 2
@@ -62296,52 +62295,52 @@ layer_0/tile_data = PackedInt32Array(8847350, 2949120, 0, 8912886, 2949120, 0, 8
 
 [node name="Animated door vertical nodes" type="Node2D" parent="."]
 
-[node name="Animated door vertical right" type="CharacterBody2D" parent="Animated door vertical nodes"]
+[node name="Animated door vertical right 0" type="CharacterBody2D" parent="Animated door vertical nodes"]
 position = Vector2(2250, 1350)
 script = ExtResource("10_8r4cu")
 metadata/_edit_group_ = true
 
-[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(530, 348)
 scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_8suk2")
 animation = &"OpenRight"
 
-[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(478, 348)
 scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_qcsmy")
 animation = &"OpenLeft"
 
-[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(504, 360)
 shape = SubResource("RectangleShape2D_qs3vu")
 debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
 
-[node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft"]
 position = Vector2(0.458313, 2.34784)
 shape = SubResource("RectangleShape2D_1x1wi")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
 
-[node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromRight"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromRight"]
 position = Vector2(-11.625, 2.21739)
 shape = SubResource("RectangleShape2D_6dfmx")
 
-[node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(550, 292)
 shape = SubResource("RectangleShape2D_nqw8d")
 debug_color = Color(0.670588, 0.505882, 0.164706, 0.419608)
 
-[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right"]
+[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right 0"]
 position = Vector2(457, 292)
 shape = SubResource("RectangleShape2D_6c8gq")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
@@ -62396,133 +62395,130 @@ position = Vector2(457, 292)
 shape = SubResource("RectangleShape2D_6c8gq")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
-[node name="Animated door vertical right locked" type="CharacterBody2D" parent="Animated door vertical nodes"]
+[node name="Locked interactable objects" type="Node2D" parent="."]
+
+[node name="Animated door vertical right locked 0" type="CharacterBody2D" parent="Locked interactable objects"]
 position = Vector2(1596, 146)
 script = ExtResource("13_ga0jk")
 metadata/_edit_group_ = true
 
-[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
+[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(530, 348)
 scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_qb2hu")
 animation = &"OpenRight"
 
-[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
+[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(478, 348)
 scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_xybwc")
 animation = &"OpenLeft"
 
-[node name="AnimatedKey" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
+[node name="AnimatedKey" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(507, 333)
 rotation = -6.28319
 scale = Vector2(4.24076, 4.43559)
 sprite_frames = SubResource("SpriteFrames_7tjxw")
 animation = &"Key"
 
-[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
+[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(486, 353)
 scale = Vector2(2.97461, 3.70312)
 sprite_frames = SubResource("SpriteFrames_61q0w")
 animation = &"DoorRattle"
 
-[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-visible = false
+[node name="CollDoor" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(503.5, 360)
 shape = SubResource("RectangleShape2D_nc3qf")
 debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
 
-[node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-visible = false
+[node name="PlayerDetectionFromLeft" type="Area2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromLeft"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromLeft"]
 position = Vector2(3.16672, 2.34772)
 shape = SubResource("RectangleShape2D_j8pqe")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
 
-[node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
-visible = false
+[node name="PlayerDetectionFromRight" type="Area2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight"]
 position = Vector2(-12.8333, 2.21735)
 shape = SubResource("RectangleShape2D_jr0i1")
 
-[node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
+[node name="CollTopDoorRight" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(544.5, 292)
 shape = SubResource("RectangleShape2D_bixd8")
 debug_color = Color(0.670588, 0.505882, 0.164706, 0.419608)
 
-[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked"]
+[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(457, 292)
 shape = SubResource("RectangleShape2D_yn13o")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
-[node name="Animated door vertical right locked 1" type="CharacterBody2D" parent="Animated door vertical nodes"]
+[node name="Animated door vertical right locked 1" type="CharacterBody2D" parent="Locked interactable objects"]
 position = Vector2(180, 526)
 script = ExtResource("13_ga0jk")
+metadata/_edit_group_ = true
 
-[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
+[node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(543, 350)
 scale = Vector2(5.33204, 3.74479)
 sprite_frames = SubResource("SpriteFrames_qb2hu")
 animation = &"OpenRight"
 
-[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
+[node name="AnimatedDoorLeft" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(490, 350.125)
 scale = Vector2(5.20313, 3.70313)
 sprite_frames = SubResource("SpriteFrames_xybwc")
 animation = &"OpenLeft"
 
-[node name="AnimatedKey" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
+[node name="AnimatedKey" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(507, 333)
 rotation = -6.28319
 scale = Vector2(4.24076, 4.43559)
 sprite_frames = SubResource("SpriteFrames_7tjxw")
 animation = &"Key"
 
-[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
+[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(501, 350)
 scale = Vector2(2.97461, 3.70312)
 sprite_frames = SubResource("SpriteFrames_61q0w")
 animation = &"DoorRattle"
 
-[node name="CollDoor" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
-visible = false
+[node name="CollDoor" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(503.5, 360)
 shape = SubResource("RectangleShape2D_nc3qf")
 debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
 
-[node name="PlayerDetectionFromLeft" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
-visible = false
+[node name="PlayerDetectionFromLeft" type="Area2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromLeft"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 1/PlayerDetectionFromLeft"]
 position = Vector2(3.16672, 2.34772)
 shape = SubResource("RectangleShape2D_j8pqe")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
 
-[node name="PlayerDetectionFromRight" type="Area2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
-visible = false
+[node name="PlayerDetectionFromRight" type="Area2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromRight"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 1/PlayerDetectionFromRight"]
 position = Vector2(-12.8333, 2.21735)
 shape = SubResource("RectangleShape2D_jr0i1")
 
-[node name="CollTopDoorRight" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
+[node name="CollTopDoorRight" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(544.5, 292)
 shape = SubResource("RectangleShape2D_bixd8")
 debug_color = Color(0.670588, 0.505882, 0.164706, 0.419608)
 
-[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Animated door vertical nodes/Animated door vertical right locked 1"]
+[node name="CollTopDoorLeft" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 1"]
 position = Vector2(457, 292)
 shape = SubResource("RectangleShape2D_yn13o")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
@@ -62554,131 +62550,131 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Animated door horizontal and sliding node" type="Node2D" parent="."]
 
-[node name="Animated glass sliding door" type="CharacterBody2D" parent="Animated door horizontal and sliding node"]
+[node name="Animated glass sliding door 0" type="CharacterBody2D" parent="Animated door horizontal and sliding node"]
 position = Vector2(-438, -289)
 script = ExtResource("12_t14l1")
 
-[node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+[node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0"]
 position = Vector2(940, 1374.37)
 scale = Vector2(7.8125, 4.66407)
 sprite_frames = SubResource("SpriteFrames_m13a8")
 animation = &"SlideOpen"
 
-[node name="CollDoor1" type="CharacterBody2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+[node name="CollDoor1" type="CharacterBody2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0"]
 metadata/_edit_group_ = true
 
-[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
+[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(874.75, 1439)
 shape = SubResource("RectangleShape2D_23ve3")
 debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
 
-[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
+[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(1003, 1439)
 shape = SubResource("RectangleShape2D_0lscf")
 debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
 
-[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
+[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(860, 1439.5)
 shape = SubResource("RectangleShape2D_dynue")
 debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
 
-[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
+[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(1020, 1439.5)
 shape = SubResource("RectangleShape2D_mx8ac")
 debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
 
-[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
+[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(842.5, 1439.5)
 shape = SubResource("RectangleShape2D_pcdxm")
 debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
 
-[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
+[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(1037.5, 1439.5)
 shape = SubResource("RectangleShape2D_w021m")
 debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
 
-[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
+[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(821.375, 1439.5)
 shape = SubResource("RectangleShape2D_pct16")
 debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
 
-[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor1"]
+[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor1"]
 position = Vector2(1058.12, 1439.5)
 shape = SubResource("RectangleShape2D_5vi1p")
 debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
 
-[node name="CollDoor2" type="CharacterBody2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+[node name="CollDoor2" type="CharacterBody2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0"]
 position = Vector2(2, -68)
 metadata/_edit_group_ = true
 
-[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
+[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(874.5, 1439)
 shape = SubResource("RectangleShape2D_5aoln")
 debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
 
-[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
+[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(1003.25, 1439)
 shape = SubResource("RectangleShape2D_m6n0d")
 debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
 
-[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
+[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(859.625, 1439)
 shape = SubResource("RectangleShape2D_yn3ic")
 debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
 
-[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
+[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(1020, 1439)
 shape = SubResource("RectangleShape2D_vgosm")
 debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
 
-[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
+[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(846.25, 1439)
 shape = SubResource("RectangleShape2D_fom45")
 debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
 
-[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
+[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(1033.75, 1439)
 shape = SubResource("RectangleShape2D_mqcmr")
 debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
 
-[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
+[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(823, 1439)
 shape = SubResource("RectangleShape2D_t11gp")
 debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
 
-[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/CollDoor2"]
+[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/CollDoor2"]
 position = Vector2(1058, 1439)
 shape = SubResource("RectangleShape2D_v2hoy")
 debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
 
-[node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+[node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0"]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionLayering"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectionLayering"]
 position = Vector2(940.5, 1472)
 shape = SubResource("RectangleShape2D_xcupg")
 debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
 
-[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0"]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseTop"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectAnimCloseTop"]
 position = Vector2(939.5, 1339)
 shape = SubResource("RectangleShape2D_3ego0")
 debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
 
-[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0"]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseBottom"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectAnimCloseBottom"]
 position = Vector2(939, 1499)
 shape = SubResource("RectangleShape2D_datki")
 debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 
-[node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door"]
+[node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0"]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionAnimation"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectionAnimation"]
 position = Vector2(939, 1438)
 shape = SubResource("RectangleShape2D_cy5j5")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
@@ -62689,14 +62685,17 @@ tile_set = SubResource("TileSet_0eggs")
 format = 2
 layer_0/tile_data = PackedInt32Array(1376268, 1900544, 1, 1376264, 1966080, 1, 1376265, 2228224, 1, 1376266, 2228224, 1, 1376267, 2228224, 1, 2228281, 2162688, 2, 2293817, 2162688, 2, 2359353, 2162688, 2, 2687033, 2162688, 2, 2752569, 2162688, 2, 2818105, 2162688, 2, 589867, 2293760, 2, 655403, 2293760, 2, 720939, 2293760, 2, 1114126, 2162688, 2, 1179662, 2162688, 2, 1245198, 2162688, 2)
 
-[node name="Collectible item key" parent="." instance=ExtResource("20_3bbwf")]
+[node name="Collectible items" type="Node2D" parent="."]
+
+[node name="Collectible item key 0" parent="Collectible items" instance=ExtResource("20_3bbwf")]
 position = Vector2(-1709, -430)
 
-[node name="Collectible item key 1" parent="." instance=ExtResource("20_3bbwf")]
+[node name="Collectible item key 1" parent="Collectible items" instance=ExtResource("20_3bbwf")]
 position = Vector2(-1492, -239)
 
-[node name="Collectible item frog" parent="." instance=ExtResource("16_te3xe")]
+[node name="Collectible item frog 0" parent="Collectible items" instance=ExtResource("16_te3xe")]
 position = Vector2(346, 490)
+metadata/_edit_group_ = true
 
 [node name="Floor1 to Boss" type="CharacterBody2D" parent="."]
 script = ExtResource("16_6emu4")
@@ -62711,33 +62710,33 @@ shape = SubResource("RectangleShape2D_o2wj3")
 position = Vector2(742, 885)
 shape = SubResource("RectangleShape2D_c7b7j")
 
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromLeft_body_exited"]
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromRight_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
+[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]
+[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromRight_body_entered"]
+[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromRight_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 1/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 1" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 1/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 1" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 1/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 1" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 1/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 1" method="_on_PlayerDetectionFromRight_body_exited"]
-[connection signal="frame_changed" from="Animated door vertical nodes/Animated door vertical right locked/AnimatedKey" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_animated_key_frame_changed"]
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromLeft_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromLeft_body_exited"]
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromRight_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked" method="_on_PlayerDetectionFromRight_body_exited"]
-[connection signal="frame_changed" from="Animated door vertical nodes/Animated door vertical right locked 1/AnimatedKey" to="Animated door vertical nodes/Animated door vertical right locked 1" method="_on_animated_key_frame_changed"]
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right locked 1" method="_on_PlayerDetectionFromLeft_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right locked 1" method="_on_PlayerDetectionFromLeft_body_exited"]
-[connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked 1" method="_on_PlayerDetectionFromRight_body_entered"]
-[connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right locked 1/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right locked 1" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="frame_changed" from="Locked interactable objects/Animated door vertical right locked 0/AnimatedKey" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_animated_key_frame_changed"]
+[connection signal="body_entered" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromLeft" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromLeft_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromLeft" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromLeft_body_exited"]
+[connection signal="body_entered" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromRight_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="frame_changed" from="Locked interactable objects/Animated door vertical right locked 1/AnimatedKey" to="Locked interactable objects/Animated door vertical right locked 1" method="_on_animated_key_frame_changed"]
+[connection signal="body_entered" from="Locked interactable objects/Animated door vertical right locked 1/PlayerDetectionFromLeft" to="Locked interactable objects/Animated door vertical right locked 1" method="_on_PlayerDetectionFromLeft_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 1/PlayerDetectionFromLeft" to="Locked interactable objects/Animated door vertical right locked 1" method="_on_PlayerDetectionFromLeft_body_exited"]
+[connection signal="body_entered" from="Locked interactable objects/Animated door vertical right locked 1/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 1" method="_on_PlayerDetectionFromRight_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 1/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 1" method="_on_PlayerDetectionFromRight_body_exited"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
-[connection signal="frame_changed" from="Animated door horizontal and sliding node/Animated glass sliding door/AnimatedSlideDoor" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_animated_slide_door_frame_changed"]
-[connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionLayering" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDectectionLayering_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionLayering" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionLayering_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectAnimCloseTop_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionAnimCloseTop_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectAnimCloseBottom_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
-[connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionAnimation" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_entered"]
-[connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door/PlayerDetectionAnimation" to="Animated door horizontal and sliding node/Animated glass sliding door" method="_on_PlayerDetectionAnimation_body_exited"]
+[connection signal="frame_changed" from="Animated door horizontal and sliding node/Animated glass sliding door 0/AnimatedSlideDoor" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_animated_slide_door_frame_changed"]
+[connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectionLayering" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDectectionLayering_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectionLayering" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDetectionLayering_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseTop_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectAnimCloseTop" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDetectionAnimCloseTop_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
+[connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectionAnimation" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_entered"]
+[connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectionAnimation" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_exited"]
 [connection signal="body_entered" from="Floor1 to Boss/Player Detection" to="Floor1 to Boss" method="_on_player_detection_body_entered"]

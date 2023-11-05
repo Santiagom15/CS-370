@@ -43,9 +43,11 @@ var unlocked = false
 @onready var total_num_key_frames = animKeyFrames.get_frame_count("Key")
 @onready var animRattle = $AnimatedDoorRattle
 
-signal doorUnlocked
+signal doorUnlocked(doorIdx)
 @onready var levelRoot = get_parent().get_parent()
-signal doorLockDisabled
+signal doorLockDisabled(doorIdx)
+@onready var doorName = str(get_name())
+var doorIdx_curr : int
 
 # As soon as scene loads, disable the collision shapes for when door is open 
 func _ready():
@@ -60,7 +62,7 @@ func _ready():
 	animRattle.set_frame(0)
 	
 	levelRoot.doorLockDisabled.connect(_on_door_lock_disabled)
- 
+	
 
 # When requirements are met, open the door to the correct side
 func _process(delta):
@@ -76,7 +78,10 @@ func _process(delta):
 			if unlocked == false:
 				unlocked = true
 				inventory.remove_item("Key")
-				doorUnlocked.emit()
+				doorIdx_curr = int(doorName[-1]) # It is assumed that the name of any locked door node will end with a integer >= 0
+										#This is used to identify/distinguish the doors in the scene when unlocking/locking
+				doorUnlocked.emit(doorIdx_curr)
+				
 			
 			curr_side = stack_approach_side[len - 1]  # Get current side of the door the player is on
 			
@@ -109,8 +114,10 @@ func _process(delta):
 			animRattle.play("DoorRattle")
 
 
-func _on_door_lock_disabled():
-	unlocked = true
+func _on_door_lock_disabled(doorIdx):
+	# It is assumed that locked door node names will end in a int > 0 to identify/distinguish all locked doors in a scene
+	if doorIdx == int(doorName[-1]):
+		unlocked = true
 
 
 func _on_animated_key_frame_changed():
@@ -185,4 +192,3 @@ func _on_PlayerDetectionFromRight_body_exited(body):
 			stack_approach_side.pop_back() 
 		elif curr_side == 0:
 			stack_approach_side.pop_front()
-

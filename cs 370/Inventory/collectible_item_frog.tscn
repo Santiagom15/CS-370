@@ -1,11 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://uxeft12nwgge"]
+[gd_scene load_steps=21 format=3 uid="uid://uxeft12nwgge"]
 
 [ext_resource type="Script" path="res://Inventory/Collectible Item Frog.gd" id="1_mi18n"]
 [ext_resource type="Texture2D" uid="uid://bmayfqtxqqpmq" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_idle.png" id="2_c271o"]
 [ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="3_lv6lu"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r6cc6"]
-size = Vector2(53, 46)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m2ci3"]
 atlas = ExtResource("2_c271o")
@@ -136,10 +133,8 @@ size = Vector2(138, 123)
 position = Vector2(-1853, -921)
 script = ExtResource("1_mi18n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Frog"]
-position = Vector2(1973, 1014)
-shape = SubResource("RectangleShape2D_r6cc6")
-debug_color = Color(0.709804, 0.423529, 0.639216, 0.419608)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Frog"]
+polygon = PackedVector2Array(1952, 997, 1992, 990, 2010, 1013, 2010, 1047, 1955, 1052, 1927, 1028)
 
 [node name="AnimatedFrog" type="AnimatedSprite2D" parent="Frog"]
 position = Vector2(1966, 1015)

@@ -2,18 +2,18 @@ extends GridContainer
 
 var ItemClass = preload("res://Inventory/Item in inventory.tscn")
 var item = null
-signal itemCurrent(item_id)
-var child : Panel
+var slot : Panel
 var used_slot_idx = 0
 var items_ordered = []
 
 @onready var inventory = get_node("/root/Inventory")
 
 @onready var textInfoDisplay = get_parent().get_node("Item description")
-signal itemAnimPlay(item_id)
 
 signal panelClicked(panelIndex)
-@onready var num_panels = get_child_count()
+var curr_item : String
+var orig_color = null
+var prev_panel_idx = null
 
 func _ready():
 	var inventory_contents = inventory.get_inventory()
@@ -22,23 +22,37 @@ func _ready():
 	for key in inventory_contents.keys():
 		items_ordered.append(key)
 		
-		child = get_child(used_slot_idx)
+		slot = get_child(used_slot_idx)
 		item = ItemClass.instantiate()
-		itemCurrent.emit(key)
-		child.add_child(item)
+		slot.add_child(item)
+		item._on_item_current(key)
 		
 		used_slot_idx += 1
 	
-	for idx in range(num_panels):
-		child = get_child(idx)
-		child.panelClicked.connect(_on_panel_clicked)
+	for idx in range(get_child_count()):
+		slot = get_child(idx)
+		slot.panelClicked.connect(_on_panel_clicked)
+		
+	if used_slot_idx > 0: orig_color = slot.modulate
 
 
 func _on_panel_clicked(panelIdx):
 	if used_slot_idx >= panelIdx:
-		var curr_item = items_ordered[panelIdx - 1]
+		
+		if prev_panel_idx != null:
+			curr_item = items_ordered[prev_panel_idx - 1]
+			slot = get_child(prev_panel_idx - 1)
+			item = slot.get_child(0)
+			item._on_item_anim_stop(curr_item)
+			slot.self_modulate = orig_color
+			slot.z_index = 0
+		
+		curr_item = items_ordered[panelIdx - 1]
 		textInfoDisplay.text = "" + curr_item + ": " + str(inventory.get_item_count(curr_item))
-		itemAnimPlay.emit(curr_item)
-		child = get_child(panelIdx - 1)
-		child.self_modulate = Color(0.6, 0.0, 0.5)
-		child.z_index = 0
+		slot = get_child(panelIdx - 1)
+		item = slot.get_child(0)
+		item._on_item_anim_play(curr_item)
+		slot.self_modulate = Color(0.6, 0.0, 0.5)
+		slot.z_index = 0
+		
+		prev_panel_idx = panelIdx
