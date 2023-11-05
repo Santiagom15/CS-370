@@ -6,6 +6,9 @@ signal panelClicked(panelIndex)
 var panelName: String
 var idx: int
 
+func _ready():
+	visible = false
+
 func _on_slot_gui_input(event):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.button_index == MOUSE_BUTTON_LEFT:

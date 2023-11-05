@@ -29,6 +29,7 @@ signal itemDisabled(itemIdx)
 func _ready():
 	animItem.show()  # Show (enable visibility of) the item animation
 	animItem.set_frame(0)  # Make the initial animation frame the first frame
+	animItem.play("Idle")
 	
 	animSparkle.hide()   # Hide (disable visibility of) the sparkle animation
 	animSparkle.set_frame(0)

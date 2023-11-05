@@ -23,17 +23,19 @@ func _ready():
 		items_ordered.append(key)
 		
 		slot = get_child(used_slot_idx)
+		slot.visible = true
 		item = ItemClass.instantiate()
 		slot.add_child(item)
 		item._on_item_current(key)
 		
 		used_slot_idx += 1
 	
-	for idx in range(get_child_count()):
+	for idx in range(get_child_count(false)):
 		slot = get_child(idx)
 		slot.panelClicked.connect(_on_panel_clicked)
 		
 	if used_slot_idx > 0: orig_color = slot.modulate
+			
 
 
 func _on_panel_clicked(panelIdx):
@@ -52,7 +54,7 @@ func _on_panel_clicked(panelIdx):
 		slot = get_child(panelIdx - 1)
 		item = slot.get_child(0)
 		item._on_item_anim_play(curr_item)
-		slot.self_modulate = Color(0.6, 0.0, 0.5)
+		slot.self_modulate = Color(0.0, 0.0, 0.0)
 		slot.z_index = 0
 		
 		prev_panel_idx = panelIdx
