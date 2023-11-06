@@ -12,8 +12,6 @@ func _process(_delta):
 	var state =  machine.current_state
 	print(state)
 
-func animation(state):
-	if state.class_name == "Idle":
-		print("IT MOVES")
+
 	
 
