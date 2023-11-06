@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cai5mcmsd0b0x"]
 
 [ext_resource type="Texture2D" uid="uid://ca28yvg20sy3j" path="res://assets/Modern_Interiors_Free_v2.2/plant.png" id="1_jg26s"]
-[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="2_vsapb"]
+[ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="2_vsapb"]
 [ext_resource type="Script" path="res://demo/Return home.gd" id="3_f5fa8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_os1jm"]
@@ -32,5 +32,4 @@ script = ExtResource("3_f5fa8")
 
 [node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
 
-[connection signal="button_down" from="CharacterBody2D/Return home" to="CharacterBody2D" method="_on_return_home_button_down"]
 [connection signal="button_down" from="CharacterBody2D/Return home" to="CharacterBody2D/Return home" method="_on_button_down"]

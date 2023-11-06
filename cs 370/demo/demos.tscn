@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="2_a7fq2"]
 [ext_resource type="Texture2D" uid="uid://bwd4w27swp6t7" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="3_mpgr5"]
-[ext_resource type="Script" path="res://demo/Return to home.gd" id="4_1a0hj"]
 [ext_resource type="Texture2D" uid="uid://cavefsfsw871w" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png" id="4_ex2yv"]
+[ext_resource type="Script" path="res://demo/Return home.gd" id="4_km284"]
 [ext_resource type="AudioStream" uid="uid://rh88dcspefks" path="res://Theme_1.mp3" id="4_l6j0k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7k8nq"]
@@ -20624,13 +20624,13 @@ layer_0/tile_data = PackedInt32Array(655376, 983041, 3, 720912, 983041, 3, 78644
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_a7fq2")]
 position = Vector2(514, 803)
 
-[node name="Return to home" type="Button" parent="CharacterBody2D"]
+[node name="Return home" type="Button" parent="CharacterBody2D"]
 offset_left = 341.0
 offset_top = -308.0
 offset_right = 546.0
 offset_bottom = -220.0
 text = "Return to home page"
-script = ExtResource("4_1a0hj")
+script = ExtResource("4_km284")
 
 [node name="Ghost furniture no collision infront" type="TileMap" parent="."]
 scale = Vector2(4, 4)
@@ -20647,5 +20647,4 @@ layer_0/tile_data = PackedInt32Array(-5636093, 983041, 3, -5570557, 983041, 3, -
 stream = ExtResource("4_l6j0k")
 autoplay = true
 
-[connection signal="button_down" from="CharacterBody2D/Return to home" to="CharacterBody2D" method="_on_button_button_down"]
-[connection signal="button_down" from="CharacterBody2D/Return to home" to="CharacterBody2D/Return to home" method="_on_button_down"]
+[connection signal="button_down" from="CharacterBody2D/Return home" to="CharacterBody2D/Return home" method="_on_button_down"]
