@@ -1,14 +1,14 @@
 extends State
 class_name Idle
 
-@onready var timer = $Idle_timer
+@onready var timer = $TestTimerFoMeteor# going to learn how to restaurt everytime I finish th attacks
 func transition():
 	if ray_cast.is_colliding():
 		print("test")
 		get_parent().change_state("Attack1")
 		
 	if timer.timeout():
-		pass
+		get_parent().change_state("MeteorAttack")
 		
 
 

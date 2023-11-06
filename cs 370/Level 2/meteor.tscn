@@ -88,3 +88,7 @@ speed_scale = 10.0
 position = Vector2(-7, 13)
 shape = SubResource("SegmentShape2D_83kx0")
 one_way_collision_margin = 0.0
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
