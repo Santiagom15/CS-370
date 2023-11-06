@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://c5ppeedcmaxjb"]
+[gd_scene load_steps=31 format=3 uid="uid://c5ppeedcmaxjb"]
 
 [ext_resource type="Script" path="res://Inventory/Item in inventory.gd" id="1_nlos4"]
 [ext_resource type="Texture2D" uid="uid://dmb8u1sxh5x7c" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_wall_candle_eddittedAlisa_inventory.png" id="2_khxq8"]
@@ -36,6 +36,10 @@ region = Rect2(96, 0, 16, 24)
 [sub_resource type="AtlasTexture" id="AtlasTexture_itt64"]
 atlas = ExtResource("2_khxq8")
 region = Rect2(112, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pv74e"]
+atlas = ExtResource("2_khxq8")
+region = Rect2(0, 0, 16, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1skj2"]
 atlas = ExtResource("3_p320k")
@@ -127,6 +131,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_itt64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pv74e")
 }],
 "loop": true,
 "name": &"Candle",
@@ -198,4 +205,6 @@ script = ExtResource("1_nlos4")
 position = Vector2(76, 78)
 scale = Vector2(7.40308, 7.69543)
 sprite_frames = SubResource("SpriteFrames_ccr37")
-animation = &"Frog"
+animation = &"Key"
+
+[connection signal="animation_looped" from="ItemAnimation" to="." method="_on_item_animation_animation_looped"]

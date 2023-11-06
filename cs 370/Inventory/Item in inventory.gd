@@ -3,9 +3,7 @@
 extends Node2D
 
 @onready var anim = $ItemAnimation
-@onready var inventory = get_node("/root/Inventory")
-
-@onready var grid = get_parent().get_parent()
+signal itemAnimLooped
 
 func _ready():
 	anim.hide()
@@ -22,3 +20,6 @@ func _on_item_anim_play(item_id):
 func _on_item_anim_stop(item_id):
 	anim.pause()
 	anim.set_frame(0)
+
+func _on_item_animation_animation_looped():
+	itemAnimLooped.emit()
