@@ -54,9 +54,9 @@ func _ready():
 
 func _item_anim_looped():
 	textInfoDisplay.clear()
-	textInfoDisplay.append_text("[shake rate=5.0]" + curr_text + "[/shake]")
+	textInfoDisplay.append_text(curr_text)
 	textInventoryTitle.clear()
-	textInventoryTitle.append_text("[shake rate=7.0][center]Inventory")
+	textInventoryTitle.append_text("[center]Inventory")
 
 
 func _on_panel_clicked(panelIdx):
@@ -74,9 +74,9 @@ func _on_panel_clicked(panelIdx):
 		#textInfoDisplay.text = "" + curr_item + ": " + str(inventory.get_item_count(curr_item))
 		curr_text = "[center]" + curr_item + ": " + str(inventory.get_item_count(curr_item)) + "\n" + descriptions[curr_item] + "[/center]"
 		textInfoDisplay.clear()
-		textInfoDisplay.append_text("[shake rate=16.0]" + curr_text + "[/shake]")
+		textInfoDisplay.append_text("[shake rate=8.0]" + curr_text + "[/shake]")
 		textInventoryTitle.clear()
-		textInventoryTitle.append_text("[shake rate=20.0][center]Inventory")
+		textInventoryTitle.append_text("[shake rate=12.0][center]Inventory")
 		slot = get_child(panelIdx - 1)
 		item = slot.get_child(0)
 		item._on_item_anim_play(curr_item)
