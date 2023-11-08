@@ -8,9 +8,8 @@ var direction = Vector2.RIGHT
 
 func _process(_delta):
 	direction = (player.position - global_position).normalized()
-	ray_cast.target_position = direction *100
+	ray_cast.target_position = direction *200
 	var state =  machine.current_state
-	print(state)
 
 
 	

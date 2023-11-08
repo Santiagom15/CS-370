@@ -71,7 +71,8 @@ animations = [{
 }]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_83kx0"]
-b = Vector2(7, 0)
+a = Vector2(16, -37)
+b = Vector2(2, 0)
 
 [node name="Meteor" type="Area2D"]
 script = ExtResource("1_srt0c")
@@ -81,7 +82,7 @@ position = Vector2(-1.90735e-06, -6.00002)
 scale = Vector2(0.0631311, 0.0858645)
 sprite_frames = SubResource("SpriteFrames_y6je3")
 animation = &"Attack1"
-frame_progress = 0.209788
+frame_progress = 0.508324
 speed_scale = 10.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -89,6 +90,6 @@ position = Vector2(-7, 13)
 shape = SubResource("SegmentShape2D_83kx0")
 one_way_collision_margin = 0.0
 
-[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 
-[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://dt1ymtq6cxmda"]
+[gd_scene load_steps=28 format=3 uid="uid://dt1ymtq6cxmda"]
 
 [ext_resource type="Texture2D" uid="uid://c4y4byl1rprxr" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png" id="1_7kc8y"]
 [ext_resource type="Script" path="res://Level 2/boss_abttle.gd" id="1_gms7e"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://dmf83ubfam2v7" path="res://Level 2/meteor.tscn" id="5_4ckkf"]
 [ext_resource type="Script" path="res://Level 2/MeteorAttack.gd" id="5_11nsm"]
 [ext_resource type="Script" path="res://Level 2/Idle.gd" id="6_vile7"]
-[ext_resource type="Script" path="res://Level 2/Attack1.gd" id="7_bw07v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a2rbp"]
 atlas = ExtResource("1_7kc8y")
@@ -151,7 +150,7 @@ animations = [{
 radius = 31.0
 height = 128.0
 
-[node name="boss battle2" type="CharacterBody2D"]
+[node name="bossBattle2" type="CharacterBody2D"]
 script = ExtResource("1_gms7e")
 
 [node name="debug" type="Label" parent="."]
@@ -167,15 +166,11 @@ script = ExtResource("4_elpor")
 script = ExtResource("6_vile7")
 
 [node name="TestTimerFoMeteor" type="Timer" parent="FiniteStateMachine/Idle"]
-wait_time = 1.41
-
-[node name="Attack1" type="Node2D" parent="FiniteStateMachine"]
-script = ExtResource("7_bw07v")
+wait_time = 1.121
 
 [node name="MeteorAttack" type="Node2D" parent="FiniteStateMachine"]
 script = ExtResource("5_11nsm")
-
-[node name="Meteor" parent="FiniteStateMachine/MeteorAttack" instance=ExtResource("5_4ckkf")]
+meteorNode = ExtResource("5_4ckkf")
 
 [node name="MeteroShoot" type="Timer" parent="FiniteStateMachine/MeteorAttack"]
 
