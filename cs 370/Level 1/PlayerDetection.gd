@@ -8,10 +8,8 @@ func _ready():
 func _on_player_detection_body_entered(body):
 	if body.name == "Player":  # Check if the colliding body is the player
 		collisionShape.disabled = true  # Disable the CollisionShape2D
-		print("Collision shape disabled")
 
 func _on_player_detection_body_exited(body):
 	if body.name == "Player":  # Check if the colliding body is the player
 		collisionShape.disabled = false  # Enable the CollisionShape2D
-		print("Collision shape enabled")
 

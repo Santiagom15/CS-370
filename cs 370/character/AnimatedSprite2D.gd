@@ -1,11 +1,21 @@
 extends AnimatedSprite2D
 
+@onready var animatedSprite = $AnimatedSprite2D
+var fear = 1
+
+
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready():# search what this does
-	pass # Replace with function body.
+func _ready(): # search what this does
+	play("heartBeat")
+	
+	
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 
+
+		
+	
+	
+# What this shoudl do I check everytime 
