@@ -12,9 +12,6 @@ var moving = false
 var isFrame: bool
 
 
-
-
-	
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")	
 	if input_direction:

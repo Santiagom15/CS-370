@@ -1,11 +1,11 @@
-[gd_scene load_steps=28 format=3 uid="uid://dt1ymtq6cxmda"]
+[gd_scene load_steps=28 format=3 uid="uid://b56vaqpj2xuuv"]
 
 [ext_resource type="Texture2D" uid="uid://c4y4byl1rprxr" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png" id="1_7kc8y"]
 [ext_resource type="Script" path="res://Level 2/boss_abttle.gd" id="1_gms7e"]
 [ext_resource type="Texture2D" uid="uid://2xdc6p7sugbd" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png" id="2_3lp72"]
 [ext_resource type="Texture2D" uid="uid://c8wcmw6fg2qib" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Jump.png" id="3_gb48f"]
 [ext_resource type="Script" path="res://Level 2/FiniteStateMachine.gd" id="4_elpor"]
-[ext_resource type="PackedScene" uid="uid://dmf83ubfam2v7" path="res://Level 2/meteor.tscn" id="5_4ckkf"]
+[ext_resource type="PackedScene" uid="uid://c0u7rqldefv1q" path="res://Level 2/meteor.tscn" id="5_4ckkf"]
 [ext_resource type="Script" path="res://Level 2/MeteorAttack.gd" id="5_11nsm"]
 [ext_resource type="Script" path="res://Level 2/Idle.gd" id="6_vile7"]
 

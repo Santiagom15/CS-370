@@ -2,6 +2,12 @@ extends CharacterBody2D
 # Detect when the player has reached the end of the stairs in Level 1
 # and automatically change scenes to Level 2
 
+@onready var inventory = get_node("/root/Inventory")
+
+# Update the path of the current level
+func _ready():
+	inventory.update_current_level("res://Level 1/floor5.tscn")
+
 # Detect when the player comes into/collides with the "Player detection"
 # collision shape
 func _on_player_detection_body_entered(body):
@@ -9,10 +15,9 @@ func _on_player_detection_body_entered(body):
 	#  shape is named "Player"
 	if body.name == "Player":
 		# Change the scene to the next floor
+		inventory.update_current_level("res://Level 2/floor4.tscn")
+		inventory.update_transport(false)
+		inventory.clear_level_items()
+		inventory.clear_level_unlocks()
 		get_tree().change_scene_to_file("res://Level 2/floor4.tscn")
-
-# Detect when the player is not colliding with the Player detection shape
-func _on_player_detection_body_exited(body):
-	if body.name == "Player":
-		pass
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dmf83ubfam2v7"]
+[gd_scene load_steps=19 format=3 uid="uid://c0u7rqldefv1q"]
 
 [ext_resource type="Script" path="res://Level 2/meteor.gd" id="1_srt0c"]
 [ext_resource type="Texture2D" uid="uid://dm756bvyt548h" path="res://Level 2/Animations_for_bass/falling_star/F501-1.png" id="2_suph3"]
