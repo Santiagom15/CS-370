@@ -122,3 +122,4 @@ func get_unlocks():
 # Clear the level items list
 func clear_level_unlocks():
 	levelUnlocks = []
+

@@ -111,6 +111,7 @@ func _process(delta):
 			animKey.show()
 			animKey.z_index = 1
 			animKey.play("Key")
+			animRattle.set_frame(1)
 			animRattle.play("DoorRattle")
 
 
@@ -122,7 +123,8 @@ func _on_lock_disabled(lockIdx):
 
 func _on_animated_key_frame_changed():
 	# As animation plays, increase transparency of current frame to create a fading away visual affect
-	animKey.modulate.a = 1.0 - (animKey.get_frame() / float(total_num_key_frames - 1))
+	if animKey.get_frame() >= total_num_key_frames / 2.0:
+		animKey.modulate.a = 1.0 - ((total_num_key_frames - animKey.get_frame()) / float(total_num_key_frames - 1))
 	
 	# When on the last frame, reset the animation to hidden and fully non-transparent
 	if animKey.get_frame() == total_num_key_frames-1:
