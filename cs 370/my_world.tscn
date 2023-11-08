@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://djgirt4513m8p"]
+[gd_scene load_steps=5 format=3 uid="uid://djgirt4513m8p"]
 
 [ext_resource type="Script" path="res://Start.gd" id="1_poiht"]
 [ext_resource type="Script" path="res://Button2.gd" id="1_qt705"]
 [ext_resource type="Texture2D" uid="uid://c3lxttphkgl5g" path="res://assets/BackGrounds/StartScrene.png" id="3_qhcsj"]
+[ext_resource type="Script" path="res://Inventory/Inventory.gd" id="4_m55eg"]
 
 [node name="MyWorld" type="Node2D"]
 
@@ -30,6 +31,9 @@ offset_bottom = 646.0
 mouse_filter = 2
 texture = ExtResource("3_qhcsj")
 expand_mode = 1
+
+[node name="Inventory" type="Node2D" parent="."]
+script = ExtResource("4_m55eg")
 
 [connection signal="button_down" from="Start" to="Start" method="_on_button_down"]
 [connection signal="button_down" from="Exit" to="Exit" method="_on_button_down"]

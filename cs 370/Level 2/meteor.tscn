@@ -1,0 +1,95 @@
+[gd_scene load_steps=19 format=3 uid="uid://c0u7rqldefv1q"]
+
+[ext_resource type="Script" path="res://Level 2/meteor.gd" id="1_srt0c"]
+[ext_resource type="Texture2D" uid="uid://dm756bvyt548h" path="res://Level 2/Animations_for_bass/falling_star/F501-1.png" id="2_suph3"]
+[ext_resource type="Texture2D" uid="uid://07q7fs0qtydu" path="res://Level 2/Animations_for_bass/falling_star/F501-2.png" id="3_hv8ro"]
+[ext_resource type="Texture2D" uid="uid://btk0k0h1svx1b" path="res://Level 2/Animations_for_bass/falling_star/F501-3.png" id="4_gfkcn"]
+[ext_resource type="Texture2D" uid="uid://dapdidshprj25" path="res://Level 2/Animations_for_bass/falling_star/F501-4.png" id="5_23ctx"]
+[ext_resource type="Texture2D" uid="uid://dbhesrvrfckho" path="res://Level 2/Animations_for_bass/falling_star/F501-5.png" id="6_snusu"]
+[ext_resource type="Texture2D" uid="uid://bv8v8qqi1im3c" path="res://Level 2/Animations_for_bass/falling_star/F501-6.png" id="7_uppgt"]
+[ext_resource type="Texture2D" uid="uid://dd5cl8l8gcp0i" path="res://Level 2/Animations_for_bass/falling_star/F501-7.png" id="8_8t0ls"]
+[ext_resource type="Texture2D" uid="uid://dvh33qt8m1nv6" path="res://Level 2/Animations_for_bass/falling_star/F501-9.png" id="9_w2edk"]
+[ext_resource type="Texture2D" uid="uid://cmaa888rva133" path="res://Level 2/Animations_for_bass/falling_star/F501-8.png" id="10_klgr7"]
+[ext_resource type="Texture2D" uid="uid://dbuvf507pyptj" path="res://Level 2/Animations_for_bass/falling_star/F501-10.png" id="11_bcxeh"]
+[ext_resource type="Texture2D" uid="uid://cyptn32tn7r6s" path="res://Level 2/Animations_for_bass/falling_star/F501-11.png" id="12_voa2b"]
+[ext_resource type="Texture2D" uid="uid://c556uhwgdu6c4" path="res://Level 2/Animations_for_bass/falling_star/F501-12.png" id="13_delqf"]
+[ext_resource type="Texture2D" uid="uid://bljqvw7clled5" path="res://Level 2/Animations_for_bass/falling_star/F501-13.png" id="14_4jduc"]
+[ext_resource type="Texture2D" uid="uid://c188ol021m2w1" path="res://Level 2/Animations_for_bass/falling_star/F501-14.png" id="15_d2afm"]
+[ext_resource type="Texture2D" uid="uid://bpl2gm8y7e43v" path="res://Level 2/Animations_for_bass/falling_star/F501-15.png" id="16_l1xs6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y6je3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_suph3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hv8ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gfkcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_23ctx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_snusu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uppgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8t0ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_w2edk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_klgr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bcxeh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_voa2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_delqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4jduc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d2afm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_l1xs6")
+}],
+"loop": true,
+"name": &"Attack1",
+"speed": 5.0
+}]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_83kx0"]
+a = Vector2(16, -37)
+b = Vector2(2, 0)
+
+[node name="Meteor" type="Area2D"]
+script = ExtResource("1_srt0c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.90735e-06, -6.00002)
+scale = Vector2(0.0631311, 0.0858645)
+sprite_frames = SubResource("SpriteFrames_y6je3")
+animation = &"Attack1"
+frame_progress = 0.508324
+speed_scale = 10.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7, 13)
+shape = SubResource("SegmentShape2D_83kx0")
+one_way_collision_margin = 0.0
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

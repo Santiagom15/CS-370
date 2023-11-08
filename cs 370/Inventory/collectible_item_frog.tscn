@@ -1,0 +1,200 @@
+[gd_scene load_steps=26 format=3 uid="uid://uxeft12nwgge"]
+
+[ext_resource type="Script" path="res://Inventory/Collectible Item.gd" id="1_3kerh"]
+[ext_resource type="Texture2D" uid="uid://bmayfqtxqqpmq" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_idle.png" id="2_c271o"]
+[ext_resource type="Texture2D" uid="uid://dsiyjqy5ea5eg" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_edittedAlisa_jump.png" id="3_ggiu8"]
+[ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="3_lv6lu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05qh2"]
+atlas = ExtResource("3_ggiu8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmaaf"]
+atlas = ExtResource("3_ggiu8")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_two08"]
+atlas = ExtResource("3_ggiu8")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vx7h"]
+atlas = ExtResource("3_ggiu8")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yssej"]
+atlas = ExtResource("3_ggiu8")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flry2"]
+atlas = ExtResource("3_ggiu8")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2ci3"]
+atlas = ExtResource("2_c271o")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fuqf"]
+atlas = ExtResource("2_c271o")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ew4k"]
+atlas = ExtResource("2_c271o")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjy02"]
+atlas = ExtResource("2_c271o")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6dvnm"]
+atlas = ExtResource("2_c271o")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rppqo"]
+atlas = ExtResource("2_c271o")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m6bef"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05qh2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmaaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_two08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vx7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yssej")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flry2")
+}],
+"loop": false,
+"name": &"Frog",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2ci3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fuqf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ew4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjy02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6dvnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rppqo")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0drv"]
+atlas = ExtResource("3_lv6lu")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4tn8"]
+atlas = ExtResource("3_lv6lu")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8vmen"]
+atlas = ExtResource("3_lv6lu")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkpe3"]
+atlas = ExtResource("3_lv6lu")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5e0qb"]
+atlas = ExtResource("3_lv6lu")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rokle"]
+atlas = ExtResource("3_lv6lu")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_43fre"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0drv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4tn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8vmen")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkpe3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5e0qb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rokle")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5e0qb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkpe3")
+}],
+"loop": false,
+"name": &"Sparkle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iox1l"]
+size = Vector2(138, 123)
+
+[node name="Collectible item frog" type="Node2D"]
+position = Vector2(-54, -45)
+
+[node name="Frog" type="CharacterBody2D" parent="."]
+position = Vector2(-1853, -921)
+script = ExtResource("1_3kerh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Frog"]
+position = Vector2(325, 155)
+scale = Vector2(0.82756, 0.832661)
+polygon = PackedVector2Array(1952, 997, 1992, 990, 2010, 1013, 2010, 1047, 1955, 1052, 1927, 1028)
+
+[node name="AnimatedItem" type="AnimatedSprite2D" parent="Frog"]
+position = Vector2(1952.94, 1004.08)
+scale = Vector2(7.13286, 6.61525)
+sprite_frames = SubResource("SpriteFrames_m6bef")
+animation = &"Frog"
+
+[node name="AnimatedSparkle" type="AnimatedSprite2D" parent="Frog"]
+modulate = Color(1, 0.933333, 0.756863, 1)
+position = Vector2(1992, 993)
+scale = Vector2(5.69922, 5.48828)
+sprite_frames = SubResource("SpriteFrames_43fre")
+animation = &"Sparkle"
+frame = 7
+frame_progress = 1.0
+
+[node name="PlayerDetectionItem" type="Area2D" parent="Frog"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frog/PlayerDetectionItem"]
+position = Vector2(1960, 1003)
+shape = SubResource("RectangleShape2D_iox1l")
+
+[connection signal="animation_finished" from="Frog/AnimatedItem" to="Frog" method="_on_animated_item_animation_finished"]
+[connection signal="animation_finished" from="Frog/AnimatedSparkle" to="Frog" method="_on_animated_sparkle_animation_finished"]
+[connection signal="body_entered" from="Frog/PlayerDetectionItem" to="Frog" method="_on_player_detection_item_body_entered"]
+[connection signal="body_exited" from="Frog/PlayerDetectionItem" to="Frog" method="_on_player_detection_item_body_exited"]

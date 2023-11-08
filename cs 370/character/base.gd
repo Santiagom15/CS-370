@@ -12,10 +12,6 @@ var moving = false
 var isFrame: bool
 
 
-
-func _ready():
-	heart.play("heartBeat")
-	
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")	
 	if input_direction:
@@ -32,7 +28,6 @@ func get_input():
 
 func _physics_process(_delta):
 	get_input()
-	_onTime()
 	move_and_slide()
 
 
@@ -52,27 +47,6 @@ func _process(_delta):
 
 
 
-func _onTime():# check different scnarios 
-	
-	isFrame = heartFrame==heart.get_frame()
-	print(heart.get_playing_speed())
-	#print(heart.get_playing_speed())
-	if heart.get_playing_speed() > 3: # moves to previous save in the future 
-		heartbeat==0.5
-		heart.play("heartBeat",heartbeat)
-		
-	if moving and isFrame and space:  #in this case you are doing everything right
-		heart.play("heartBeat",heartbeat)	
-	elif moving and !isFrame and space:# your moving and presing space on the wrong time
-		heartbeat = heartbeat + 0.1                    
-		heart.play("heartBeat",heartbeat)	
-	elif moving and isFrame and !space:
-		heartbeat = heartbeat + 0.1                    
-		heart.play("heartBeat",heartbeat)	
-	else:
-		if heartbeat >0.5:
-			heartbeat = heartbeat-1
-		heart.play("heartBeat",heartbeat)
 		
 		
 	
