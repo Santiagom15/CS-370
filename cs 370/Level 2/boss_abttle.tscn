@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://b56vaqpj2xuuv"]
+[gd_scene load_steps=28 format=3 uid="uid://bk1ytbihhcm5v"]
 
 [ext_resource type="Texture2D" uid="uid://c4y4byl1rprxr" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png" id="1_7kc8y"]
 [ext_resource type="Script" path="res://Level 2/boss_abttle.gd" id="1_gms7e"]
