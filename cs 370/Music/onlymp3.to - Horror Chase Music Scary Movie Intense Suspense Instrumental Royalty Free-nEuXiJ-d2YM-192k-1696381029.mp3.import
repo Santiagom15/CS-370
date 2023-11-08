@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cm4u13deon1v4"
+path="res://.godot/imported/onlymp3.to - Horror Chase Music Scary Movie Intense Suspense Instrumental Royalty Free-nEuXiJ-d2YM-192k-1696381029.mp3-f88176a4296608082c35c3e877c0b10f.mp3str"
+
+[deps]
+
+source_file="res://Music/onlymp3.to - Horror Chase Music Scary Movie Intense Suspense Instrumental Royalty Free-nEuXiJ-d2YM-192k-1696381029.mp3"
+dest_files=["res://.godot/imported/onlymp3.to - Horror Chase Music Scary Movie Intense Suspense Instrumental Royalty Free-nEuXiJ-d2YM-192k-1696381029.mp3-f88176a4296608082c35c3e877c0b10f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

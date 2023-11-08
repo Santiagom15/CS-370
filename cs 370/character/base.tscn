@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://whkxyoo3p723"]
+[gd_scene load_steps=58 format=3 uid="uid://b58t7w3dxxise"]
 
 [ext_resource type="Texture2D" uid="uid://c15viyffob8xn" path="res://assets/aisha/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_notqu"]
 [ext_resource type="Script" path="res://character/base.gd" id="1_qqij5"]
@@ -401,16 +401,6 @@ animations = [{
 "name": &"walkright_aisha",
 "speed": 5.0
 }]
-
-[sub_resource type="Gradient" id="Gradient_usl58"]
-offsets = PackedFloat32Array(0, 0.998529, 1)
-colors = PackedColorArray(1, 1, 1, 1, 0.0691177, 0.0691177, 0.0691177, 1, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_wtcuu"]
-gradient = SubResource("Gradient_usl58")
-fill = 1
-fill_from = Vector2(0.5, 0.5)
-fill_to = Vector2(0.5, 0.13)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_qqij5")

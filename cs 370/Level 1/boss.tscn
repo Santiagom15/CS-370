@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bfhrt5rvfing8"]
+
+[ext_resource type="Script" path="res://Level 1/boss.gd" id="1_k1qbu"]
+[ext_resource type="Texture2D" uid="uid://cvdqs3q0i3vbd" path="res://doctor.png" id="2_nkgjw"]
+[ext_resource type="Script" path="res://Level 1/FiniteStateMachine.gd" id="3_qsjdb"]
+[ext_resource type="Script" path="res://Level 1/Idle.gd" id="4_i5e1q"]
+[ext_resource type="Script" path="res://Level 1/Shoot.gd" id="5_sb548"]
+[ext_resource type="PackedScene" uid="uid://dxw1xcy3pxojt" path="res://Level 1/scalpely.tscn" id="6_x4qxr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kx3pw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nkgjw")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="boss" type="CharacterBody2D"]
+script = ExtResource("1_k1qbu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(0.23, 0.247)
+sprite_frames = SubResource("SpriteFrames_kx3pw")
+animation = &"Idle"
+autoplay = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="FiniteStateMachine" type="Node2D" parent="."]
+script = ExtResource("3_qsjdb")
+
+[node name="Idle" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("4_i5e1q")
+
+[node name="Shoot" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("5_sb548")
+scalpely_node = ExtResource("6_x4qxr")
+
+[node name="Timer" type="Timer" parent="FiniteStateMachine/Shoot"]
+wait_time = 0.5
+autostart = true
+
+[node name="debug" type="Label" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="timeout" from="FiniteStateMachine/Shoot/Timer" to="FiniteStateMachine/Shoot" method="_on_timer_timeout"]
