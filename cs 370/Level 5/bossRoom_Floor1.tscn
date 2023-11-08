@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cgxvwm7nsmtns" path="res://assets/Solaria Demo Update 01.png" id="1_wg576"]
 [ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="2_y74dr"]
-[ext_resource type="PackedScene" uid="uid://bk1ytbihhcm5v" path="res://Level 2/boss_abttle.tscn" id="3_xc7mn"]
+[ext_resource type="PackedScene" uid="uid://bk1ytbihhcm5v" path="res://Level 2/boss_battle.tscn" id="3_xc7mn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5r6lv"]
 texture = ExtResource("1_wg576")
