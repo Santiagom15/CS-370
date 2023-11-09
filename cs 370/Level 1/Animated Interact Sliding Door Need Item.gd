@@ -196,7 +196,9 @@ func _on_PlayerDectectionLayering_body_entered(body):
 	print("   player position: ", player.global_position)
 	if body.name == "Player":
 		anim.z_index = 0 # z_index controls the order in which the nodes render: higher z_index means rendering in front
-
+		animLock.z_index = 0
+		animLockOpen.z_index = 0
+		animBoltCut.z_index = 0
 
 # GoDot Note: The body entered signal is emitted from the PlayerDetectionLayering Area2D node when
 #             the player exits its collision shape and accordingly this function is called
@@ -204,6 +206,9 @@ func _on_PlayerDectectionLayering_body_entered(body):
 func _on_PlayerDetectionLayering_body_exited(body):
 	if body.name == "Player":
 		anim.z_index = player.z_index + 1
+		animLock.z_index = player.z_index + 1
+		animLockOpen.z_index = player.z_index + 1
+		animBoltCut.z_index = player.z_index + 1
 
 
 # Set play_open to true if the door is currently closed and player is close enough to door

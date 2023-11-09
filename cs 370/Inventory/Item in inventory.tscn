@@ -139,7 +139,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"BoltCutter",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -171,7 +171,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Candle",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -197,7 +197,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Frog",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -229,7 +229,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Key",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [node name="Item" type="Node2D"]
