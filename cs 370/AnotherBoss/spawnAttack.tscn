@@ -1,10 +1,19 @@
-[gd_scene load_steps=9 format=3 uid="uid://dfmtqgvpc1ivm"]
+[gd_scene load_steps=10 format=3 uid="uid://dfmtqgvpc1ivm"]
 
+[ext_resource type="Script" path="res://AnotherBoss/spawnAttack.gd" id="1_4kfr8"]
 [ext_resource type="Texture2D" uid="uid://crmaaqh62pevf" path="res://Level 2/Animations_for_bass/SFX301_nyknck/SFX301_01.png" id="1_4kyyk"]
 [ext_resource type="Texture2D" uid="uid://baxywmy2ohyan" path="res://Level 2/Animations_for_bass/SFX301_nyknck/SFX301_02.png" id="2_eu73m"]
 [ext_resource type="Texture2D" uid="uid://cfkuqile8xpcr" path="res://Level 2/Animations_for_bass/SFX301_nyknck/SFX301_03.png" id="3_gafgp"]
 [ext_resource type="Texture2D" uid="uid://bo0wuj6jitwrb" path="res://Level 2/Animations_for_bass/SFX301_nyknck/SFX301_04.png" id="4_57tfv"]
 [ext_resource type="Texture2D" uid="uid://tunb5wmrpju5" path="res://Level 2/Animations_for_bass/SFX301_nyknck/SFX301_05.png" id="5_6gei7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kke1b"]
+radius = 6.0
+height = 31.5616
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6r0f"]
+radius = 6.27144
+height = 24.3307
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_35yn8"]
 animations = [{
@@ -29,20 +38,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kke1b"]
-radius = 6.0
-height = 31.5616
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6r0f"]
-radius = 6.27144
-height = 24.3307
-
-[node name="Area2D" type="Area2D"]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_35yn8")
-animation = &"groundAttack"
-frame_progress = 0.912599
+[node name="FiniteState" type="Area2D"]
+script = ExtResource("1_4kfr8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, -8)
@@ -57,3 +54,13 @@ shape = SubResource("CapsuleShape2D_g6r0f")
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(-1, -2.5)
 scale = Vector2(1.7, 1.55)
+
+[node name="Beforedamage" type="Node2D" parent="."]
+
+[node name="damage" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_35yn8")
+animation = &"groundAttack"
+frame = 4
+frame_progress = 1.0

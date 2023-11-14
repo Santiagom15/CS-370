@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://dbwyrxq5wypil"]
+[gd_scene load_steps=18 format=3 uid="uid://dbwyrxq5wypil"]
 
 [ext_resource type="Script" path="res://AnotherBoss/bossbattle_santi_2.gd" id="1_n3td2"]
 [ext_resource type="Script" path="res://FiniteStateMachine.gd" id="2_rxedy"]
 [ext_resource type="Script" path="res://Idle.gd" id="3_gop6f"]
 [ext_resource type="Script" path="res://AnotherBoss/groundAttack.gd" id="4_abaln"]
 [ext_resource type="Texture2D" uid="uid://ds3slukvdegjw" path="res://assets/FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/_Idle.png" id="4_t278w"]
+[ext_resource type="PackedScene" uid="uid://dfmtqgvpc1ivm" path="res://AnotherBoss/spawnAttack.tscn" id="5_dx47a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fx411"]
 atlas = ExtResource("4_t278w")
@@ -108,6 +109,9 @@ script = ExtResource("3_gop6f")
 
 [node name="groundAttack" type="Node2D" parent="FiniteState"]
 script = ExtResource("4_abaln")
+groundAttack = ExtResource("5_dx47a")
+
+[node name="groundTimer" type="Timer" parent="FiniteState/groundAttack"]
 
 [node name="Animations" type="AnimatedSprite2D" parent="FiniteState"]
 position = Vector2(1, -41)
@@ -116,3 +120,5 @@ sprite_frames = SubResource("SpriteFrames_txg71")
 animation = &"Idle "
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[connection signal="timeout" from="FiniteState/groundAttack/groundTimer" to="FiniteState/groundAttack" method="_on_ground_timer_timeout"]

@@ -6,13 +6,13 @@ var previous_state: State
 
 
 func _ready():
-	print(get_child(0).name)
 	current_state = get_child(0) as State 
 	previous_state = current_state
 	current_state.enter()
 
 
 func change_state(state): # lets you change the state
+	print(state)
 	current_state = find_child(state) as State
 	current_state.enter()
 
