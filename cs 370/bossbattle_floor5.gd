@@ -1,8 +1,9 @@
 extends Node2D
 
 @onready var timmy = $AudioStreamPlayer2D
-@onready var timer = $Timer
-
+@onready var deathTimer = $deathTimer
+@onready var state = $boss/FiniteStateMachine/Shoot
+@onready var global_hit = get_node("/root/Global")
 var lanesize = 105
 
 @onready var newPos1 = $boss.position
@@ -16,14 +17,15 @@ var lanesize = 105
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	timer = Timer.new()
-	add_child(timer)
-	timer.start()
+	pass
+	
+
 
 	
 # when music is up, change scene (temp: main menu)
 func _on_timer_timeout():
-	get_tree().change_scene_to_file("res://first_game.tscn")
+	get_tree().change_scene_to_file("res://DeathScene1.tscn")
+
 	
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -31,20 +33,30 @@ func _process(_delta):
 	$AudioStreamPlayer2D.get_time()
 	var t = timmy.time
 	print(t) 
-	$HealthBar.play("3-2")
-	if(t - lasttime >= 0.75):
-		var randInd = randi_range(0, 2)
-		if(prevprev == randInd && prev == randInd):
-			randInd = randi_range(0, 2)
-		prevprev = prev
-		prev = randInd
+
+	if(global_hit.hits == 1):
+		$HealthBar.play("2")
+	elif(global_hit.hits == 2):
+		$HealthBar.play("1")
+	elif(global_hit.hits == 3):
+		$HealthBar.play("0")
+		state.exit()
+		if(deathTimer.is_stopped()):
+			deathTimer.start()
+		#get_tree().change_scene_to_file("res://Level 1/floor5.tscn")	
+	if(global_hit.hits < 3):
+		if(t - lasttime >= 0.375):
+			var randInd = randi_range(0, 2)
+			if(prevprev == randInd && prev == randInd):
+				randInd = randi_range(0, 2)
+			prevprev = prev
+			prev = randInd
+			
+			var randomElement = poses[randInd]
 		
-		var randomElement = poses[randInd]
-	
-		$boss.set_position(randomElement)
-		lasttime = t
-		
-	
+			$boss.set_position(randomElement)
+			lasttime = t
 
-
-
+func _on_death_timer_timeout():
+	#print("Timer stop")
+	get_tree().change_scene_to_file("res://DeathScene1.tscn")

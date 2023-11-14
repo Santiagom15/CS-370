@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://isjesotk5ain"
-path="res://.godot/imported/doctor.png-01ee7671fb44ac934f578ac4914c21af.ctex"
+uid="uid://cwsafg14fthnp"
+path="res://.godot/imported/DeathScene1Background.png-acab9eaa09da32e72832e1d90883314e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doctor.png"
-dest_files=["res://.godot/imported/doctor.png-01ee7671fb44ac934f578ac4914c21af.ctex"]
+source_file="res://DeathScene1Background.png"
+dest_files=["res://.godot/imported/DeathScene1Background.png-acab9eaa09da32e72832e1d90883314e.ctex"]
 
 [params]
 

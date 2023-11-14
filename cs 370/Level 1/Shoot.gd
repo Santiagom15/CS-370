@@ -4,8 +4,8 @@ class_name ShootState
 @export var scalpely_node : PackedScene
 @onready var timer = $Timer
 
-#func transition():
-	#get_parent().change_state("Idle")
+func transition():
+	get_parent().change_state("Idle")
 	
 func enter():
 	super.enter()
@@ -21,7 +21,8 @@ func _on_timer_timeout():
 	
 func shoot():
 	var scalpely = scalpely_node.instantiate()
-	
+	get_parent().get_parent().get_node("AnimatedSprite2D").play("Shoot")
+	#get_node("AnimatedSprite2D").play("Shoot")
 	scalpely.position = global_position + Vector2(30,35)
 	scalpely.direction = Vector2.DOWN
 	

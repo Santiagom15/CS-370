@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://isjesotk5ain"
-path="res://.godot/imported/doctor.png-01ee7671fb44ac934f578ac4914c21af.ctex"
+uid="uid://qbmyfk2enlmd"
+path="res://.godot/imported/Untitled design (2).png-b15afa5e0643959c424cd7a011d7d66b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doctor.png"
-dest_files=["res://.godot/imported/doctor.png-01ee7671fb44ac934f578ac4914c21af.ctex"]
+source_file="res://Untitled design (2).png"
+dest_files=["res://.godot/imported/Untitled design (2).png-b15afa5e0643959c424cd7a011d7d66b.ctex"]
 
 [params]
 

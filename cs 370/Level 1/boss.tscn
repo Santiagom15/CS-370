@@ -1,21 +1,44 @@
-[gd_scene load_steps=8 format=3 uid="uid://bfhrt5rvfing8"]
+[gd_scene load_steps=11 format=3 uid="uid://bfhrt5rvfing8"]
 
 [ext_resource type="Script" path="res://Level 1/boss.gd" id="1_k1qbu"]
-[ext_resource type="Texture2D" uid="uid://cvdqs3q0i3vbd" path="res://doctor.png" id="2_nkgjw"]
+[ext_resource type="Texture2D" uid="uid://isjesotk5ain" path="res://doctor.png" id="2_nkgjw"]
 [ext_resource type="Script" path="res://Level 1/FiniteStateMachine.gd" id="3_qsjdb"]
 [ext_resource type="Script" path="res://Level 1/Idle.gd" id="4_i5e1q"]
 [ext_resource type="Script" path="res://Level 1/Shoot.gd" id="5_sb548"]
 [ext_resource type="PackedScene" uid="uid://dxw1xcy3pxojt" path="res://Level 1/scalpely.tscn" id="6_x4qxr"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwm3o"]
+atlas = ExtResource("2_nkgjw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q66n1"]
+atlas = ExtResource("2_nkgjw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nl40"]
+atlas = ExtResource("2_nkgjw")
+region = Rect2(32, 0, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_kx3pw"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_nkgjw")
+"texture": SubResource("AtlasTexture_pwm3o")
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 2.7
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q66n1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nl40")
+}],
+"loop": false,
+"name": &"Shoot",
+"speed": 5.3
 }]
 
 [node name="boss" type="CharacterBody2D"]
@@ -23,10 +46,9 @@ script = ExtResource("1_k1qbu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
-scale = Vector2(0.23, 0.247)
+scale = Vector2(4, 4.296)
 sprite_frames = SubResource("SpriteFrames_kx3pw")
 animation = &"Idle"
-autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
@@ -41,7 +63,7 @@ script = ExtResource("5_sb548")
 scalpely_node = ExtResource("6_x4qxr")
 
 [node name="Timer" type="Timer" parent="FiniteStateMachine/Shoot"]
-wait_time = 0.5
+wait_time = 0.375
 autostart = true
 
 [node name="debug" type="Label" parent="."]

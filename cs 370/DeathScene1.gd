@@ -1,7 +1,4 @@
-
-class_name HitBox
-extends Area2D
-
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,3 +9,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_exit_button_down():
+	get_tree().change_scene_to_file("res://first_game.tscn")

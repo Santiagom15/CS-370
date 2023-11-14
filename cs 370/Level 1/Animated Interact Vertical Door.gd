@@ -24,7 +24,7 @@ func _ready():
 	collTopRight.set_deferred("disabled", true)
  
 
-func _process(delta):
+func _process(_delta):
 	len = stack_approach_side.size()
 	if play_open == true && len == 2 && Input.is_action_pressed("ui_accept"):
 		curr_side = stack_approach_side[len - 1]
