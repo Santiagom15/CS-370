@@ -50,6 +50,8 @@ signal lockDisabled(lockIdx)
 @onready var doorName = str(get_name())
 var lockIdx : int
 @onready var animRattle = $AnimatedDoorRattle
+@onready var animLockOpen = $AnimatedLockOpen
+@onready var animBoltCut = $AnimatedBoltCutterOpen
 
 
 # As soon as scene loads, disable the collision shapes for when door is open 
@@ -60,10 +62,14 @@ func _ready():
 	animLock.set_frame(0)
 	anim.set_frame(0)
 	animRattle.set_frame(0)
+	animLockOpen.set_frame(0)
+	animBoltCut.set_frame(0)
 	
 	animLock.show()
 	anim.hide()
 	animRattle.show()
+	animLockOpen.hide()
+	animBoltCut.hide()
 	
 	levelRoot.lockDisabled.connect(_on_lock_disabled)
 
@@ -76,12 +82,12 @@ func _process(delta):
 	if play_open == true && Input.is_action_pressed("ui_accept"):
 		
 		# Case when play has the key or has already used the key
-		if inventory.has_item("Key") == true || unlocked == true:
+		if inventory.has_item("BoltCutter") == true || unlocked == true:
 		
 			# If the player still has the key, remove it from inventory and use it here
 			if unlocked == false:
 				unlocked = true
-				inventory.remove_item("Key")
+				inventory.remove_item("BoltCutter")
 				
 				# Update the list of locked interactable objects for the current level
 				inventory.update_level_unlocks("Door" + doorName[-1])   # It is assumed that the name of any locked door node will end with a integer >= 0
@@ -90,17 +96,25 @@ func _process(delta):
 				animLock.hide()
 				anim.show()
 				animRattle.hide()
-		
-			play_open = false
-			play_close = true
+				animLockOpen.show()
+				animBoltCut.show()
+				
+				animLockOpen.play("LockOpen")
+				animBoltCut.play("BoltCutter")
+				
+				play_open = false
 			
-			# If the close animation is playing, start the open animation from the current frame
-			if anim.is_playing():
-				curr_frame = anim.get_frame()
-			else:   # If close animation isn't playing, start open animation from start
-				curr_frame = 0
-			anim.play("SlideOpen")   # Play open animation
-			anim.set_frame(curr_frame)
+			else:
+				play_open = false
+				play_close = true
+				
+				# If the close animation is playing, start the open animation from the current frame
+				if anim.is_playing():
+					curr_frame = anim.get_frame()
+				else:   # If close animation isn't playing, start open animation from start
+					curr_frame = 0
+				anim.play("SlideOpen")   # Play open animation
+				anim.set_frame(curr_frame)
 			
 		elif !animLock.is_playing():
 			play_open = false
@@ -109,6 +123,21 @@ func _process(delta):
 			animRattle.show()
 			animLock.play("Bolt")
 			animRattle.play("DoorRattle")
+
+
+func _on_animated_lock_open_animation_finished():
+	animLockOpen.hide()
+	animBoltCut.hide()
+	
+	play_close = true
+		
+	# If the close animation is playing, start the open animation from the current frame
+	if anim.is_playing():
+		curr_frame = anim.get_frame()
+	else:   # If close animation isn't playing, start open animation from start
+		curr_frame = 0
+		anim.play("SlideOpen")   # Play open animation
+		anim.set_frame(curr_frame)
 
 
 func _on_lock_disabled(lockIdx):
@@ -167,7 +196,9 @@ func _on_PlayerDectectionLayering_body_entered(body):
 	print("   player position: ", player.global_position)
 	if body.name == "Player":
 		anim.z_index = 0 # z_index controls the order in which the nodes render: higher z_index means rendering in front
-
+		animLock.z_index = 0
+		animLockOpen.z_index = 0
+		animBoltCut.z_index = 0
 
 # GoDot Note: The body entered signal is emitted from the PlayerDetectionLayering Area2D node when
 #             the player exits its collision shape and accordingly this function is called
@@ -175,6 +206,9 @@ func _on_PlayerDectectionLayering_body_entered(body):
 func _on_PlayerDetectionLayering_body_exited(body):
 	if body.name == "Player":
 		anim.z_index = player.z_index + 1
+		animLock.z_index = player.z_index + 1
+		animLockOpen.z_index = player.z_index + 1
+		animBoltCut.z_index = player.z_index + 1
 
 
 # Set play_open to true if the door is currently closed and player is close enough to door

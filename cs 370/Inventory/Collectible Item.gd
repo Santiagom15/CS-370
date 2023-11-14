@@ -89,6 +89,3 @@ func _on_item_disabled(itemIdx):
 		animSparkle.hide()
 		collision.set_deferred("disabled", true)
 
-
-func _on_animated_key_animation_finished():
-	pass # Replace with function body.
