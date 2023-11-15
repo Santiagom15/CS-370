@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Idle.gd" id="3_gop6f"]
 [ext_resource type="Script" path="res://AnotherBoss/groundAttack.gd" id="4_abaln"]
 [ext_resource type="Texture2D" uid="uid://ds3slukvdegjw" path="res://assets/FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/_Idle.png" id="4_t278w"]
-[ext_resource type="PackedScene" uid="uid://dfmtqgvpc1ivm" path="res://AnotherBoss/spawnAttack.tscn" id="5_dx47a"]
+[ext_resource type="PackedScene" uid="uid://k02txmjwjr1q" path="res://AnotherBoss/SpawnAttackFiniteState.tscn" id="5_3p7hx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fx411"]
 atlas = ExtResource("4_t278w")
@@ -109,9 +109,13 @@ script = ExtResource("3_gop6f")
 
 [node name="groundAttack" type="Node2D" parent="FiniteState"]
 script = ExtResource("4_abaln")
-groundAttack = ExtResource("5_dx47a")
+groundAttack = ExtResource("5_3p7hx")
 
 [node name="groundTimer" type="Timer" parent="FiniteState/groundAttack"]
+wait_time = 2.0
+
+[node name="delay" type="Timer" parent="FiniteState/groundAttack"]
+wait_time = 3.0
 
 [node name="Animations" type="AnimatedSprite2D" parent="FiniteState"]
 position = Vector2(1, -41)
@@ -122,3 +126,4 @@ animation = &"Idle "
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
 [connection signal="timeout" from="FiniteState/groundAttack/groundTimer" to="FiniteState/groundAttack" method="_on_ground_timer_timeout"]
+[connection signal="timeout" from="FiniteState/groundAttack/delay" to="FiniteState/groundAttack" method="_on_delay_timeout"]
