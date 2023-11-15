@@ -21,3 +21,7 @@ func _on_player_detection_body_entered(body):
 		inventory.clear_level_unlocks()
 		get_tree().change_scene_to_file("res://Level 2/floor4.tscn")
 
+
+
+func _on_player_detection_body_exited(body):
+	pass # Replace with function body.

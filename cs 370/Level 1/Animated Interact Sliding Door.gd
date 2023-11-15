@@ -192,3 +192,7 @@ func _on_PlayerDetectAnimCloseBottom_body_exited(body):
 			play_close = false
 			switch_anims = true
 		in_bottom = false
+
+
+func _on_PlayerDetectionAnimation_body_exited(body):
+	pass # Replace with function body.
