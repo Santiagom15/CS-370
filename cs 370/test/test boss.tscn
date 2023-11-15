@@ -1,7 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0is1bydgyr16"]
 
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="2_e4byw"]
 [ext_resource type="PackedScene" path="res://Level 2/boss_abttle.tscn" id="3_8hgdl"]
+=======
+[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="2_e4byw"]
+[ext_resource type="PackedScene" uid="uid://b56vaqpj2xuuv" path="res://Level 2/boss_abttle.tscn" id="3_8hgdl"]
+>>>>>>> 99dbcc239fd7fe2689231475253f68ac426fe5c8
 
 [node name="Node2D" type="Node2D"]
 

@@ -1,12 +1,13 @@
-[gd_scene load_steps=27 format=3 uid="uid://dt1ymtq6cxmda"]
+[gd_scene load_steps=28 format=3 uid="uid://b56vaqpj2xuuv"]
 
 [ext_resource type="Texture2D" uid="uid://c4y4byl1rprxr" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack.png" id="1_7kc8y"]
 [ext_resource type="Script" path="res://Level 2/boss_abttle.gd" id="1_gms7e"]
 [ext_resource type="Texture2D" uid="uid://2xdc6p7sugbd" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png" id="2_3lp72"]
 [ext_resource type="Texture2D" uid="uid://c8wcmw6fg2qib" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Jump.png" id="3_gb48f"]
 [ext_resource type="Script" path="res://Level 2/FiniteStateMachine.gd" id="4_elpor"]
+[ext_resource type="PackedScene" uid="uid://c0u7rqldefv1q" path="res://Level 2/meteor.tscn" id="5_4ckkf"]
+[ext_resource type="Script" path="res://Level 2/MeteorAttack.gd" id="5_11nsm"]
 [ext_resource type="Script" path="res://Level 2/Idle.gd" id="6_vile7"]
-[ext_resource type="Script" path="res://Level 2/Attack1.gd" id="7_bw07v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a2rbp"]
 atlas = ExtResource("1_7kc8y")
@@ -149,7 +150,7 @@ animations = [{
 radius = 31.0
 height = 128.0
 
-[node name="boss battle2" type="CharacterBody2D"]
+[node name="bossBattle2" type="CharacterBody2D"]
 script = ExtResource("1_gms7e")
 
 [node name="debug" type="Label" parent="."]
@@ -164,10 +165,16 @@ script = ExtResource("4_elpor")
 [node name="Idle" type="Node2D" parent="FiniteStateMachine"]
 script = ExtResource("6_vile7")
 
-[node name="Attack1" type="Node2D" parent="FiniteStateMachine"]
-script = ExtResource("7_bw07v")
+[node name="TestTimerFoMeteor" type="Timer" parent="FiniteStateMachine/Idle"]
+wait_time = 1.121
 
-[node name="Animations" type="AnimatedSprite2D" parent="FiniteStateMachine"]
+[node name="MeteorAttack" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("5_11nsm")
+meteorNode = ExtResource("5_4ckkf")
+
+[node name="MeteroShoot" type="Timer" parent="FiniteStateMachine/MeteorAttack"]
+
+[node name="Animations" type="AnimatedSprite2D" parent="."]
 position = Vector2(23, -130)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_tsyjc")
@@ -178,3 +185,5 @@ animation = &"attack"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, -64)
 shape = SubResource("CapsuleShape2D_2bfg6")
+
+[connection signal="timeout" from="FiniteStateMachine/MeteorAttack/MeteroShoot" to="FiniteStateMachine/MeteorAttack" method="_on_metero_shoot_timeout"]

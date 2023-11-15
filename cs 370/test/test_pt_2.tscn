@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ums131eorg3e"]
+
+[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="1_3hiqi"]
+[ext_resource type="PackedScene" uid="uid://dbwyrxq5wypil" path="res://AnotherBoss/bossbattle_santi_2.tscn" id="2_kjvfx"]
+
+[node name="TestPt2" type="Node2D"]
+position = Vector2(0, 10)
+
+[node name="player" parent="." instance=ExtResource("1_3hiqi")]
+position = Vector2(573, 324)
+
+[node name="Camera2D2" type="Camera2D" parent="player"]
+zoom = Vector2(0.5, 0.5)
+
+[node name="BossbattleSanti2" parent="." instance=ExtResource("2_kjvfx")]
+position = Vector2(657, -318)
