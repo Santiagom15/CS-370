@@ -62803,7 +62803,7 @@ offset_left = 317.0
 offset_top = -291.0
 offset_right = 504.0
 offset_bottom = -211.0
-text = "Home Page"
+text = "Level Menu"
 metadata/_edit_use_anchors_ = true
 
 [node name="Inventory" type="Button" parent="Player/Buttons"]
