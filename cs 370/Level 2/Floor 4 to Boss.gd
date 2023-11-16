@@ -6,8 +6,6 @@ extends CharacterBody2D
 #
 ## Update the path of the current level
 func _ready():
-	var col = $"CollisionShape2D"
-	col.disabled = true
 	inventory.update_current_level("res://Level 5/Floor 1.tscn")
 #
 ## Detect when the player comes into/collides with the "Player detection"

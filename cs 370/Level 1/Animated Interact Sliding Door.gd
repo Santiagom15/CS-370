@@ -152,6 +152,8 @@ func _on_PlayerDetectionAnimCloseTop_body_exited(body):
 			use_coll1 = true
 			play_close = false
 			switch_anims = true
+		elif !in_bottom:
+			play_open = false 
 		in_top = false   # Since player has exited the top area, set to false
 
 
@@ -191,6 +193,8 @@ func _on_PlayerDetectAnimCloseBottom_body_exited(body):
 			use_coll1 = false
 			play_close = false
 			switch_anims = true
+		elif !in_top:
+			play_open = false
 		in_bottom = false
 
 
