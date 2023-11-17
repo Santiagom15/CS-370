@@ -1,6 +1,6 @@
-[gd_scene load_steps=46 format=3 uid="uid://y8mau72gcoib"]
+[gd_scene load_steps=46 format=3 uid="uid://dqdendaq2h3xf"]
 
-[ext_resource type="PackedScene" uid="uid://bfhrt5rvfing8" path="res://Level 1/boss.tscn" id="1_1sf1f"]
+[ext_resource type="PackedScene" path="res://Level 1/boss.tscn" id="1_1sf1f"]
 [ext_resource type="Script" path="res://bossbattle_floor5.gd" id="1_pp6cf"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="2_mnnjk"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="3_fmn3m"]
