@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c0v6gv2irwtpw"]
 
 [ext_resource type="Texture2D" uid="uid://cehedy2l2c2km" path="res://icon.svg" id="1_4dbb7"]
-[ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="2_ywj48"]
+[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="2_ywj48"]
 [ext_resource type="Script" path="res://Level 2/Exit level 2 to level 3.gd" id="3_pq1vm"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="3_wgfgf"]
 
