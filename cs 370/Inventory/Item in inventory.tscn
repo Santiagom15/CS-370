@@ -1,9 +1,26 @@
-[gd_scene load_steps=31 format=3 uid="uid://c5ppeedcmaxjb"]
+[gd_scene load_steps=36 format=3 uid="uid://c5ppeedcmaxjb"]
 
 [ext_resource type="Script" path="res://Inventory/Item in inventory.gd" id="1_nlos4"]
+[ext_resource type="Texture2D" uid="uid://kbht784kfp40" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_inventory.png" id="2_7np3e"]
 [ext_resource type="Texture2D" uid="uid://dmb8u1sxh5x7c" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_wall_candle_eddittedAlisa_inventory.png" id="2_khxq8"]
 [ext_resource type="Texture2D" uid="uid://bki76e5ugswye" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_edittedAlisa_inventory.png" id="3_p320k"]
 [ext_resource type="Texture2D" uid="uid://cmtwxcv7v86vy" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_inventory_edittedAlisa.png" id="3_xpjfe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6n6fs"]
+atlas = ExtResource("2_7np3e")
+region = Rect2(0, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gkca"]
+atlas = ExtResource("2_7np3e")
+region = Rect2(49, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwtlj"]
+atlas = ExtResource("2_7np3e")
+region = Rect2(98, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_or85m"]
+atlas = ExtResource("2_7np3e")
+region = Rect2(147, 0, 49, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rpkbg"]
 atlas = ExtResource("2_khxq8")
@@ -109,6 +126,23 @@ region = Rect2(256, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_6n6fs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gkca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwtlj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_or85m")
+}],
+"loop": true,
+"name": &"BoltCutter",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_rpkbg")
 }, {
 "duration": 1.0,
@@ -137,7 +171,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Candle",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -163,7 +197,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Frog",
-"speed": 5.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -195,7 +229,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Key",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [node name="Item" type="Node2D"]

@@ -17,3 +17,6 @@ func _on_level_5_button_down():
 
 func _on_inventory_button_down():
 	get_tree().change_scene_to_file("res://Inventory/Inventory.tscn")
+
+func _on_level_menu_button_down():
+	get_tree().change_scene_to_file("res://Level Navigation/level_select.tscn")
