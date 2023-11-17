@@ -33,7 +33,5 @@ func spawn():
 			attack.direction = (player.global_position - attack.position).normalized()
 			
 		break
-		
-	
 	get_tree().current_scene.call_deferred("add_child",attack)
 
