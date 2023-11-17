@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://c8om272at6wu1"]
+
+[ext_resource type="Texture2D" uid="uid://df14ey5m4cgnr" path="res://scalpel.png" id="2_37wrq"]
+[ext_resource type="AudioStream" uid="uid://b3td1v87hwt53" path="res://Music/bossbattlemusic1.mp3" id="3_kj22o"]
+[ext_resource type="Script" path="res://AnimatedSprite2D.gd" id="3_ms0jc"]
+[ext_resource type="Script" path="res://syncaudio.gd" id="5_opb5b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i0j84"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_37wrq")
+}],
+"loop": false,
+"name": &"beat",
+"speed": 2.0
+}]
+
+[sub_resource type="Animation" id="Animation_5su7c"]
+resource_name = "sword"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(180, -275), Vector2(180, 450)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0tg5a"]
+_data = {
+"sword": SubResource("Animation_5su7c")
+}
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(180, -275)
+sprite_frames = SubResource("SpriteFrames_i0j84")
+animation = &"beat"
+frame_progress = 1.0
+script = ExtResource("3_ms0jc")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_kj22o")
+autoplay = true
+script = ExtResource("5_opb5b")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0tg5a")
+}
