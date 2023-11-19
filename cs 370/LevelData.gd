@@ -10,6 +10,7 @@ extends Node2D
 signal itemDisabled(itemIdx)
 signal lockDisabled(lockIdx)
 
+
 # If the player was prematurely moved from current scene, place them where they were previously
 func _ready():
 	

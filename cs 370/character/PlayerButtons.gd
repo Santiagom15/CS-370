@@ -15,7 +15,7 @@ func _ready():
 		child_node.z_index = 2
 
 func _on_home_button_down():
-	get_tree().change_scene_to_file("res://first_game.tscn")
+	get_tree().change_scene_to_file("res://Level Navigation/level_select.tscn")
 
 
 func _on_inventory_button_down():

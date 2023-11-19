@@ -1,4 +1,4 @@
-[gd_scene load_steps=396 format=3 uid="uid://bgkfmqsltr2aj"]
+[gd_scene load_steps=461 format=3 uid="uid://d0rp3r6rsqjj7"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Script" path="res://LevelData.gd" id="1_nmc80"]
@@ -12,10 +12,12 @@
 [ext_resource type="Texture2D" uid="uid://dv2q0p67lrydp" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_painting_doll_1.png" id="5_yt6uo"]
 [ext_resource type="Texture2D" uid="uid://ckb4ja5ocbgnm" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_full.png" id="6_c3omn"]
 [ext_resource type="Texture2D" uid="uid://drbvmbors5uxv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_right.png" id="6_i8hy6"]
+[ext_resource type="Texture2D" uid="uid://btml02hilic6v" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_blood_drip_edittedAlisa.png" id="6_ov5sj"]
 [ext_resource type="Texture2D" uid="uid://b4q0knbvu7wf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xraymachine_screen.png" id="6_tku2f"]
 [ext_resource type="Texture2D" uid="uid://cwl7odqgh6i5x" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror.png" id="6_vbod5"]
 [ext_resource type="Texture2D" uid="uid://bye32i8ybd7m6" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_empty.png" id="6_wqapt"]
 [ext_resource type="Texture2D" uid="uid://bc7yomw0w3532" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_sink_new_2_3-10 loop.png" id="6_yuj1v"]
+[ext_resource type="Texture2D" uid="uid://dage1b20td5od" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_blood_splatter_edittedAlisa.png" id="7_1708x"]
 [ext_resource type="Texture2D" uid="uid://bote30ouq70j" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathtub_2.png" id="7_ovnr8"]
 [ext_resource type="Texture2D" uid="uid://d3ng0ce47d54y" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_left.png" id="8_0cefy"]
 [ext_resource type="Texture2D" uid="uid://4xcd7q6v2co6" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_old_tv.png" id="8_n8eh6"]
@@ -30,12 +32,20 @@
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door Need Item.gd" id="28_s0rtn"]
 [ext_resource type="Texture2D" uid="uid://bdw58iw7s5jvd" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="29_0ygv0"]
 [ext_resource type="Texture2D" uid="uid://difda4krhim5h" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_big_1.png" id="29_adnfa"]
+[ext_resource type="PackedScene" uid="uid://c2frl1g2skbcy" path="res://Inventory/collectible_item_boltcutter.tscn" id="29_j1icn"]
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="29_nb3ye"]
+[ext_resource type="Texture2D" uid="uid://byyti5evxrayp" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_lock1.png" id="30_a6tw1"]
 [ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="30_ycgyi"]
-[ext_resource type="Texture2D" uid="uid://de4qpekfy6jiv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_rattle_2_edittedAlisa.png" id="31_6aeo5"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="32_62thx"]
+[ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="32_83m24"]
+[ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door Need Item.gd" id="34_so8o3"]
 [ext_resource type="Texture2D" uid="uid://df4ksnwncongf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
+[ext_resource type="Texture2D" uid="uid://bnlln117petdg" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_unlock.png" id="35_s5vr5"]
+[ext_resource type="Texture2D" uid="uid://l50lbsccrl8u" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_and_lock.png" id="36_4b83o"]
+[ext_resource type="Texture2D" uid="uid://bsw4rdjy5qs8l" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_glass_sliding_32x32_edittedAlisa_locked.png" id="36_k7kwh"]
 [ext_resource type="Texture2D" uid="uid://blurtqdn6gseh" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
+[ext_resource type="Texture2D" uid="uid://sfrovock16q1" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolted_lock_broken.png" id="38_pdkwt"]
+[ext_resource type="Texture2D" uid="uid://1f8525nwlko4" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_action.png" id="40_44drb"]
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acfsb"]
@@ -28094,221 +28104,107 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 2.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fbekp"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(0, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgdgw"]
+atlas = ExtResource("6_ov5sj")
+region = Rect2(0, 0, 16, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6hdil"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(16, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7q87"]
+atlas = ExtResource("6_ov5sj")
+region = Rect2(16, 0, 16, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4ucp8"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(32, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_0k73s"]
+atlas = ExtResource("6_ov5sj")
+region = Rect2(32, 0, 16, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mbymp"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(48, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1g7f"]
+atlas = ExtResource("6_ov5sj")
+region = Rect2(48, 0, 16, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0jo2q"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(64, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_rn733"]
+atlas = ExtResource("6_ov5sj")
+region = Rect2(64, 0, 16, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lacet"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(80, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_uu3w4"]
+atlas = ExtResource("6_ov5sj")
+region = Rect2(80, 0, 16, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_k1xtv"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(96, 40, 16, 8)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_cuf2o"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_g1xpk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fbekp")
+"texture": SubResource("AtlasTexture_cgdgw")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6hdil")
+"texture": SubResource("AtlasTexture_h7q87")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4ucp8")
+"texture": SubResource("AtlasTexture_0k73s")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mbymp")
+"texture": SubResource("AtlasTexture_m1g7f")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0jo2q")
+"texture": SubResource("AtlasTexture_rn733")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lacet")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k1xtv")
+"texture": SubResource("AtlasTexture_uu3w4")
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 4.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kvg2t"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(16, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_rv4gj"]
+atlas = ExtResource("7_1708x")
+region = Rect2(0, 0, 35, 21)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1wvcp"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(32, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_b05ra"]
+atlas = ExtResource("7_1708x")
+region = Rect2(35, 0, 35, 21)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_73lnu"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(48, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo0h6"]
+atlas = ExtResource("7_1708x")
+region = Rect2(70, 0, 35, 21)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3lv7j"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(64, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw3do"]
+atlas = ExtResource("7_1708x")
+region = Rect2(105, 0, 35, 21)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gy31n"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(80, 40, 16, 8)
+[sub_resource type="AtlasTexture" id="AtlasTexture_656e1"]
+atlas = ExtResource("7_1708x")
+region = Rect2(140, 0, 35, 21)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mnold"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(96, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cvgkp"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(0, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8vk6c"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(16, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l8kmq"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(32, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ljrkh"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(48, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d35xj"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(64, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ra15j"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(80, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m7jbq"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(96, 40, 16, 8)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_6h7ed"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kvg2t")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1wvcp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_73lnu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3lv7j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gy31n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mnold")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cvgkp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8vk6c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l8kmq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ljrkh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d35xj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ra15j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m7jbq")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0a0kc"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(32, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m3318"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(48, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gixyc"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(64, 40, 16, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sodhl"]
-atlas = ExtResource("4_nvu84")
-region = Rect2(80, 40, 16, 8)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_by1kg"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0a0kc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m3318")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gixyc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sodhl")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n0h1v"]
-atlas = ExtResource("3_mrhk3")
-region = Rect2(80, 384, 16, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lo10h"]
-atlas = ExtResource("3_mrhk3")
-region = Rect2(96, 384, 16, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjnj0"]
+atlas = ExtResource("7_1708x")
+region = Rect2(175, 0, 35, 21)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4pkle"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_n0h1v")
+"texture": SubResource("AtlasTexture_rv4gj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lo10h")
+"texture": SubResource("AtlasTexture_b05ra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vo0h6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qw3do")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_656e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xjnj0")
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 1.0
+"speed": 3.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7rkq2"]
@@ -39700,6 +39596,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rpvo"]
+size = Vector2(13.8125, 41.875)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_h2fjp"]
 atlas = ExtResource("6_c3omn")
 region = Rect2(0, 0, 16, 32)
@@ -39777,6 +39676,9 @@ animations = [{
 "name": &"Idle",
 "speed": 5.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjbo5"]
+size = Vector2(84.25, 85.75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yht8s"]
 atlas = ExtResource("6_wqapt")
@@ -40398,7 +40300,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 4.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mpuhg"]
@@ -40615,70 +40517,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ptalu")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lc3h7"]
-atlas = ExtResource("6_i8hy6")
-region = Rect2(0, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vpnuo"]
-atlas = ExtResource("6_i8hy6")
-region = Rect2(32, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8fssq"]
-atlas = ExtResource("6_i8hy6")
-region = Rect2(64, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_am53y"]
-atlas = ExtResource("6_i8hy6")
-region = Rect2(96, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i4ils"]
-atlas = ExtResource("6_i8hy6")
-region = Rect2(128, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_snse0"]
-atlas = ExtResource("6_i8hy6")
-region = Rect2(160, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_flfjp"]
-atlas = ExtResource("6_i8hy6")
-region = Rect2(192, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hi3y6"]
-atlas = ExtResource("6_i8hy6")
-region = Rect2(224, 0, 32, 48)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_co7gj"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lc3h7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vpnuo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8fssq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_am53y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i4ils")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_snse0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_flfjp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hi3y6")
 }],
 "loop": true,
 "name": &"Idle",
@@ -40934,43 +40772,43 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_agr52"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5suj"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(128, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_b752b"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_cp350"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(96, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_b4mdk"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlcd5"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(64, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fyl02"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1p3p6"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(32, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xgsx5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_os4i8"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(0, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gvecj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gto4m"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(0, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1iws4"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_reirb"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(32, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mcf2p"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ni1w"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(64, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uwx2x"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbn15"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(96, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ho6dv"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_08c82"]
 atlas = ExtResource("23_u8hcn")
 region = Rect2(128, 0, 32, 48)
 
@@ -40978,19 +40816,19 @@ region = Rect2(128, 0, 32, 48)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_agr52")
+"texture": SubResource("AtlasTexture_u5suj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b752b")
+"texture": SubResource("AtlasTexture_cp350")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b4mdk")
+"texture": SubResource("AtlasTexture_qlcd5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fyl02")
+"texture": SubResource("AtlasTexture_1p3p6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xgsx5")
+"texture": SubResource("AtlasTexture_os4i8")
 }],
 "loop": false,
 "name": &"CloseRight",
@@ -40998,62 +40836,62 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gvecj")
+"texture": SubResource("AtlasTexture_gto4m")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1iws4")
+"texture": SubResource("AtlasTexture_reirb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mcf2p")
+"texture": SubResource("AtlasTexture_1ni1w")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uwx2x")
+"texture": SubResource("AtlasTexture_hbn15")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ho6dv")
+"texture": SubResource("AtlasTexture_08c82")
 }],
 "loop": false,
 "name": &"OpenRight",
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qs6ow"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_6g2kt"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(128, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_btehi"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihxj8"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(96, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vlgdo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7i03m"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(64, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_h6rno"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8yaa"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(32, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7doyb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_37phr"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(0, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_yr7wf"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jfad"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(0, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_clo57"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gj4vh"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(32, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_f0ctd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdofs"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(64, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5hpce"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwuvl"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(96, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_oc24s"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uh0p"]
 atlas = ExtResource("25_ad4ki")
 region = Rect2(128, 0, 32, 48)
 
@@ -41061,19 +40899,19 @@ region = Rect2(128, 0, 32, 48)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qs6ow")
+"texture": SubResource("AtlasTexture_6g2kt")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_btehi")
+"texture": SubResource("AtlasTexture_ihxj8")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vlgdo")
+"texture": SubResource("AtlasTexture_7i03m")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_h6rno")
+"texture": SubResource("AtlasTexture_v8yaa")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7doyb")
+"texture": SubResource("AtlasTexture_37phr")
 }],
 "loop": false,
 "name": &"CloseLeft",
@@ -41081,19 +40919,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yr7wf")
+"texture": SubResource("AtlasTexture_8jfad")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_clo57")
+"texture": SubResource("AtlasTexture_gj4vh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_f0ctd")
+"texture": SubResource("AtlasTexture_tdofs")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5hpce")
+"texture": SubResource("AtlasTexture_fwuvl")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_oc24s")
+"texture": SubResource("AtlasTexture_1uh0p")
 }],
 "loop": false,
 "name": &"OpenLeft",
@@ -63797,6 +63635,113 @@ texture = ExtResource("1_mqcgy")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_duku6")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0drv"]
+atlas = ExtResource("32_83m24")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4tn8"]
+atlas = ExtResource("32_83m24")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8vmen"]
+atlas = ExtResource("32_83m24")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkpe3"]
+atlas = ExtResource("32_83m24")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5e0qb"]
+atlas = ExtResource("32_83m24")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rokle"]
+atlas = ExtResource("32_83m24")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pw258"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0drv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0drv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4tn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8vmen")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkpe3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5e0qb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rokle")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5e0qb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkpe3")
+}],
+"loop": false,
+"name": &"Sparkle",
+"speed": 4.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgvts"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rxvi"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppcvh"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbtuc"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8atq"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dplv"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5oph"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0u0em"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkbsv"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3x12d"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0im45"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8b8t"]
+atlas = ExtResource("30_a6tw1")
+region = Rect2(352, 0, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_vvocg"]
 atlas = ExtResource("29_nb3ye")
 region = Rect2(0, 0, 32, 32)
@@ -63837,8 +63782,91 @@ region = Rect2(352, 0, 32, 32)
 atlas = ExtResource("29_nb3ye")
 region = Rect2(384, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jfq3"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(0, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8201"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(48, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npuic"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(96, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvs7a"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(144, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kpen"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(192, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0e720"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(240, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owj7c"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(288, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmikg"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(336, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a82l0"]
+atlas = ExtResource("35_s5vr5")
+region = Rect2(384, 0, 48, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_oljdu"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgvts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rxvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppcvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbtuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s8atq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dplv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5oph")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0u0em")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkbsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3x12d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0im45")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8b8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rxvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgvts")
+}],
+"loop": false,
+"name": &"Key",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vvocg")
@@ -63892,73 +63920,39 @@ animations = [{
 "texture": SubResource("AtlasTexture_l5jra")
 }],
 "loop": false,
-"name": &"Key",
+"name": &"KeySparkle",
 "speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_evrj0"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(0, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qa1dp"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(160, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5n5j0"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(192, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gr7fw"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(128, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_y3ccs"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(32, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_phwl6"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(64, 0, 32, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ppglu"]
-atlas = ExtResource("31_6aeo5")
-region = Rect2(256, 0, 32, 48)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_elu61"]
-animations = [{
+}, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_evrj0")
+"texture": SubResource("AtlasTexture_8jfq3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qa1dp")
+"texture": SubResource("AtlasTexture_e8201")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5n5j0")
+"texture": SubResource("AtlasTexture_npuic")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gr7fw")
+"texture": SubResource("AtlasTexture_mvs7a")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_y3ccs")
+"texture": SubResource("AtlasTexture_0kpen")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_phwl6")
+"texture": SubResource("AtlasTexture_0e720")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gr7fw")
+"texture": SubResource("AtlasTexture_owj7c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qa1dp")
+"texture": SubResource("AtlasTexture_vmikg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5n5j0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ppglu")
+"texture": SubResource("AtlasTexture_a82l0")
 }],
 "loop": false,
-"name": &"DoorRattle",
+"name": &"Unlock",
 "speed": 5.0
 }]
 
@@ -63976,66 +63970,6 @@ size = Vector2(59, 7)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x08dl"]
 size = Vector2(59, 7)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcvg8"]
-size = Vector2(154, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_856oc"]
-size = Vector2(105.5, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jb6pp"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a18w3"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecty4"]
-size = Vector2(154, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ixbn"]
-size = Vector2(105.5, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ei1ol"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bylhy"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u4n5"]
-size = Vector2(174, 54)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rj3tj"]
-size = Vector2(154.875, 204)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_awjkv"]
-size = Vector2(160, 100)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuc5o"]
-size = Vector2(156, 34)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_urwkt"]
-size = Vector2(118, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqxj5"]
-size = Vector2(82, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3sld"]
-size = Vector2(52, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3i8u"]
-size = Vector2(12, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwlwr"]
-size = Vector2(174, 44)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg2eu"]
-size = Vector2(118, 193)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ibfs"]
-size = Vector2(122, 65)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oy8l"]
-size = Vector2(138, 31)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a01e6"]
 atlas = ExtResource("26_eu261")
@@ -64101,6 +64035,403 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhrkg"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g48i7"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snq3j"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4nod"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aromv"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqk1g"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrv52"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_deabt"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3bdd"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44pc6"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cm2bn"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1mm2i"]
+atlas = ExtResource("36_k7kwh")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uryc8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhrkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g48i7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snq3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4nod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aromv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqk1g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrv52")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_deabt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3bdd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44pc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cm2bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1mm2i")
+}],
+"loop": false,
+"name": &"DoorRattle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gb5kg"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(0, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orttd"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(66, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y48am"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(132, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhei7"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(198, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymmts"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(264, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mnx1m"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(330, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sato"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(0, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmmsn"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(66, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkxqt"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(132, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1s05"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(198, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npgo8"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(264, 0, 66, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbqio"]
+atlas = ExtResource("36_4b83o")
+region = Rect2(330, 0, 66, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nnytk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gb5kg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orttd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y48am")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhei7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymmts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mnx1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0sato")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmmsn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkxqt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1s05")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npgo8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbqio")
+}],
+"loop": false,
+"name": &"Bolt",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afrsw"]
+atlas = ExtResource("38_pdkwt")
+region = Rect2(0, 0, 49, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6ln3"]
+atlas = ExtResource("38_pdkwt")
+region = Rect2(49, 0, 49, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w618m"]
+atlas = ExtResource("38_pdkwt")
+region = Rect2(98, 0, 49, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdvln"]
+atlas = ExtResource("38_pdkwt")
+region = Rect2(147, 0, 49, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1cxsq"]
+atlas = ExtResource("38_pdkwt")
+region = Rect2(196, 0, 49, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsp8d"]
+atlas = ExtResource("38_pdkwt")
+region = Rect2(245, 0, 49, 29)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iegyp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afrsw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6ln3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w618m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdvln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1cxsq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xsp8d")
+}],
+"loop": false,
+"name": &"LockOpen",
+"speed": 3.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxdtf"]
+atlas = ExtResource("40_44drb")
+region = Rect2(0, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmbj2"]
+atlas = ExtResource("40_44drb")
+region = Rect2(49, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjqpk"]
+atlas = ExtResource("40_44drb")
+region = Rect2(98, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3clw0"]
+atlas = ExtResource("40_44drb")
+region = Rect2(147, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lp6ec"]
+atlas = ExtResource("40_44drb")
+region = Rect2(196, 0, 49, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lvvpu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxdtf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmbj2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjqpk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3clw0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lp6ec")
+}],
+"loop": false,
+"name": &"BoltCutter",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wx6pd"]
+size = Vector2(133, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0nxrc"]
+size = Vector2(126.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dhic"]
+size = Vector2(102.75, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgnkk"]
+size = Vector2(90, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iy0b"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7evrr"]
+size = Vector2(53.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4xl7t"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ja4n8"]
+size = Vector2(11.75, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f1ih8"]
+size = Vector2(133, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gm7aq"]
+size = Vector2(126.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ummjj"]
+size = Vector2(102.75, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrpb7"]
+size = Vector2(90, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4wnc"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihw7f"]
+size = Vector2(53.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ang7o"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rlhdr"]
+size = Vector2(11.75, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_loqqa"]
+size = Vector2(276, 79)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7r2b"]
+size = Vector2(245, 132.312)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnbd4"]
+size = Vector2(248, 109)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hrxam"]
+size = Vector2(246, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcvg8"]
+size = Vector2(154, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_856oc"]
+size = Vector2(105.5, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jb6pp"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a18w3"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecty4"]
+size = Vector2(154, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ixbn"]
+size = Vector2(105.5, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ei1ol"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bylhy"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u4n5"]
+size = Vector2(174, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rj3tj"]
+size = Vector2(154.875, 204)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awjkv"]
+size = Vector2(160, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuc5o"]
+size = Vector2(156, 34)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urwkt"]
+size = Vector2(118, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqxj5"]
+size = Vector2(82, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3sld"]
+size = Vector2(52, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3i8u"]
+size = Vector2(12, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwlwr"]
+size = Vector2(174, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg2eu"]
+size = Vector2(118, 193)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ibfs"]
+size = Vector2(122, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oy8l"]
+size = Vector2(138, 31)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7lqyg"]
 size = Vector2(133, 13)
 
@@ -64129,10 +64460,10 @@ size = Vector2(11.75, 13)
 size = Vector2(276, 54)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8l43d"]
-size = Vector2(245, 190.75)
+size = Vector2(245, 139.375)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mgqmf"]
-size = Vector2(248, 107)
+size = Vector2(248, 104.125)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oqypt"]
 size = Vector2(246, 40)
@@ -67958,36 +68289,73 @@ position = Vector2(1096, 924.5)
 scale = Vector2(6.5, 8.875)
 sprite_frames = SubResource("SpriteFrames_cx70t")
 animation = &"Idle"
+frame_progress = 0.258117
 
 [node name="Animated blood drip 1" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
-position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip 1"]
-position = Vector2(720, 1952)
-scale = Vector2(7.25, 11.75)
-sprite_frames = SubResource("SpriteFrames_cuf2o")
+position = Vector2(366, 125)
+scale = Vector2(5.27344, 3.34896)
+sprite_frames = SubResource("SpriteFrames_g1xpk")
 animation = &"Idle"
 
 [node name="Animated blood drip 2" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
-position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip 2"]
-position = Vector2(1656, 960)
-scale = Vector2(6.5, 10.75)
-sprite_frames = SubResource("SpriteFrames_6h7ed")
+position = Vector2(688, 1305)
+scale = Vector2(5.27344, 3.34896)
+sprite_frames = SubResource("SpriteFrames_g1xpk")
 animation = &"Idle"
 
 [node name="Animated blood drip 3" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
-position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip 3"]
-position = Vector2(656, -184)
-scale = Vector2(4.82143, 6.75)
-sprite_frames = SubResource("SpriteFrames_by1kg")
+position = Vector2(397, 2257)
+scale = Vector2(6.69922, 4.09115)
+sprite_frames = SubResource("SpriteFrames_g1xpk")
 animation = &"Idle"
+
+[node name="Animated blood drip 4" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
+script = ExtResource("10_kkunq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip 4"]
+position = Vector2(2347, 2378)
+scale = Vector2(6.69922, 4.09115)
+sprite_frames = SubResource("SpriteFrames_g1xpk")
+animation = &"Idle"
+
+[node name="Animated blood drip 5" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
+script = ExtResource("10_kkunq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip 5"]
+position = Vector2(1225, 1317)
+scale = Vector2(8.53711, 5.02474)
+sprite_frames = SubResource("SpriteFrames_g1xpk")
+animation = &"Idle"
+frame_progress = 0.0505088
+
+[node name="Animated blood drip 6" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
+script = ExtResource("10_kkunq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip 6"]
+position = Vector2(1611, 1340.31)
+scale = Vector2(4.69214, 3.86198)
+sprite_frames = SubResource("SpriteFrames_g1xpk")
+animation = &"Idle"
+frame_progress = 0.749347
+
+[node name="Animated blood drip 7" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
+script = ExtResource("10_kkunq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood drip 7"]
+position = Vector2(1997, 1308)
+scale = Vector2(4.69214, 3.86198)
+sprite_frames = SubResource("SpriteFrames_g1xpk")
+animation = &"Idle"
+frame_progress = 0.153041
 
 [node name="Animated blood splatter 0" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
@@ -68004,40 +68372,33 @@ position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 1"]
-position = Vector2(2120, 872)
+position = Vector2(2130, 893)
 scale = Vector2(5.5, 4.375)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
+frame_progress = 0.416858
 
 [node name="Animated blood splatter 2" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 2"]
-position = Vector2(2224, 888)
-scale = Vector2(5.5, 6.1875)
+position = Vector2(1677.69, 973.008)
+scale = Vector2(5.21786, 3.6183)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
-
-[node name="Animated blood splatter 3" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
-position = Vector2(-276, 384)
-script = ExtResource("10_kkunq")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 3"]
-position = Vector2(1448, 912)
-scale = Vector2(8.75, 7.42708)
-sprite_frames = SubResource("SpriteFrames_4pkle")
-animation = &"Idle"
+frame_progress = 0.506737
 
 [node name="Animated blood splatter 4" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 4"]
-position = Vector2(2000.5, 1487.72)
-scale = Vector2(6.93749, 6.02343)
+position = Vector2(1993.55, 1485.24)
+scale = Vector2(6.54017, 5.78696)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
+frame_progress = 0.284278
 
 [node name="Animated blood splatter 5" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
@@ -68064,17 +68425,18 @@ position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 7"]
-position = Vector2(688, 1936)
-scale = Vector2(5.21874, 9.16667)
+position = Vector2(690, 1948)
+scale = Vector2(5.86651, 7.39286)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
+frame_progress = 0.0232231
 
 [node name="Animated blood splatter 8" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 8"]
-position = Vector2(968, 856)
+position = Vector2(961, 858)
 scale = Vector2(5.21874, 5.25)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
@@ -68104,7 +68466,7 @@ position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 11"]
-position = Vector2(696, -272)
+position = Vector2(638, -177)
 scale = Vector2(5.80468, 4.125)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
@@ -68114,7 +68476,7 @@ position = Vector2(-276, 384)
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture/Animated blood splatter 12"]
-position = Vector2(704.781, -177.5)
+position = Vector2(704, -183)
 scale = Vector2(4.90234, 4.79167)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
@@ -68128,6 +68490,7 @@ position = Vector2(2607.1, 2017.81)
 scale = Vector2(4.11279, 5.18229)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
+frame_progress = 0.300967
 
 [node name="Door horizontal not animated" type="AnimatedSprite2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(637, 2145)
@@ -68152,21 +68515,21 @@ layer_1/modulate = Color(1, 1, 1, 1)
 layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
-layer_1/tile_data = PackedInt32Array(-262143, 720896, 71, -196607, 720896, 72, -262142, 786432, 71, -196606, 786432, 72, -262139, 196608, 69, -262138, 262144, 69, -327675, 196608, 68, -327674, 262144, 68, -327677, 0, 31, -262141, 0, 32, -196605, 0, 33, -196604, 65536, 33, 7, 65536, 27, 65543, 65536, 28, 131079, 65536, 29, 196615, 65536, 30, -262137, 65536, 27, -196601, 65536, 28, -131065, 65536, 29, -65529, 65536, 30, 720897, 720896, 71, 786433, 720896, 72, 720898, 786432, 71, 786434, 786432, 72, 589825, 589824, 97, 655361, 524288, 66, 524289, 589824, 96, 524290, 589824, 64, 589826, 589824, 65, 655362, 589824, 66, 589830, 0, 65, 655366, 0, 66, 720902, 0, 67, 589831, 65536, 65, 655367, 65536, 66, 720903, 65536, 67, 524293, 983040, 52, 589829, 983040, 53, 917510, 196608, 79, -65519, 589824, 69, 17, 589824, 70, -65518, 655360, 69, 18, 655360, 70, -327663, 131072, 0, -262127, 131072, 1, -327662, 196608, 0, -262126, 196608, 1, -327671, 131072, 37, -262135, 131072, 38, 131089, 655360, 97, 196625, 655360, 65, 262161, 655360, 66, 131090, 720896, 64, 196626, 720896, 65, 262162, 720896, 66, 131091, 786432, 64, 196627, 786432, 65, 262163, 786432, 66, 131087, 589824, 96, 131088, 589824, 64, 196624, 589824, 65, 262160, 589824, 66, 196623, 589824, 97, 262159, 524288, 66, -327669, 655360, 97, 589837, 655360, 49, 655373, 655360, 50, 655378, 458752, 62, 720914, 458752, 63, 655377, 983040, 56, 720913, 524288, 63, 655376, 917504, 56, 720912, 393216, 63, 786446, 851968, 103, 851982, 851968, 104, 786447, 983040, 102, 851983, 917504, 104, 786448, 983040, 103, 851984, 983040, 104, 720911, 983040, 101, 589838, 720896, 67, 655374, 720896, 68, -196603, 196608, 70, -196602, 262144, 70, 196609, 720896, 71, 262145, 720896, 72, 196610, 786432, 71, 262147, 131072, 75, 262148, 196608, 75, 327681, 1, 58, 262146, 786432, 72, 327683, 131072, 76, 327684, 196608, 76, 1, 720896, 41, -262134, 393217, 24, 851986, 393217, 24, 851985, 327681, 24, 917519, 327681, 24, 393234, 589825, 12, 524306, 393217, 24, 458769, 327681, 24, 393217, 1, 59, 983045, 786434, 5, 1048581, 786434, 6, 983046, 851970, 5, 1048582, 851970, 6, 983057, 786434, 5, 1048593, 786434, 6, 983058, 851970, 5, 1048594, 851970, 6, 1376263, 327682, 23, 1441799, 327682, 24, 1507335, 2, 25, 1376264, 393218, 23, 1441800, 393218, 24, 1507336, 65538, 25, 1376265, 917506, 30, 1441801, 917506, 31, 1507337, 917506, 32, 1376266, 983042, 30, 1441802, 983042, 31, 1507338, 983042, 32, 1441794, 2, 17, 1507330, 2, 18, 1572866, 2, 19, 1376259, 65538, 16, 1441795, 65538, 17, 1507331, 65538, 18, 1572867, 65538, 19, 1376260, 131074, 16, 1441796, 131074, 17, 1507332, 131074, 18, 1572868, 131074, 19, 1376261, 196610, 16, 1441797, 196610, 17, 1507333, 196610, 18, 1572869, 196610, 19, 1376262, 262146, 16, 1441798, 262146, 17, 1507334, 262146, 18, 1572870, 262146, 19, 1441803, 589826, 41, 1310725, 720896, 19, 1310724, 720896, 19, 1310723, 720896, 19, 1114113, 589824, 18, 1179649, 589824, 19, 1114130, 327680, 18, 1179666, 327680, 19, 983053, 0, 39, 1048589, 0, 40, 983054, 65536, 39, 1048590, 65536, 40, 983055, 0, 37, 1048591, 0, 38, 983056, 917505, 33, 1048592, 917505, 34, 983044, 131072, 37, 1048580, 131072, 38, 983043, 393216, 73, 1048579, 393216, 74, 983042, 65536, 37, 1048578, 65536, 38, 983041, 458753, 15, 1048577, 458753, 16, 1900545, 917506, 39, 1966081, 917506, 40, 1900546, 983042, 39, 1966082, 983042, 40, 1900547, 131074, 32, 1966083, 131074, 33, 1900548, 196610, 32, 1966084, 196610, 33, 1835016, 983042, 18, 1900552, 983042, 19, 1835017, 589826, 18, 1900553, 589826, 19, 1900554, 589824, 97, 1376274, 917504, 16, 1310726, 720896, 19, 1310738, 917504, 15, 1310739, 983040, 15, 1638437, 0, 71, 1703973, 0, 72, 1638438, 65536, 71, 1703974, 65536, 72, 1638431, 0, 71, 1703967, 0, 72, 1638429, 196608, 68, 1703965, 196608, 69, 1638430, 262144, 68, 1703966, 262144, 69, 1441825, 327680, 7, 1507361, 327680, 8, 1441826, 393216, 7, 1507362, 393216, 8, 1441827, 0, 72, 1507363, 0, 73, 1441828, 65536, 72, 1507364, 65536, 73, 1441829, 0, 72, 1507365, 0, 73, 1441830, 65536, 72, 1507366, 65536, 73, 1376289, 327680, 6, 1376290, 393216, 6, 1376291, 0, 72, 1376292, 65536, 72, 1376293, 0, 71, 1376294, 65536, 71, 1310755, 0, 71, 1310756, 65536, 71, 1441817, 720896, 32, 1507353, 720896, 33, 1441818, 786432, 32, 1507354, 786432, 33, 1441819, 720896, 35, 1507355, 720896, 36, 1441821, 720896, 35, 1507357, 720896, 36, 1441822, 786432, 35, 1507358, 786432, 36, 1441820, 786432, 32, 1507356, 786432, 33, 1376288, 262144, 23, 1441824, 262144, 24, 1835024, 589824, 32, 1900560, 589824, 33, 1835025, 655360, 32, 1900561, 655360, 33, 1376275, 983040, 16, 1376276, 655360, 34, 1376281, 720896, 32, 1376282, 786432, 32, 1376283, 786432, 32, 1376284, 786432, 32, 1376285, 786432, 32, 1376286, 786432, 35, 1507359, 655360, 97, 1310750, 589824, 96, 1638424, 0, 71, 1703960, 0, 72, 1638422, 0, 71, 1703958, 0, 72, 1638423, 65536, 71, 1703959, 65536, 72, 1638436, 327680, 68, 1703972, 327680, 69, 1638432, 65536, 71, 1703968, 65536, 72, 1638425, 65536, 71, 1703961, 65536, 72, 1376287, 589824, 49, 1703952, 327680, 22, 1703953, 393216, 22, 1966110, 589824, 22, 2031646, 720896, 23, 2097182, 720896, 23, 1835039, 851968, 16, 1966111, 655360, 22, 2031647, 786432, 23, 2097183, 786432, 23, 1769508, 327680, 41, 1835044, 917504, 56, 1900580, 917504, 57, 1769509, 983040, 55, 1835045, 983040, 56, 1900581, 983040, 57, 1966117, 589824, 22, 2031653, 720896, 23, 2097189, 720896, 23, 1835046, 131072, 19, 1900582, 131072, 20, 1966118, 655360, 22, 2031654, 786432, 23, 2097190, 786432, 23, 1835038, 786432, 35, 1900574, 786432, 36, 1835037, 720896, 32, 1900573, 720896, 33, 1769503, 851968, 15, 1966093, 720896, 100, 1966094, 786432, 100, 2031629, 720896, 101, 2031630, 786432, 101, 589840, 917504, 55, 589841, 983040, 55, 1835018, 589824, 96, 851992, 786432, 49, 917528, 786432, 50, 851989, 851968, 49, 917525, 851968, 50, 851990, 917504, 49, 917526, 917504, 50, 851991, 983040, 49, 917527, 983040, 50, 851993, 458752, 49, 917529, 458752, 50, 851994, 524288, 49, 917530, 524288, 50, 917531, 589824, 50, 852002, 786432, 49, 917538, 786432, 50, 852003, 786432, 49, 917539, 786432, 50, 851998, 589824, 56, 917534, 589824, 57, 851999, 655360, 56, 917535, 655360, 57, 852000, 655360, 56, 917536, 655360, 57, 852001, 720896, 56, 917537, 720896, 57, 851996, 917504, 17, 917532, 917504, 18, 851997, 983040, 17, 917533, 983040, 18, 983060, 655360, 9, 1048596, 655360, 10, 1114132, 655360, 11, 983061, 589824, 18, 1048597, 589824, 19, 1048599, 65536, 17, 1048600, 131072, 17, 1769507, 262144, 41, 1966120, 589825, 12, 2031656, 524289, 12, -131064, 131072, 79, -65528, 131072, 80, 524299, 0, 79, 589835, 0, 80, 1114135, 65536, 18, 1114136, 131072, 18, 2031649, 131072, 76, 2031650, 196608, 76, 1966113, 131072, 75, 1966114, 196608, 75, 1966106, 131072, 76, 1966107, 196608, 76, 1900570, 131072, 75, 1900571, 196608, 75, 524292, 917504, 52, 589828, 917504, 53, 655364, 917504, 54, 655365, 983040, 54, 15, 0, 75, 65551, 0, 76, 16, 65536, 75, 65552, 65536, 76, -262140, 65536, 32, -327666, 262144, 49, -262130, 262144, 50, -196594, 262144, 51, -327665, 327680, 49, -262129, 327680, 50, -196593, 327680, 51, -327664, 393216, 49, -262128, 393216, 50, -196592, 393216, 51, 131085, 65536, 2, -327672, 524288, 96, -262136, 524288, 97, 1966103, 655360, 22, 2031639, 786432, 23, 2097175, 786432, 23, 1966102, 589824, 22, 2031638, 720896, 23, 2097174, 720896, 23, 917521, 393217, 24, 1966091, 327681, 24, 1769494, 917504, 55, 1835030, 917504, 56, 1900566, 917504, 57, 1769495, 983040, 55, 1835031, 983040, 56, 1900567, 983040, 57, 1835032, 131072, 19, 1900568, 131072, 20)
+layer_1/tile_data = PackedInt32Array(-262143, 720896, 71, -196607, 720896, 72, -262142, 786432, 71, -196606, 786432, 72, -262139, 196608, 69, -262138, 262144, 69, -327675, 196608, 68, -327674, 262144, 68, -327677, 0, 31, -262141, 0, 32, -196605, 0, 33, -196604, 65536, 33, 7, 65536, 27, 65543, 65536, 28, 131079, 65536, 29, 196615, 65536, 30, -262137, 65536, 27, -196601, 65536, 28, -131065, 65536, 29, -65529, 65536, 30, 720897, 720896, 71, 786433, 720896, 72, 720898, 786432, 71, 786434, 786432, 72, 589825, 589824, 97, 655361, 524288, 66, 524289, 589824, 96, 524290, 589824, 64, 589826, 589824, 65, 655362, 589824, 66, 589830, 0, 65, 655366, 0, 66, 720902, 0, 67, 589831, 65536, 65, 655367, 65536, 66, 720903, 65536, 67, 524293, 983040, 52, 589829, 983040, 53, 917510, 196608, 79, -65519, 589824, 69, 17, 589824, 70, -65518, 655360, 69, 18, 655360, 70, -327663, 131072, 0, -262127, 131072, 1, -327662, 196608, 0, -262126, 196608, 1, -327671, 131072, 37, -262135, 131072, 38, 131089, 655360, 97, 196625, 655360, 65, 262161, 655360, 66, 131090, 720896, 64, 196626, 720896, 65, 262162, 720896, 66, 131091, 786432, 64, 196627, 786432, 65, 262163, 786432, 66, 131087, 589824, 96, 131088, 589824, 64, 196624, 589824, 65, 262160, 589824, 66, 196623, 589824, 97, 262159, 524288, 66, -327669, 655360, 97, 589837, 655360, 49, 655373, 655360, 50, 655378, 458752, 62, 720914, 458752, 63, 655377, 983040, 56, 720913, 524288, 63, 655376, 917504, 56, 720912, 393216, 63, 786446, 851968, 103, 851982, 851968, 104, 786447, 983040, 102, 851983, 917504, 104, 786448, 983040, 103, 851984, 983040, 104, 720911, 983040, 101, 589838, 720896, 67, 655374, 720896, 68, -196603, 196608, 70, -196602, 262144, 70, 196609, 720896, 71, 262145, 720896, 72, 196610, 786432, 71, 262147, 131072, 75, 262148, 196608, 75, 327681, 1, 58, 262146, 786432, 72, 327683, 131072, 76, 327684, 196608, 76, 1, 720896, 41, -262134, 393217, 24, 851986, 393217, 24, 851985, 327681, 24, 917519, 327681, 24, 393234, 589825, 12, 524306, 393217, 24, 458769, 327681, 24, 393217, 1, 59, 983045, 786434, 5, 1048581, 786434, 6, 983046, 851970, 5, 1048582, 851970, 6, 983057, 786434, 5, 1048593, 786434, 6, 983058, 851970, 5, 1048594, 851970, 6, 1376263, 327682, 23, 1441799, 327682, 24, 1507335, 2, 25, 1376264, 393218, 23, 1441800, 393218, 24, 1507336, 65538, 25, 1376265, 917506, 30, 1441801, 917506, 31, 1507337, 917506, 32, 1376266, 983042, 30, 1441802, 983042, 31, 1507338, 983042, 32, 1441794, 2, 17, 1507330, 2, 18, 1572866, 2, 19, 1376259, 65538, 16, 1441795, 65538, 17, 1507331, 65538, 18, 1572867, 65538, 19, 1376260, 131074, 16, 1441796, 131074, 17, 1507332, 131074, 18, 1572868, 131074, 19, 1376261, 196610, 16, 1441797, 196610, 17, 1507333, 196610, 18, 1572869, 196610, 19, 1376262, 262146, 16, 1441798, 262146, 17, 1507334, 262146, 18, 1572870, 262146, 19, 1310725, 720896, 19, 1310724, 720896, 19, 1310723, 720896, 19, 1114113, 589824, 18, 1179649, 589824, 19, 1114130, 327680, 18, 1179666, 327680, 19, 983053, 0, 39, 1048589, 0, 40, 983054, 65536, 39, 1048590, 65536, 40, 983055, 0, 37, 1048591, 0, 38, 983056, 917505, 33, 1048592, 917505, 34, 983044, 131072, 37, 1048580, 131072, 38, 983043, 393216, 73, 1048579, 393216, 74, 983042, 65536, 37, 1048578, 65536, 38, 983041, 458753, 15, 1048577, 458753, 16, 1900545, 917506, 39, 1966081, 917506, 40, 1900546, 983042, 39, 1966082, 983042, 40, 1900547, 131074, 32, 1966083, 131074, 33, 1900548, 196610, 32, 1966084, 196610, 33, 1835016, 983042, 18, 1900552, 983042, 19, 1835017, 589826, 18, 1900553, 589826, 19, 1900554, 589824, 97, 1376274, 917504, 16, 1310726, 720896, 19, 1310738, 917504, 15, 1310739, 983040, 15, 1441825, 327680, 7, 1507361, 327680, 8, 1441826, 393216, 7, 1507362, 393216, 8, 1441827, 0, 72, 1507363, 0, 73, 1441828, 65536, 72, 1507364, 65536, 73, 1441829, 0, 72, 1507365, 0, 73, 1441830, 65536, 72, 1507366, 65536, 73, 1376289, 327680, 6, 1376290, 393216, 6, 1376291, 0, 72, 1376292, 65536, 72, 1376293, 0, 71, 1376294, 65536, 71, 1310755, 0, 71, 1310756, 65536, 71, 1441817, 720896, 32, 1507353, 720896, 33, 1441818, 786432, 32, 1507354, 786432, 33, 1441819, 720896, 35, 1507355, 720896, 36, 1441821, 720896, 35, 1507357, 720896, 36, 1441822, 786432, 35, 1507358, 786432, 36, 1441820, 786432, 32, 1507356, 786432, 33, 1835024, 589824, 32, 1900560, 589824, 33, 1835025, 655360, 32, 1900561, 655360, 33, 1376275, 983040, 16, 1376276, 655360, 34, 1376281, 720896, 32, 1376282, 786432, 32, 1376283, 786432, 32, 1376284, 786432, 32, 1376285, 786432, 32, 1376286, 786432, 35, 1507359, 655360, 97, 1310750, 589824, 96, 1376287, 589824, 49, 1703952, 327680, 22, 1703953, 393216, 22, 1966110, 589824, 22, 2031646, 720896, 23, 2097182, 720896, 23, 1835039, 851968, 16, 1966111, 655360, 22, 2031647, 786432, 23, 2097183, 786432, 23, 1835044, 917504, 56, 1900580, 917504, 57, 1769509, 983040, 55, 1835045, 983040, 56, 1900581, 983040, 57, 1966117, 589824, 22, 2031653, 720896, 23, 2097189, 720896, 23, 1835046, 131072, 19, 1900582, 131072, 20, 1966118, 655360, 22, 2031654, 786432, 23, 2097190, 786432, 23, 1835038, 786432, 35, 1900574, 786432, 36, 1835037, 720896, 32, 1900573, 720896, 33, 1769503, 851968, 15, 1966093, 720896, 100, 1966094, 786432, 100, 2031629, 720896, 101, 2031630, 786432, 101, 589840, 917504, 55, 589841, 983040, 55, 1835018, 589824, 96, 851992, 786432, 49, 917528, 786432, 50, 851989, 851968, 49, 917525, 851968, 50, 851990, 917504, 49, 917526, 917504, 50, 851991, 983040, 49, 917527, 983040, 50, 851993, 458752, 49, 917529, 458752, 50, 851994, 524288, 49, 917530, 524288, 50, 852002, 786432, 49, 917538, 786432, 50, 852003, 786432, 49, 917539, 786432, 50, 851998, 589824, 56, 917534, 589824, 57, 851999, 655360, 56, 917535, 655360, 57, 852000, 655360, 56, 917536, 655360, 57, 852001, 720896, 56, 917537, 720896, 57, 851996, 917504, 17, 917532, 917504, 18, 851997, 983040, 17, 917533, 983040, 18, 983060, 655360, 9, 1048596, 655360, 10, 1114132, 655360, 11, 983061, 589824, 18, 1048597, 589824, 19, 1048599, 65536, 17, 1048600, 131072, 17, 1966120, 589825, 12, 2031656, 524289, 12, -131064, 131072, 79, -65528, 131072, 80, 524299, 0, 79, 589835, 0, 80, 1114135, 65536, 18, 1114136, 131072, 18, 2031649, 131072, 76, 2031650, 196608, 76, 1966113, 131072, 75, 1966114, 196608, 75, 1966106, 131072, 76, 1966107, 196608, 76, 1900570, 131072, 75, 1900571, 196608, 75, 524292, 917504, 52, 589828, 917504, 53, 655364, 917504, 54, 655365, 983040, 54, 15, 0, 75, 65551, 0, 76, 16, 65536, 75, 65552, 65536, 76, -262140, 65536, 32, -327666, 262144, 49, -262130, 262144, 50, -196594, 262144, 51, -327665, 327680, 49, -262129, 327680, 50, -196593, 327680, 51, -327664, 393216, 49, -262128, 393216, 50, -196592, 393216, 51, 131085, 65536, 2, -327672, 524288, 96, -262136, 524288, 97, 1966103, 655360, 22, 2031639, 786432, 23, 2097175, 786432, 23, 1966102, 589824, 22, 2031638, 720896, 23, 2097174, 720896, 23, 917521, 393217, 24, 1966091, 327681, 24, 1835030, 917504, 56, 1900566, 917504, 57, 1769495, 983040, 55, 1835031, 983040, 56, 1900567, 983040, 57, 1835032, 131072, 19, 1900568, 131072, 20, 917531, 589824, 50)
 layer_2/name = "Infront"
 layer_2/enabled = true
 layer_2/modulate = Color(1, 1, 1, 1)
 layer_2/y_sort_enabled = false
 layer_2/y_sort_origin = 0
 layer_2/z_index = 0
-layer_2/tile_data = PackedInt32Array(786433, 983040, 69, 851969, 983040, 70, 589827, 196608, 71, 655363, 196608, 72, 655361, 524288, 66, 720897, 131072, 80, -196607, 131072, 19, -131071, 131072, 20, -262127, 589824, 69, -196591, 589824, 70, -262126, 655360, 69, -196590, 655360, 70, 18, 983040, 69, 65554, 983040, 70, 524289, 524288, 64, 589825, 524288, 65, 524290, 589824, 64, 589826, 589824, 65, 655362, 589824, 66, 131087, 524288, 64, 196623, 524288, 65, 262159, 524288, 66, 131088, 589824, 64, 196624, 589824, 65, 262160, 589824, 66, 131089, 655360, 64, 196625, 655360, 65, 262161, 65536, 27, 131090, 720896, 64, 196626, 720896, 65, 262162, 720896, 66, 131091, 786432, 64, 196627, 786432, 65, 262163, 786432, 66, 196622, 196608, 71, 262158, 196608, 72, 327698, 655360, 27, 393234, 655360, 28, 327699, 720896, 27, 393235, 720896, 28, 458766, 786432, 54, 524302, 786432, 55, 458767, 851968, 54, 524303, 851968, 55, 327697, 65536, 28, 393233, 65536, 29, 458769, 65536, 30, 786447, 589824, 100, 851983, 131072, 45, 786448, 655360, 100, 851984, 196608, 45, 851985, 262144, 63, 917521, 262144, 64, 851986, 327680, 63, 917522, 327680, 64, 917519, 131072, 46, 917520, 196608, 46, 917518, 851968, 39, 917517, 851968, 39, -196603, 262144, 75, -131067, 262144, 76, -196602, 327680, 75, -131066, 327680, 76, -65531, 262144, 77, 5, 262144, 78, -65530, 327680, 77, 6, 327680, 78, 65541, 262144, 75, 131077, 262144, 76, 65542, 327680, 75, 131078, 327680, 76, 262145, 458752, 39, 327681, 458752, 40, 262146, 524288, 39, 327682, 524288, 40, 262147, 458752, 39, 327683, 458752, 40, 262148, 524288, 39, 327684, 524288, 40, 393217, 458752, 41, 393218, 524288, 41, 393219, 458752, 41, 393220, 524288, 41, 1, 720896, 71, 65537, 720896, 72, 2, 786432, 71, 65538, 786432, 72, 458770, 655360, 29, 458771, 720896, 29, 1376258, 655362, 3, 1441794, 655362, 4, 1507330, 655362, 5, 1376257, 655362, 3, 1441793, 655362, 4, 1507329, 655362, 5, 1179649, 589824, 18, 1245185, 589824, 19, 1179666, 327680, 18, 1245202, 327680, 19, 1703937, 65538, 5, 1769473, 2, 6, 2031617, 655362, 9, 1769474, 2, 11, 2031618, 720898, 13, 1769475, 65538, 11, 1769476, 655362, 13, 1769481, 917506, 50, 1966089, 393218, 13, 2031625, 393218, 14, 1769482, 983042, 50, 1966090, 458754, 13, 2031626, 458754, 14, 1966091, 917506, 25, 1638401, 65538, 4, 1966081, 655362, 8, 1703938, 2, 10, 1966082, 720898, 12, 1703939, 65538, 10, 1966083, 393218, 42, 1703940, 655362, 12, 1703945, 917506, 49, 1900553, 393218, 12, 1703946, 983042, 49, 1900554, 458754, 12, 1900555, 917506, 24, 1048577, 65536, 12, 1114113, 65536, 13, 1048592, 786432, 6, 1114128, 786432, 7, 1179664, 786432, 8, 1441819, 655360, 30, 1441818, 524288, 31, 1900569, 655360, 9, 1966105, 655360, 10, 2031641, 655360, 11, 1900563, 720896, 9, 1966099, 720896, 10, 2031635, 720896, 11, 1441824, 196608, 71, 1507360, 196608, 72, 1441823, 262144, 71, 1507359, 196608, 72, -327667, 524288, 96, -262131, 524288, 97, 1769488, 458752, 60, 1835024, 458752, 61, 1769489, 524288, 60, 1835025, 524288, 61, 1376276, 65536, 68, 1376273, 262144, 27, 1441809, 262144, 28, 1507345, 262144, 29, 1376274, 327680, 27, 1441810, 327680, 28, 1507346, 327680, 29, 1376275, 0, 68, 1441811, 0, 69, 1507347, 0, 69, 1441812, 65536, 69, 1507348, 65536, 69, 1572883, 0, 70, 1572884, 65536, 70, 1310745, 131072, 2, 1376281, 131072, 3, 1310746, 0, 2, 1376282, 0, 3, 1376283, 0, 4, 1441820, 720896, 31, 1441821, 786432, 31, 1376285, 589824, 49, 1769485, 458752, 39, 1835021, 458752, 40, 1900557, 458752, 41, 1769486, 524288, 39, 1835022, 524288, 40, 1900558, 524288, 41, 2031632, 65536, 42, 2097168, 65536, 43, 2031633, 131072, 19, 2097169, 131072, 20, 2031650, 196608, 79, 2031651, 65536, 42, 2097187, 65536, 43, 2031652, 131072, 19, 2097188, 131072, 20, 2031629, 458752, 40, 2097165, 458752, 41, 2031630, 524288, 40, 2097166, 524288, 41, 1966093, 458752, 39, 1966094, 524288, 39, 2031645, 65536, 42, 2097181, 65536, 43, 655376, 393216, 62, 720912, 393216, 63, 655377, 458752, 62, 720913, 458752, 63, 655378, 524288, 62, 720914, 524288, 63, 917534, 327680, 9, 983071, 393216, 9, 1048607, 393216, 11, 983072, 458752, 9, 1048608, 458752, 11, 917537, 524288, 9, 983073, 524288, 10, 1048609, 524288, 11, 983070, 327680, 10, 1048606, 327680, 11, 983068, 786432, 54, 1048604, 786432, 55, 983069, 851968, 54, 1048605, 851968, 55, 1114132, 655360, 9, 1179668, 655360, 10, 1245204, 655360, 11, 1114133, 589824, 19, 1048597, 589824, 18, 917539, 458752, 18, 983075, 458752, 19, 917538, 458752, 18, 983074, 458752, 19, 917526, 458752, 18, 983062, 458752, 19, 917527, 458752, 18, 983063, 458752, 19, 851989, 131072, 14, 917525, 131072, 15, 983061, 131072, 16, 1179687, 786432, 87, 1245223, 786432, 88, 1179688, 851968, 87, 1245224, 851968, 88, 1048615, 786432, 87, 1114151, 786432, 88, 1048616, 851968, 87, 1114152, 851968, 88, 1179685, 786432, 87, 1245221, 786432, 88, 1179686, 851968, 87, 1245222, 851968, 88, 1048614, 589824, 18, 1114150, 589824, 19, 1179689, 327680, 18, 1245225, 327680, 19, 1048617, 327680, 18, 1114153, 327680, 19, -65528, 131072, 79, 8, 131072, 80, 589835, 0, 79, 655371, 0, 80, 983066, 589824, 97, 917529, 589824, 96, 1114135, 65536, 17, 1179671, 65536, 18, 1114136, 131072, 17, 1179672, 131072, 18, 2031643, 786432, 87, 2031644, 851968, 87, 2097179, 786432, 88, 2097180, 851968, 88, 65550, 131072, 78, 15, 196608, 77, 65551, 196608, 78, -327676, 983042, 18, -262140, 983042, 19, 2031637, 131072, 19, 2097173, 131072, 20, 14, 131072, 77, -196595, 196608, 79)
+layer_2/tile_data = PackedInt32Array(786433, 983040, 69, 851969, 983040, 70, 589827, 196608, 71, 655363, 196608, 72, 655361, 524288, 66, 720897, 131072, 80, -196607, 131072, 19, -131071, 131072, 20, -262127, 589824, 69, -196591, 589824, 70, -262126, 655360, 69, -196590, 655360, 70, 18, 983040, 69, 65554, 983040, 70, 524289, 524288, 64, 589825, 524288, 65, 524290, 589824, 64, 589826, 589824, 65, 655362, 589824, 66, 131087, 524288, 64, 196623, 524288, 65, 262159, 524288, 66, 131088, 589824, 64, 196624, 589824, 65, 262160, 589824, 66, 131089, 655360, 64, 196625, 655360, 65, 262161, 65536, 27, 131090, 720896, 64, 196626, 720896, 65, 262162, 720896, 66, 131091, 786432, 64, 196627, 786432, 65, 262163, 786432, 66, 196622, 196608, 71, 262158, 196608, 72, 327698, 655360, 27, 393234, 655360, 28, 327699, 720896, 27, 393235, 720896, 28, 458766, 786432, 54, 524302, 786432, 55, 458767, 851968, 54, 524303, 851968, 55, 327697, 65536, 28, 393233, 65536, 29, 458769, 65536, 30, 786447, 589824, 100, 851983, 131072, 45, 786448, 655360, 100, 851984, 196608, 45, 851985, 262144, 63, 917521, 262144, 64, 851986, 327680, 63, 917522, 327680, 64, 917519, 131072, 46, 917520, 196608, 46, 917518, 851968, 39, 917517, 851968, 39, -196603, 262144, 75, -131067, 262144, 76, -196602, 327680, 75, -131066, 327680, 76, -65531, 262144, 77, 5, 262144, 78, -65530, 327680, 77, 6, 327680, 78, 65541, 262144, 75, 131077, 262144, 76, 65542, 327680, 75, 131078, 327680, 76, 262145, 458752, 39, 327681, 458752, 40, 262146, 524288, 39, 327682, 524288, 40, 262147, 458752, 39, 327683, 458752, 40, 262148, 524288, 39, 327684, 524288, 40, 393217, 458752, 41, 393218, 524288, 41, 393219, 458752, 41, 393220, 524288, 41, 1, 720896, 71, 65537, 720896, 72, 2, 786432, 71, 65538, 786432, 72, 458770, 655360, 29, 458771, 720896, 29, 1179649, 589824, 18, 1245185, 589824, 19, 1179666, 327680, 18, 1245202, 327680, 19, 1703937, 65538, 5, 1769473, 2, 6, 1769474, 2, 11, 1769475, 65538, 11, 1769481, 917506, 50, 1966089, 393218, 13, 2031625, 393218, 14, 1769482, 983042, 50, 1966090, 458754, 13, 2031626, 458754, 14, 1966091, 917506, 25, 1638401, 65538, 4, 1703938, 2, 10, 1703939, 65538, 10, 1703945, 917506, 49, 1900553, 393218, 12, 1703946, 983042, 49, 1900554, 458754, 12, 1900555, 917506, 24, 1048577, 65536, 12, 1114113, 65536, 13, 1048592, 786432, 6, 1114128, 786432, 7, 1179664, 786432, 8, 1441819, 655360, 30, 1441818, 524288, 31, 1900569, 655360, 9, 1966105, 655360, 10, 2031641, 655360, 11, 1900563, 720896, 9, 1966099, 720896, 10, 2031635, 720896, 11, 1441824, 196608, 71, 1507360, 196608, 72, 1441823, 262144, 71, 1507359, 196608, 72, -327667, 524288, 96, -262131, 524288, 97, 1769488, 458752, 60, 1835024, 458752, 61, 1769489, 524288, 60, 1835025, 524288, 61, 1376276, 65536, 68, 1376273, 262144, 27, 1441809, 262144, 28, 1507345, 262144, 29, 1376274, 327680, 27, 1441810, 327680, 28, 1507346, 327680, 29, 1376275, 0, 68, 1441811, 0, 69, 1507347, 0, 69, 1441812, 65536, 69, 1507348, 65536, 69, 1572883, 0, 70, 1572884, 65536, 70, 1441820, 720896, 31, 1441821, 786432, 31, 1376285, 589824, 49, 1769485, 458752, 39, 1835021, 458752, 40, 1900557, 458752, 41, 1769486, 524288, 39, 1835022, 524288, 40, 1900558, 524288, 41, 2031632, 65536, 42, 2097168, 65536, 43, 2031633, 131072, 19, 2097169, 131072, 20, 2031650, 196608, 79, 2031651, 65536, 42, 2097187, 65536, 43, 2031652, 131072, 19, 2097188, 131072, 20, 2031629, 458752, 40, 2097165, 458752, 41, 2031630, 524288, 40, 2097166, 524288, 41, 1966093, 458752, 39, 1966094, 524288, 39, 2031645, 65536, 42, 2097181, 65536, 43, 655376, 393216, 62, 720912, 393216, 63, 655377, 458752, 62, 720913, 458752, 63, 655378, 524288, 62, 720914, 524288, 63, 917534, 327680, 9, 983071, 393216, 9, 1048607, 393216, 11, 983072, 458752, 9, 1048608, 458752, 11, 917537, 524288, 9, 983073, 524288, 10, 1048609, 524288, 11, 983070, 327680, 10, 1048606, 327680, 11, 983068, 786432, 54, 1048604, 786432, 55, 983069, 851968, 54, 1048605, 851968, 55, 1114132, 655360, 9, 1179668, 655360, 10, 1245204, 655360, 11, 1114133, 589824, 19, 1048597, 589824, 18, 917539, 458752, 18, 983075, 458752, 19, 917538, 458752, 18, 983074, 458752, 19, 917526, 458752, 18, 983062, 458752, 19, 917527, 458752, 18, 983063, 458752, 19, 851989, 131072, 14, 917525, 131072, 15, 983061, 131072, 16, 1179687, 786432, 87, 1245223, 786432, 88, 1179688, 851968, 87, 1245224, 851968, 88, 1048615, 786432, 87, 1114151, 786432, 88, 1048616, 851968, 87, 1114152, 851968, 88, 1179685, 786432, 87, 1245221, 786432, 88, 1179686, 851968, 87, 1245222, 851968, 88, 1048614, 589824, 18, 1114150, 589824, 19, 1179689, 327680, 18, 1245225, 327680, 19, 1048617, 327680, 18, 1114153, 327680, 19, -65528, 131072, 79, 8, 131072, 80, 589835, 0, 79, 655371, 0, 80, 983066, 589824, 97, 917529, 589824, 96, 1114135, 65536, 17, 1179671, 65536, 18, 1114136, 131072, 17, 1179672, 131072, 18, 2031643, 786432, 87, 2031644, 851968, 87, 2097179, 786432, 88, 2097180, 851968, 88, 65550, 131072, 78, 15, 196608, 77, 65551, 196608, 78, 2031637, 131072, 19, 2097173, 131072, 20, 14, 131072, 77, -196595, 196608, 79, 1376257, 655362, 3, 1441793, 655362, 4, 1507329, 655362, 5, 1376258, 655362, 3, 1441794, 655362, 4, 1507330, 655362, 5)
 layer_3/name = "Infront 1"
 layer_3/enabled = true
 layer_3/modulate = Color(1, 1, 1, 1)
 layer_3/y_sort_enabled = false
 layer_3/y_sort_origin = 0
 layer_3/z_index = 0
-layer_3/tile_data = PackedInt32Array(-196607, 65536, 20, 786433, 262144, 19, -196590, 983040, 69, -131054, 983040, 70, 18, 65536, 20, -327670, 196608, 14, -262134, 196608, 15, -196598, 196608, 16, -327669, 262144, 14, -262133, 262144, 15, -196597, 262144, 16, -262135, 65536, 15, -196599, 65536, 16, 720897, 131072, 80, 393233, 458752, 39, 458769, 458752, 40, 524305, 458752, 41, 393234, 524288, 39, 458770, 524288, 40, 524306, 524288, 41, 458768, 65536, 42, 524304, 65536, 43, 458767, 655360, 30, 458766, 524288, 31, 262161, 65536, 27, 327697, 65536, 28, 589837, 589824, 50, 655373, 655360, 50, 786447, 655360, 97, 851984, 262144, 58, 327681, 655360, 97, 327682, 589824, 96, 327684, 655360, 97, 393217, 131072, 27, 458753, 131072, 28, 393218, 196608, 27, 458754, 196608, 28, 458755, 131072, 30, 458756, 196608, 30, 1376264, 589824, 96, 1114115, 458752, 19, 1114116, 458752, 19, 1114117, 458752, 19, 1114118, 458752, 19, 1114129, 720896, 41, 1769481, 655360, 97, 1966081, 720898, 31, 2031617, 917506, 0, 2031618, 983042, 0, 1835017, 589826, 18, 1900553, 589826, 19, 1835018, 655362, 18, 1900554, 655362, 19, 1048579, 458752, 18, 1048580, 458752, 18, 1048581, 458752, 18, 1048582, 458752, 18, 1048578, 458752, 18, 1114114, 458752, 19, 1441820, 786432, 29, 1048588, 917504, 13, 1114124, 917504, 14, 1048589, 983040, 13, 1114125, 983040, 14, 1179664, 786432, 87, 1245200, 786432, 88, 1179665, 851968, 87, 1245201, 851968, 88, 1376282, 0, 4, 1769496, 720896, 67, 1835032, 720896, 68, 1376285, 589824, 74, 1376286, 589825, 12, 2031633, 65536, 20, 1703951, 589824, 96, 1769487, 589824, 97, 2031652, 65536, 20, 1769510, 720896, 67, 1835046, 720896, 68, 1769501, 458753, 10, 1835037, 458753, 11, 1769502, 524289, 10, 1835038, 524289, 11, 1835039, 131072, 19, 1900575, 131072, 20, 2031629, 589824, 97, 2031630, 655360, 97, 1966093, 589824, 96, 1114133, 589824, 18, 1179669, 589824, 19, 1179687, 65536, 20, 1048616, 655360, 30, 1179688, 786432, 28, 8, 131072, 79, 65544, 131072, 80, 655371, 0, 79, 655361, 131072, 79, 720907, 0, 80, 2031643, 917504, 55, 2031644, 655360, 30, 1507335, 131074, 28, 1572871, 131074, 29, 1507336, 196610, 28, 1572872, 196610, 29, 1769473, 65538, 6, 2031637, 65536, 20, 1376296, 262144, 41, 1376297, 327680, 41, 1966088, 65538, 6)
+layer_3/tile_data = PackedInt32Array(-196607, 65536, 20, 786433, 262144, 19, -196590, 983040, 69, -131054, 983040, 70, 18, 65536, 20, -327670, 196608, 14, -262134, 196608, 15, -196598, 196608, 16, -327669, 262144, 14, -262133, 262144, 15, -196597, 262144, 16, -262135, 65536, 15, -196599, 65536, 16, 720897, 131072, 80, 393233, 458752, 39, 458769, 458752, 40, 524305, 458752, 41, 393234, 524288, 39, 458770, 524288, 40, 524306, 524288, 41, 458768, 65536, 42, 524304, 65536, 43, 262161, 65536, 27, 327697, 65536, 28, 655373, 655360, 50, 786447, 655360, 97, 851984, 262144, 58, 327681, 655360, 97, 327682, 589824, 96, 327684, 655360, 97, 393217, 131072, 27, 458753, 131072, 28, 393218, 196608, 27, 458754, 196608, 28, 458755, 131072, 30, 458756, 196608, 30, 1376264, 589824, 96, 1114115, 458752, 19, 1114116, 458752, 19, 1114117, 458752, 19, 1114118, 458752, 19, 1114129, 720896, 41, 1769481, 655360, 97, 1835017, 589826, 18, 1900553, 589826, 19, 1835018, 655362, 18, 1900554, 655362, 19, 1048579, 458752, 18, 1048580, 458752, 18, 1048581, 458752, 18, 1048582, 458752, 18, 1048578, 458752, 18, 1114114, 458752, 19, 1441820, 786432, 29, 1048588, 917504, 13, 1114124, 917504, 14, 1048589, 983040, 13, 1114125, 983040, 14, 1179664, 786432, 87, 1245200, 786432, 88, 1179665, 851968, 87, 1245201, 851968, 88, 1769496, 720896, 67, 1835032, 720896, 68, 1376285, 589824, 74, 1376286, 589825, 12, 1703951, 589824, 96, 1769487, 589824, 97, 2031652, 65536, 20, 1769510, 720896, 67, 1835046, 720896, 68, 1769501, 458753, 10, 1835037, 458753, 11, 1769502, 524289, 10, 1835038, 524289, 11, 1835039, 131072, 19, 1900575, 131072, 20, 2031629, 589824, 97, 2031630, 655360, 97, 1966093, 589824, 96, 1114133, 589824, 18, 1179669, 589824, 19, 1179687, 65536, 20, 1048616, 655360, 30, 1179688, 786432, 28, 8, 131072, 79, 65544, 131072, 80, 655371, 0, 79, 655361, 131072, 79, 720907, 0, 80, 1507335, 131074, 28, 1572871, 131074, 29, 1507336, 196610, 28, 1572872, 196610, 29, 2031637, 65536, 20, 1376296, 262144, 41, 1376297, 327680, 41)
 
 [node name="Idle animation nodes infront furniture" type="Node2D" parent="."]
 
@@ -68188,6 +68551,11 @@ position = Vector2(660, 236)
 sprite_frames = SubResource("SpriteFrames_s1tr5")
 animation = &"Idle"
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Idle animation nodes infront furniture/Animated blue drawer 0"]
+visible = false
+position = Vector2(659.906, 240.812)
+shape = SubResource("RectangleShape2D_3rpvo")
+
 [node name="Animated blue drawer 1" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
 script = ExtResource("10_kkunq")
 
@@ -68196,6 +68564,10 @@ position = Vector2(952, 1120)
 scale = Vector2(6, 3.125)
 sprite_frames = SubResource("SpriteFrames_m3ihl")
 animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Idle animation nodes infront furniture/Animated blue drawer 1"]
+position = Vector2(951.875, 1113.12)
+shape = SubResource("RectangleShape2D_yjbo5")
 
 [node name="Animated blue drawer empty" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
 scale = Vector2(4, 4)
@@ -68258,7 +68630,7 @@ animation = &"Idle"
 script = ExtResource("10_kkunq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture/Animated screen"]
-position = Vector2(1848, 896)
+position = Vector2(1850, 896)
 scale = Vector2(3.75001, 3.25)
 sprite_frames = SubResource("SpriteFrames_3eopg")
 animation = &"Idle"
@@ -68290,17 +68662,6 @@ script = ExtResource("10_kkunq")
 position = Vector2(333, 291)
 scale = Vector2(0.6875, 1.125)
 sprite_frames = SubResource("SpriteFrames_osn8i")
-animation = &"Idle"
-
-[node name="Animated vertical fridge 1" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
-position = Vector2(1504, 1800)
-scale = Vector2(4, 4)
-script = ExtResource("10_kkunq")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture/Animated vertical fridge 1"]
-position = Vector2(-54, 33.5)
-scale = Vector2(0.75, 1.1875)
-sprite_frames = SubResource("SpriteFrames_co7gj")
 animation = &"Idle"
 
 [node name="Animated vertical fridge right" type="CharacterBody2D" parent="Idle animation nodes infront furniture"]
@@ -68658,14 +69019,16 @@ layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 1
 [node name="Collectible items" type="Node2D" parent="."]
 
 [node name="Collectible item key 0" parent="Collectible items" instance=ExtResource("30_ycgyi")]
-position = Vector2(-2, 4)
+position = Vector2(558, -381)
+
+[node name="Collectible item boltcutter" parent="Collectible items" instance=ExtResource("29_j1icn")]
+position = Vector2(1588, 1021)
 
 [node name="Locked interactable objects" type="Node2D" parent="."]
 
 [node name="Animated door vertical right locked 0" type="CharacterBody2D" parent="Locked interactable objects"]
 position = Vector2(2030, 1205)
 script = ExtResource("28_s0rtn")
-metadata/_edit_group_ = true
 
 [node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(530, 348)
@@ -68679,6 +69042,15 @@ scale = Vector2(5.20313, 3.57292)
 sprite_frames = SubResource("SpriteFrames_15kui")
 animation = &"OpenLeft"
 
+[node name="AnimatedSparkle" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+modulate = Color(1, 0.901961, 0.862745, 0.878431)
+position = Vector2(582, 330)
+scale = Vector2(3.97498, 3.52618)
+sprite_frames = SubResource("SpriteFrames_pw258")
+animation = &"Sparkle"
+frame = 7
+frame_progress = 1.0
+
 [node name="AnimatedKey" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(507, 333)
 rotation = -6.28319
@@ -68686,20 +69058,14 @@ scale = Vector2(4.24076, 4.43559)
 sprite_frames = SubResource("SpriteFrames_oljdu")
 animation = &"Key"
 
-[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
-position = Vector2(486, 353)
-scale = Vector2(2.97461, 3.70312)
-sprite_frames = SubResource("SpriteFrames_elu61")
-animation = &"DoorRattle"
-frame = 8
-frame_progress = 1.0
-
 [node name="CollDoor" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+visible = false
 position = Vector2(503.5, 360)
 shape = SubResource("RectangleShape2D_pitd8")
 debug_color = Color(0.921569, 0.266667, 0.25098, 0.419608)
 
 [node name="PlayerDetectionFromLeft" type="Area2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+visible = false
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
@@ -68710,6 +69076,7 @@ one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
 
 [node name="PlayerDetectionFromRight" type="Area2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+visible = false
 position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
@@ -68718,17 +69085,175 @@ position = Vector2(-12.8333, 2.21735)
 shape = SubResource("RectangleShape2D_4b54t")
 
 [node name="CollTopDoorRight" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+visible = false
 position = Vector2(544.5, 292)
 shape = SubResource("RectangleShape2D_fcq5d")
 debug_color = Color(0.670588, 0.505882, 0.164706, 0.419608)
 
 [node name="CollTopDoorLeft" type="CollisionShape2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
+visible = false
 position = Vector2(457, 292)
 shape = SubResource("RectangleShape2D_x08dl")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
+[node name="Animated glass sliding door 1" type="CharacterBody2D" parent="Locked interactable objects"]
+position = Vector2(1531, -481)
+script = ExtResource("34_so8o3")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+position = Vector2(940, 1374.37)
+scale = Vector2(7.8125, 4.66407)
+sprite_frames = SubResource("SpriteFrames_qjag6")
+animation = &"SlideOpen"
+
+[node name="AnimatedDoorRattle" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+position = Vector2(940, 1374)
+scale = Vector2(3.875, 2.30469)
+sprite_frames = SubResource("SpriteFrames_uryc8")
+animation = &"DoorRattle"
+
+[node name="AnimatedLock" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+position = Vector2(942.101, 1402)
+scale = Vector2(1.95507, 2.03125)
+sprite_frames = SubResource("SpriteFrames_nnytk")
+animation = &"Bolt"
+
+[node name="AnimatedLockOpen" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+modulate = Color(0.886275, 1, 1, 0.894118)
+position = Vector2(945, 1401)
+scale = Vector2(1.9477, 2.03448)
+sprite_frames = SubResource("SpriteFrames_iegyp")
+animation = &"LockOpen"
+
+[node name="AnimatedBoltCutterOpen" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+position = Vector2(910, 1390)
+rotation = 0.218166
+scale = Vector2(1.70153, 3.125)
+sprite_frames = SubResource("SpriteFrames_lvvpu")
+animation = &"BoltCutter"
+
+[node name="CollDoor1" type="CharacterBody2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
+
+[node name="Coll0a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor1"]
+position = Vector2(876.5, 1439.5)
+shape = SubResource("RectangleShape2D_wx6pd")
+debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
+
+[node name="Coll0b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor1"]
+position = Vector2(1002, 1439.5)
+shape = SubResource("RectangleShape2D_0nxrc")
+debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
+
+[node name="Coll2a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor1"]
+position = Vector2(860, 1439.5)
+shape = SubResource("RectangleShape2D_6dhic")
+debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
+
+[node name="Coll2b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor1"]
+position = Vector2(1020, 1439.5)
+shape = SubResource("RectangleShape2D_dgnkk")
+debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
+
+[node name="Coll4a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor1"]
+position = Vector2(842.5, 1439.5)
+shape = SubResource("RectangleShape2D_6iy0b")
+debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
+
+[node name="Coll4b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor1"]
+position = Vector2(1037.5, 1439.5)
+shape = SubResource("RectangleShape2D_7evrr")
+debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
+
+[node name="Coll6a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor1"]
+position = Vector2(821.375, 1439.5)
+shape = SubResource("RectangleShape2D_4xl7t")
+debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
+
+[node name="Coll6b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor1"]
+position = Vector2(1058.12, 1439.5)
+shape = SubResource("RectangleShape2D_ja4n8")
+debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
+
+[node name="CollDoor2" type="CharacterBody2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
+position = Vector2(0, -60)
+
+[node name="Coll0a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor2"]
+position = Vector2(877, 1439)
+shape = SubResource("RectangleShape2D_f1ih8")
+debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
+
+[node name="Coll0b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor2"]
+position = Vector2(1002, 1439)
+shape = SubResource("RectangleShape2D_gm7aq")
+debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
+
+[node name="Coll2a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor2"]
+position = Vector2(861, 1439)
+shape = SubResource("RectangleShape2D_ummjj")
+debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
+
+[node name="Coll2b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor2"]
+position = Vector2(1020, 1439)
+shape = SubResource("RectangleShape2D_yrpb7")
+debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
+
+[node name="Coll4a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor2"]
+position = Vector2(846.25, 1439)
+shape = SubResource("RectangleShape2D_p4wnc")
+debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
+
+[node name="Coll4b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor2"]
+position = Vector2(1033.75, 1439)
+shape = SubResource("RectangleShape2D_ihw7f")
+debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
+
+[node name="Coll6a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor2"]
+position = Vector2(823, 1439)
+shape = SubResource("RectangleShape2D_ang7o")
+debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
+
+[node name="Coll6b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/CollDoor2"]
+position = Vector2(1058, 1439)
+shape = SubResource("RectangleShape2D_rlhdr")
+debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
+
+[node name="PlayerDetectionLayering" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionLayering"]
+position = Vector2(940, 1481)
+shape = SubResource("RectangleShape2D_loqqa")
+debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
+
+[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/PlayerDetectAnimCloseTop"]
+position = Vector2(942, 1311.84)
+shape = SubResource("RectangleShape2D_t7r2b")
+debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
+
+[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/PlayerDetectAnimCloseBottom"]
+position = Vector2(941, 1499.5)
+shape = SubResource("RectangleShape2D_wnbd4")
+debug_color = Color(0.835294, 0.356863, 0.419608, 0.419608)
+
+[node name="PlayerDetectionAnimation" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionAnimation"]
+position = Vector2(941, 1437)
+shape = SubResource("RectangleShape2D_hrxam")
+debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
+
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(1809, 1187)
+position = Vector2(1107, 1610)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -68741,7 +69266,7 @@ offset_left = 317.0
 offset_top = -291.0
 offset_right = 504.0
 offset_bottom = -211.0
-text = "Home Page"
+text = "Level Menu"
 metadata/_edit_use_anchors_ = true
 
 [node name="Inventory" type="Button" parent="Player/Buttons"]
@@ -68922,7 +69447,6 @@ shape = SubResource("RectangleShape2D_4ibfs")
 debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 
 [node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal 1"]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated door horizontal 1/PlayerDetectionAnimation"]
 position = Vector2(930, 1407.5)
@@ -69108,7 +69632,6 @@ debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Animated glass sliding door 0" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
 script = ExtResource("26_xyf23")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 position = Vector2(940, 1374.37)
@@ -69211,14 +69734,14 @@ debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
 [node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectAnimCloseTop"]
-position = Vector2(939.5, 1339)
+position = Vector2(939.5, 1313.31)
 shape = SubResource("RectangleShape2D_8l43d")
 debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
 
 [node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectAnimCloseBottom"]
-position = Vector2(939, 1499)
+position = Vector2(939, 1498.06)
 shape = SubResource("RectangleShape2D_mgqmf")
 debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 
@@ -69232,7 +69755,6 @@ debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 [node name="Animated glass sliding door 1" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
 position = Vector2(524, 1)
 script = ExtResource("26_xyf23")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1"]
 position = Vector2(940, 1374.37)
@@ -69335,144 +69857,20 @@ debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
 [node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectAnimCloseTop"]
-position = Vector2(942, 1352.62)
+position = Vector2(940, 1312)
 shape = SubResource("RectangleShape2D_8l43d")
 debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
 
 [node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectAnimCloseBottom"]
-position = Vector2(941, 1501)
+position = Vector2(941, 1496.12)
 shape = SubResource("RectangleShape2D_mgqmf")
 debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 
 [node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectionAnimation"]
-position = Vector2(941, 1435)
-shape = SubResource("RectangleShape2D_oqypt")
-debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
-
-[node name="Animated glass sliding door 2" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
-position = Vector2(1531, -481)
-script = ExtResource("26_xyf23")
-metadata/_edit_group_ = true
-
-[node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2"]
-position = Vector2(940, 1374.37)
-scale = Vector2(7.8125, 4.66407)
-sprite_frames = SubResource("SpriteFrames_qjag6")
-animation = &"SlideOpen"
-
-[node name="CollDoor1" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2"]
-
-[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor1"]
-position = Vector2(876.5, 1439.5)
-shape = SubResource("RectangleShape2D_7lqyg")
-debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
-
-[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor1"]
-position = Vector2(1002, 1439.5)
-shape = SubResource("RectangleShape2D_wjs67")
-debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
-
-[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor1"]
-position = Vector2(860, 1439.5)
-shape = SubResource("RectangleShape2D_wqd7e")
-debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
-
-[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor1"]
-position = Vector2(1020, 1439.5)
-shape = SubResource("RectangleShape2D_t6j0a")
-debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
-
-[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor1"]
-position = Vector2(842.5, 1439.5)
-shape = SubResource("RectangleShape2D_vxvug")
-debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
-
-[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor1"]
-position = Vector2(1037.5, 1439.5)
-shape = SubResource("RectangleShape2D_xbnk2")
-debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
-
-[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor1"]
-position = Vector2(821.375, 1439.5)
-shape = SubResource("RectangleShape2D_tm3aa")
-debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
-
-[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor1"]
-position = Vector2(1058.12, 1439.5)
-shape = SubResource("RectangleShape2D_vuxav")
-debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
-
-[node name="CollDoor2" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2"]
-position = Vector2(0, -60)
-
-[node name="Coll0a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor2"]
-position = Vector2(877, 1439)
-shape = SubResource("RectangleShape2D_7lqyg")
-debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
-
-[node name="Coll0b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor2"]
-position = Vector2(1002, 1439)
-shape = SubResource("RectangleShape2D_wjs67")
-debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
-
-[node name="Coll2a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor2"]
-position = Vector2(861, 1439)
-shape = SubResource("RectangleShape2D_wqd7e")
-debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
-
-[node name="Coll2b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor2"]
-position = Vector2(1020, 1439)
-shape = SubResource("RectangleShape2D_t6j0a")
-debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
-
-[node name="Coll4a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor2"]
-position = Vector2(846.25, 1439)
-shape = SubResource("RectangleShape2D_vxvug")
-debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
-
-[node name="Coll4b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor2"]
-position = Vector2(1033.75, 1439)
-shape = SubResource("RectangleShape2D_xbnk2")
-debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
-
-[node name="Coll6a" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor2"]
-position = Vector2(823, 1439)
-shape = SubResource("RectangleShape2D_tm3aa")
-debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
-
-[node name="Coll6b" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/CollDoor2"]
-position = Vector2(1058, 1439)
-shape = SubResource("RectangleShape2D_vuxav")
-debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
-
-[node name="PlayerDetectionLayering" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/PlayerDetectionLayering"]
-position = Vector2(940, 1473)
-shape = SubResource("RectangleShape2D_54wqa")
-debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
-
-[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/PlayerDetectAnimCloseTop"]
-position = Vector2(942, 1348.75)
-shape = SubResource("RectangleShape2D_8l43d")
-debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
-
-[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/PlayerDetectAnimCloseBottom"]
-position = Vector2(941, 1500.5)
-shape = SubResource("RectangleShape2D_mgqmf")
-debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
-
-[node name="PlayerDetectionAnimation" type="Area2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 2/PlayerDetectionAnimation"]
 position = Vector2(941, 1435)
 shape = SubResource("RectangleShape2D_oqypt")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
