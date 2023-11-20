@@ -69251,16 +69251,11 @@ position = Vector2(941, 1437)
 shape = SubResource("RectangleShape2D_hrxam")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
-[node name="Player" parent="." instance=ExtResource("3_eevib")]
+[node name="Buttons" type="Node2D" parent="."]
 position = Vector2(1107, 1610)
-metadata/_edit_group_ = true
-
-[node name="Camera2D2" type="Camera2D" parent="Player"]
-
-[node name="Buttons" type="Node2D" parent="Player"]
 script = ExtResource("32_62thx")
 
-[node name="Home" type="Button" parent="Player/Buttons"]
+[node name="Home" type="Button" parent="Buttons"]
 offset_left = 317.0
 offset_top = -291.0
 offset_right = 504.0
@@ -69268,13 +69263,26 @@ offset_bottom = -211.0
 text = "Level Menu"
 metadata/_edit_use_anchors_ = true
 
-[node name="Inventory" type="Button" parent="Player/Buttons"]
+[node name="Inventory" type="Button" parent="Buttons"]
 offset_left = 316.0
 offset_top = -179.0
 offset_right = 501.0
 offset_bottom = -96.0
 text = "Inventory"
 metadata/_edit_use_anchors_ = true
+
+[node name="Level" type="Button" parent="Buttons"]
+offset_left = 311.0
+offset_top = -65.0
+offset_right = 428.0
+offset_bottom = 5.0
+text = "Level"
+
+[node name="Player" parent="." instance=ExtResource("3_eevib")]
+position = Vector2(1107, 1610)
+metadata/_edit_group_ = true
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
 
 [node name="Animated door horizontal and sliding nodes" type="Node2D" parent="."]
 
@@ -69922,8 +69930,9 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromLeft" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromRight_body_exited"]
-[connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
-[connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
+[connection signal="button_down" from="Buttons/Home" to="Buttons" method="_on_home_button_down"]
+[connection signal="button_down" from="Buttons/Inventory" to="Buttons" method="_on_inventory_button_down"]
+[connection signal="button_down" from="Buttons/Level" to="Buttons" method="_on_level_button_down"]
 [connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/AnimatedDoor" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_animated_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectionLayering_body_exited"]
