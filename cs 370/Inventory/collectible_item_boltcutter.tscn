@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c2frl1g2skbcy"]
+[gd_scene load_steps=23 format=3 uid="uid://dbsb25h8g4mlo"]
 
 [ext_resource type="Script" path="res://Inventory/Collectible Item.gd" id="1_wpik8"]
 [ext_resource type="Texture2D" uid="uid://1f8525nwlko4" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_action.png" id="2_6kqh6"]

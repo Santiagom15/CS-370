@@ -32,6 +32,10 @@ var levelItems = []
 # Array storing the item_id of unlocked interactible items in current scene
 var levelUnlocks = []
 
+# Boolean array with flag: true if player entering current scene from boss battle, else otherwise
+#						   true if player won the boss battle they are entering from, false otherwise
+var bossBattleToLevel = [false, false]
+
 # Function to get the singleton instance
 func _get_instance():
 	if instance == null:
@@ -122,4 +126,26 @@ func get_unlocks():
 # Clear the level items list
 func clear_level_unlocks():
 	levelUnlocks = []
+
+# Set entering from a boss battle to true, retain current win status
+func set_entering_from_boss_battle_true():
+	bossBattleToLevel = [true, bossBattleToLevel[1]]
+
+# Set entering from a boss battle to false, retain current win status
+func set_entering_from_boss_battle_false():
+	bossBattleToLevel = [false, bossBattleToLevel[1]]
+
+# Set boss battle win status to true
+func set_boss_battle_win():
+	bossBattleToLevel = [bossBattleToLevel[0], true]
+
+# Set boss battle win status to false
+func set_boss_battle_loss():
+	bossBattleToLevel = [bossBattleToLevel[0], false]
+
+# Return entered from boss battle and boss battle win status
+func get_boss_battle_status():
+	return bossBattleToLevel
+
+
 

@@ -18,6 +18,10 @@ var accuracy = 1.0
 func _ready():
 	heart.play("heartBeat",0)
 	heart.set_frame(0)
+	
+	# Disable CanvasLayer node for now because it being layered above other nodes in a scene means mouse clicks won't register on things like buttons
+	var layer = get_node("CanvasLayer")
+	layer.visible = false 
 
 		
 func isSpacePressed()->bool:
@@ -86,6 +90,7 @@ func _on_timer_timeout():
 	elif heart.get_frame() == 1:
 		heart.set_frame(0)# is dark 
 		state = true
+
 
 func calcAccuracy(accuracy:float):
 	var minAccToDarken = 0.0

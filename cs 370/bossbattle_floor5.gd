@@ -15,6 +15,14 @@ var lanesize = 105
 @onready var prev = 7
 @onready var prevprev = 6
 
+# Boolean flag for battle won, true when boss beaten byt the player and false otherwise
+var bossBeaten = false
+# Signal to unlock the door to exit the boss battle room and return to the level when boss battle is beaten
+#signal lockDisabled(lockIdx)
+# Get inventory
+@onready var inventory = get_node("/root/Inventory")
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -24,16 +32,34 @@ func _ready():
 	
 # when music is up, change scene (temp: main menu)
 func _on_timer_timeout():
-	get_tree().change_scene_to_file("res://DeathScene1.tscn")
+	inventory.set_entering_from_boss_battle_true()
+	inventory.set_boss_battle_win()
+	get_tree().change_scene_to_file("res://Level 1/floor5.tscn")
+	
+#	# Code attempts at implementing the unlock door functionality when the player beats the boss battle
+#	print("Boss beaten")
+#
+#	var laneCol1 = get_node("Lane collision").get_child(3)
+#	var laneCol2 = get_node("Lane collision2").get_child(0)
+#	laneCol1.set_deferred("disabled", true)
+#	laneCol2.set_deferred("disabled", true)
+#
+#	var boss = get_node("boss")
+#	print("boss: ", boss)
+#	print("Boos beaten end")
+#
+##	lockDisabled.emit("Door1")
+#	bossBeaten = true
+	
+#	boss.visibile = false
 
-	
-	
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	$AudioStreamPlayer2D.get_time()
 	var t = timmy.time
 	print(t) 
-
+	
 	if(global_hit.hits == 1):
 		$HealthBar.play("2")
 	elif(global_hit.hits == 2):
@@ -51,12 +77,15 @@ func _process(_delta):
 				randInd = randi_range(0, 2)
 			prevprev = prev
 			prev = randInd
-			
+
 			var randomElement = poses[randInd]
-		
+
 			$boss.set_position(randomElement)
 			lasttime = t
 
+
 func _on_death_timer_timeout():
 	#print("Timer stop")
+	inventory.set_entering_from_boss_battle_true()
+	inventory.set_boss_battle_loss()
 	get_tree().change_scene_to_file("res://DeathScene1.tscn")

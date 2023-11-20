@@ -108,6 +108,7 @@ script = ExtResource("2_rxedy")
 script = ExtResource("3_gop6f")
 
 [node name="groundAttack" type="Node2D" parent="FiniteState"]
+visible = false
 script = ExtResource("4_abaln")
 groundAttack = ExtResource("5_3p7hx")
 

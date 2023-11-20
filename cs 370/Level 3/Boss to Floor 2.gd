@@ -9,6 +9,4 @@ func _on_player_detection_body_entered(body):
 #	#  shape is named "Player"
 	if body.name == "Player":
 		# Change the scene to the next floor
-		get_tree().change_scene_to_file("res://Level 5/bossRoom_Floor1.tscn")
-
-
+		get_tree().change_scene_to_file("res://Level 3/Floor 2.tscn")
