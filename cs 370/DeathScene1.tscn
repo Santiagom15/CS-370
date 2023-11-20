@@ -9,13 +9,21 @@
 script = ExtResource("1_g63ge")
 
 [node name="Exit" type="Button" parent="."]
-offset_left = 937.0
-offset_top = 10.0
-offset_right = 1125.0
-offset_bottom = 125.0
-text = "Exit"
+offset_left = 603.0
+offset_top = 496.0
+offset_right = 791.0
+offset_bottom = 611.0
+text = "Return to Level"
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 394.0
+offset_top = 496.0
+offset_right = 571.0
+offset_bottom = 612.0
+text = "Restart Boss Battle"
 
 [node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.529412)
 z_index = -1
 offset_left = -1.0
 offset_top = -4.0
@@ -41,3 +49,4 @@ stream = ExtResource("3_akhr5")
 autoplay = true
 
 [connection signal="button_down" from="Exit" to="." method="_on_exit_button_down"]
+[connection signal="button_down" from="Restart" to="." method="_on_restart_button_down"]

@@ -59784,130 +59784,6 @@ size = Vector2(59, 7)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dvuc7"]
 size = Vector2(59, 7)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a01e6"]
-atlas = ExtResource("8_nnol0")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k8pmd"]
-atlas = ExtResource("8_nnol0")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kksbg"]
-atlas = ExtResource("8_nnol0")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_06j70"]
-atlas = ExtResource("8_nnol0")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1m32u"]
-atlas = ExtResource("8_nnol0")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gudsr"]
-atlas = ExtResource("8_nnol0")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ldcgb"]
-atlas = ExtResource("8_nnol0")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2hna0"]
-atlas = ExtResource("8_nnol0")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_5kfn3"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a01e6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k8pmd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kksbg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_06j70")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1m32u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gudsr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ldcgb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2hna0")
-}],
-"loop": false,
-"name": &"SlideOpen",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tl3x2"]
-size = Vector2(133, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqeho"]
-size = Vector2(126.5, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2v87p"]
-size = Vector2(102.75, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yiyph"]
-size = Vector2(90, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2wts"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5f2v2"]
-size = Vector2(53.5, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dl8cd"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppr5n"]
-size = Vector2(11.75, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ge8vr"]
-size = Vector2(133, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ivmly"]
-size = Vector2(126.5, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n41cl"]
-size = Vector2(102.75, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hvbg0"]
-size = Vector2(90, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0eqyr"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gk8xd"]
-size = Vector2(53.5, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pq0v"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2gjjf"]
-size = Vector2(11.75, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vhdu"]
-size = Vector2(276, 54)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a6460"]
-size = Vector2(245, 139.375)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0jcy"]
-size = Vector2(248, 104.125)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhmqd"]
-size = Vector2(246, 40)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_46vu2"]
 size = Vector2(239.25, 76)
 
@@ -87884,6 +87760,130 @@ sources/10 = SubResource("TileSetAtlasSource_am3qv")
 sources/11 = SubResource("TileSetAtlasSource_d302e")
 sources/6 = SubResource("TileSetAtlasSource_pymqq")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_a01e6"]
+atlas = ExtResource("8_nnol0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8pmd"]
+atlas = ExtResource("8_nnol0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kksbg"]
+atlas = ExtResource("8_nnol0")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06j70"]
+atlas = ExtResource("8_nnol0")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1m32u"]
+atlas = ExtResource("8_nnol0")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gudsr"]
+atlas = ExtResource("8_nnol0")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ldcgb"]
+atlas = ExtResource("8_nnol0")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hna0"]
+atlas = ExtResource("8_nnol0")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5kfn3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a01e6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8pmd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kksbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06j70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1m32u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gudsr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ldcgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hna0")
+}],
+"loop": false,
+"name": &"SlideOpen",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tl3x2"]
+size = Vector2(133, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqeho"]
+size = Vector2(126.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2v87p"]
+size = Vector2(102.75, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yiyph"]
+size = Vector2(90, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2wts"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5f2v2"]
+size = Vector2(53.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dl8cd"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppr5n"]
+size = Vector2(11.75, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ge8vr"]
+size = Vector2(133, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ivmly"]
+size = Vector2(126.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n41cl"]
+size = Vector2(102.75, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hvbg0"]
+size = Vector2(90, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0eqyr"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gk8xd"]
+size = Vector2(53.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pq0v"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2gjjf"]
+size = Vector2(11.75, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vhdu"]
+size = Vector2(276, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a6460"]
+size = Vector2(245, 139.375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0jcy"]
+size = Vector2(248, 104.125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhmqd"]
+size = Vector2(246, 40)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0vrvx"]
 size = Vector2(194.75, 76.75)
 
@@ -88077,6 +88077,127 @@ position = Vector2(457, 292)
 shape = SubResource("RectangleShape2D_dvuc7")
 debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 
+[node name="Floor 4 to Boss" type="CharacterBody2D" parent="."]
+script = ExtResource("9_yofu8")
+
+[node name="Player Detection" type="Area2D" parent="Floor 4 to Boss"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 4 to Boss/Player Detection"]
+position = Vector2(891, 1876)
+shape = SubResource("RectangleShape2D_46vu2")
+
+[node name="NPCs" type="Node2D" parent="."]
+
+[node name="Room 1" type="Node2D" parent="NPCs"]
+script = ExtResource("9_gmmtw")
+
+[node name="PlayerDetectionLeft" type="Area2D" parent="NPCs/Room 1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Room 1/PlayerDetectionLeft"]
+position = Vector2(2667, 2900)
+shape = SubResource("RectangleShape2D_cqmte")
+
+[node name="PlayerDetectionRight" type="Area2D" parent="NPCs/Room 1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Room 1/PlayerDetectionRight"]
+position = Vector2(2955.5, 2901)
+shape = SubResource("RectangleShape2D_wg12y")
+debug_color = Color(0.858824, 0.145098, 0.815686, 0.419608)
+
+[node name="Frog 1" type="AnimatedSprite2D" parent="NPCs/Room 1"]
+position = Vector2(2731, 2718)
+scale = Vector2(10.4375, 13.625)
+sprite_frames = SubResource("SpriteFrames_bwup4")
+animation = &"Idle"
+frame_progress = 0.109201
+
+[node name="Frog 2" type="AnimatedSprite2D" parent="NPCs/Room 1"]
+position = Vector2(2616, 2772)
+scale = Vector2(6.21875, 14.6875)
+sprite_frames = SubResource("SpriteFrames_bwup4")
+animation = &"Idle"
+frame_progress = 0.00589716
+
+[node name="Frog 3" type="AnimatedSprite2D" parent="NPCs/Room 1"]
+position = Vector2(2602, 2962)
+scale = Vector2(6.21875, 29.1563)
+sprite_frames = SubResource("SpriteFrames_bwup4")
+animation = &"Idle"
+frame_progress = 0.564173
+
+[node name="Frog 4" type="AnimatedSprite2D" parent="NPCs/Room 1"]
+position = Vector2(2832, 2865)
+scale = Vector2(6.63282, 20.9375)
+sprite_frames = SubResource("SpriteFrames_bwup4")
+animation = &"Idle"
+frame_progress = 0.020051
+
+[node name="Frog 5" type="AnimatedSprite2D" parent="NPCs/Room 1"]
+position = Vector2(2713, 3029)
+scale = Vector2(8.71879, 15.375)
+sprite_frames = SubResource("SpriteFrames_bwup4")
+animation = &"Idle"
+frame_progress = 0.867
+
+[node name="Furniture2" type="TileMap" parent="."]
+scale = Vector2(4, 4)
+tile_set = SubResource("TileSet_yjihk")
+format = 2
+layer_0/name = "Outside"
+layer_1/name = "Behind or alone"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(3080234, 131081, 35, 3145770, 131081, 36, 3080243, 131081, 35, 3145779, 131081, 36, 3080253, 131081, 35, 3145789, 131081, 36)
+layer_2/name = "Infront"
+layer_2/enabled = true
+layer_2/modulate = Color(1, 1, 1, 1)
+layer_2/y_sort_enabled = false
+layer_2/y_sort_origin = 0
+layer_2/z_index = 0
+layer_2/tile_data = PackedInt32Array()
+layer_3/name = "Infront 1"
+layer_3/enabled = true
+layer_3/modulate = Color(1, 1, 1, 1)
+layer_3/y_sort_enabled = false
+layer_3/y_sort_origin = 0
+layer_3/z_index = 0
+layer_3/tile_data = PackedInt32Array()
+layer_4/name = "Infront 2"
+layer_4/enabled = true
+layer_4/modulate = Color(1, 1, 1, 1)
+layer_4/y_sort_enabled = false
+layer_4/y_sort_origin = 0
+layer_4/z_index = 0
+layer_4/tile_data = PackedInt32Array()
+
+[node name="Player" parent="." instance=ExtResource("11_ox552")]
+position = Vector2(4185, 1324)
+metadata/_edit_group_ = true
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+
+[node name="Buttons" type="Node2D" parent="Player"]
+script = ExtResource("15_kprdl")
+
+[node name="Home" type="Button" parent="Player/Buttons"]
+offset_left = 317.0
+offset_top = -291.0
+offset_right = 504.0
+offset_bottom = -211.0
+text = "Level Menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventory" type="Button" parent="Player/Buttons"]
+offset_left = 316.0
+offset_top = -179.0
+offset_right = 501.0
+offset_bottom = -96.0
+text = "Inventory"
+metadata/_edit_use_anchors_ = true
+
 [node name="Sliding Doors" type="Node2D" parent="."]
 
 [node name="Animated glass sliding door 0" type="CharacterBody2D" parent="Sliding Doors"]
@@ -88201,127 +88322,6 @@ position = Vector2(890, 1816.26)
 shape = SubResource("RectangleShape2D_yhmqd")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
-[node name="Floor 4 to Boss" type="CharacterBody2D" parent="."]
-script = ExtResource("9_yofu8")
-
-[node name="Player Detection" type="Area2D" parent="Floor 4 to Boss"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 4 to Boss/Player Detection"]
-position = Vector2(891, 1876)
-shape = SubResource("RectangleShape2D_46vu2")
-
-[node name="NPCs" type="Node2D" parent="."]
-
-[node name="Room 1" type="Node2D" parent="NPCs"]
-script = ExtResource("9_gmmtw")
-
-[node name="PlayerDetectionLeft" type="Area2D" parent="NPCs/Room 1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Room 1/PlayerDetectionLeft"]
-position = Vector2(2667, 2900)
-shape = SubResource("RectangleShape2D_cqmte")
-
-[node name="PlayerDetectionRight" type="Area2D" parent="NPCs/Room 1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Room 1/PlayerDetectionRight"]
-position = Vector2(2955.5, 2901)
-shape = SubResource("RectangleShape2D_wg12y")
-debug_color = Color(0.858824, 0.145098, 0.815686, 0.419608)
-
-[node name="Frog 1" type="AnimatedSprite2D" parent="NPCs/Room 1"]
-position = Vector2(2731, 2718)
-scale = Vector2(10.4375, 13.625)
-sprite_frames = SubResource("SpriteFrames_bwup4")
-animation = &"Idle"
-frame_progress = 0.109201
-
-[node name="Frog 2" type="AnimatedSprite2D" parent="NPCs/Room 1"]
-position = Vector2(2616, 2772)
-scale = Vector2(6.21875, 14.6875)
-sprite_frames = SubResource("SpriteFrames_bwup4")
-animation = &"Idle"
-frame_progress = 0.00589716
-
-[node name="Frog 3" type="AnimatedSprite2D" parent="NPCs/Room 1"]
-position = Vector2(2602, 2962)
-scale = Vector2(6.21875, 29.1563)
-sprite_frames = SubResource("SpriteFrames_bwup4")
-animation = &"Idle"
-frame_progress = 0.564173
-
-[node name="Frog 4" type="AnimatedSprite2D" parent="NPCs/Room 1"]
-position = Vector2(2832, 2865)
-scale = Vector2(6.63282, 20.9375)
-sprite_frames = SubResource("SpriteFrames_bwup4")
-animation = &"Idle"
-frame_progress = 0.020051
-
-[node name="Frog 5" type="AnimatedSprite2D" parent="NPCs/Room 1"]
-position = Vector2(2713, 3029)
-scale = Vector2(8.71879, 15.375)
-sprite_frames = SubResource("SpriteFrames_bwup4")
-animation = &"Idle"
-frame_progress = 0.867
-
-[node name="Furniture2" type="TileMap" parent="."]
-scale = Vector2(4, 4)
-tile_set = SubResource("TileSet_yjihk")
-format = 2
-layer_0/name = "Outside"
-layer_1/name = "Behind or alone"
-layer_1/enabled = true
-layer_1/modulate = Color(1, 1, 1, 1)
-layer_1/y_sort_enabled = false
-layer_1/y_sort_origin = 0
-layer_1/z_index = 0
-layer_1/tile_data = PackedInt32Array(3080234, 131081, 35, 3145770, 131081, 36, 3080243, 131081, 35, 3145779, 131081, 36, 3080253, 131081, 35, 3145789, 131081, 36)
-layer_2/name = "Infront"
-layer_2/enabled = true
-layer_2/modulate = Color(1, 1, 1, 1)
-layer_2/y_sort_enabled = false
-layer_2/y_sort_origin = 0
-layer_2/z_index = 0
-layer_2/tile_data = PackedInt32Array()
-layer_3/name = "Infront 1"
-layer_3/enabled = true
-layer_3/modulate = Color(1, 1, 1, 1)
-layer_3/y_sort_enabled = false
-layer_3/y_sort_origin = 0
-layer_3/z_index = 0
-layer_3/tile_data = PackedInt32Array()
-layer_4/name = "Infront 2"
-layer_4/enabled = true
-layer_4/modulate = Color(1, 1, 1, 1)
-layer_4/y_sort_enabled = false
-layer_4/y_sort_origin = 0
-layer_4/z_index = 0
-layer_4/tile_data = PackedInt32Array()
-
-[node name="Player" parent="." instance=ExtResource("11_ox552")]
-position = Vector2(4185, 1324)
-metadata/_edit_group_ = true
-
-[node name="Camera2D2" type="Camera2D" parent="Player"]
-
-[node name="Buttons" type="Node2D" parent="Player"]
-script = ExtResource("15_kprdl")
-
-[node name="Home" type="Button" parent="Player/Buttons"]
-offset_left = 317.0
-offset_top = -291.0
-offset_right = 504.0
-offset_bottom = -211.0
-text = "Level Menu"
-metadata/_edit_use_anchors_ = true
-
-[node name="Inventory" type="Button" parent="Player/Buttons"]
-offset_left = 316.0
-offset_top = -179.0
-offset_right = 501.0
-offset_bottom = -96.0
-text = "Inventory"
-metadata/_edit_use_anchors_ = true
-
 [node name="Floor 4 to Floor 2" type="CharacterBody2D" parent="."]
 script = ExtResource("16_lcbc2")
 
@@ -88339,6 +88339,13 @@ shape = SubResource("RectangleShape2D_0vrvx")
 [connection signal="body_exited" from="Vertical Doors/Exit Door/PlayerDetectionFromLeft" to="Vertical Doors/Exit Door" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Vertical Doors/Exit Door/PlayerDetectionFromRight" to="Vertical Doors/Exit Door" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Vertical Doors/Exit Door/PlayerDetectionFromRight" to="Vertical Doors/Exit Door" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="body_entered" from="Floor 4 to Boss/Player Detection" to="Floor 4 to Boss" method="_on_player_detection_body_entered"]
+[connection signal="body_entered" from="NPCs/Room 1/PlayerDetectionLeft" to="NPCs/Room 1" method="_on_player_detection_left_body_entered"]
+[connection signal="body_exited" from="NPCs/Room 1/PlayerDetectionLeft" to="NPCs/Room 1" method="_on_player_detection_left_body_exited"]
+[connection signal="body_entered" from="NPCs/Room 1/PlayerDetectionRight" to="NPCs/Room 1" method="_on_player_detection_right_body_entered"]
+[connection signal="body_exited" from="NPCs/Room 1/PlayerDetectionRight" to="NPCs/Room 1" method="_on_player_detection_right_body_exited"]
+[connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
+[connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
 [connection signal="frame_changed" from="Sliding Doors/Animated glass sliding door 0/AnimatedSlideDoor" to="Sliding Doors/Animated glass sliding door 0" method="_on_animated_slide_door_frame_changed"]
 [connection signal="body_entered" from="Sliding Doors/Animated glass sliding door 0/PlayerDetectionLayering" to="Sliding Doors/Animated glass sliding door 0" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Sliding Doors/Animated glass sliding door 0/PlayerDetectionLayering" to="Sliding Doors/Animated glass sliding door 0" method="_on_PlayerDetectionLayering_body_exited"]
@@ -88348,11 +88355,4 @@ shape = SubResource("RectangleShape2D_0vrvx")
 [connection signal="body_exited" from="Sliding Doors/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Sliding Doors/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
 [connection signal="body_entered" from="Sliding Doors/Animated glass sliding door 0/PlayerDetectionAnimation" to="Sliding Doors/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Sliding Doors/Animated glass sliding door 0/PlayerDetectionAnimation" to="Sliding Doors/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_exited"]
-[connection signal="body_entered" from="Floor 4 to Boss/Player Detection" to="Floor 4 to Boss" method="_on_player_detection_body_entered"]
-[connection signal="body_entered" from="NPCs/Room 1/PlayerDetectionLeft" to="NPCs/Room 1" method="_on_player_detection_left_body_entered"]
-[connection signal="body_exited" from="NPCs/Room 1/PlayerDetectionLeft" to="NPCs/Room 1" method="_on_player_detection_left_body_exited"]
-[connection signal="body_entered" from="NPCs/Room 1/PlayerDetectionRight" to="NPCs/Room 1" method="_on_player_detection_right_body_entered"]
-[connection signal="body_exited" from="NPCs/Room 1/PlayerDetectionRight" to="NPCs/Room 1" method="_on_player_detection_right_body_exited"]
-[connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
-[connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
 [connection signal="body_entered" from="Floor 4 to Floor 2/Area2D" to="Floor 4 to Floor 2" method="_on_player_detection_body_entered"]

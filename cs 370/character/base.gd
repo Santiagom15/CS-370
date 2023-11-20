@@ -91,6 +91,7 @@ func _on_timer_timeout():
 		heart.set_frame(0)# is dark 
 		state = true
 
+
 func calcAccuracy(accuracy:float):
 	var minAccToDarken = 0.0
 	#should change from self.molduate to the scene but idk

@@ -14,7 +14,12 @@ signal lockDisabled(lockIdx)
 # If the player was prematurely moved from current scene, place them where they were previously
 func _ready():
 	
-	if inventory.get_transport():
+	var bossStatus = inventory.get_boss_battle_status()
+	print("LevelData, bossStatus: ", bossStatus)
+	
+	if bossStatus[0]:
+		player.global_position = Vector2(2412.31, 966.9786)
+	elif inventory.get_transport():
 		player.global_position = inventory.get_player_position()
 		
 	for unlocked_item in inventory.get_level_items():

@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Level 1/FiniteStateMachine.gd" id="3_qsjdb"]
 [ext_resource type="Script" path="res://Level 1/Idle.gd" id="4_i5e1q"]
 [ext_resource type="Script" path="res://Level 1/Shoot.gd" id="5_sb548"]
-[ext_resource type="PackedScene" path="res://Level 1/scalpely.tscn" id="6_x4qxr"]
+[ext_resource type="PackedScene" uid="uid://dxw1xcy3pxojt" path="res://Level 1/scalpely.tscn" id="6_x4qxr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pwm3o"]
 atlas = ExtResource("2_nkgjw")
