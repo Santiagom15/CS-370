@@ -9,6 +9,13 @@ size = Vector2(98, 181)
 
 [node name="demos" type="Node2D"]
 
+[node name="Return home" type="Button" parent="."]
+offset_left = 714.0
+offset_right = 912.0
+offset_bottom = 90.0
+text = "Return to home page"
+script = ExtResource("3_f5fa8")
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
@@ -22,14 +29,6 @@ texture = ExtResource("1_jg26s")
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_vsapb")]
 position = Vector2(446, 248)
 
-[node name="Return home" type="Button" parent="CharacterBody2D"]
-offset_left = 268.0
-offset_top = -248.0
-offset_right = 466.0
-offset_bottom = -158.0
-text = "Return to home page"
-script = ExtResource("3_f5fa8")
-
 [node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
 
-[connection signal="button_down" from="CharacterBody2D/Return home" to="CharacterBody2D/Return home" method="_on_button_down"]
+[connection signal="button_down" from="Return home" to="Return home" method="_on_button_down"]

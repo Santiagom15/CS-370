@@ -16,13 +16,8 @@ func _ready():
 
 
 func _on_home_button_down():
-	print("Home button pressed")
 	get_tree().change_scene_to_file("res://Level Navigation/level_select.tscn")
 
 func _on_inventory_button_down():
 	get_tree().change_scene_to_file("res://Inventory/Inventory.tscn")
 
-
-func _on_level_button_down():
-	print("Level button pressed")
-	get_tree().change_scene_to_file("res://Level Navigation/level_select.tscn")

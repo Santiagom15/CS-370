@@ -1,7 +1,8 @@
-[gd_scene load_steps=34 format=3 uid="uid://b26cbygyls8na"]
+[gd_scene load_steps=35 format=3 uid="uid://b26cbygyls8na"]
 
 [ext_resource type="Texture2D" uid="uid://cgxvwm7nsmtns" path="res://assets/Solaria Demo Update 01.png" id="1_wg576"]
 [ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="2_y74dr"]
+[ext_resource type="Script" path="res://character/PlayerButtons.gd" id="3_c36xr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5r6lv"]
 texture = ExtResource("1_wg576")
@@ -48969,3 +48970,25 @@ position = Vector2(-586, 835)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
+
+[node name="Buttons" type="Node2D" parent="Player"]
+script = ExtResource("3_c36xr")
+
+[node name="Home" type="Button" parent="Player/Buttons"]
+offset_left = 317.0
+offset_top = -291.0
+offset_right = 504.0
+offset_bottom = -211.0
+text = "Level Menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventory" type="Button" parent="Player/Buttons"]
+offset_left = 316.0
+offset_top = -179.0
+offset_right = 501.0
+offset_bottom = -96.0
+text = "Inventory"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
+[connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
