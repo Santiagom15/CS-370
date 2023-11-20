@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Inventory/Item in inventory.gd" id="1_nlos4"]
 [ext_resource type="Texture2D" uid="uid://dmb8u1sxh5x7c" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_wall_candle_eddittedAlisa_inventory.png" id="2_khxq8"]
-[ext_resource type="Texture2D" uid="uid://bki76e5ugswye" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_edittedAlisa_inventory.png" id="3_p320k"]
+[ext_resource type="Texture2D" uid="uid://bki76e5ugswye" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_edittedAlisa_inventory.png" id="3_p320k"]
 [ext_resource type="Texture2D" uid="uid://cmtwxcv7v86vy" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_inventory_edittedAlisa.png" id="3_xpjfe"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rpkbg"]

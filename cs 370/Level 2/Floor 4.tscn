@@ -9,12 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="8_nnol0"]
 [ext_resource type="Script" path="res://Level 2/NPC interaction.gd" id="9_gmmtw"]
 [ext_resource type="Script" path="res://Level 2/Floor 4 to Boss.gd" id="9_yofu8"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle_edittedAlisa_blink.png" id="10_pwum8"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle_edittedAlisa_flipped_blink.png" id="11_0hj8u"]
-[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="11_ox552"]
+[ext_resource type="Texture2D" uid="uid://wvop8bvvwff0" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle_edittedAlisa_blink.png" id="10_pwum8"]
+[ext_resource type="Texture2D" uid="uid://bqbvcvscfm2j" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle_edittedAlisa_flipped_blink.png" id="11_0hj8u"]
+[ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="11_ox552"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="12_4y8mk"]
-[ext_resource type="Texture2D" uid="uid://bmayfqtxqqpmq" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_idle.png" id="12_7c3d3"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle_edittedAlisa_flipped.png" id="13_fmeln"]
+[ext_resource type="Texture2D" uid="uid://bmayfqtxqqpmq" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle.png" id="12_7c3d3"]
+[ext_resource type="Texture2D" uid="uid://dt8jfwo22p77" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle_edittedAlisa_flipped.png" id="13_fmeln"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_coewt"]
 texture = ExtResource("1_hduej")
