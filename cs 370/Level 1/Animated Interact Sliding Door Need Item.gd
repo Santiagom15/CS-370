@@ -192,8 +192,6 @@ func _on_animated_slide_door_frame_changed():
 #             the player enters its collision shape and accordingly this function is called
 # Render/display the player in-front of the door when the player is located below/inf-ront of the door
 func _on_PlayerDectectionLayering_body_entered(body):
-	print("Layering detection space entered!")
-	print("   player position: ", player.global_position)
 	if body.name == "Player":
 		anim.z_index = 0 # z_index controls the order in which the nodes render: higher z_index means rendering in front
 		animLock.z_index = 0

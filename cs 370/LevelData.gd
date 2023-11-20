@@ -17,12 +17,9 @@ func _ready():
 	if inventory.get_transport():
 		player.global_position = inventory.get_player_position()
 		
-	print("get_level_items(): ", inventory.get_level_items())
 	for unlocked_item in inventory.get_level_items():
 		itemDisabled.emit(unlocked_item)
 		
-	print("get_unlocks(): ", inventory.get_unlocks())
-	print("get_inventory(): ", inventory.get_inventory())
 	for unlocked_item in inventory.get_unlocks():
 		lockDisabled.emit(unlocked_item)
 

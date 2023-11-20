@@ -10,7 +10,7 @@
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="5_17wkx"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="6_0ditl"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Horizontal Door.gd" id="6_mmvlj"]
-[ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="7_bmtc2"]
+[ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="7_bmtc2"]
 [ext_resource type="Texture2D" uid="uid://bdw58iw7s5jvd" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="7_c4mag"]
 [ext_resource type="Texture2D" uid="uid://difda4krhim5h" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_big_1.png" id="8_8ergh"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="9_hj4bd"]

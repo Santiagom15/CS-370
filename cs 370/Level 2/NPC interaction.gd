@@ -8,17 +8,14 @@ var in_left = false
 
 
 func play_animation(animation_name):
-	print("animation_name: ", animation_name)
 	for idx in range(num_children):
 		var child = get_child(idx)
-		print("   child: ", str(child.get_name()))
 		if "Frog" in str(child.get_name()):
 			child.set_frame(0)
 			child.play(animation_name)
 
 
 func _ready():
-	print("num_children: ", num_children)
 	play_animation("Idle")
 
 
