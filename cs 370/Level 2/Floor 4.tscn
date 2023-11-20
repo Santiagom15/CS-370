@@ -1,4 +1,4 @@
-[gd_scene load_steps=199 format=3 uid="uid://cnjgs5qf15yk1"]
+[gd_scene load_steps=201 format=3 uid="uid://cnjgs5qf15yk1"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_hduej"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_kcheg"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bmayfqtxqqpmq" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle.png" id="12_7c3d3"]
 [ext_resource type="Texture2D" uid="uid://dt8jfwo22p77" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle_edittedAlisa_flipped.png" id="13_fmeln"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="15_kprdl"]
+[ext_resource type="Script" path="res://Level 2/Floor 4 to Floor 2.gd" id="16_lcbc2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_coewt"]
 texture = ExtResource("1_hduej")
@@ -87883,6 +87884,9 @@ sources/10 = SubResource("TileSetAtlasSource_am3qv")
 sources/11 = SubResource("TileSetAtlasSource_d302e")
 sources/6 = SubResource("TileSetAtlasSource_pymqq")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0vrvx"]
+size = Vector2(194.75, 76.75)
+
 [node name="Floor 4" type="Node2D"]
 
 [node name="Floor Cover" type="TileMap" parent="."]
@@ -88203,7 +88207,7 @@ script = ExtResource("9_yofu8")
 [node name="Player Detection" type="Area2D" parent="Floor 4 to Boss"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 4 to Boss/Player Detection"]
-position = Vector2(891.375, 1906)
+position = Vector2(891, 1876)
 shape = SubResource("RectangleShape2D_46vu2")
 
 [node name="NPCs" type="Node2D" parent="."]
@@ -88294,7 +88298,7 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("11_ox552")]
-position = Vector2(2641, 2266)
+position = Vector2(4185, 1324)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -88318,6 +88322,15 @@ offset_bottom = -96.0
 text = "Inventory"
 metadata/_edit_use_anchors_ = true
 
+[node name="Floor 4 to Floor 2" type="CharacterBody2D" parent="."]
+script = ExtResource("16_lcbc2")
+
+[node name="Area2D" type="Area2D" parent="Floor 4 to Floor 2"]
+
+[node name="g" type="CollisionShape2D" parent="Floor 4 to Floor 2/Area2D"]
+position = Vector2(4418, 2036)
+shape = SubResource("RectangleShape2D_0vrvx")
+
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromRight" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromRight_body_entered"]
@@ -88335,9 +88348,11 @@ metadata/_edit_use_anchors_ = true
 [connection signal="body_exited" from="Sliding Doors/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Sliding Doors/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
 [connection signal="body_entered" from="Sliding Doors/Animated glass sliding door 0/PlayerDetectionAnimation" to="Sliding Doors/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Sliding Doors/Animated glass sliding door 0/PlayerDetectionAnimation" to="Sliding Doors/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_exited"]
+[connection signal="body_entered" from="Floor 4 to Boss/Player Detection" to="Floor 4 to Boss" method="_on_player_detection_body_entered"]
 [connection signal="body_entered" from="NPCs/Room 1/PlayerDetectionLeft" to="NPCs/Room 1" method="_on_player_detection_left_body_entered"]
 [connection signal="body_exited" from="NPCs/Room 1/PlayerDetectionLeft" to="NPCs/Room 1" method="_on_player_detection_left_body_exited"]
 [connection signal="body_entered" from="NPCs/Room 1/PlayerDetectionRight" to="NPCs/Room 1" method="_on_player_detection_right_body_entered"]
 [connection signal="body_exited" from="NPCs/Room 1/PlayerDetectionRight" to="NPCs/Room 1" method="_on_player_detection_right_body_exited"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
+[connection signal="body_entered" from="Floor 4 to Floor 2/Area2D" to="Floor 4 to Floor 2" method="_on_player_detection_body_entered"]

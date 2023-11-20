@@ -31,7 +31,7 @@
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door Need Item.gd" id="28_s0rtn"]
 [ext_resource type="Texture2D" uid="uid://bdw58iw7s5jvd" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="29_0ygv0"]
 [ext_resource type="Texture2D" uid="uid://difda4krhim5h" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_big_1.png" id="29_adnfa"]
-[ext_resource type="PackedScene" path="res://Inventory/collectible_item_boltcutter.tscn" id="29_j1icn"]
+[ext_resource type="PackedScene" uid="uid://c2frl1g2skbcy" path="res://Inventory/collectible_item_boltcutter.tscn" id="29_j1icn"]
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="29_nb3ye"]
 [ext_resource type="Texture2D" uid="uid://byyti5evxrayp" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_lock1.png" id="30_a6tw1"]
 [ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="30_ycgyi"]

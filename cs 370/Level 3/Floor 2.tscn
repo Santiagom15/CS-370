@@ -1,6 +1,10 @@
-[gd_scene load_steps=33 format=3 uid="uid://b7chfudtedjhi"]
+[gd_scene load_steps=39 format=3 uid="uid://b7chfudtedjhi"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_82f1x"]
+[ext_resource type="Script" path="res://Level 3/Floor 2 to Boss.gd" id="2_mt760"]
+[ext_resource type="Script" path="res://Level 3/Floor 2 to Floor 1.gd" id="2_peh34"]
+[ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="3_dpc47"]
+[ext_resource type="Script" path="res://character/PlayerButtons.gd" id="4_ed8wx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jmkv3"]
 texture = ExtResource("1_82f1x")
@@ -57303,6 +57307,12 @@ texture = SubResource("CompressedTexture2D_dv8rd")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_8aont")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_doqln"]
+size = Vector2(416.375, 102.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1q3v5"]
+size = Vector2(82.1875, 227.375)
+
 [node name="Floor 2" type="Node2D"]
 
 [node name="Floor Cover" type="TileMap" parent="."]
@@ -57376,3 +57386,51 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(2162755, 3670017, 56, 2162754, 3670017, 56, 1507380, 3473409, 59, 1572916, 3473409, 59, 1638452, 3473409, 59, 524351, 3670017, 56, 589887, 3670017, 57, 524350, 3670017, 56, 589886, 3670017, 57, 524360, 3670017, 56, 589896, 3670017, 57, 524361, 3670017, 56, 589897, 3670017, 57, 524362, 3670017, 56, 589898, 3670017, 57, 524371, 3670017, 56, 589907, 3670017, 57, 524372, 3670017, 56, 589908, 3670017, 57, 524373, 3670017, 56, 589909, 3670017, 57, 524382, 3670017, 56, 589918, 3670017, 57, 524383, 3670017, 56, 589919, 3670017, 57)
+
+[node name="Floor 2 to Floor 1" type="CharacterBody2D" parent="."]
+script = ExtResource("2_peh34")
+
+[node name="Player Detection" type="Area2D" parent="Floor 2 to Floor 1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 2 to Floor 1/Player Detection"]
+position = Vector2(3526, 2069)
+shape = SubResource("RectangleShape2D_doqln")
+
+[node name="Player" parent="." instance=ExtResource("3_dpc47")]
+position = Vector2(4506, 946)
+metadata/_edit_group_ = true
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+
+[node name="Buttons" type="Node2D" parent="Player"]
+script = ExtResource("4_ed8wx")
+
+[node name="Home" type="Button" parent="Player/Buttons"]
+offset_left = 317.0
+offset_top = -291.0
+offset_right = 504.0
+offset_bottom = -211.0
+text = "Level Menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventory" type="Button" parent="Player/Buttons"]
+offset_left = 316.0
+offset_top = -179.0
+offset_right = 501.0
+offset_bottom = -96.0
+text = "Inventory"
+metadata/_edit_use_anchors_ = true
+
+[node name="Floor 2 to Boss" type="CharacterBody2D" parent="."]
+script = ExtResource("2_mt760")
+
+[node name="Player Detection" type="Area2D" parent="Floor 2 to Boss"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 2 to Boss/Player Detection"]
+position = Vector2(832, 503)
+shape = SubResource("RectangleShape2D_1q3v5")
+
+[connection signal="body_entered" from="Floor 2 to Floor 1/Player Detection" to="Floor 2 to Floor 1" method="_on_player_detection_body_entered"]
+[connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
+[connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
+[connection signal="body_entered" from="Floor 2 to Boss/Player Detection" to="Floor 2 to Boss" method="_on_player_detection_body_entered"]
