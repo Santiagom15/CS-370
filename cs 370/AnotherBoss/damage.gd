@@ -1,4 +1,4 @@
-extends State
+extends SantisBossesState
 class_name damage
 
 @export var spawnAttack: PackedScene

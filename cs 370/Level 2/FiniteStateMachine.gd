@@ -1,5 +1,5 @@
 extends Node2D
-class_name FiniteStateMachine
+class_name FiniteStateMachin
 
 var current_state: State
 var previous_state: State

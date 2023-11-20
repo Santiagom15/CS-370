@@ -1,4 +1,4 @@
-extends State
+extends SantisBossesState
 class_name IdleForAnotherboss
 
 @onready var test =  $"../Animations"

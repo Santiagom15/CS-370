@@ -1,5 +1,5 @@
-extends State
-
+extends SantisBossesState
+class_name groundattack
 var switchState = false
 @export var groundAttack: PackedScene
 @onready var timer = $groundTimer
