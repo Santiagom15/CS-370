@@ -63,7 +63,7 @@ script = ExtResource("5_sb548")
 scalpely_node = ExtResource("6_x4qxr")
 
 [node name="Timer" type="Timer" parent="FiniteStateMachine/Shoot"]
-wait_time = 0.375
+wait_time = 0.75
 autostart = true
 
 [node name="debug" type="Label" parent="."]

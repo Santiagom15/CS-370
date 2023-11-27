@@ -6,6 +6,7 @@ var speed = 300
 
 
 @onready var timer := $Timer
+@onready var explodeTimer := $explodeTimer
 @onready var global_hit = get_node("/root/Global")
 
 
@@ -22,10 +23,17 @@ func _on_hit_box_body_entered(body):
 	if body.name == "player":
 		print("hit")
 		global_hit.hits = global_hit.hits + 1
-		queue_free()
+		$Sprite2D.play("explode")
+		speed = 0
+		if(explodeTimer.is_stopped()):
+			explodeTimer.start()
 			
 		
 	if body.name == "Lane collision2":
 		print("hit edge")
 		queue_free()
 
+
+
+func _on_explode_timer_timeout():
+	queue_free()

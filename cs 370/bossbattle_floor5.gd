@@ -17,14 +17,14 @@ var lanesize = 105
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	global_hit.restart_hits()
 	
 
 
 	
 # when music is up, change scene (temp: main menu)
 func _on_timer_timeout():
-	get_tree().change_scene_to_file("res://DeathScene1.tscn")
+	get_tree().change_scene_to_file("res://Level 1/bossbattle_floor5.tscn")
 
 	
 	
@@ -59,4 +59,4 @@ func _process(_delta):
 
 func _on_death_timer_timeout():
 	#print("Timer stop")
-	get_tree().change_scene_to_file("res://DeathScene1.tscn")
+	get_tree().change_scene_to_file("res://Level 1/bossbattle_floor5.tscn")
