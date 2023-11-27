@@ -69884,7 +69884,6 @@ scale = Vector2(3, 3.013)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 5 to Boss/Player Detection"]
 position = Vector2(823.333, 278.792)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_oewjx")
 
 [node name="Exit level 1 to level 2" type="CharacterBody2D" parent="."]

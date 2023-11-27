@@ -32,18 +32,32 @@ offset_right = 728.0
 offset_bottom = 278.0
 text = "Level 1: Floor 5"
 
+[node name="Level 2" type="Button" parent="."]
+offset_left = 499.0
+offset_top = 296.0
+offset_right = 734.0
+offset_bottom = 368.0
+text = "Level 2: Floor 4"
+
+[node name="Level 3" type="Button" parent="."]
+offset_left = 502.0
+offset_top = 390.0
+offset_right = 743.0
+offset_bottom = 459.0
+text = "Level 3: Floor 2"
+
 [node name="Level 5" type="Button" parent="."]
-offset_left = 776.0
-offset_top = 198.0
-offset_right = 995.0
-offset_bottom = 274.0
+offset_left = 493.0
+offset_top = 483.0
+offset_right = 744.0
+offset_bottom = 560.0
 text = "Level 5: Floor 1"
 
 [node name="TestNoBg" type="Button" parent="."]
-offset_left = 502.0
-offset_top = 326.0
-offset_right = 722.0
-offset_bottom = 396.0
+offset_left = 777.0
+offset_top = 85.0
+offset_right = 997.0
+offset_bottom = 155.0
 text = "Demo (no background)"
 
 [node name="Inventory" type="Button" parent="."]
@@ -62,6 +76,8 @@ text = "Level Menu"
 
 [connection signal="button_down" from="BacktoHome" to="BacktoHome" method="_on_button_down"]
 [connection signal="button_down" from="Level 1" to="BacktoHome" method="_on_level_1_button_down"]
+[connection signal="button_down" from="Level 2" to="BacktoHome" method="_on_level_2_button_down"]
+[connection signal="button_down" from="Level 3" to="BacktoHome" method="_on_level_3_button_down"]
 [connection signal="button_down" from="Level 5" to="BacktoHome" method="_on_level_5_button_down"]
 [connection signal="button_down" from="TestNoBg" to="BacktoHome" method="_on_test_no_bg_button_down"]
 [connection signal="button_down" from="Inventory" to="BacktoHome" method="_on_inventory_button_down"]

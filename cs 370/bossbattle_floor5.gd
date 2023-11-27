@@ -34,6 +34,7 @@ func _ready():
 func _on_timer_timeout():
 	inventory.set_entering_from_boss_battle_true()
 	inventory.set_boss_battle_win()
+	global_hit.restart_hit()
 	get_tree().change_scene_to_file("res://Level 1/floor5.tscn")
 	
 #	# Code attempts at implementing the unlock door functionality when the player beats the boss battle
