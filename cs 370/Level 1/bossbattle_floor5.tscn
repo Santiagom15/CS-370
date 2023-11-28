@@ -10,10 +10,10 @@
 [ext_resource type="AudioStream" uid="uid://b877gjg3cn5hh" path="res://Music/bossbattlemusic1 (1).mp3" id="8_7cap3"]
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="9_2t6jl"]
 [ext_resource type="PackedScene" uid="uid://datyj1ghnmx25" path="res://character/character_body_2d.tscn" id="10_4710w"]
-[ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar1.png" id="11_2lr00"]
-[ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar0.png" id="12_y6cuw"]
-[ext_resource type="Texture2D" uid="uid://vqwfho1vro7k" path="res://HealthBar2.png" id="13_62qlp"]
-[ext_resource type="Texture2D" uid="uid://dgbtrhg18j1qo" path="res://HealthBar3.png" id="14_abl3y"]
+[ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="11_1tntx"]
+[ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="12_5372v"]
+[ext_resource type="Texture2D" uid="uid://vqwfho1vro7k" path="res://HealthBar/HealthBar2.png" id="13_l77iv"]
+[ext_resource type="Texture2D" uid="uid://dgbtrhg18j1qo" path="res://HealthBar/HealthBar3.png" id="14_qg4u7"]
 [ext_resource type="Script" path="res://Level 1/HealthBar.gd" id="15_x6ebb"]
 [ext_resource type="Texture2D" uid="uid://dq2iwl0x4ni6v" path="res://Untitled design (3).png" id="16_udx2s"]
 
@@ -18786,7 +18786,7 @@ size = Vector2(349.444, 14.3814)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_y6cuw")
+"texture": ExtResource("11_1tntx")
 }],
 "loop": true,
 "name": &"0",
@@ -18794,7 +18794,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_2lr00")
+"texture": ExtResource("12_5372v")
 }],
 "loop": false,
 "name": &"1",
@@ -18802,7 +18802,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_62qlp")
+"texture": ExtResource("13_l77iv")
 }],
 "loop": false,
 "name": &"2",
@@ -18810,7 +18810,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_abl3y")
+"texture": ExtResource("14_qg4u7")
 }],
 "loop": false,
 "name": &"3",

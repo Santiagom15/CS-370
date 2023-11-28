@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bnmwtvmgpppjm"]
+[gd_scene load_steps=19 format=3 uid="uid://bnmwtvmgpppjm"]
 
 [ext_resource type="Script" path="res://bossbattle2/bossbattle2.gd" id="1_4kwuv"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_orxrf"]
@@ -6,6 +6,13 @@
 [ext_resource type="AudioStream" uid="uid://d3tqm5uif5vmc" path="res://Music/Music - bossbattle2.mp3" id="3_c3x0e"]
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="4_x6qsl"]
 [ext_resource type="PackedScene" uid="uid://datyj1ghnmx25" path="res://character/character_body_2d.tscn" id="5_qyuws"]
+[ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="17_o11fh"]
+[ext_resource type="Texture2D" uid="uid://b8dndk4bcn8ic" path="res://HealthBar/HealthBar0.5.png" id="18_nj3lc"]
+[ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="19_kx70b"]
+[ext_resource type="Texture2D" uid="uid://f32cpoub7wiv" path="res://HealthBar/HealthBar1.5.png" id="20_8kb7i"]
+[ext_resource type="Texture2D" uid="uid://vqwfho1vro7k" path="res://HealthBar/HealthBar2.png" id="21_1bfq5"]
+[ext_resource type="Texture2D" uid="uid://cltf07c5s48jv" path="res://HealthBar/HealthBar2.5.png" id="22_asmlp"]
+[ext_resource type="Texture2D" uid="uid://dgbtrhg18j1qo" path="res://HealthBar/HealthBar3.png" id="23_7i5rx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q0cam"]
 texture = ExtResource("1_orxrf")
@@ -7559,6 +7566,65 @@ texture = ExtResource("3_1g6k7")
 [sub_resource type="TileSet" id="TileSet_p284p"]
 sources/1 = SubResource("TileSetAtlasSource_7lcsa")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_l332g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_o11fh")
+}],
+"loop": false,
+"name": &"0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_nj3lc")
+}],
+"loop": false,
+"name": &"0.5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_kx70b")
+}],
+"loop": false,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_8kb7i")
+}],
+"loop": false,
+"name": &"1.5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_1bfq5")
+}],
+"loop": false,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_asmlp")
+}],
+"loop": false,
+"name": &"2.5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_7i5rx")
+}],
+"loop": false,
+"name": &"3",
+"speed": 5.0
+}]
+
 [node name="bossbattle2" type="Node2D"]
 script = ExtResource("1_4kwuv")
 
@@ -7587,5 +7653,12 @@ script = ExtResource("4_x6qsl")
 
 [node name="player" parent="." instance=ExtResource("5_qyuws")]
 position = Vector2(607, 343)
+
+[node name="HealthBar" type="AnimatedSprite2D" parent="."]
+position = Vector2(975, 147)
+scale = Vector2(0.188657, 0.173177)
+sprite_frames = SubResource("SpriteFrames_l332g")
+animation = &"3"
+autoplay = "3"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

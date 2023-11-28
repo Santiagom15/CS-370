@@ -19,7 +19,6 @@ func _on_screen_exited():
 
 
 func _on_hit_box_body_entered(body):
-	
 	if body.name == "player":
 		print("hit")
 		global_hit.hits = global_hit.hits + 1
