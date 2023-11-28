@@ -33,7 +33,8 @@ func isSpacePressed()->bool:
 	
 		
 func _on_heart_frame_changed():
-	print("Moving: ",moving," space: ",isSpacePressed()," stat: ",state)
+	pass
+	#print("Moving: ",moving," space: ",isSpacePressed()," stat: ",state)
 	#if getState() and isSpacePressed():
 		#print("State: ",getState(), " Space: ",isSpacePressed())
 	

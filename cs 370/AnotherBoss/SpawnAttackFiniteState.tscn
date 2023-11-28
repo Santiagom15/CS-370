@@ -12,6 +12,11 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ftgfi"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_cto7b")
@@ -44,7 +49,7 @@ autostart = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="warning"]
 sprite_frames = SubResource("SpriteFrames_ftgfi")
-animation = &"warning"
+animation = &"new_animation"
 
 [node name="damage" type="Node2D" parent="."]
 script = ExtResource("8_e5ubs")

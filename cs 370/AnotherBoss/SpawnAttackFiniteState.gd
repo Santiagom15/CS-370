@@ -12,10 +12,12 @@ func _ready():
 
 
 func change_state(state): # lets you change the state
-	current_state = find_child(state) as SantisBossesState
-	current_state.enter()
-	previous_state.exit()
 	previous_state = current_state
+	current_state = find_child(state) as SantisBossesState
+	previous_state.exit()
+	current_state.enter()
+	print("Current State: ",current_state," Previous State: ", previous_state)
 	
-func get_StateInString():# TODO erro here 
+	
+func get_StateInString():# 
 	return current_state.name

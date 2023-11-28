@@ -13,3 +13,4 @@ func spawn():
 	attack.position = global_position
 	attack.spawnAttack(player.position,attack.position)
 	get_tree().current_scene.call_deferred("add_child",attack)
+

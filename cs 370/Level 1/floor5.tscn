@@ -1,4 +1,4 @@
-[gd_scene load_steps=463 format=3 uid="uid://d0rp3r6rsqjj7"]
+[gd_scene load_steps=463 format=3 uid="uid://bgkfmqsltr2aj"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Script" path="res://LevelData.gd" id="1_nmc80"]
@@ -31,7 +31,7 @@
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door Need Item.gd" id="28_s0rtn"]
 [ext_resource type="Texture2D" uid="uid://bdw58iw7s5jvd" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="29_0ygv0"]
 [ext_resource type="Texture2D" uid="uid://difda4krhim5h" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_big_1.png" id="29_adnfa"]
-[ext_resource type="PackedScene" uid="uid://dbsb25h8g4mlo" path="res://Inventory/collectible_item_boltcutter.tscn" id="29_j1icn"]
+[ext_resource type="PackedScene" path="res://Inventory/collectible_item_boltcutter.tscn" id="29_j1icn"]
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="29_nb3ye"]
 [ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_lock1.png" id="30_a6tw1"]
 [ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="30_ycgyi"]
@@ -69884,7 +69884,6 @@ scale = Vector2(3, 3.013)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 5 to Boss/Player Detection"]
 position = Vector2(823.333, 278.792)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_oewjx")
 
 [node name="Exit level 1 to level 2" type="CharacterBody2D" parent="."]
