@@ -128,3 +128,7 @@ func _on_PlayerDetectionFromRight_body_exited(body):
 			stack_approach_side.pop_back() 
 		elif curr_side == 0:
 			stack_approach_side.pop_front()
+
+
+func _on_player_detection_right_body_exited(body):
+	pass # Replace with function body.
