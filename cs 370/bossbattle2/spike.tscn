@@ -1,11 +1,20 @@
-[gd_scene load_steps=9 format=3 uid="uid://dndwyyaxys4eg"]
+[gd_scene load_steps=10 format=3 uid="uid://dndwyyaxys4eg"]
 
 [ext_resource type="Script" path="res://bossbattle2/spike.gd" id="1_f8owj"]
 [ext_resource type="Texture2D" uid="uid://brqgyydn5my67" path="res://bossbattle2/spikes.png" id="2_10tl0"]
+[ext_resource type="Texture2D" uid="uid://ctr630g14mvge" path="res://bossbattle2/spikes-red.png" id="2_b0yit"]
 [ext_resource type="Texture2D" uid="uid://cr3fimws2554f" path="res://Room_Builder_16x16.png" id="2_tkwi7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_huuw7"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b0yit")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_10tl0")
@@ -13,15 +22,10 @@ animations = [{
 "loop": false,
 "name": &"spike",
 "speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"unspike",
-"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7cat"]
-size = Vector2(25.4348, 19.1243)
+size = Vector2(25.4348, 19.7219)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a3b1e"]
 size = Vector2(21.491, 15.9938)
@@ -3814,22 +3818,21 @@ position = Vector2(-108.713, -43.8461)
 scale = Vector2(0.240135, 0.318292)
 sprite_frames = SubResource("SpriteFrames_huuw7")
 animation = &"spike"
+autoplay = "spike"
 
 [node name="Area2D" type="Area2D" parent="Spike1"]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Spike1/Area2D"]
 position = Vector2(-109.513, -40.9379)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_l7cat")
 debug_color = Color(0.694118, 0.490196, 0.203922, 0.419608)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spike1"]
 position = Vector2(-109.513, -41.0091)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_a3b1e")
 
 [node name="Spike2" type="CharacterBody2D" parent="."]
-position = Vector2(325, 241)
+position = Vector2(279, 243)
 scale = Vector2(2.20658, 3.47956)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Spike2"]
@@ -3837,6 +3840,7 @@ position = Vector2(-114.417, 42.1989)
 scale = Vector2(0.240135, 0.318292)
 sprite_frames = SubResource("SpriteFrames_huuw7")
 animation = &"spike"
+autoplay = "spike"
 
 [node name="Area2D" type="Area2D" parent="Spike2"]
 
@@ -3859,10 +3863,10 @@ position = Vector2(-24.3426, 17.3602)
 scale = Vector2(0.240135, 0.318292)
 sprite_frames = SubResource("SpriteFrames_huuw7")
 animation = &"spike"
+autoplay = "spike"
 
 [node name="Area2D" type="Area2D" parent="Spike3"]
 position = Vector2(-25.4371, 20.1348)
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Spike3/Area2D"]
 position = Vector2(0.246037, 0.00314331)
@@ -3872,7 +3876,6 @@ debug_color = Color(0.694118, 0.490196, 0.203922, 0.419608)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Spike3"]
 position = Vector2(-25.4371, 20.1348)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_a3b1e")
 
 [node name="Spike4" type="CharacterBody2D" parent="."]
@@ -3888,6 +3891,7 @@ position = Vector2(45.4025, 56.468)
 scale = Vector2(0.240135, 0.318292)
 sprite_frames = SubResource("SpriteFrames_huuw7")
 animation = &"spike"
+autoplay = "spike"
 
 [node name="Area2D" type="Area2D" parent="Spike4"]
 
@@ -3898,13 +3902,12 @@ shape = SubResource("RectangleShape2D_l7cat")
 debug_color = Color(0.694118, 0.490196, 0.203922, 0.419608)
 
 [node name="Spike5" type="CharacterBody2D" parent="."]
-position = Vector2(498, 367)
+position = Vector2(-112, 66)
 scale = Vector2(2.38546, 3.56639)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spike5"]
 position = Vector2(99.8027, 8.59514)
 rotation = 0.00941507
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_a3b1e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Spike5"]
@@ -3913,6 +3916,7 @@ rotation = 0.00941507
 scale = Vector2(0.240135, 0.318292)
 sprite_frames = SubResource("SpriteFrames_huuw7")
 animation = &"spike"
+autoplay = "spike"
 
 [node name="Area2D" type="Area2D" parent="Spike5"]
 
@@ -3935,6 +3939,7 @@ position = Vector2(158.934, -33.3743)
 scale = Vector2(0.240135, 0.318292)
 sprite_frames = SubResource("SpriteFrames_huuw7")
 animation = &"spike"
+autoplay = "spike"
 
 [node name="Area2D" type="Area2D" parent="Spike6"]
 
@@ -3945,7 +3950,7 @@ shape = SubResource("RectangleShape2D_l7cat")
 debug_color = Color(0.694118, 0.490196, 0.203922, 0.419608)
 
 [node name="Spike7" type="CharacterBody2D" parent="."]
-position = Vector2(122, 351)
+position = Vector2(125, 454)
 scale = Vector2(2.27413, 3.51571)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spike7"]
@@ -3957,6 +3962,7 @@ position = Vector2(181.139, 44.8413)
 scale = Vector2(0.240135, 0.318292)
 sprite_frames = SubResource("SpriteFrames_huuw7")
 animation = &"spike"
+autoplay = "spike"
 
 [node name="Area2D" type="Area2D" parent="Spike7"]
 
@@ -3979,10 +3985,34 @@ position = Vector2(34.7687, -27.561)
 scale = Vector2(0.240135, 0.318292)
 sprite_frames = SubResource("SpriteFrames_huuw7")
 animation = &"spike"
+autoplay = "spike"
 
 [node name="Area2D" type="Area2D" parent="Spike8"]
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="Spike8/Area2D"]
+position = Vector2(33.3981, -24.9248)
+scale = Vector2(0.958692, 0.947859)
+shape = SubResource("RectangleShape2D_l7cat")
+debug_color = Color(0.694118, 0.490196, 0.203922, 0.419608)
+
+[node name="Spike9" type="CharacterBody2D" parent="."]
+position = Vector2(1022, 492)
+scale = Vector2(2.28119, 3.53062)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spike9"]
+position = Vector2(33.6741, -24.7864)
+shape = SubResource("RectangleShape2D_a3b1e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Spike9"]
+position = Vector2(34.7687, -27.561)
+scale = Vector2(0.240135, 0.318292)
+sprite_frames = SubResource("SpriteFrames_huuw7")
+animation = &"spike"
+autoplay = "spike"
+
+[node name="Area2D" type="Area2D" parent="Spike9"]
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Spike9/Area2D"]
 position = Vector2(33.3981, -24.9248)
 scale = Vector2(0.958692, 0.947859)
 shape = SubResource("RectangleShape2D_l7cat")
@@ -4015,4 +4045,6 @@ layer_0/tile_data = PackedInt32Array(262144, 2752513, 43, 196608, 2752513, 42, 1
 [connection signal="body_exited" from="Spike7/Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="Spike8/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Spike8/Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Spike9/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Spike9/Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

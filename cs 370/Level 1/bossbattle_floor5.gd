@@ -59,4 +59,4 @@ func _process(_delta):
 
 func _on_death_timer_timeout():
 	#print("Timer stop")
-	get_tree().change_scene_to_file("res://Level 1/bossbattle_floor5.tscn")
+	get_tree().change_scene_to_file("res://DeathScene2.tscn")

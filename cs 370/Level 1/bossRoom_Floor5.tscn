@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://c7n55ihcpr4qy"]
 
-[ext_resource type="PackedScene" uid="uid://bfhrt5rvfing8" path="res://boss.tscn" id="2_jsrq2"]
+[ext_resource type="PackedScene" uid="uid://bfhrt5rvfing8" path="res://Level 1/boss.tscn" id="2_jsrq2"]
 
 [sub_resource type="TileSet" id="TileSet_b4lgr"]
 

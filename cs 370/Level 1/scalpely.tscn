@@ -57,7 +57,7 @@ polygon = PackedVector2Array(-1, 0, 0, 1, -2, -93.8272, 2, -96.2963, 6, -92.5926
 position = Vector2(-4, 1.21468)
 scale = Vector2(1.5, 0.855883)
 sprite_frames = SubResource("SpriteFrames_8vqb0")
-animation = &"normal"
+animation = &"explode"
 autoplay = "normal"
 
 [node name="Timer" type="Timer" parent="."]
