@@ -33,7 +33,8 @@ func _ready():
 	descriptions["Flower"] = "This looks pretty, I hear frogs really like blue flowers"
 	descriptions["Hat"] = "Nice to wear, too bad it's too big for you"
 	descriptions["Brain"] = "I think you have one already, need an extra?"
-	descriptions["Money"] = "Use this buy things, maybe from the vending machine?"
+	descriptions["Money"] = "Use this to buy things, maybe from the vending machine?"
+	descriptions["Coffee"] = "A nice pick me up, but sometimes if makes you more tired"
 	
 	var inventory_contents = inventory.get_inventory()
 	
