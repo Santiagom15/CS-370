@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://LevelData.gd" id="1_vngvv"]
 [ext_resource type="Texture2D" uid="uid://cgxvwm7nsmtns" path="res://assets/Solaria Demo Update 01.png" id="2_r72m1"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="9_c6a1d"]
-[ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="10_0cc3k"]
+[ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="10_0cc3k"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door.gd" id="10_8r4cu"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="11_g01am"]
 [ext_resource type="Texture2D" uid="uid://cd0nbgye3yh7u" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="11_r6vb1"]
