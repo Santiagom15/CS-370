@@ -1,6 +1,17 @@
 extends Node2D
 
-@onready var globar_var = get_node("/root/Global")
-# Called when the node enters the scene tree for the first time.
+@onready var global_var = get_node("/root/Global")
+@onready var curr_health = 6
+@onready var Healthbar = $player/Camera2D2/pin/HealthBar
+@onready var timmy = $AudioStreamPlayer2D
+var healtharr = [3, 2.5, 2, 1.5, 1, 0.5, 0]
 func _ready():
-		globar_var.restart_hits()
+		global_var.restart_hits()
+		
+func _process(_delta):
+	timmy.get_time()
+	var t = timmy.time
+	
+	
+	
+	Healthbar.play(str(healtharr[global_var.hits]))

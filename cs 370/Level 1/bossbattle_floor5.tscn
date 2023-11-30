@@ -1,7 +1,7 @@
 [gd_scene load_steps=118 format=3 uid="uid://df1f4wch2uy0c"]
 
 [ext_resource type="PackedScene" uid="uid://rhgf2vjoui6j" path="res://Level 1/boss.tscn" id="1_1sf1f"]
-[ext_resource type="Script" path="res://bossbattle_floor5.gd" id="1_pp6cf"]
+[ext_resource type="Script" path="res://Level 1/bossbattle_floor5.gd" id="1_tomha"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="2_mnnjk"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="3_fmn3m"]
 [ext_resource type="Texture2D" uid="uid://boymgm517uh7f" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/16_Grocery_store_Butcher_16x16.png" id="4_vj4tx"]
@@ -21532,7 +21532,7 @@ size = Vector2(248, 109)
 size = Vector2(246, 52)
 
 [node name="testscene" type="Node2D"]
-script = ExtResource("1_pp6cf")
+script = ExtResource("1_tomha")
 
 [node name="boss" parent="." instance=ExtResource("1_1sf1f")]
 top_level = true

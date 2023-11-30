@@ -41,8 +41,19 @@ func _on_area_2d_body_exited(body):
 
 func _on_area_2d_body_entered(body):
 	if body.name == "player":
+		$Spike1/AnimatedSprite2D.play("hit")
+		$Spike2/AnimatedSprite2D.play("hit")
+		$Spike3/AnimatedSprite2D.play("hit")
+		$Spike4/AnimatedSprite2D.play("hit")
+		$Spike5/AnimatedSprite2D.play("hit")
+		$Spike6/AnimatedSprite2D.play("hit")
+		$Spike7/AnimatedSprite2D.play("hit")
+		$Spike8/AnimatedSprite2D.play("hit")
+		$Spike9/AnimatedSprite2D.play("hit")
 		if(global_var.flag == false):
 			global_var.hits2 = global_var.hits2 + 1
+			if(global_var.hits2 >= 6):
+				get_tree().change_scene_to_file("res://deathscene.tscn")
 			#curr_health = curr_health - 1
 			print(global_var.hits2)
 		global_var.flag = true
