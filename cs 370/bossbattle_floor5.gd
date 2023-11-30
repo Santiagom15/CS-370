@@ -25,35 +25,14 @@ var bossBeaten = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	global_hit.restart_hits()
 	
 
 
 	
 # when music is up, change scene (temp: main menu)
 func _on_timer_timeout():
-	inventory.set_entering_from_boss_battle_true()
-	inventory.set_boss_battle_win()
-	global_hit.restart_hit()
-	get_tree().change_scene_to_file("res://Level 1/floor5.tscn")
-	
-#	# Code attempts at implementing the unlock door functionality when the player beats the boss battle
-#	print("Boss beaten")
-#
-#	var laneCol1 = get_node("Lane collision").get_child(3)
-#	var laneCol2 = get_node("Lane collision2").get_child(0)
-#	laneCol1.set_deferred("disabled", true)
-#	laneCol2.set_deferred("disabled", true)
-#
-#	var boss = get_node("boss")
-#	print("boss: ", boss)
-#	print("Boos beaten end")
-#
-##	lockDisabled.emit("Door1")
-#	bossBeaten = true
-	
-#	boss.visibile = false
-
+	get_tree().change_scene_to_file("res://Level 1/bossbattle_floor5.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -87,6 +66,4 @@ func _process(_delta):
 
 func _on_death_timer_timeout():
 	#print("Timer stop")
-	inventory.set_entering_from_boss_battle_true()
-	inventory.set_boss_battle_loss()
-	get_tree().change_scene_to_file("res://DeathScene1.tscn")
+	get_tree().change_scene_to_file("res://Level 1/bossbattle_floor5.tscn")

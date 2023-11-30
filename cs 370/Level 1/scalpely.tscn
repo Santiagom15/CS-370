@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dxw1xcy3pxojt"]
+[gd_scene load_steps=6 format=3 uid="uid://dxw1xcy3pxojt"]
 
 [ext_resource type="Script" path="res://Level 1/scalpely.gd" id="1_dbhww"]
-[ext_resource type="Texture2D" uid="uid://df14ey5m4cgnr" path="res://scalpel.png" id="3_xj4cn"]
+[ext_resource type="Texture2D" uid="uid://bd2iuav3kbd4q" path="res://pixil-frame-0 (3).png" id="2_f40o5"]
+[ext_resource type="Texture2D" uid="uid://cpbubqnkx3ard" path="res://scalpel (3).png" id="3_ve8w8"]
 
 [sub_resource type="GDScript" id="GDScript_xhit0"]
 script/source = "
@@ -20,6 +21,25 @@ func _process(_delta):
 	pass
 "
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_8vqb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f40o5")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ve8w8")
+}],
+"loop": false,
+"name": &"normal",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
 position = Vector2(196, 91)
 scale = Vector2(1, 0.9)
@@ -33,11 +53,17 @@ position = Vector2(-7, 38.8889)
 scale = Vector2(1, 0.9)
 polygon = PackedVector2Array(-1, 0, 0, 1, -2, -93.8272, 2, -96.2963, 6, -92.5926, 6, -75, 6, -62, 6, -53, 6, -43, 6, -29, 6, -21, 6, -19, 6, -15, 19, -6.66666, 35, 3.55556, -28, 2.44444, -12, -6.66666, 5, -16)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -3.33333)
-scale = Vector2(1.5, 0.9)
-texture = ExtResource("3_xj4cn")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4, 1.21468)
+scale = Vector2(1.5, 0.855883)
+sprite_frames = SubResource("SpriteFrames_8vqb0")
+animation = &"normal"
+autoplay = "normal"
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="explodeTimer" type="Timer" parent="."]
+wait_time = 0.1
+
 [connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
+[connection signal="timeout" from="explodeTimer" to="." method="_on_explode_timer_timeout"]

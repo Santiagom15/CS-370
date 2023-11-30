@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3tqm5uif5vmc"
+path="res://.godot/imported/Music - bossbattle2.mp3-7a0cb2e97d12270f1536d076734902ca.mp3str"
+
+[deps]
+
+source_file="res://Music/Music - bossbattle2.mp3"
+dest_files=["res://.godot/imported/Music - bossbattle2.mp3-7a0cb2e97d12270f1536d076734902ca.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

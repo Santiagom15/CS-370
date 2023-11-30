@@ -2,6 +2,10 @@ extends Area2D
 
 var direction = Vector2.RIGHT
 var speed = 100
+@onready var animation = $AnimatedSprite2D
+
+func _ready():
+	animation.play("Attack1")
 
 func _physics_process(delta):
 	position+= direction * speed*delta
