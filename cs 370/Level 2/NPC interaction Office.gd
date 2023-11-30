@@ -31,10 +31,20 @@ func _ready():
 
 
 func _on_player_detection_body_entered(body):
+	for idx in range(frog_parent.get_child_count()):
+		frog_child = frog_parent.get_child(idx)
+		if !("Flipped" in frog_child.get_name()):
+			frog_child.set_flip_h(true)
+	
 	if body.name == "Player":
 		play_animation("Blink")
 
 
 func _on_player_detection_body_exited(body):
+	for idx in range(frog_parent.get_child_count()):
+		frog_child = frog_parent.get_child(idx)
+		if !("Flipped" in frog_child.get_name()):
+			frog_child.set_flip_h(false)
+	
 	if body.name == "Player":
 		play_animation("Idle")

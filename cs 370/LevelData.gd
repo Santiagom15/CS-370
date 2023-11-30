@@ -15,7 +15,6 @@ signal lockDisabled(lockIdx)
 func _ready():
 	
 	var bossStatus = inventory.get_boss_battle_status()
-	print("LevelData, bossStatus: ", bossStatus)
 	
 	if bossStatus[0]:
 		player.global_position = Vector2(2412.31, 966.9786)

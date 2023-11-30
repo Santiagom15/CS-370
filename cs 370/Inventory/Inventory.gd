@@ -36,6 +36,12 @@ var levelUnlocks = []
 #						   true if player won the boss battle they are entering from, false otherwise
 var bossBattleToLevel = [false, false]
 
+# Dictionary storing the state of all major collectible or NPC based interactions in the current scene
+# 	key: name of the interaction (ex. "Room 1")
+#	value: an integer >= 0 that represents the state of the interaction
+var interactionStates = {}
+
+
 # Function to get the singleton instance
 func _get_instance():
 	if instance == null:
@@ -147,5 +153,39 @@ func set_boss_battle_loss():
 func get_boss_battle_status():
 	return bossBattleToLevel
 
+# Function to add an interaction to interactionStates or update/increase state of existing element
+func update_interaction(item_id):
+	if interactionStates.has(item_id):
+		interactionStates[item_id] += 1
+	else:
+		interactionStates[item_id] = 0
+
+# Function to remove an interaction or decrease state for an interaction in interactionStates
+func decrease_interaction(item_id):
+	if interactionStates.has(item_id):
+		interactionStates[item_id] -= 1
+		if interactionStates[item_id] < 0:
+			interactionStates.erase(item_id)
+
+# Function to check if interactionStates is empty
+func check_empty_interaction():
+	return interactionStates.empty()
+
+# Function to check if a certain interaction exists in interactionStates
+func has_interaction(item_id):
+	if item_id in interactionStates: return true
+	else: return false 
+
+# Function to get the state of an interaction in interactionStates
+func get_interaction_state(item_id):
+	return interactionStates.get(item_id, 0)
+
+# Function to return the dictionary interactionStates of level interactions and counts
+func get_interactions():
+	return interactionStates
+
+# Function to clear interactionStates
+func clear_interactions():
+	interactionStates = {}
 
 
