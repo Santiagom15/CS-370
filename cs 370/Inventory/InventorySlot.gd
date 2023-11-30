@@ -29,27 +29,39 @@ func _ready():
 	descriptions["Key"] = "Key unlocks locked doors"
 	descriptions["Frog"] = "A cool companion"
 	descriptions["Candle"] = "Help light the way"
+	descriptions["BoltCutter"] = "Open bolted off doors"
+	descriptions["Flower"] = "This looks pretty, I hear frogs really like blue flowers"
+	descriptions["Hat"] = "Nice to wear, too bad it's too big for you"
+	descriptions["Brain"] = "I think you have one already, need an extra?"
+	descriptions["Money"] = "Use this to buy things, maybe from the vending machine?"
+	descriptions["Coffee"] = "A nice pick me up, but sometimes if makes you more tired"
 	
 	var inventory_contents = inventory.get_inventory()
-	# Get and iterate through all child nodes
-	# for child in get_children():
-	for key in inventory_contents.keys():
-		items_ordered.append(key)
-		
-		slot = get_child(used_slot_idx)
-		slot.visible = true
-		item = ItemClass.instantiate()
-		slot.add_child(item)
-		item._on_item_current(key)
-		item.itemAnimLooped.connect(_item_anim_looped)
-		
-		used_slot_idx += 1
 	
-	for idx in range(get_child_count(false)):
-		slot = get_child(idx)
-		slot.panelClicked.connect(_on_panel_clicked)
+	if len(inventory_contents) == 0:
+		textInfoDisplay.clear()
+		textInfoDisplay.append_text("[center]Looking empty in here, try collecting something")
+	
+	else: 
+		# Get and iterate through all child nodes
+		# for child in get_children():
+		for key in inventory_contents.keys():
+			items_ordered.append(key)
+			
+			slot = get_child(used_slot_idx)
+			slot.visible = true
+			item = ItemClass.instantiate()
+			slot.add_child(item)
+			item._on_item_current(key)
+			item.itemAnimLooped.connect(_item_anim_looped)
+			
+			used_slot_idx += 1
 		
-	if used_slot_idx > 0: orig_color = slot.modulate
+		for idx in range(get_child_count(false)):
+			slot = get_child(idx)
+			slot.panelClicked.connect(_on_panel_clicked)
+			
+		if used_slot_idx > 0: orig_color = slot.modulate
 
 
 func _item_anim_looped():

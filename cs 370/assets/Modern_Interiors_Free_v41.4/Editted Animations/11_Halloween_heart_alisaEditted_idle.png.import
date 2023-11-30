@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://q43mtdie7ncw"
+path="res://.godot/imported/11_Halloween_heart_alisaEditted_idle.png-c55a55df367ba915db0ecb1418fac82c.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/11_Halloween_heart_alisaEditted_idle.png"
+dest_files=["res://.godot/imported/11_Halloween_heart_alisaEditted_idle.png-c55a55df367ba915db0ecb1418fac82c.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

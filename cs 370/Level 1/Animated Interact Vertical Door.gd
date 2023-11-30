@@ -38,8 +38,7 @@ func _ready():
 	collTopRight.set_deferred("disabled", true)
  
 
-# When requirements are met, open the door to the correct side
-func _process(delta):
+func _process(_delta):
 	len = stack_approach_side.size()
 	
 	# Check if requirements are met and player has pressed the spacebar
@@ -129,3 +128,7 @@ func _on_PlayerDetectionFromRight_body_exited(body):
 			stack_approach_side.pop_back() 
 		elif curr_side == 0:
 			stack_approach_side.pop_front()
+
+
+func _on_player_detection_right_body_exited(body):
+	pass # Replace with function body.

@@ -7,4 +7,5 @@ extends CharacterBody2D
 
 # Play the "Idle" animation when the scene loads 
 func _ready():
+	anim.set_frame(0)
 	anim.play("Idle")

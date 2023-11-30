@@ -1,4 +1,4 @@
-extends State
+extends SantisBossesState
 class_name Idle
 
 @onready var timer = $TestTimerFoMeteor # TODO going to learn how to restaurt everytime I finish the attacks// or connect to song an dchange base onf song 

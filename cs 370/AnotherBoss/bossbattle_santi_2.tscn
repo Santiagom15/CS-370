@@ -108,14 +108,14 @@ script = ExtResource("2_rxedy")
 script = ExtResource("3_gop6f")
 
 [node name="groundAttack" type="Node2D" parent="FiniteState"]
+visible = false
 script = ExtResource("4_abaln")
 groundAttack = ExtResource("5_3p7hx")
 
 [node name="groundTimer" type="Timer" parent="FiniteState/groundAttack"]
 wait_time = 2.0
 
-[node name="delay" type="Timer" parent="FiniteState/groundAttack"]
-wait_time = 3.0
+[node name="Lifespan" type="Timer" parent="FiniteState/groundAttack"]
 
 [node name="Animations" type="AnimatedSprite2D" parent="FiniteState"]
 position = Vector2(1, -41)
@@ -126,4 +126,4 @@ animation = &"Idle "
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
 [connection signal="timeout" from="FiniteState/groundAttack/groundTimer" to="FiniteState/groundAttack" method="_on_ground_timer_timeout"]
-[connection signal="timeout" from="FiniteState/groundAttack/delay" to="FiniteState/groundAttack" method="_on_delay_timeout"]
+[connection signal="timeout" from="FiniteState/groundAttack/Lifespan" to="FiniteState/groundAttack" method="_on_lifespan_timeout"]

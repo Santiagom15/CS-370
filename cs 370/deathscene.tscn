@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbwgv1ajumc03"]
+
+[ext_resource type="Texture2D" uid="uid://cwsafg14fthnp" path="res://DeathScene1Background.png" id="1_hgqxy"]
+[ext_resource type="Script" path="res://deathscene.gd" id="1_wgldv"]
+[ext_resource type="FontFile" uid="uid://bf7bg7h4xbki7" path="res://Another Danger - Demo.otf" id="3_vextd"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_wgldv")
+
+[node name="DeathScene1Background" type="Sprite2D" parent="."]
+position = Vector2(584.062, 328)
+scale = Vector2(1.47832, 1.60092)
+texture = ExtResource("1_hgqxy")
+
+[node name="RestartBattle" type="Button" parent="."]
+offset_left = 332.0
+offset_top = 571.0
+offset_right = 460.0
+offset_bottom = 613.0
+text = "Replay battle"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 308.0
+offset_top = 252.0
+offset_right = 800.0
+offset_bottom = 514.0
+theme_override_colors/font_color = Color(0.290196, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vextd")
+theme_override_font_sizes/font_size = 150
+text = "You Ded"
+
+[node name="RestartLevel" type="Button" parent="."]
+offset_left = 650.0
+offset_top = 581.0
+offset_right = 776.0
+offset_bottom = 612.0
+text = "Return to Level"
+
+[connection signal="button_down" from="RestartBattle" to="." method="_on_restart_battle_button_down"]

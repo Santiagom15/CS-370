@@ -1,4 +1,4 @@
-extends State
+extends SantisBossesState
 
 @export var meteorNode: PackedScene
 @onready var timer = $MeteroShoot

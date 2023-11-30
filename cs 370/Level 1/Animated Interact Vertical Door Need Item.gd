@@ -1,5 +1,5 @@
 # This script give functionality to the opening/closing vertical door.
-# There is additional functionality where the a door rattle and key floating animation will play
+# There is additional functionality where the key floating animation will play
 # and the door will not open unless the player has the key collectible item when trying to open the door.
 # This is an interactable animation. The door opens when the player presses the spacebar
 # when close enough, and the player can walk through. When the door is approached by the
@@ -41,7 +41,7 @@ var unlocked = false
 @onready var animKey = $AnimatedKey
 @onready var animKeyFrames = animKey.get_sprite_frames()
 @onready var total_num_key_frames = animKeyFrames.get_frame_count("Key")
-@onready var animRattle = $AnimatedDoorRattle
+@onready var animSparkle = $AnimatedSparkle
 
 @onready var levelRoot = get_parent().get_parent()
 signal lockDisabled(lockIdx)
@@ -51,6 +51,10 @@ var lockIdx : int
 # As soon as scene loads, disable the collision shapes for when door is open 
 func _ready():
 	animKey.hide()
+	animRight.show()
+	animLeft.show()
+	animSparkle.hide()
+	
 	collTopLeft.set_deferred("disabled", true)
 	collTopRight.set_deferred("disabled", true)
 	
@@ -58,7 +62,7 @@ func _ready():
 	animKey.set_frame(0)
 	animRight.set_frame(0)
 	animLeft.set_frame(0)
-	animRattle.set_frame(0)
+	animSparkle.set_frame(0)
 	
 	levelRoot.lockDisabled.connect(_on_lock_disabled)
 	
@@ -69,6 +73,8 @@ func _process(delta):
 	
 	# Check if requirements are met and player has pressed the spacebar
 	if play_open == true && len == 2 && Input.is_action_pressed("ui_accept"):
+		
+		curr_side = stack_approach_side[len - 1]  # Get current side of the door the player is on
 		
 		# Case when play has the key or has already used the key
 		if inventory.has_item("Key") == true || unlocked == true:
@@ -82,36 +88,65 @@ func _process(delta):
 				inventory.update_level_unlocks("Door" + doorName[-1])   # It is assumed that the name of any locked door node will end with a integer >= 0
 																		# This is used to identify/distinguish the doors in the scene when unlocking/locking
 				
-			
-			curr_side = stack_approach_side[len - 1]  # Get current side of the door the player is on
-			
-			# If player is to the left, open the door to the right
-			if curr_side == 0 && right_open == false:
-				# Play open right animation
-				animRight.play("OpenRight")
-				# Disable/enable correct collision shapes
-				collDoor.set_deferred("disabled", true)  # Disable the vertical door collision shape so the player can walk through doorway
-				collTopRight.set_deferred("disabled", false)   # Enable the top of open door collision shape so player can't walk over door 
-				# Update state flags
-				play_open = false
-				play_close = true
-				left_open = true
+				animKey.show()
+				animSparkle.show()
+				animKey.play("Unlock")
+				animSparkle.play("Sparkle")
 				
-			# If player is to the right, open the door to the left
-			elif curr_side == 1 && left_open == false:
-				animLeft.play("OpenLeft")
-				collDoor.set_deferred("disabled", true)  # Disable the CollisionShape2D
-				collTopLeft.set_deferred("disabled", false)
 				play_open = false
-				play_close = true
-				right_open = true
+			
+			else:
+				
+				# If player is to the left, open the door to the right
+				if curr_side == 0 && right_open == false:
+					# Play open right animation
+					animRight.play("OpenRight")
+					# Disable/enable correct collision shapes
+					collDoor.set_deferred("disabled", true)  # Disable the vertical door collision shape so the player can walk through doorway
+					collTopRight.set_deferred("disabled", false)   # Enable the top of open door collision shape so player can't walk over door 
+					# Update state flags
+					play_open = false
+					play_close = true
+					left_open = true
+					
+				# If player is to the right, open the door to the left
+				elif curr_side == 1 && left_open == false:
+					animLeft.play("OpenLeft")
+					collDoor.set_deferred("disabled", true)  # Disable the CollisionShape2D
+					collTopLeft.set_deferred("disabled", false)
+					play_open = false
+					play_close = true
+					right_open = true
 		
-		# Play door rattle and key floating animation when player tries to open door without having the key
+		# Play key floating animation when player tries to open door without having the key
 		elif !animKey.is_playing():
 			animKey.show()
 			animKey.z_index = 1
 			animKey.play("Key")
-			animRattle.play("DoorRattle")
+
+
+func _on_animated_sparkle_animation_finished():
+	animKey.hide()
+	animSparkle.hide()
+
+	# If player is to the left, open the door to the right
+	if curr_side == 0 && right_open == false:
+		# Play open right animation
+		animRight.play("OpenRight")
+		# Disable/enable correct collision shapes
+		collDoor.set_deferred("disabled", true)  # Disable the vertical door collision shape so the player can walk through doorway
+		collTopRight.set_deferred("disabled", false)   # Enable the top of open door collision shape so player can't walk over door 
+		# Update state flags
+		play_close = true
+		left_open = true
+					
+	# If player is to the right, open the door to the left
+	elif curr_side == 1 && left_open == false:
+		animLeft.play("OpenLeft")
+		collDoor.set_deferred("disabled", true)  # Disable the CollisionShape2D
+		collTopLeft.set_deferred("disabled", false)
+		play_close = true
+		right_open = true
 
 
 func _on_lock_disabled(lockIdx):
@@ -121,14 +156,16 @@ func _on_lock_disabled(lockIdx):
 
 
 func _on_animated_key_frame_changed():
-	# As animation plays, increase transparency of current frame to create a fading away visual affect
-	animKey.modulate.a = 1.0 - (animKey.get_frame() / float(total_num_key_frames - 1))
-	
-	# When on the last frame, reset the animation to hidden and fully non-transparent
-	if animKey.get_frame() == total_num_key_frames-1:
-		animKey.hide()
-		animKey.modulate.a = 1
-		#has_key = true
+	if str(animKey.get_animation()) == "Key":
+		# As animation plays, increase transparency of current frame to create a fading away visual affect
+		if animKey.get_frame() >= total_num_key_frames / 2.0:
+			animKey.modulate.a = 1.0 - ((total_num_key_frames - animKey.get_frame()) / float(total_num_key_frames - 1))
+		
+		# When on the last frame, reset the animation to hidden and fully non-transparent
+		if animKey.get_frame() == total_num_key_frames-1:
+			animKey.hide()
+			animKey.modulate.a = 1
+			#has_key = true
 
 
 # Update door state when player enters the left detection shape

@@ -1,4 +1,4 @@
-extends State
+extends SantisBossesState
 class_name warning
 
 @onready var uiTime = false
@@ -7,16 +7,14 @@ class_name warning
 func transition():# amethod from the parent class that we can use to transition to new states
 	if uiTime:
 		get_parent().change_state("damage")
-		animationPlayer.stop()
+		animationPlayer.queue_free()
 
 func exit():
+	animationPlayer.stop()
 	super.exit()
 	
-
-
-func animation():
+func _ready():
 	animationPlayer.play("warning")
-
 
 func _on_uitime_timeout():
 	uiTime = true

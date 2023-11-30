@@ -55,8 +55,6 @@ func _process(_delta):
 
 		# Update the inventory of the current level
 		inventory.update_level_items(ITEM + itemNameUnique[-1])
-		print("ITEM: ", ITEM)
-		print("ITEM + itemNameUnique[-1]: ", ITEM + itemNameUnique[-1])
 
 
 # Hide the sparkle animation/node when the sparkle animation has finished 
@@ -89,6 +87,3 @@ func _on_item_disabled(itemIdx):
 		animSparkle.hide()
 		collision.set_deferred("disabled", true)
 
-
-func _on_animated_key_animation_finished():
-	pass # Replace with function body.
