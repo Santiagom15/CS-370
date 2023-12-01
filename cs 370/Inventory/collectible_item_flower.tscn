@@ -1,42 +1,43 @@
-[gd_scene load_steps=24 format=3 uid="uid://crqo4m2erba4r"]
+[gd_scene load_steps=31 format=3 uid="uid://betwh3svq3j6d"]
 
-[ext_resource type="Script" path="res://Inventory/Collectible Item.gd" id="1_30hnc"]
-[ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="2_11hld"]
-[ext_resource type="Texture2D" uid="uid://lqypn1btd4tx" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/19_Hospital_flower_edittedAlisa_collect.png" id="3_ur8lo"]
+[ext_resource type="Script" path="res://Inventory/Collectible Item.gd" id="1_70rhp"]
+[ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="2_h7xer"]
+[ext_resource type="Texture2D" uid="uid://lqypn1btd4tx" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/19_Hospital_flower_edittedAlisa_collect.png" id="3_ojhdg"]
+[ext_resource type="Texture2D" uid="uid://djae2nnvxq1ww" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/19_Hospital_flower_edittedAlisa_idle.png" id="4_o42bm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y0drv"]
-atlas = ExtResource("2_11hld")
+atlas = ExtResource("2_h7xer")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2dpot"]
-atlas = ExtResource("2_11hld")
+atlas = ExtResource("2_h7xer")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e4tn8"]
-atlas = ExtResource("2_11hld")
+atlas = ExtResource("2_h7xer")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8vmen"]
-atlas = ExtResource("2_11hld")
+atlas = ExtResource("2_h7xer")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ihjey"]
-atlas = ExtResource("2_11hld")
+atlas = ExtResource("2_h7xer")
 region = Rect2(192, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tkpe3"]
-atlas = ExtResource("2_11hld")
+atlas = ExtResource("2_h7xer")
 region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5e0qb"]
-atlas = ExtResource("2_11hld")
+atlas = ExtResource("2_h7xer")
 region = Rect2(256, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rokle"]
-atlas = ExtResource("2_11hld")
+atlas = ExtResource("2_h7xer")
 region = Rect2(288, 0, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ru3wo"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_3mrqo"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -75,42 +76,66 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s7p8c"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(0, 0, 20, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_05887"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(20, 0, 20, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ktg81"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(40, 0, 20, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0g181"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(60, 0, 20, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_12m83"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(80, 0, 20, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eqlfs"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(100, 0, 20, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h01p1"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(120, 0, 20, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v5f7i"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(140, 0, 20, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cb8al"]
-atlas = ExtResource("3_ur8lo")
+atlas = ExtResource("3_ojhdg")
 region = Rect2(160, 0, 20, 24)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_1ioxl"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipw6t"]
+atlas = ExtResource("4_o42bm")
+region = Rect2(0, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvynh"]
+atlas = ExtResource("4_o42bm")
+region = Rect2(20, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0y26v"]
+atlas = ExtResource("4_o42bm")
+region = Rect2(40, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8h80"]
+atlas = ExtResource("4_o42bm")
+region = Rect2(60, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6dfv6"]
+atlas = ExtResource("4_o42bm")
+region = Rect2(80, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_udfy1"]
+atlas = ExtResource("4_o42bm")
+region = Rect2(100, 0, 20, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ci6nf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -140,24 +165,42 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cb8al")
 }],
-"loop": true,
+"loop": false,
 "name": &"Flower",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipw6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvynh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0y26v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8h80")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6dfv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_udfy1")
+}],
 "loop": true,
 "name": &"Idle",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8s62m"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_15iow"]
 size = Vector2(130, 125)
 
-[node name="Collectible item flower" type="Node"]
+[node name="Collectible item flower" type="Node2D"]
 
 [node name="Flower" type="CharacterBody2D" parent="."]
 position = Vector2(-1916, -969)
-script = ExtResource("1_30hnc")
+script = ExtResource("1_70rhp")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Flower"]
 position = Vector2(1957, 1015)
@@ -166,23 +209,22 @@ polygon = PackedVector2Array(14, 42, 33, 41, 32, 1, 12, 1)
 [node name="AnimatedSparkle" type="AnimatedSprite2D" parent="Flower"]
 position = Vector2(1970, 1020)
 scale = Vector2(4.14648, 4.08789)
-sprite_frames = SubResource("SpriteFrames_ru3wo")
+sprite_frames = SubResource("SpriteFrames_3mrqo")
 animation = &"Sparkle"
 frame = 9
-frame_progress = 1.0
+frame_progress = 0.138025
 
 [node name="AnimatedItem" type="AnimatedSprite2D" parent="Flower"]
 position = Vector2(1980.19, 1025.72)
 scale = Vector2(4.48146, 4.2735)
-sprite_frames = SubResource("SpriteFrames_1ioxl")
-animation = &"Flower"
-frame_progress = 0.0223917
+sprite_frames = SubResource("SpriteFrames_ci6nf")
+animation = &"Idle"
 
 [node name="PlayerDetectionItem" type="Area2D" parent="Flower"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flower/PlayerDetectionItem"]
 position = Vector2(1979, 1020)
-shape = SubResource("RectangleShape2D_8s62m")
+shape = SubResource("RectangleShape2D_15iow")
 
 [connection signal="animation_finished" from="Flower/AnimatedSparkle" to="Flower" method="_on_animated_sparkle_animation_finished"]
 [connection signal="animation_finished" from="Flower/AnimatedItem" to="Flower" method="_on_animated_item_animation_finished"]

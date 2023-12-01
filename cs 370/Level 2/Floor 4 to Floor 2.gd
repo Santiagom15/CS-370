@@ -3,15 +3,9 @@ extends CharacterBody2D
 # and automatically change scenes to Level 2
 
 @onready var inventory = get_node("/root/Inventory")
-#
-## Update the path of the current level
-func _ready():
-	var col = $"CollisionShape2D"
-#	col.disabled = true
-#	inventory.update_current_level("res://Level 5/Floor 1.tscn")
-#
-## Detect when the player comes into/collides with the "Player detection"
-## collision shape
+
+# Detect when the player comes into/collides with the "Player detection"
+# collision shape
 func _on_player_detection_body_entered(body):
 #	# Check if the body/node that has collided with Player decection
 #	#  shape is named "Player"

@@ -160,6 +160,10 @@ func update_interaction(item_id):
 	else:
 		interactionStates[item_id] = 0
 
+# Function to set interaction state equal to input value
+func set_interaction(item_id, state):
+	interactionStates[item_id] = state
+
 # Function to remove an interaction or decrease state for an interaction in interactionStates
 func decrease_interaction(item_id):
 	if interactionStates.has(item_id):

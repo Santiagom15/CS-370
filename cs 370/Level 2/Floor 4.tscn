@@ -1,4 +1,4 @@
-[gd_scene load_steps=353 format=3 uid="uid://cnjgs5qf15yk1"]
+[gd_scene load_steps=393 format=3 uid="uid://cnjgs5qf15yk1"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_hduej"]
 [ext_resource type="Script" path="res://Level 2/Level data level2.gd" id="1_tbxpt"]
@@ -7,8 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://cd0nbgye3yh7u" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="5_k7q74"]
 [ext_resource type="Texture2D" uid="uid://ba0onicitg6jt" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_left_1.png" id="6_ljm20"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="7_ld41i"]
+[ext_resource type="Script" path="res://Inventory/Initial info.gd" id="8_0gg5n"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="8_nnol0"]
 [ext_resource type="Script" path="res://Level 2/NPC interaction.gd" id="9_gmmtw"]
+[ext_resource type="Texture2D" uid="uid://36ft47es1epo" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/speech_bubble_box_edittedAlisa.png" id="9_nwh1a"]
 [ext_resource type="Script" path="res://Level 2/Floor 4 to Boss.gd" id="9_yofu8"]
 [ext_resource type="Texture2D" uid="uid://ndktihjqojtc" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_idle_edittedAlisa_blink.png" id="10_0omn8"]
 [ext_resource type="Script" path="res://Level 2/NPC interaction Bathroom.gd" id="10_7cwh1"]
@@ -21,22 +23,26 @@
 [ext_resource type="Texture2D" uid="uid://bx5w223s42ake" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_2_idle.png" id="12_mvjwx"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="15_kprdl"]
 [ext_resource type="Script" path="res://Level 2/Floor 4 to Floor 2.gd" id="16_lcbc2"]
-[ext_resource type="PackedScene" uid="uid://betwh3svq3j6d" path="res://Inventory/colectible_item_flower.tscn" id="16_nr0lb"]
+[ext_resource type="PackedScene" uid="uid://betwh3svq3j6d" path="res://Inventory/collectible_item_flower.tscn" id="16_nr0lb"]
 [ext_resource type="Texture2D" uid="uid://dktqyj6l215rs" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_4_edittedAlisa_blink.png" id="17_04j2p"]
 [ext_resource type="Script" path="res://Level 2/NPC Interaction Guard.gd" id="17_52xwd"]
 [ext_resource type="Texture2D" uid="uid://sr01w78mqt01" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_4_edittedAlisa_sleep.png" id="17_naoqb"]
 [ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="17_q2tn1"]
 [ext_resource type="PackedScene" uid="uid://dq8vjtystxhav" path="res://Inventory/collectible_item_brain.tscn" id="19_0q0qc"]
 [ext_resource type="Texture2D" uid="uid://cryv16ceiwmo4" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_4_idle_edittedAlisa_resize.png" id="19_3y8er"]
+[ext_resource type="Script" path="res://Level 2/NPC state based item exchange interaction.gd" id="19_qgmqi"]
 [ext_resource type="Texture2D" uid="uid://dckxmesepqwrm" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_4_idle_edittedAlisa_hop.png" id="19_twwtf"]
 [ext_resource type="PackedScene" uid="uid://c4kup6hkiq7y8" path="res://Inventory/collectible_item_hat.tscn" id="20_38b0b"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Horizontal Door.gd" id="20_ifwy6"]
+[ext_resource type="Texture2D" uid="uid://q43mtdie7ncw" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/11_Halloween_heart_alisaEditted_idle.png" id="21_3h7su"]
 [ext_resource type="PackedScene" uid="uid://b8cb80ab7spo8" path="res://Inventory/collectible_item_money.tscn" id="21_44lul"]
 [ext_resource type="Texture2D" uid="uid://bdw58iw7s5jvd" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="21_p4l84"]
 [ext_resource type="Texture2D" uid="uid://bx3mhoflqtip4" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/speech_bubble_edittedAlisa.png" id="21_tv6q4"]
 [ext_resource type="Texture2D" uid="uid://difda4krhim5h" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_big_1.png" id="22_aqi58"]
 [ext_resource type="Texture2D" uid="uid://46c5w48i6nhv" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_coffee.png" id="22_giawu"]
+[ext_resource type="Texture2D" uid="uid://djae2nnvxq1ww" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/19_Hospital_flower_edittedAlisa_idle.png" id="22_q4lnm"]
 [ext_resource type="PackedScene" uid="uid://beeb46oe8nkn2" path="res://Inventory/collectible_item_coffee.tscn" id="27_ndy2v"]
+[ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="28_ecyy1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_coewt"]
 texture = ExtResource("1_hduej")
@@ -59725,6 +59731,9 @@ size = Vector2(59, 7)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_46vu2"]
 size = Vector2(239.25, 76)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8h8ca"]
+size = Vector2(185.5, 506)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tlvai"]
 size = Vector2(239, 813)
 
@@ -60205,7 +60214,7 @@ size = Vector2(1112, 173.5)
 size = Vector2(4.97094, 3.58752)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eo20s"]
-size = Vector2(573.5, 501.25)
+size = Vector2(573.5, 542.25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m6l7w"]
 atlas = ExtResource("11_jg4kl")
@@ -60431,7 +60440,238 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vvml2"]
-size = Vector2(573.5, 507.625)
+size = Vector2(573.5, 543.625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_61hnn"]
+size = Vector2(180.75, 183)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ccu4"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_se720"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5nxdc"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aosgj"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vswxu"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fe4je"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_njde6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ccu4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_se720")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5nxdc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aosgj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vswxu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fe4je")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ts11a"]
+atlas = ExtResource("22_q4lnm")
+region = Rect2(0, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cc62f"]
+atlas = ExtResource("22_q4lnm")
+region = Rect2(20, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sij76"]
+atlas = ExtResource("22_q4lnm")
+region = Rect2(40, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xn5hg"]
+atlas = ExtResource("22_q4lnm")
+region = Rect2(60, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rh7jd"]
+atlas = ExtResource("22_q4lnm")
+region = Rect2(80, 0, 20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74ics"]
+atlas = ExtResource("22_q4lnm")
+region = Rect2(100, 0, 20, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_avs0j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ts11a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cc62f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sij76")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xn5hg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rh7jd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74ics")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ddy2"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dasa5"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bx4d"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8tnth"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76q33"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luilo"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4y162"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_es6nh"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x050u"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd4ib"]
+atlas = ExtResource("28_ecyy1")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0nh3n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ddy2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dasa5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bx4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8tnth")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76q33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luilo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4y162")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_es6nh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x050u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dd4ib")
+}],
+"loop": false,
+"name": &"Idle",
+"speed": 4.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1au3m"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_es71v"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlrjy"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03k37"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0brmh"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2gwlb"]
+atlas = ExtResource("21_3h7su")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vujtl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1au3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_es71v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dlrjy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03k37")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0brmh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2gwlb")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 4.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gtpck"]
 atlas = ExtResource("17_04j2p")
@@ -60803,14 +61043,8 @@ animations = [{
 }],
 "loop": true,
 "name": &"Sleep",
-"speed": 5.0
+"speed": 4.0
 }]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ol2sf"]
-size = Vector2(8.87937, 5.2575)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_w8a10"]
-size = Vector2(415.5, 386)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i4472"]
 atlas = ExtResource("22_giawu")
@@ -60859,8 +61093,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"Coffee",
-"speed": 5.0
+"speed": 4.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ol2sf"]
+size = Vector2(8.87937, 5.2575)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w8a10"]
+size = Vector2(415.5, 386)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w1o2d"]
 load_path = "res://.godot/imported/19_Hospital_16x16.png-52b705add28f40660711c8894483d31f.ctex"
@@ -92613,6 +92853,37 @@ shape = SubResource("RectangleShape2D_46vu2")
 
 [node name="NPCs" type="Node2D" parent="."]
 
+[node name="Initial info" type="Node2D" parent="NPCs"]
+script = ExtResource("8_0gg5n")
+metadata/_edit_group_ = true
+
+[node name="Speech" type="Node2D" parent="NPCs/Initial info"]
+position = Vector2(-1602, 1294)
+
+[node name="Speech bubble" type="TextureRect" parent="NPCs/Initial info/Speech"]
+offset_left = 3681.0
+offset_top = 1377.0
+offset_right = 4129.0
+offset_bottom = 1785.0
+texture = ExtResource("9_nwh1a")
+flip_h = true
+
+[node name="Speech text" type="RichTextLabel" parent="NPCs/Initial info/Speech"]
+offset_left = 3789.0
+offset_top = 1437.0
+offset_right = 4013.0
+offset_bottom = 1640.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 38
+bbcode_enabled = true
+text = "[center] Find the stairs to escape"
+
+[node name="PlayerDetection" type="Area2D" parent="NPCs/Initial info"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Initial info/PlayerDetection"]
+position = Vector2(2296.25, 2869)
+shape = SubResource("RectangleShape2D_8h8ca")
+
 [node name="Room 1" type="Node2D" parent="NPCs"]
 position = Vector2(337, -1177)
 script = ExtResource("9_gmmtw")
@@ -92638,9 +92909,7 @@ debug_color = Color(0.858824, 0.145098, 0.815686, 0.419608)
 position = Vector2(2594, 2869)
 scale = Vector2(8.80762, 15.918)
 sprite_frames = SubResource("SpriteFrames_bwup4")
-animation = &"Idle"
-frame = 2
-frame_progress = 0.510892
+animation = &"Blink"
 
 [node name="Frog 2" type="AnimatedSprite2D" parent="NPCs/Room 1/Frog Left"]
 position = Vector2(2731, 2718)
@@ -92932,7 +93201,7 @@ script = ExtResource("11_24bi3")
 [node name="PlayerDetection" type="Area2D" parent="NPCs/Office 1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Office 1/PlayerDetection"]
-position = Vector2(2802.25, 167.625)
+position = Vector2(2802.25, 147.125)
 shape = SubResource("RectangleShape2D_eo20s")
 
 [node name="Frog" type="Node2D" parent="NPCs/Office 1"]
@@ -92968,18 +93237,24 @@ sprite_frames = SubResource("SpriteFrames_88sat")
 animation = &"Blink"
 
 [node name="Office 2" type="Node2D" parent="NPCs"]
+script = ExtResource("19_qgmqi")
+metadata/_edit_group_ = true
+
+[node name="Idle interaction" type="Node2D" parent="NPCs/Office 2"]
 position = Vector2(1204, 2752)
 script = ExtResource("11_24bi3")
+metadata/_edit_group_ = true
 
-[node name="PlayerDetection" type="Area2D" parent="NPCs/Office 2"]
+[node name="PlayerDetection" type="Area2D" parent="NPCs/Office 2/Idle interaction"]
+visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Office 2/PlayerDetection"]
-position = Vector2(2816, 177.812)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Office 2/Idle interaction/PlayerDetection"]
+position = Vector2(2816, 159.812)
 shape = SubResource("RectangleShape2D_vvml2")
 
-[node name="Frog" type="Node2D" parent="NPCs/Office 2"]
+[node name="Frog" type="Node2D" parent="NPCs/Office 2/Idle interaction"]
 
-[node name="Frog 1" type="AnimatedSprite2D" parent="NPCs/Office 2/Frog"]
+[node name="Frog 1" type="AnimatedSprite2D" parent="NPCs/Office 2/Idle interaction/Frog"]
 modulate = Color(1, 0.176471, 0.0470588, 1)
 position = Vector2(2725, -21.0002)
 scale = Vector2(12.6192, 8.41998)
@@ -92988,7 +93263,7 @@ animation = &"Blink"
 frame = 7
 frame_progress = 0.618054
 
-[node name="Frog 2" type="AnimatedSprite2D" parent="NPCs/Office 2/Frog"]
+[node name="Frog 2" type="AnimatedSprite2D" parent="NPCs/Office 2/Idle interaction/Frog"]
 modulate = Color(1, 0.176471, 0.0470588, 1)
 position = Vector2(2846, 31)
 scale = Vector2(5.23854, 8.29498)
@@ -92996,7 +93271,7 @@ sprite_frames = SubResource("SpriteFrames_88sat")
 animation = &"Idle"
 frame_progress = 0.475982
 
-[node name="Frog 3" type="AnimatedSprite2D" parent="NPCs/Office 2/Frog"]
+[node name="Frog 3" type="AnimatedSprite2D" parent="NPCs/Office 2/Idle interaction/Frog"]
 modulate = Color(1, 0.176471, 0.0470588, 1)
 position = Vector2(2854.45, 143.18)
 scale = Vector2(4.18179, 9.64749)
@@ -93004,7 +93279,7 @@ sprite_frames = SubResource("SpriteFrames_88sat")
 animation = &"Idle"
 frame_progress = 0.475982
 
-[node name="Frog 4" type="AnimatedSprite2D" parent="NPCs/Office 2/Frog"]
+[node name="Frog 4" type="AnimatedSprite2D" parent="NPCs/Office 2/Idle interaction/Frog"]
 modulate = Color(1, 0.176471, 0.0470588, 1)
 position = Vector2(2855, 293)
 scale = Vector2(4.30679, 6.20999)
@@ -93012,7 +93287,7 @@ sprite_frames = SubResource("SpriteFrames_88sat")
 animation = &"Idle"
 frame_progress = 0.475982
 
-[node name="Frog Flipped 1" type="AnimatedSprite2D" parent="NPCs/Office 2/Frog"]
+[node name="Frog Flipped 1" type="AnimatedSprite2D" parent="NPCs/Office 2/Idle interaction/Frog"]
 modulate = Color(1, 0.176471, 0.0470588, 1)
 position = Vector2(2599, 33)
 scale = Vector2(5.4573, 7.90248)
@@ -93020,7 +93295,7 @@ sprite_frames = SubResource("SpriteFrames_88sat")
 animation = &"Idle"
 frame_progress = 0.475982
 
-[node name="Frog Flipped 2" type="AnimatedSprite2D" parent="NPCs/Office 2/Frog"]
+[node name="Frog Flipped 2" type="AnimatedSprite2D" parent="NPCs/Office 2/Idle interaction/Frog"]
 modulate = Color(1, 0.176471, 0.0470588, 1)
 position = Vector2(2609, 166)
 scale = Vector2(4.04112, 5.26373)
@@ -93028,7 +93303,7 @@ sprite_frames = SubResource("SpriteFrames_88sat")
 animation = &"Idle"
 frame_progress = 0.475982
 
-[node name="Frog Flipped 3" type="AnimatedSprite2D" parent="NPCs/Office 2/Frog"]
+[node name="Frog Flipped 3" type="AnimatedSprite2D" parent="NPCs/Office 2/Idle interaction/Frog"]
 modulate = Color(1, 0.176471, 0.0470588, 1)
 position = Vector2(2603, 292)
 scale = Vector2(4.72865, 6.82624)
@@ -93036,7 +93311,7 @@ sprite_frames = SubResource("SpriteFrames_88sat")
 animation = &"Idle"
 frame_progress = 0.475982
 
-[node name="Frog Flipped 4" type="AnimatedSprite2D" parent="NPCs/Office 2/Frog"]
+[node name="Frog Flipped 4" type="AnimatedSprite2D" parent="NPCs/Office 2/Idle interaction/Frog"]
 modulate = Color(1, 0.176471, 0.0470588, 1)
 position = Vector2(2719, 288)
 scale = Vector2(11.6197, 13.4566)
@@ -93044,15 +93319,87 @@ sprite_frames = SubResource("SpriteFrames_88sat")
 animation = &"Idle"
 frame_progress = 0.475982
 
+[node name="PlayerDetectionInteraction" type="Area2D" parent="NPCs/Office 2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Office 2/PlayerDetectionInteraction"]
+position = Vector2(3993.62, 2771.5)
+shape = SubResource("RectangleShape2D_61hnn")
+debug_color = Color(0.901961, 0.258824, 0.439216, 0.419608)
+
+[node name="Speech" type="Node2D" parent="NPCs/Office 2"]
+position = Vector2(164, 1024)
+
+[node name="Speech bubble" type="TextureRect" parent="NPCs/Office 2/Speech"]
+offset_left = 3681.0
+offset_top = 1377.0
+offset_right = 4129.0
+offset_bottom = 1785.0
+texture = ExtResource("21_tv6q4")
+
+[node name="Speech text" type="RichTextLabel" parent="NPCs/Office 2/Speech"]
+offset_left = 3795.0
+offset_top = 1431.0
+offset_right = 4019.0
+offset_bottom = 1634.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Thank you
+for the
+
+Here is your"
+
+[node name="Brain" type="AnimatedSprite2D" parent="NPCs/Office 2/Speech"]
+position = Vector2(3960, 1445)
+scale = Vector2(8.0552, 7.41146)
+sprite_frames = SubResource("SpriteFrames_njde6")
+animation = &"Idle"
+frame_progress = 0.470998
+
+[node name="Flower" type="AnimatedSprite2D" parent="NPCs/Office 2/Speech"]
+position = Vector2(4008, 1576)
+scale = Vector2(11.875, 9.82292)
+sprite_frames = SubResource("SpriteFrames_avs0j")
+animation = &"Idle"
+frame = 5
+frame_progress = 0.771338
+
+[node name="Sparkle animation" type="AnimatedSprite2D" parent="NPCs/Office 2"]
+position = Vector2(3985, 2895)
+scale = Vector2(6.17969, 6.19042)
+sprite_frames = SubResource("SpriteFrames_0nh3n")
+animation = &"Idle"
+
+[node name="Item collected" type="AnimatedSprite2D" parent="NPCs/Office 2"]
+position = Vector2(3985, 2858)
+scale = Vector2(7.08333, 5.58334)
+sprite_frames = SubResource("SpriteFrames_vujtl")
+animation = &"Idle"
+
 [node name="Guard" type="Node2D" parent="NPCs"]
+position = Vector2(-27, -1)
 script = ExtResource("17_52xwd")
+metadata/_edit_group_ = true
 
 [node name="Frog" type="AnimatedSprite2D" parent="NPCs/Guard"]
 position = Vector2(4120, 1495)
 scale = Vector2(32.8438, 27.1992)
 sprite_frames = SubResource("SpriteFrames_hanik")
-animation = &"Hop"
+animation = &"Sleep"
 metadata/_edit_group_ = true
+
+[node name="Sparkle animation" type="AnimatedSprite2D" parent="NPCs/Guard/Frog"]
+position = Vector2(-2.80115, 10.3312)
+scale = Vector2(0.184111, 0.22081)
+sprite_frames = SubResource("SpriteFrames_0nh3n")
+animation = &"Idle"
+
+[node name="Item needed" type="AnimatedSprite2D" parent="NPCs/Guard/Frog"]
+position = Vector2(-2.74026, 9.04439)
+scale = Vector2(0.274977, 0.279621)
+sprite_frames = SubResource("SpriteFrames_rw7gl")
+animation = &"Coffee"
+frame_progress = 0.752333
 
 [node name="Collision body" type="CharacterBody2D" parent="NPCs/Guard/Frog"]
 
@@ -93085,7 +93432,6 @@ offset_bottom = 1634.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 24
 bbcode_enabled = true
-text = "[center] Yum.        -              Thanks for the coffee, good luck with your escape, human."
 
 [node name="Item needed" type="AnimatedSprite2D" parent="NPCs/Guard/Speech"]
 position = Vector2(3943, 1394)
@@ -93098,12 +93444,12 @@ animation = &"Coffee"
 [node name="Collectible item key 0" parent="Collectible items" instance=ExtResource("17_q2tn1")]
 position = Vector2(1166, 610)
 
-[node name="Colectible item flower 0" parent="Collectible items" instance=ExtResource("16_nr0lb")]
+[node name="Collectible item flower 0" parent="Collectible items" instance=ExtResource("16_nr0lb")]
 position = Vector2(3937, 2708)
 metadata/_edit_group_ = true
 
 [node name="Collectible item brain 0" parent="Collectible items" instance=ExtResource("19_0q0qc")]
-position = Vector2(47, 1293)
+position = Vector2(44, 1282)
 metadata/_edit_group_ = true
 
 [node name="Collectible item hat 0" parent="Collectible items" instance=ExtResource("20_38b0b")]
@@ -93114,7 +93460,7 @@ metadata/_edit_group_ = true
 position = Vector2(2728, 2751)
 
 [node name="Collectible item coffee 0" parent="Collectible items" instance=ExtResource("27_ndy2v")]
-position = Vector2(3683, 1944)
+position = Vector2(196, 1565)
 
 [node name="Furniture2" type="TileMap" parent="."]
 scale = Vector2(4, 4)
@@ -93152,7 +93498,7 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("11_ox552")]
-position = Vector2(2295, 3044)
+position = Vector2(2299, 3046)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -93976,6 +94322,7 @@ shape = SubResource("RectangleShape2D_0vrvx")
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 2/PlayerDetectionFromRight" to="Vertical Doors/Animated door vertical right 2" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Vertical Doors/Animated door vertical right 2/PlayerDetectionFromRight" to="Vertical Doors/Animated door vertical right 2" method="_on_PlayerDetectionFromRight_body_exited"]
 [connection signal="body_entered" from="Floor 4 to Boss/Player Detection" to="Floor 4 to Boss" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="NPCs/Initial info/PlayerDetection" to="NPCs/Initial info" method="_on_player_detection_body_exited"]
 [connection signal="body_entered" from="NPCs/Room 1/PlayerDetectionLeft" to="NPCs/Room 1" method="_on_player_detection_left_body_entered"]
 [connection signal="body_exited" from="NPCs/Room 1/PlayerDetectionLeft" to="NPCs/Room 1" method="_on_player_detection_left_body_exited"]
 [connection signal="body_entered" from="NPCs/Room 1/PlayerDetectionRight" to="NPCs/Room 1" method="_on_player_detection_right_body_entered"]
@@ -93996,10 +94343,14 @@ shape = SubResource("RectangleShape2D_0vrvx")
 [connection signal="body_exited" from="NPCs/Bathroom 3/PlayerDetection" to="NPCs/Bathroom 3" method="_on_player_detection_body_exited"]
 [connection signal="body_entered" from="NPCs/Office 1/PlayerDetection" to="NPCs/Office 1" method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="NPCs/Office 1/PlayerDetection" to="NPCs/Office 1" method="_on_player_detection_body_exited"]
-[connection signal="body_entered" from="NPCs/Office 2/PlayerDetection" to="NPCs/Office 2" method="_on_player_detection_body_entered"]
-[connection signal="body_exited" from="NPCs/Office 2/PlayerDetection" to="NPCs/Office 2" method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="NPCs/Office 2/Idle interaction/PlayerDetection" to="NPCs/Office 2/Idle interaction" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="NPCs/Office 2/Idle interaction/PlayerDetection" to="NPCs/Office 2/Idle interaction" method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="NPCs/Office 2/PlayerDetectionInteraction" to="NPCs/Office 2" method="_on_player_detection_interaction_body_entered"]
+[connection signal="body_exited" from="NPCs/Office 2/PlayerDetectionInteraction" to="NPCs/Office 2" method="_on_player_detection_interaction_body_exited"]
+[connection signal="animation_finished" from="NPCs/Office 2/Sparkle animation" to="NPCs/Office 2" method="_on_sparkle_animation_animation_finished"]
 [connection signal="animation_finished" from="NPCs/Guard/Frog" to="NPCs/Guard" method="_on_frog_animation_finished"]
 [connection signal="frame_changed" from="NPCs/Guard/Frog" to="NPCs/Guard" method="_on_frog_frame_changed"]
+[connection signal="animation_finished" from="NPCs/Guard/Frog/Sparkle animation" to="NPCs/Guard" method="_on_sparkle_animation_animation_finished"]
 [connection signal="body_entered" from="NPCs/Guard/PlayerDetection" to="NPCs/Guard" method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="NPCs/Guard/PlayerDetection" to="NPCs/Guard" method="_on_player_detection_body_exited"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]

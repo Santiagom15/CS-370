@@ -528,6 +528,6 @@ script = ExtResource("1_nlos4")
 position = Vector2(76, 78)
 scale = Vector2(7.40308, 7.69543)
 sprite_frames = SubResource("SpriteFrames_ccr37")
-animation = &"Coffee"
+animation = &"Flower"
 
 [connection signal="animation_looped" from="ItemAnimation" to="." method="_on_item_animation_animation_looped"]

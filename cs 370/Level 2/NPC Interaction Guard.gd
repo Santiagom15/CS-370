@@ -23,9 +23,14 @@ var play_start = true
 # Get nodes for the frog/guard node, including animation player and collision shape
 @onready var frogAnim = get_node("Frog")
 @onready var frogCol = frogAnim.get_node("Collision body").get_child(0)
+@onready var frogItem = frogAnim.get_node("Item needed")
+@onready var frogSparkle = frogAnim.get_node("Sparkle animation")
 
 # Integer tracking which speech interaction has already played
 var text_progress = 0
+
+# Detection collision shape for detecting player
+@onready var detect = get_node("PlayerDetection").get_child(0)
 
 # Retrieve the game wide inventory, used to store data between scenes
 @onready var inventory = get_node("/root/Inventory")
@@ -34,16 +39,25 @@ func _ready():
 	if !inventory.has_interaction(interaction_name):
 		inventory.update_interaction(interaction_name)
 	
-	speechBubble.hide()
+	speechBubble.hide() 
 	speechText.hide()
 	speechItem.play("Coffee")
 	speechItem.hide()
+	frogItem.hide()
+	frogSparkle.hide()
 	speechBubble.z_index = 2
 	speechText.z_index = 2
 	speechItem.z_index = 2
 	
 	frogAnim.play("Sleep")
 	frogAnim.set_frame(0)
+	
+	if inventory.get_interaction_state(interaction_name) == 3:
+		frogAnim.position = Vector2(3988, 1315)
+		detect.set_deferred("disabled", true)
+		
+		frogItem.show()
+		frogItem.play("Coffee")
 
 
 func _process(delta):
@@ -54,7 +68,7 @@ func _process(delta):
 		
 		if curr_state == 0 || curr_state == 1:
 			if inventory.has_item("Coffee"):
-				inventory.update_interaction(interaction_name)
+				inventory.set_interaction(interaction_name, 2)
 				curr_state = 2
 			
 			else:
@@ -116,7 +130,6 @@ func _on_player_detection_body_entered(body):
 
 func _on_player_detection_body_exited(body):
 	if body.name == "Player":
-		print("-  exited")
 		play_interaction = false
 		
 		speechBubble.hide()
@@ -138,6 +151,13 @@ func _on_frog_animation_finished():
 	if frogAnim.get_animation() == "Hop":
 		frogAnim.play("Sleep")
 		frogAnim.set_frame(0)
-		
-		var detect = get_node("PlayerDetection").get_child(0)
+		frogItem.show()
+		frogItem.play("Coffee")
+		frogSparkle.show()
+		frogSparkle.play("Idle")
+		frogSparkle.set_frame(0)
 		detect.set_deferred("disabled", true)
+
+
+func _on_sparkle_animation_animation_finished():
+	frogSparkle.hide()
