@@ -39,6 +39,7 @@ radius = 6.27144
 height = 24.3307
 
 [node name="Area2D" type="Area2D"]
+scale = Vector2(2.23324, 2.16254)
 script = ExtResource("1_4kfr8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
