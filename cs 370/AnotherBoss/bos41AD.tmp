@@ -1,0 +1,129 @@
+[gd_scene load_steps=18 format=3 uid="uid://dbwyrxq5wypil"]
+
+[ext_resource type="Script" path="res://AnotherBoss/bossbattle_santi_2.gd" id="1_n3td2"]
+[ext_resource type="Script" path="res://FiniteStateMachine.gd" id="2_rxedy"]
+[ext_resource type="Script" path="res://Idle.gd" id="3_gop6f"]
+[ext_resource type="Script" path="res://AnotherBoss/groundAttack.gd" id="4_abaln"]
+[ext_resource type="Texture2D" uid="uid://ds3slukvdegjw" path="res://assets/FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/_Idle.png" id="4_t278w"]
+[ext_resource type="PackedScene" uid="uid://k02txmjwjr1q" path="res://AnotherBoss/SpawnAttackFiniteState.tscn" id="5_3p7hx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fx411"]
+atlas = ExtResource("4_t278w")
+region = Rect2(0, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlhcw"]
+atlas = ExtResource("4_t278w")
+region = Rect2(120, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48wyq"]
+atlas = ExtResource("4_t278w")
+region = Rect2(240, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8oq48"]
+atlas = ExtResource("4_t278w")
+region = Rect2(360, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ia4pq"]
+atlas = ExtResource("4_t278w")
+region = Rect2(480, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxg2u"]
+atlas = ExtResource("4_t278w")
+region = Rect2(600, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pvqp"]
+atlas = ExtResource("4_t278w")
+region = Rect2(720, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbely"]
+atlas = ExtResource("4_t278w")
+region = Rect2(840, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0w4j"]
+atlas = ExtResource("4_t278w")
+region = Rect2(960, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01nn6"]
+atlas = ExtResource("4_t278w")
+region = Rect2(1080, 0, 120, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_txg71"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fx411")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlhcw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48wyq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8oq48")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ia4pq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxg2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pvqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbely")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0w4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01nn6")
+}],
+"loop": true,
+"name": &"Idle ",
+"speed": 5.0
+}]
+
+[node name="BossbattleSanti2" type="CharacterBody2D"]
+script = ExtResource("1_n3td2")
+
+[node name="debug" type="Label" parent="."]
+offset_left = -97.0
+offset_top = -72.0
+offset_right = 61.0
+offset_bottom = -41.0
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="FiniteState" type="Node2D" parent="."]
+script = ExtResource("2_rxedy")
+
+[node name="Idle" type="Node2D" parent="FiniteState"]
+script = ExtResource("3_gop6f")
+
+[node name="groundAttack" type="Node2D" parent="FiniteState"]
+script = ExtResource("4_abaln")
+groundAttack = ExtResource("5_3p7hx")
+
+[node name="groundTimer" type="Timer" parent="FiniteState/groundAttack"]
+wait_time = 2.0
+
+[node name="delay" type="Timer" parent="FiniteState/groundAttack"]
+wait_time = 3.0
+
+[node name="Animations" type="AnimatedSprite2D" parent="FiniteState"]
+position = Vector2(1, -41)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_txg71")
+animation = &"Idle "
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[connection signal="timeout" from="FiniteState/groundAttack/groundTimer" to="FiniteState/groundAttack" method="_on_ground_timer_timeout"]
+[connection signal="timeout" from="FiniteState/groundAttack/delay" to="FiniteState/groundAttack" method="_on_delay_timeout"]

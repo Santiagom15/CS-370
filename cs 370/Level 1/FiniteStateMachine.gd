@@ -1,5 +1,5 @@
 extends Node2D
-class_name FiniteStateMachine1#change the name of this 
+class_name FiniteStateMachine2#change the name of this 
 
 var current_state: State
 var previous_state: State
