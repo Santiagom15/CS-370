@@ -1,7 +1,7 @@
 extends Area2D
 
 var direction = Vector2.RIGHT
-var speed = 100
+var speed = 600
 @onready var animation = $AnimatedSprite2D
 @onready var global_var = get_node("/root/Global")
 

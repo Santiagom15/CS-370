@@ -75,6 +75,7 @@ a = Vector2(16, -37)
 b = Vector2(2, 0)
 
 [node name="Meteor" type="Area2D"]
+scale = Vector2(2.16283, 2.13048)
 script = ExtResource("1_srt0c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -82,7 +83,7 @@ position = Vector2(-1.90735e-06, -6.00002)
 scale = Vector2(0.0631311, 0.0858645)
 sprite_frames = SubResource("SpriteFrames_y6je3")
 animation = &"Attack1"
-frame_progress = 0.508324
+frame_progress = 0.793045
 speed_scale = 10.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

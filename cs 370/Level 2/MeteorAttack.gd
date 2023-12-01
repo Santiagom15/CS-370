@@ -24,8 +24,8 @@ func _on_metero_shoot_timeout():
 func shoot():
 	var meteor = meteorNode.instantiate()
 	
-	meteor.position = global_position
-	meteor.direction = (player.global_position - global_position).normalized()
+	meteor.position = global_position + Vector2(150,0)
+	meteor.direction = (player.position - meteor.position).normalized()
 	
 	get_tree().current_scene.call_deferred("add_child",meteor)
 	

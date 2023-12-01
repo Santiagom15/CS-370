@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var global_var = get_node("/root/Global")
 @onready var curr_health = 6
-@onready var Healthbar = $player/Camera2D2/HealthBar
+@onready var Healthbar = $HealthBar
 @onready var timmy = $AudioStreamPlayer2D
 var healtharr = [3, 2.5, 2, 1.5, 1, 0.5, 0]
 func _ready():
