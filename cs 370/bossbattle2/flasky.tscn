@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=3 uid="uid://d3cwhilfrbn16"]
+
+[ext_resource type="Script" path="res://bossbattle2/flasky.gd" id="1_vha05"]
+[ext_resource type="Texture2D" uid="uid://djndx2don2npq" path="res://bossbattle2/flask (2).png" id="2_n7pab"]
+[ext_resource type="Texture2D" uid="uid://d1ph7k81xb1k1" path="res://bossbattle2/flask (1).png" id="2_ully1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmg8x"]
+atlas = ExtResource("2_n7pab")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hm78j"]
+atlas = ExtResource("2_ully1")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m7d6d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmg8x")
+}],
+"loop": true,
+"name": &"spill",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hm78j")
+}],
+"loop": true,
+"name": &"throw",
+"speed": 5.0
+}]
+
+[node name="flasky" type="Node2D"]
+script = ExtResource("1_vha05")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(0.740005, 0.720016)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_m7d6d")
+animation = &"spill"
+autoplay = "throw"
+
+[node name="hit box" type="Area2D" parent="."]
+position = Vector2(0.400002, 0.400002)
+
+[node name="throwCollision" type="CollisionPolygon2D" parent="hit box"]
+position = Vector2(-7.4, -17.4)
+scale = Vector2(0.1, 0.1)
+polygon = PackedVector2Array(28, -1, 29, -18, 107, -19, 108, -5, 141, -1, 143, 29, 127, 30, 127, 139, 205, 222, 205, 294, 135, 363, 5, 360, -63, 291, -64, 222, 12, 141, 15, 30, -2, 30, -2, -2)
+
+[node name="spillCollision" type="CollisionPolygon2D" parent="hit box"]
+visible = false
+position = Vector2(-12.4, -14.4)
+scale = Vector2(0.1, 0.1)
+polygon = PackedVector2Array(-20, -70, 120, -100, 290, -60, 370, 70, 380, 170, 360, 250, 320, 290, 190, 360, 30, 350, -90, 300, -120, 190, -100, 100, -90, 60, -90, 20, -100, -20, -100, -70)
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="explodeTimer" type="Timer" parent="."]
+wait_time = 1.5
+
+[connection signal="body_entered" from="hit box" to="." method="_on_hit_box_body_entered"]
+[connection signal="timeout" from="explodeTimer" to="." method="_on_explode_timer_timeout"]
