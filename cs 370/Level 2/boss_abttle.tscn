@@ -64,7 +64,7 @@ script = ExtResource("5_11nsm")
 meteorNode = ExtResource("5_4ckkf")
 
 [node name="MeteroShoot" type="Timer" parent="FiniteStateMachine/MeteorAttack"]
-wait_time = 0.55
+wait_time = 0.667
 
 [node name="Animations" type="AnimatedSprite2D" parent="."]
 position = Vector2(10, -75)
