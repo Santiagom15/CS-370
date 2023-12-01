@@ -9,7 +9,7 @@ extends CharacterBody2D
 # GoDot note: @onready means this line is called when the scene loads and only then
 # Retrieve the animated door and character body Player nodes
 @onready var anim = get_node("AnimatedSlideDoor")
-@onready var player = get_parent().get_parent().get_node("Player")
+@onready var player = get_parent().get_parent().get_node("player")
 
 # Value of 0 mean no collision boxes for this door have been entered
 # Value of 1 means either PlayerDetectionAnimCloseTop or PlayerDetectionAnimCloseBottom has been entered

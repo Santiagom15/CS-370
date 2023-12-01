@@ -1,7 +1,8 @@
-[gd_scene load_steps=118 format=3 uid="uid://df1f4wch2uy0c"]
+[gd_scene load_steps=117 format=3 uid="uid://df1f4wch2uy0c"]
 
 [ext_resource type="PackedScene" uid="uid://rhgf2vjoui6j" path="res://Level 1/boss.tscn" id="1_1sf1f"]
 [ext_resource type="Script" path="res://Level 1/bossbattle_floor5.gd" id="1_tomha"]
+[ext_resource type="PackedScene" uid="uid://drdru62qqbtpc" path="res://character/base_noheart.tscn" id="2_36itt"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="2_mnnjk"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="3_fmn3m"]
 [ext_resource type="Texture2D" uid="uid://boymgm517uh7f" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/16_Grocery_store_Butcher_16x16.png" id="4_vj4tx"]
@@ -9,19 +10,17 @@
 [ext_resource type="Texture2D" uid="uid://b7nlr4nalr1ko" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/18_Jail_16x16.png" id="6_b0xwd"]
 [ext_resource type="AudioStream" uid="uid://b877gjg3cn5hh" path="res://Music/bossbattlemusic1 (1).mp3" id="8_7cap3"]
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="9_2t6jl"]
-[ext_resource type="PackedScene" uid="uid://datyj1ghnmx25" path="res://character/character_body_2d.tscn" id="10_4710w"]
 [ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="11_1tntx"]
 [ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="12_5372v"]
 [ext_resource type="Texture2D" uid="uid://vqwfho1vro7k" path="res://HealthBar/HealthBar2.png" id="13_l77iv"]
 [ext_resource type="Texture2D" uid="uid://dgbtrhg18j1qo" path="res://HealthBar/HealthBar3.png" id="14_qg4u7"]
-[ext_resource type="Script" path="res://Level 1/HealthBar.gd" id="15_x6ebb"]
-[ext_resource type="Texture2D" path="res://Untitled design (3).png" id="16_udx2s"]
+[ext_resource type="Texture2D" uid="uid://dq2iwl0x4ni6v" path="res://Untitled design (3).png" id="16_udx2s"]
 [ext_resource type="Script" path="res://Level 1/Animated glass sliding door locked.gd" id="17_srint"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="18_l4ayp"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_glass_sliding_32x32_edittedAlisa_locked.png" id="19_wesiw"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_and_lock.png" id="20_cco37"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolted_lock_broken.png" id="21_73amw"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_action.png" id="22_jntq7"]
+[ext_resource type="Texture2D" uid="uid://bsw4rdjy5qs8l" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_glass_sliding_32x32_edittedAlisa_locked.png" id="19_wesiw"]
+[ext_resource type="Texture2D" uid="uid://l50lbsccrl8u" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_and_lock.png" id="20_cco37"]
+[ext_resource type="Texture2D" uid="uid://sfrovock16q1" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolted_lock_broken.png" id="21_73amw"]
+[ext_resource type="Texture2D" uid="uid://1f8525nwlko4" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_action.png" id="22_jntq7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kaxt5"]
 texture = ExtResource("2_mnnjk")
@@ -21534,6 +21533,11 @@ size = Vector2(246, 52)
 [node name="testscene" type="Node2D"]
 script = ExtResource("1_tomha")
 
+[node name="player" parent="." instance=ExtResource("2_36itt")]
+top_level = true
+position = Vector2(567, 539)
+scale = Vector2(0.828409, 0.745788)
+
 [node name="boss" parent="." instance=ExtResource("1_1sf1f")]
 top_level = true
 position = Vector2(443.116, 112.018)
@@ -21623,11 +21627,9 @@ scale = Vector2(0.999999, 1)
 shape = SubResource("RectangleShape2D_bwpib")
 debug_color = Color(0.796078, 0.364706, 0.576471, 0.419608)
 
-[node name="player" parent="." instance=ExtResource("10_4710w")]
-position = Vector2(559, 537)
-
 [node name="Timer" type="Timer" parent="."]
 wait_time = 92.0
+one_shot = true
 autostart = true
 
 [node name="HealthBar" type="AnimatedSprite2D" parent="."]
@@ -21637,7 +21639,6 @@ scale = Vector2(0.163158, 0.149441)
 sprite_frames = SubResource("SpriteFrames_ha3rg")
 animation = &"3"
 autoplay = "3"
-script = ExtResource("15_x6ebb")
 
 [node name="Outside2" type="TileMap" parent="."]
 show_behind_parent = true

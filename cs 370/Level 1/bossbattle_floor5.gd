@@ -32,8 +32,9 @@ func _ready():
 	
 # when music is up, change scene (temp: main menu)
 func _on_timer_timeout():
-	get_tree().change_scene_to_file("res://Level 1/bossbattle_floor5.tscn")
-
+	state.exit()
+	$boss.visible = false
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	$AudioStreamPlayer2D.get_time()
