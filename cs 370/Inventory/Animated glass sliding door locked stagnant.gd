@@ -4,6 +4,7 @@ extends CharacterBody2D
 # Retrieve the animated door and character body Player nodes
 @onready var anim = get_node("AnimatedSlideDoor")
 @onready var player = get_parent().get_parent().get_node("player")
+var body_name: String
 
 # Value of 0 mean no collision boxes for this door have been entered
 # Value of 1 means either PlayerDetectionAnimCloseTop or PlayerDetectionAnimCloseBottom has been entered
@@ -38,7 +39,6 @@ var unlocked = false
 @onready var animLock = $AnimatedLock
 @onready var animLockFrames = animLock.get_sprite_frames()
 @onready var total_num_key_frames = animLockFrames.get_frame_count("Bolt")
-
 
 @onready var animRattle = $AnimatedDoorRattle
 @onready var animLockOpen = $AnimatedLockOpen
@@ -170,13 +170,15 @@ func _on_animated_slide_door_frame_changed():
 
 # Set play_open to true if the door is currently closed and player is close enough to door
 func _on_PlayerDetectionAnimation_body_entered(body):
-	if body.name == "player":
+	body_name = body.name
+	if body_name.to_lower() == "player":
 		if !play_close: play_open = true
 
 
 # Set in_top to true when player is in the top collision area
 func _on_PlayerDetectAnimCloseTop_body_entered(body):
-	if body.name == "player":
+	body_name = body.name
+	if body_name.to_lower() == "player":
 		in_top = true
 		
 		# Initialize all collision shapes accordingly when player's first approach of the door is from behind/above
@@ -200,7 +202,8 @@ func _on_PlayerDetectAnimCloseTop_body_entered(body):
 
 # Play door closing animation when requirements are met
 func _on_PlayerDetectionAnimCloseTop_body_exited(body):
-	if body.name == "player":
+	body_name = body.name
+	if body_name.to_lower() == "player":
 		if play_close && !in_bottom:   # If door open animation is playing or finished and player is only in top collision area
 			# Play the animation from the correct frame
 			if anim.is_playing():
@@ -219,7 +222,8 @@ func _on_PlayerDetectionAnimCloseTop_body_exited(body):
 
 # Set in_bottom to true when player is in the bottom collision area
 func _on_PlayerDetectAnimCloseBottom_body_entered(body):
-	if body.name == "player":
+	body_name = body.name
+	if body_name.to_lower() == "player":
 		in_bottom = true
 
 		# Initialize all collision shapes accordingly when player's first approach of the door is from in-front/behind
@@ -243,7 +247,8 @@ func _on_PlayerDetectAnimCloseBottom_body_entered(body):
 
 # Play door closing animation when requirements are met
 func _on_PlayerDetectAnimCloseBottom_body_exited(body):
-	if body.name == "player":
+	body_name = body.name
+	if body_name.to_lower() == "player":
 		if play_close && !in_top:
 			if anim.is_playing():
 				curr_frame = anim.get_frame()

@@ -38,3 +38,4 @@ offset_bottom = 612.0
 text = "Return to Level"
 
 [connection signal="button_down" from="RestartBattle" to="." method="_on_restart_battle_button_down"]
+[connection signal="button_down" from="RestartLevel" to="." method="_on_restart_level_button_down"]

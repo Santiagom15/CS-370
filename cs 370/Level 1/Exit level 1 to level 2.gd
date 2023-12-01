@@ -10,9 +10,8 @@ func _on_player_detection_body_entered(body):
 #	# Check if the body/node that has collided with Player decection
 #	#  shape is named "Player"
 	if body.name == "Player":
+		# Clear all relevant level data to transition to next scene
+		inventory.clear_level_data()
 		# Change the scene to the next floor
-		inventory.update_transport(false)
-		inventory.clear_level_items()
-		inventory.clear_level_unlocks()
 		get_tree().change_scene_to_file("res://Level 2/Floor 4.tscn")
 

@@ -15,15 +15,11 @@ var lanesize = 105
 @onready var prev = 7
 @onready var prevprev = 6
 
-# Boolean flag for battle won, true when boss beaten byt the player and false otherwise
-var bossBeaten = false
-# Signal to unlock the door to exit the boss battle room and return to the level when boss battle is beaten
-#signal lockDisabled(lockIdx)
 # Get inventory
 @onready var inventory = get_node("/root/Inventory")
-
+signal itemDisabled(itemIdx)
 # Item to be collected to open the door once the boss is beaten
-@onready var collectibleItem = get_node("Locked interactable objects").get_node("Collectible item boltcutter")
+@onready var collectibleItem = get_node("Locked interactable objects").get_node("Collectible item key 0")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -38,10 +34,9 @@ func _on_timer_timeout():
 	
 	var blocking_collision = get_node("Lane collision").get_node("Blocking 1")
 	blocking_collision.set_deferred("disabled", true)
-	blocking_collision = get_node("Lane collision").get_node("Blocking 2")
-	blocking_collision.set_deferred("disabled", true)
 
 	collectibleItem.show()
+	inventory.set_boss_battle_status(true)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -75,5 +70,5 @@ func _process(_delta):
 
 
 func _on_death_timer_timeout():
-	#print("Timer stop")
+	inventory.set_boss_battle_status(false)
 	get_tree().change_scene_to_file("res://DeathScene2.tscn")
