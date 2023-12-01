@@ -1,9 +1,3 @@
-# For locked sliding door.
-# This script give functionality to the sliding glass horizontal door.
-# This is an interactable animation. The door opens when the player presses the spacebar
-# when close enough, and the player can walk through. The door automatically closes
-# when the player has walked far enough away. 
-
 extends CharacterBody2D
 
 # GoDot note: @onready means this line is called when the scene loads and only then
@@ -45,10 +39,7 @@ var unlocked = false
 @onready var animLockFrames = animLock.get_sprite_frames()
 @onready var total_num_key_frames = animLockFrames.get_frame_count("Bolt")
 
-@onready var levelRoot = get_parent().get_parent()
-signal lockDisabled(lockIdx)
-@onready var doorName = str(get_name())
-var lockIdx : int
+
 @onready var animRattle = $AnimatedDoorRattle
 @onready var animLockOpen = $AnimatedLockOpen
 @onready var animBoltCut = $AnimatedBoltCutterOpen
@@ -56,7 +47,11 @@ var lockIdx : int
 
 # As soon as scene loads, disable the collision shapes for when door is open 
 func _ready():
-	animLock.hide()
+	anim.z_index = 2
+	animLock.z_index = 2
+	animRattle.z_index = 2
+	animLockOpen.z_index = 2
+	animBoltCut.z_index = 2
 	
 	# Start all animations at initial frame
 	animLock.set_frame(0)
@@ -70,8 +65,6 @@ func _ready():
 	animRattle.show()
 	animLockOpen.hide()
 	animBoltCut.hide()
-	
-	levelRoot.lockDisabled.connect(_on_lock_disabled)
 
 
 # GoDot note: the _process function is called every frame as soon as the scene has loaded
@@ -89,10 +82,6 @@ func _process(delta):
 				unlocked = true
 				inventory.remove_item("BoltCutter")
 				
-				# Update the list of locked interactable objects for the current level
-				inventory.update_level_unlocks("Door" + doorName[-1])   # It is assumed that the name of any locked door node will end with a integer >= 0
-																		# This is used to identify/distinguish the doors in the scene when unlocking/locking
-			
 				animLock.hide()
 				anim.show()
 				animRattle.hide()
@@ -140,16 +129,6 @@ func _on_animated_lock_open_animation_finished():
 		anim.set_frame(curr_frame)
 
 
-func _on_lock_disabled(lockIdx):
-	# It is assumed that locked door node names will end in a int > 0 to identify/distinguish all locked doors in a scene
-	print("LOCK DISABLED")
-	if lockIdx == "Door" + doorName[-1]:
-		unlocked = true
-		animLock.hide()
-		anim.show()
-		animRattle.hide()
-
-
 # GoDot note: this signal function is called when a frame in the animation has changed to the next frame
 # Enable/disable the appropriate collision shapes in correspondance to opening or closing door animation 
 func _on_animated_slide_door_frame_changed():
@@ -189,36 +168,15 @@ func _on_animated_slide_door_frame_changed():
 		prev_frame = curr_frame
 
 
-# GoDot Note: The body entered signal is emitted from the PlayerDetectionLayering Area2D node when
-#             the player enters its collision shape and accordingly this function is called
-# Render/display the player in-front of the door when the player is located below/inf-ront of the door
-func _on_PlayerDectectionLayering_body_entered(body):
-	if body.name == "Player":
-		anim.z_index = 0 # z_index controls the order in which the nodes render: higher z_index means rendering in front
-		animLock.z_index = 0
-		animLockOpen.z_index = 0
-		animBoltCut.z_index = 0
-
-# GoDot Note: The body entered signal is emitted from the PlayerDetectionLayering Area2D node when
-#             the player exits its collision shape and accordingly this function is called
-# Render the player behind the door when the player is located on-top/behind OR far enough away from the door
-func _on_PlayerDetectionLayering_body_exited(body):
-	if body.name == "Player":
-		anim.z_index = player.z_index + 1
-		animLock.z_index = player.z_index + 1
-		animLockOpen.z_index = player.z_index + 1
-		animBoltCut.z_index = player.z_index + 1
-
-
 # Set play_open to true if the door is currently closed and player is close enough to door
 func _on_PlayerDetectionAnimation_body_entered(body):
-	if body.name == "Player":
+	if body.name == "player":
 		if !play_close: play_open = true
 
 
 # Set in_top to true when player is in the top collision area
 func _on_PlayerDetectAnimCloseTop_body_entered(body):
-	if body.name == "Player":
+	if body.name == "player":
 		in_top = true
 		
 		# Initialize all collision shapes accordingly when player's first approach of the door is from behind/above
@@ -242,7 +200,7 @@ func _on_PlayerDetectAnimCloseTop_body_entered(body):
 
 # Play door closing animation when requirements are met
 func _on_PlayerDetectionAnimCloseTop_body_exited(body):
-	if body.name == "Player":
+	if body.name == "player":
 		if play_close && !in_bottom:   # If door open animation is playing or finished and player is only in top collision area
 			# Play the animation from the correct frame
 			if anim.is_playing():
@@ -261,7 +219,7 @@ func _on_PlayerDetectionAnimCloseTop_body_exited(body):
 
 # Set in_bottom to true when player is in the bottom collision area
 func _on_PlayerDetectAnimCloseBottom_body_entered(body):
-	if body.name == "Player":
+	if body.name == "player":
 		in_bottom = true
 
 		# Initialize all collision shapes accordingly when player's first approach of the door is from in-front/behind
@@ -285,7 +243,7 @@ func _on_PlayerDetectAnimCloseBottom_body_entered(body):
 
 # Play door closing animation when requirements are met
 func _on_PlayerDetectAnimCloseBottom_body_exited(body):
-	if body.name == "Player":
+	if body.name == "player":
 		if play_close && !in_top:
 			if anim.is_playing():
 				curr_frame = anim.get_frame()

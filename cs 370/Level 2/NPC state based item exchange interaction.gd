@@ -41,9 +41,6 @@ var descriptions: Dictionary = {}
 
 func _ready():
 	
-	print("-position brain: ", speechItemWant, ", position: ", speechItemWant.position)
-	print("-position flower: ", speechItemGive, ", position: ", speechItemGive.position)
-	
 	if !inventory.has_interaction(interaction_name):
 		inventory.update_interaction(interaction_name)
 	
@@ -70,9 +67,7 @@ for the
 Here is your"""
 	
 	curr_state = inventory.get_interaction_state(interaction_name)
-	print("--- interactions: ", inventory.get_interactions())
 	if curr_state == 0:
-		print("--disable detectItem")
 		detectItem.set_deferred("disabled", true)
 	elif curr_state == 3:
 		detectInteraction.set_deferred("disbaled", true)
@@ -91,7 +86,6 @@ func _process(delta):
 	curr_state = inventory.get_interaction_state(interaction_name)
 	
 	if play_interaction && Input.is_action_just_released("ui_accept"):
-		print("-curr_state: ", curr_state)
 		if curr_state == 1:
 			if text_progress == 0:
 				speechText.clear()

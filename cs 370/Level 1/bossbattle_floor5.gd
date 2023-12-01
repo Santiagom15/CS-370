@@ -22,19 +22,28 @@ var bossBeaten = false
 # Get inventory
 @onready var inventory = get_node("/root/Inventory")
 
+# Item to be collected to open the door once the boss is beaten
+@onready var collectibleItem = get_node("Locked interactable objects").get_node("Collectible item boltcutter")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	global_hit.restart_hits()
-	
+	collectibleItem.hide()
 
 
-	
 # when music is up, change scene (temp: main menu)
 func _on_timer_timeout():
 	state.exit()
 	$boss.visible = false
 	
+	var blocking_collision = get_node("Lane collision").get_node("Blocking 1")
+	blocking_collision.set_deferred("disabled", true)
+	blocking_collision = get_node("Lane collision").get_node("Blocking 2")
+	blocking_collision.set_deferred("disabled", true)
+
+	collectibleItem.show()
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	$AudioStreamPlayer2D.get_time()
