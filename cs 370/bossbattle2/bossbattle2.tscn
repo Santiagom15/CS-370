@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://bossbattle2/bossbattle2.gd" id="1_4kwuv"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_orxrf"]
-[ext_resource type="PackedScene" path="res://bossbattle2/boss2.tscn" id="2_jylx7"]
+[ext_resource type="PackedScene" uid="uid://5bl1xdmqwumo" path="res://bossbattle2/boss2.tscn" id="2_jylx7"]
 [ext_resource type="Texture2D" uid="uid://cr3fimws2554f" path="res://Room_Builder_16x16.png" id="3_1g6k7"]
 [ext_resource type="AudioStream" uid="uid://d3tqm5uif5vmc" path="res://Music/Music - bossbattle2.mp3" id="3_c3x0e"]
 [ext_resource type="Texture2D" uid="uid://b5hugsiudonq3" path="res://bossbattle2/blacktile.png" id="4_qktlm"]

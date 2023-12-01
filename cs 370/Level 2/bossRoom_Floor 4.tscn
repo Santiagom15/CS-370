@@ -1,10 +1,18 @@
-[gd_scene load_steps=38 format=3 uid="uid://cdxd1bj1r60su"]
+[gd_scene load_steps=47 format=3 uid="uid://cdxd1bj1r60su"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_wehrb"]
 [ext_resource type="Texture2D" uid="uid://bo2twpsc7tthv" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/13_Conference_Hall_16x16.png" id="2_0ur5n"]
 [ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="3_rmuu1"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="4_357l7"]
 [ext_resource type="Script" path="res://Level 2/Boss to Floor 4.gd" id="5_dbsv1"]
+[ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="5_g1gun"]
+[ext_resource type="Texture2D" uid="uid://b8dndk4bcn8ic" path="res://HealthBar/HealthBar0.5.png" id="6_nahaa"]
+[ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="7_arb0p"]
+[ext_resource type="Texture2D" uid="uid://f32cpoub7wiv" path="res://HealthBar/HealthBar1.5.png" id="8_jenwb"]
+[ext_resource type="Texture2D" uid="uid://vqwfho1vro7k" path="res://HealthBar/HealthBar2.png" id="9_ttddv"]
+[ext_resource type="Texture2D" uid="uid://cltf07c5s48jv" path="res://HealthBar/HealthBar2.5.png" id="10_jgi7j"]
+[ext_resource type="Texture2D" uid="uid://dgbtrhg18j1qo" path="res://HealthBar/HealthBar3.png" id="11_cjdv4"]
+[ext_resource type="PackedScene" uid="uid://fx4cdqv1f86c" path="res://bosslevel2.tscn" id="13_u7b1f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uvk7h"]
 texture = ExtResource("1_wehrb")
@@ -42623,6 +42631,65 @@ sources/9 = SubResource("TileSetAtlasSource_qkiy7")
 sources/10 = SubResource("TileSetAtlasSource_1dwsn")
 sources/11 = SubResource("TileSetAtlasSource_60gca")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_61tek"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_g1gun")
+}],
+"loop": false,
+"name": &"0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_nahaa")
+}],
+"loop": false,
+"name": &"0.5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_arb0p")
+}],
+"loop": false,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_jenwb")
+}],
+"loop": false,
+"name": &"1.5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_ttddv")
+}],
+"loop": false,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_jgi7j")
+}],
+"loop": false,
+"name": &"2.5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_cjdv4")
+}],
+"loop": false,
+"name": &"3",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_88j2w"]
 size = Vector2(93.5, 47)
 
@@ -42744,14 +42811,25 @@ offset_bottom = -96.0
 text = "Inventory"
 metadata/_edit_use_anchors_ = true
 
+[node name="HealthBar" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(-404, -192)
+scale = Vector2(0.188657, 0.173177)
+sprite_frames = SubResource("SpriteFrames_61tek")
+animation = &"3"
+autoplay = "3"
+
 [node name="Boss to Floor 4" type="CharacterBody2D" parent="."]
 script = ExtResource("5_dbsv1")
 
 [node name="Player Detection" type="Area2D" parent="Boss to Floor 4"]
+position = Vector2(195, 20)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boss to Floor 4/Player Detection"]
-position = Vector2(192, 26)
+position = Vector2(-3, 4)
 shape = SubResource("RectangleShape2D_88j2w")
+
+[node name="bossFloor4" parent="." instance=ExtResource("13_u7b1f")]
+position = Vector2(1024, 260)
 
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
