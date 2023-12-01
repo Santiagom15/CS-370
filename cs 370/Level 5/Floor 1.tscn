@@ -5,16 +5,16 @@
 [ext_resource type="Texture2D" uid="uid://cgxvwm7nsmtns" path="res://assets/Solaria Demo Update 01.png" id="2_r72m1"]
 [ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="9_8eos6"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="9_c6a1d"]
-[ext_resource type="PackedScene" uid="uid://bt5btl02jlgym" path="res://character/base.tscn" id="10_0cc3k"]
+[ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="10_0cc3k"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door.gd" id="10_8r4cu"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_lock1.png" id="10_yy56h"]
-[ext_resource type="Script" path="res://character/PlayerButtons.gd" id="11_g01am"]
+[ext_resource type="Texture2D" uid="uid://byyti5evxrayp" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_lock1.png" id="10_yy56h"]
 [ext_resource type="Texture2D" uid="uid://cd0nbgye3yh7u" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="11_r6vb1"]
 [ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_unlock.png" id="12_1q0ug"]
 [ext_resource type="Texture2D" uid="uid://ba0onicitg6jt" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_left_1.png" id="12_6omkf"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="12_t14l1"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door Need Item.gd" id="13_ga0jk"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="13_pubki"]
+[ext_resource type="Script" path="res://character/PlayerButtons.gd" id="14_hojp3"]
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="14_whdub"]
 [ext_resource type="Script" path="res://Level 5/Floor1 to Boss.gd" id="16_6emu4"]
 [ext_resource type="PackedScene" uid="uid://uxeft12nwgge" path="res://Inventory/collectible_item_frog.tscn" id="16_te3xe"]
@@ -62796,7 +62796,7 @@ metadata/_edit_group_ = true
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 
 [node name="Buttons" type="Node2D" parent="Player"]
-script = ExtResource("11_g01am")
+script = ExtResource("14_hojp3")
 
 [node name="Home" type="Button" parent="Player/Buttons"]
 offset_left = 317.0

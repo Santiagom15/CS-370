@@ -1,0 +1,64 @@
+[gd_scene load_steps=11 format=3 uid="uid://k02txmjwjr1q"]
+
+[ext_resource type="PackedScene" uid="uid://dfmtqgvpc1ivm" path="res://AnotherBoss/spawnAttack.tscn" id="1_5pu4t"]
+[ext_resource type="Texture2D" uid="uid://bhp4pl5yigdur" path="res://Level 2/Animations_for_bass/SFX303_nyknck/SFX303_01.png" id="1_cto7b"]
+[ext_resource type="Script" path="res://AnotherBoss/SpawnAttackFiniteState.gd" id="1_x7g2m"]
+[ext_resource type="Script" path="res://AnotherBoss/warning.gd" id="2_1f1d6"]
+[ext_resource type="Texture2D" uid="uid://bilvy5k53xrw7" path="res://Level 2/Animations_for_bass/SFX303_nyknck/SFX303_02.png" id="2_k2lx3"]
+[ext_resource type="Texture2D" uid="uid://c24pqxfrvkqdf" path="res://Level 2/Animations_for_bass/SFX303_nyknck/SFX303_03.png" id="3_34qhg"]
+[ext_resource type="Texture2D" uid="uid://clv1o8ailh350" path="res://Level 2/Animations_for_bass/SFX303_nyknck/SFX303_04.png" id="4_hmwie"]
+[ext_resource type="Texture2D" uid="uid://goqrv0tq6htu" path="res://Level 2/Animations_for_bass/SFX303_nyknck/SFX303_05.png" id="5_gsavw"]
+[ext_resource type="Script" path="res://AnotherBoss/damage.gd" id="8_e5ubs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ftgfi"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cto7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_k2lx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_34qhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hmwie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gsavw")
+}],
+"loop": true,
+"name": &"warning",
+"speed": 5.0
+}]
+
+[node name="FiniteState" type="Node2D"]
+script = ExtResource("1_x7g2m")
+
+[node name="warning" type="Node2D" parent="."]
+script = ExtResource("2_1f1d6")
+
+[node name="Uitime" type="Timer" parent="warning"]
+autostart = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="warning"]
+sprite_frames = SubResource("SpriteFrames_ftgfi")
+animation = &"new_animation"
+
+[node name="damage" type="Node2D" parent="."]
+script = ExtResource("8_e5ubs")
+spawnAttack = ExtResource("1_5pu4t")
+
+[node name="debug" type="Label" parent="."]
+offset_left = 8.0
+offset_top = -13.0
+offset_right = 64.0
+offset_bottom = 10.0
+
+[connection signal="timeout" from="warning/Uitime" to="warning" method="_on_uitime_timeout"]

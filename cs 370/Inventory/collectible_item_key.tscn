@@ -197,7 +197,7 @@ polygon = PackedVector2Array(35, -5, 35, 10, 27, 12, -17, 13, -26, 5, -26, -5, -
 position = Vector2(1966, 1014)
 scale = Vector2(3.06292, 3.297)
 sprite_frames = SubResource("SpriteFrames_5l516")
-animation = &"Idle"
+animation = &"Key"
 
 [node name="AnimatedSparkle" type="AnimatedSprite2D" parent="Key"]
 position = Vector2(1964, 1027)

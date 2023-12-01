@@ -2487,9 +2487,9 @@ texture = ExtResource("1_kyrdk")
 
 [node name="Inventory title" type="RichTextLabel" parent="."]
 offset_left = 3.0
-offset_top = 87.0
+offset_top = 39.0
 offset_right = 421.0
-offset_bottom = 200.0
+offset_bottom = 152.0
 theme_override_colors/default_color = Color(0.403922, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 75
 bbcode_enabled = true
@@ -2498,7 +2498,7 @@ text = "[center]Inventory"
 [node name="Item description" type="RichTextLabel" parent="."]
 clip_contents = false
 offset_left = 52.0
-offset_top = 205.0
+offset_top = 160.0
 offset_right = 368.0
 offset_bottom = 413.0
 theme_override_colors/default_color = Color(0.384314, 0, 0, 1)

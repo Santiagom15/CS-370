@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvir34lpc6687"]
+
+[ext_resource type="Script" path="res://santiBoss3/boss4.gd" id="1_52wc5"]
+[ext_resource type="Script" path="res://santiBoss3/state1.gd" id="1_lk1bp"]
+[ext_resource type="Script" path="res://santiBoss3/state2.gd" id="2_80bw0"]
+
+[node name="boss4" type="CharacterBody2D"]
+script = ExtResource("1_52wc5")
+
+[node name="debug" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="finiteState" type="Node2D" parent="."]
+
+[node name="state1" type="Node2D" parent="finiteState"]
+script = ExtResource("1_lk1bp")
+
+[node name="state2" type="Node2D" parent="finiteState"]
+script = ExtResource("2_80bw0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="finiteState"]
