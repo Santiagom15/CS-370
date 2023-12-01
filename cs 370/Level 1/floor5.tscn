@@ -1,37 +1,3 @@
-<<<<<<< HEAD
-[gd_scene load_steps=340 format=3 uid="uid://poixchn2uksq"]
-
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
-[ext_resource type="PackedScene" uid="uid://whkxyoo3p723" path="res://character/base.tscn" id="3_eevib"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/11_Halloween_16x16.png" id="3_mrhk3"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_butchershop_carcass.png" id="4_nvu84"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/3_Bathroom_16x16.png" id="4_s5jh1"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_head.png" id="5_l8cnp"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/aniamted_haunted_mirror.png" id="5_nt45a"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xrayscreen_arm.png" id="5_v0qy0"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_painting_doll_1.png" id="5_yt6uo"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_full.png" id="6_c3omn"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_right.png" id="6_i8hy6"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xraymachine_screen.png" id="6_tku2f"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror.png" id="6_vbod5"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_empty.png" id="6_wqapt"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_sink_new_2_3-10 loop.png" id="6_yuj1v"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathtub_2.png" id="7_ovnr8"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_left.png" id="8_0cefy"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_old_tv.png" id="8_n8eh6"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_ticket_machine.png" id="8_yhetw"]
-[ext_resource type="Script" path="res://Level 1/Animated Idle.gd" id="10_kkunq"]
-[ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door.gd" id="23_2yr2n"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="23_u8hcn"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_left_1.png" id="25_ad4ki"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="26_eu261"]
-[ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="26_xyf23"]
-[ext_resource type="Script" path="res://Level 1/Animated Interact Horizontal Door.gd" id="28_pc87l"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="29_0ygv0"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
-=======
 [gd_scene load_steps=340 format=3 uid="uid://d0rp3r6rsqjj7"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
@@ -64,7 +30,6 @@
 [ext_resource type="Texture2D" uid="uid://bdw58iw7s5jvd" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="29_0ygv0"]
 [ext_resource type="Texture2D" uid="uid://df4ksnwncongf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
 [ext_resource type="Texture2D" uid="uid://blurtqdn6gseh" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
->>>>>>> 575641de9f71205aa30419c74363d7fe7d73c507
 [ext_resource type="Script" path="res://Level 1/Button.gd" id="43_072me"]
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
 
@@ -57045,11 +57010,7 @@ position = Vector2(536, 352)
 scale = Vector2(6, 3.83333)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animated door vertical right 4/PlayerDetectionFromLeft"]
-<<<<<<< HEAD
-position = Vector2(0.458336, 2.34782)
-=======
 position = Vector2(0.458336, 2.08696)
->>>>>>> 575641de9f71205aa30419c74363d7fe7d73c507
 shape = SubResource("RectangleShape2D_pot04")
 one_way_collision_margin = 0.0
 debug_color = Color(0.580392, 0.458824, 0.8, 0.419608)
