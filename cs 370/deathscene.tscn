@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cwsafg14fthnp" path="res://DeathScene1Background.png" id="1_hgqxy"]
 [ext_resource type="Script" path="res://deathscene.gd" id="1_wgldv"]
-[ext_resource type="FontFile" uid="uid://bf7bg7h4xbki7" path="res://Another Danger - Demo.otf" id="3_vextd"]
+[ext_resource type="FontFile" uid="uid://bf7bg7h4xbki7" path="res://Font.otf" id="3_vextd"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_wgldv")

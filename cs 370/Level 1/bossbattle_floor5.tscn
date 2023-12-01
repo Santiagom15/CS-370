@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://b7nlr4nalr1ko" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/18_Jail_16x16.png" id="6_b0xwd"]
 [ext_resource type="AudioStream" uid="uid://b877gjg3cn5hh" path="res://Music/bossbattlemusic1 (1).mp3" id="8_7cap3"]
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="9_2t6jl"]
-[ext_resource type="PackedScene" uid="uid://datyj1ghnmx25" path="res://character/character_body_2d.tscn" id="10_4710w"]
+[ext_resource type="PackedScene" uid="uid://b58t7w3dxxise" path="res://character/base.tscn" id="10_i0yb5"]
 [ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="11_1tntx"]
 [ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="12_5372v"]
 [ext_resource type="Texture2D" uid="uid://vqwfho1vro7k" path="res://HealthBar/HealthBar2.png" id="13_l77iv"]
@@ -21216,16 +21216,18 @@ scale = Vector2(0.999999, 1)
 shape = SubResource("RectangleShape2D_bwpib")
 debug_color = Color(0.796078, 0.364706, 0.576471, 0.419608)
 
-[node name="player" parent="." instance=ExtResource("10_4710w")]
-position = Vector2(557.943, 533.532)
-
 [node name="Timer" type="Timer" parent="."]
 wait_time = 92.0
+one_shot = true
 autostart = true
 
-[node name="HealthBar" type="AnimatedSprite2D" parent="."]
+[node name="CharacterBody2D" parent="." instance=ExtResource("10_i0yb5")]
+position = Vector2(562, 543)
+scale = Vector2(0.708412, 0.63648)
+
+[node name="HealthBar" type="AnimatedSprite2D" parent="CharacterBody2D"]
 top_level = true
-position = Vector2(904, 135)
+position = Vector2(140, 337)
 scale = Vector2(0.163158, 0.149441)
 sprite_frames = SubResource("SpriteFrames_ha3rg")
 animation = &"3"
