@@ -21,12 +21,13 @@ func _process(_delta):
 	$AudioStreamPlayer2D.get_time()
 	var t = timmy.time
 	
-	if(int(t) % 5 == 0):
-		spiked()
-	if((int(t) % 5) == 4):
-		$warningAlmostSpike.visible = true
-	if((int(t) % 5) == 2):
-		$warningDots.visible = true
+	if(!spikeTimer.is_stopped()):
+		if(int(t) % 5 == 0):
+			spiked()
+		if((int(t) % 5) == 4):
+			$warningAlmostSpike.visible = true
+		if((int(t) % 5) == 2):
+			$warningDots.visible = true
 
 	
 	$HealthBar.play(str(healtharr[global_var.hits2]))
@@ -34,8 +35,9 @@ func _process(_delta):
 
 func _on_timer_timeout():
 	inventory.set_boss_battle_status(true)
-	get_tree().change_scene_to_file("res://deathscene.tscn")
-
+	$nurse_boss.visible = false
+	$nurse_boss/Shoot.shoot_stat = false
+	
 	
 
 func spiked():
