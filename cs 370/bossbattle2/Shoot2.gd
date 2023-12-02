@@ -4,13 +4,15 @@ extends Node2D
 @onready var player = get_parent().get_parent().find_child("player")
 @export var flasky_node = load("res://bossbattle2/flasky.tscn")
 @onready var tim = $Timer
+@onready var shoot_stat = true
 
 func _process(_delta):
 	if(tim.is_stopped()):
 		tim.start()
 	
 func _on_timer_timeout():
-	shoot()
+	if(shoot_stat == true):
+		shoot()
 	
 func shoot():
 	var flasky = flasky_node.instantiate()

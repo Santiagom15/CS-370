@@ -1,21 +1,10 @@
-# This script give functionality to the sliding glass horizontal door.
-# This is an interactable animation. The door opens when the player presses the spacebar
-# when close enough, and the player can walk through. The door automatically closes
-# when the player has walked far enough away. 
-
 extends CharacterBody2D
 
 # GoDot note: @onready means this line is called when the scene loads and only then
 # Retrieve the animated door and character body Player nodes
 @onready var anim = get_node("AnimatedSlideDoor")
-@onready var player : CharacterBody2D
+@onready var player = get_parent().get_parent().get_node("player")
 var body_name: String
-
-func _ready():
-	# Retrieve the correct player node within the scene (case sensitive)
-	player = get_parent().get_parent().get_node("Player")
-	if player == null:
-		player = get_parent().get_parent().get_node("player")
 
 # Value of 0 mean no collision boxes for this door have been entered
 # Value of 1 means either PlayerDetectionAnimCloseTop or PlayerDetectionAnimCloseBottom has been entered
@@ -42,20 +31,100 @@ var door_name : String
 var curr_frame = 0
 var prev_frame = 0
 
+# Get the node for the inventory, which will have the key item data
+@onready var inventory = get_node("/root/Inventory")
+
+# Logical flag for if the door has been opened with the key yet (true) or not (false)
+var unlocked = false
+@onready var animLock = $AnimatedLock
+@onready var animLockFrames = animLock.get_sprite_frames()
+@onready var total_num_key_frames = animLockFrames.get_frame_count("Bolt")
+
+@onready var animRattle = $AnimatedDoorRattle
+@onready var animLockOpen = $AnimatedLockOpen
+@onready var animBoltCut = $AnimatedBoltCutterOpen
+
+
+# As soon as scene loads, disable the collision shapes for when door is open 
+func _ready():
+	anim.z_index = 2
+	animLock.z_index = 2
+	animRattle.z_index = 2
+	animLockOpen.z_index = 2
+	animBoltCut.z_index = 2
+	
+	# Start all animations at initial frame
+	animLock.set_frame(0)
+	anim.set_frame(0)
+	animRattle.set_frame(0)
+	animLockOpen.set_frame(0)
+	animBoltCut.set_frame(0)
+	
+	animLock.show()
+	anim.hide()
+	animRattle.show()
+	animLockOpen.hide()
+	animBoltCut.hide()
+
+
 # GoDot note: the _process function is called every frame as soon as the scene has loaded
 # Play the open door animation when requirements met
 func _process(delta):
 	
 	# Check if requirements to open door are met and if player presses spacebar
 	if play_open == true && Input.is_action_pressed("ui_accept"):
-		play_open = false
-		play_close = true
 		
-		# If the close animation is playing, start the open animation from the current frame
-		if anim.is_playing():
-			curr_frame = anim.get_frame()
-		else:   # If close animation isn't playing, start open animation from start
-			curr_frame = 0
+		# Case when play has the key or has already used the key
+		if inventory.has_item("BoltCutter") == true || unlocked == true:
+		
+			# If the player still has the key, remove it from inventory and use it here
+			if unlocked == false:
+				unlocked = true
+				inventory.remove_item("BoltCutter")
+				
+				animLock.hide()
+				anim.show()
+				animRattle.hide()
+				animLockOpen.show()
+				animBoltCut.show()
+				
+				animLockOpen.play("LockOpen")
+				animBoltCut.play("BoltCutter")
+				
+				play_open = false
+			
+			else:
+				play_open = false
+				play_close = true
+				
+				# If the close animation is playing, start the open animation from the current frame
+				if anim.is_playing():
+					curr_frame = anim.get_frame()
+				else:   # If close animation isn't playing, start open animation from start
+					curr_frame = 0
+				anim.play("SlideOpen")   # Play open animation
+				anim.set_frame(curr_frame)
+			
+		elif !animLock.is_playing():
+			play_open = false
+			
+			animLock.show()
+			animRattle.show()
+			animLock.play("Bolt")
+			animRattle.play("DoorRattle")
+
+
+func _on_animated_lock_open_animation_finished():
+	animLockOpen.hide()
+	animBoltCut.hide()
+	
+	play_close = true
+		
+	# If the close animation is playing, start the open animation from the current frame
+	if anim.is_playing():
+		curr_frame = anim.get_frame()
+	else:   # If close animation isn't playing, start open animation from start
+		curr_frame = 0
 		anim.play("SlideOpen")   # Play open animation
 		anim.set_frame(curr_frame)
 
@@ -97,24 +166,6 @@ func _on_animated_slide_door_frame_changed():
 
 		# Update the previous frame index
 		prev_frame = curr_frame
-
-
-# GoDot Note: The body entered signal is emitted from the PlayerDetectionLayering Area2D node when
-#             the player enters its collision shape and accordingly this function is called
-# Render/display the player in-front of the door when the player is located below/inf-ront of the door
-func _on_PlayerDectectionLayering_body_entered(body):
-	body_name = body.name
-	if body_name.to_lower() == "player":
-		player.z_index = anim.z_index + 1  # z_index controls the order in which the nodes render: higher z_index means rendering in front
-
-
-# GoDot Note: The body entered signal is emitted from the PlayerDetectionLayering Area2D node when
-#             the player exits its collision shape and accordingly this function is called
-# Render the player behind the door when the player is located on-top/behind OR far enough away from the door
-func _on_PlayerDetectionLayering_body_exited(body):
-	body_name = body.name
-	if body_name.to_lower() == "player":
-		player.z_index = 0
 
 
 # Set play_open to true if the door is currently closed and player is close enough to door
@@ -165,7 +216,7 @@ func _on_PlayerDetectionAnimCloseTop_body_exited(body):
 			play_close = false
 			switch_anims = true
 		elif !in_bottom:
-			play_open = false 
+			play_open = false
 		in_top = false   # Since player has exited the top area, set to false
 
 
@@ -193,6 +244,7 @@ func _on_PlayerDetectAnimCloseBottom_body_entered(body):
 			use_coll1 = false
 			FIRST_CHECK = 1
 
+
 # Play door closing animation when requirements are met
 func _on_PlayerDetectAnimCloseBottom_body_exited(body):
 	body_name = body.name
@@ -210,7 +262,3 @@ func _on_PlayerDetectAnimCloseBottom_body_exited(body):
 		elif !in_top:
 			play_open = false
 		in_bottom = false
-
-
-func _on_PlayerDetectionAnimation_body_exited(body):
-	pass # Replace with function body.

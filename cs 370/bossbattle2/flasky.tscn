@@ -32,7 +32,6 @@ animations = [{
 }]
 
 [node name="flasky" type="Node2D"]
-top_level = true
 script = ExtResource("1_vha05")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=202 format=3 uid="uid://bft8gh4vv1seh"]
+[gd_scene load_steps=203 format=3 uid="uid://bft8gh4vv1seh"]
 
 [ext_resource type="Texture2D" uid="uid://dugkrqfe5mkxe" path="res://assets/Collectible_Items_Pico8Colors/Misc/Elevator floor level 1.png" id="1_due02"]
 [ext_resource type="Script" path="res://Level 1/Animated Idle.gd" id="2_njudl"]
@@ -27191,6 +27191,9 @@ size = Vector2(250.5, 75)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_orc7j"]
 size = Vector2(250.5, 75)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2tggk"]
+size = Vector2(36, 446)
+
 [node name="Level select" type="Node2D"]
 
 [node name="Walls" type="TileMap" parent="."]
@@ -27887,7 +27890,7 @@ shape = SubResource("RectangleShape2D_i55ck")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Player" parent="." instance=ExtResource("7_bmtc2")]
-position = Vector2(142, -110)
+position = Vector2(315, -113)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -27899,6 +27902,26 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-524284, 3670016, 58, -524283, 3670016, 58, -524282, 3670016, 58, -524281, 3670016, 58, -524280, 3670016, 58, -524275, 3670016, 58, -524274, 3670016, 58, -524273, 3670016, 58, -524272, 3670016, 58, -524271, 3670016, 58, -524251, 3670016, 58, -524250, 3670016, 58, -524249, 3670016, 58, -524248, 3670016, 58, -524247, 3670016, 58, -458755, 3670016, 58, -458754, 3670016, 58, -524288, 3670016, 58, -524287, 3670016, 58)
 
 [node name="Idle animation nodes infront furniture" type="Node2D" parent="."]
+
+[node name="Menu label" type="RichTextLabel" parent="Idle animation nodes infront furniture"]
+offset_left = -146.0
+offset_top = -417.0
+offset_right = -49.0
+offset_bottom = -307.0
+theme_override_colors/default_color = Color(0.0784314, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 29
+bbcode_enabled = true
+text = "[center]Start Menu"
+
+[node name="Inventory label" type="RichTextLabel" parent="Idle animation nodes infront furniture"]
+offset_left = -22.0
+offset_top = -382.0
+offset_right = 127.0
+offset_bottom = -272.0
+theme_override_colors/default_color = Color(0.0784314, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 29
+bbcode_enabled = true
+text = "[center]Inventory"
 
 [node name="Elevator number level 1" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture"]
 position = Vector2(302, -375)
@@ -27923,7 +27946,6 @@ animation = &"Idle"
 script = ExtResource("2_puo28")
 
 [node name="Level changes" type="Node2D" parent="."]
-visible = false
 script = ExtResource("16_2qoa6")
 
 [node name="Home page" type="Area2D" parent="Level changes"]
@@ -27955,6 +27977,10 @@ shape = SubResource("RectangleShape2D_akh6l")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level changes/Level 5"]
 position = Vector2(1895.75, -323)
 shape = SubResource("RectangleShape2D_orc7j")
+
+[node name="Block off unaccessed levels" type="CollisionShape2D" parent="."]
+position = Vector2(1082, -208)
+shape = SubResource("RectangleShape2D_2tggk")
 
 [connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/AnimatedSlideDoor" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_animated_slide_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDectectionLayering_body_entered"]

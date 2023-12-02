@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dg07hvygwaj0k"]
 
 [ext_resource type="Texture2D" uid="uid://cwsafg14fthnp" path="res://DeathScene1Background.png" id="1_038q4"]
-[ext_resource type="Script" path="res://DeathScene1.gd" id="1_g63ge"]
+[ext_resource type="Script" path="res://Level 1/DeathScene1.gd" id="1_g63ge"]
 [ext_resource type="FontFile" uid="uid://bf7bg7h4xbki7" path="res://Another Danger - Demo.otf" id="2_rr1db"]
 [ext_resource type="AudioStream" uid="uid://rl5n3dwrsqsj" path="res://horror-music-box-147341.mp3" id="3_akhr5"]
 

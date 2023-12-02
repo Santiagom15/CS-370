@@ -10,11 +10,36 @@
 [node name="BacktoHome" type="Button" parent="."]
 offset_left = 49.0
 offset_top = 23.0
-offset_right = 200.0
-offset_bottom = 92.0
+offset_right = 324.0
+offset_bottom = 124.0
 theme = SubResource("Theme_lu5b6")
-text = "exit"
+theme_override_font_sizes/font_size = 34
+text = "Return to start"
 script = ExtResource("2_uam63")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 349.0
+offset_top = 30.0
+offset_right = 724.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 34
+text = "PLAY level 1"
+
+[node name="Inventory" type="Button" parent="."]
+offset_left = 341.0
+offset_top = 291.0
+offset_right = 581.0
+offset_bottom = 418.0
+theme_override_font_sizes/font_size = 34
+text = "Inventory"
+
+[node name="LevelMenu" type="Button" parent="."]
+offset_left = 332.0
+offset_top = 454.0
+offset_right = 578.0
+offset_bottom = 585.0
+theme_override_font_sizes/font_size = 34
+text = "Level Menu"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -1
@@ -25,60 +50,50 @@ mouse_filter = 2
 texture = ExtResource("2_u5ucp")
 expand_mode = 1
 
-[node name="Level 1" type="Button" parent="."]
-offset_left = 503.0
-offset_top = 206.0
-offset_right = 728.0
-offset_bottom = 278.0
+[node name="Debugging level buttons" type="Node2D" parent="."]
+visible = false
+
+[node name="Level 1" type="Button" parent="Debugging level buttons"]
+offset_left = 861.0
+offset_top = 177.0
+offset_right = 1086.0
+offset_bottom = 249.0
 text = "Level 1: Floor 5"
 
-[node name="Level 2" type="Button" parent="."]
-offset_left = 499.0
-offset_top = 296.0
-offset_right = 734.0
-offset_bottom = 368.0
+[node name="Level 2" type="Button" parent="Debugging level buttons"]
+offset_left = 855.0
+offset_top = 268.0
+offset_right = 1090.0
+offset_bottom = 340.0
 text = "Level 2: Floor 4"
 
-[node name="Level 3" type="Button" parent="."]
-offset_left = 502.0
-offset_top = 390.0
-offset_right = 743.0
-offset_bottom = 459.0
+[node name="Level 3" type="Button" parent="Debugging level buttons"]
+offset_left = 850.0
+offset_top = 365.0
+offset_right = 1091.0
+offset_bottom = 434.0
 text = "Level 3: Floor 2"
 
-[node name="Level 5" type="Button" parent="."]
-offset_left = 493.0
-offset_top = 483.0
-offset_right = 744.0
-offset_bottom = 560.0
+[node name="Level 5" type="Button" parent="Debugging level buttons"]
+offset_left = 848.0
+offset_top = 471.0
+offset_right = 1099.0
+offset_bottom = 548.0
 text = "Level 5: Floor 1"
 
-[node name="TestNoBg" type="Button" parent="."]
-offset_left = 777.0
-offset_top = 85.0
-offset_right = 997.0
-offset_bottom = 155.0
+[node name="TestNoBg" type="Button" parent="Debugging level buttons"]
+offset_left = 865.0
+offset_top = 81.0
+offset_right = 1085.0
+offset_bottom = 151.0
 text = "Demo (no background)"
 
-[node name="Inventory" type="Button" parent="."]
-offset_left = 49.0
-offset_top = 144.0
-offset_right = 206.0
-offset_bottom = 239.0
-text = "Inventory"
-
-[node name="LevelMenu" type="Button" parent="."]
-offset_left = 43.0
-offset_top = 266.0
-offset_right = 205.0
-offset_bottom = 374.0
-text = "Level Menu"
-
 [connection signal="button_down" from="BacktoHome" to="BacktoHome" method="_on_button_down"]
-[connection signal="button_down" from="Level 1" to="BacktoHome" method="_on_level_1_button_down"]
-[connection signal="button_down" from="Level 2" to="BacktoHome" method="_on_level_2_button_down"]
-[connection signal="button_down" from="Level 3" to="BacktoHome" method="_on_level_3_button_down"]
-[connection signal="button_down" from="Level 5" to="BacktoHome" method="_on_level_5_button_down"]
-[connection signal="button_down" from="TestNoBg" to="BacktoHome" method="_on_test_no_bg_button_down"]
+[connection signal="button_down" from="Play" to="BacktoHome" method="_on_play_button_down"]
 [connection signal="button_down" from="Inventory" to="BacktoHome" method="_on_inventory_button_down"]
 [connection signal="button_down" from="LevelMenu" to="BacktoHome" method="_on_level_menu_button_down"]
+[connection signal="button_down" from="Debugging level buttons/Level 1" to="BacktoHome" method="_on_level_1_button_down"]
+[connection signal="button_down" from="Debugging level buttons/Level 2" to="BacktoHome" method="_on_level_2_button_down"]
+[connection signal="button_down" from="Debugging level buttons/Level 3" to="BacktoHome" method="_on_level_3_button_down"]
+[connection signal="button_down" from="Debugging level buttons/Level 5" to="BacktoHome" method="_on_level_5_button_down"]
+[connection signal="button_down" from="Debugging level buttons/TestNoBg" to="BacktoHome" method="_on_test_no_bg_button_down"]

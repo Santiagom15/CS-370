@@ -14,3 +14,5 @@ func _process(delta):
 func _on_restart_battle_button_down():
 	get_tree().change_scene_to_file("res://bossbattle2/bossbattle2.tscn")
 
+func _on_restart_level_button_down():
+	get_tree().change_scene_to_file("res://Level 2/Floor 4.tscn")

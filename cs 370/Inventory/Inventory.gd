@@ -32,9 +32,8 @@ var levelItems = []
 # Array storing the item_id of unlocked interactible items in current scene
 var levelUnlocks = []
 
-# Boolean array with flag: true if player entering current scene from boss battle, else otherwise
-#						   true if player won the boss battle they are entering from, false otherwise
-var bossBattleToLevel = [false, false]
+# Logical flag for if player won the boss battle for current level, true if player won the boss battle they are entering from, false otherwise
+var bossBattleWinStatus = false
 
 # Dictionary storing the state of all major collectible or NPC based interactions in the current scene
 # 	key: name of the interaction (ex. "Room 1")
@@ -133,25 +132,13 @@ func get_unlocks():
 func clear_level_unlocks():
 	levelUnlocks = []
 
-# Set entering from a boss battle to true, retain current win status
-func set_entering_from_boss_battle_true():
-	bossBattleToLevel = [true, bossBattleToLevel[1]]
+# Set boss battle win status to input status
+func set_boss_battle_status(status):
+	bossBattleWinStatus = status
 
-# Set entering from a boss battle to false, retain current win status
-func set_entering_from_boss_battle_false():
-	bossBattleToLevel = [false, bossBattleToLevel[1]]
-
-# Set boss battle win status to true
-func set_boss_battle_win():
-	bossBattleToLevel = [bossBattleToLevel[0], true]
-
-# Set boss battle win status to false
-func set_boss_battle_loss():
-	bossBattleToLevel = [bossBattleToLevel[0], false]
-
-# Return entered from boss battle and boss battle win status
+# Return boss battle win status
 func get_boss_battle_status():
-	return bossBattleToLevel
+	return bossBattleWinStatus
 
 # Function to add an interaction to interactionStates or update/increase state of existing element
 func update_interaction(item_id):
@@ -192,4 +179,11 @@ func get_interactions():
 func clear_interactions():
 	interactionStates = {}
 
-
+# Function to clear all relevant information for the current level
+# Used when transitioning between one scene to the next after completion, or switching between scenes in level navigiation scene
+func clear_level_data():
+	update_transport(false)
+	clear_level_items()
+	clear_level_unlocks()
+	set_boss_battle_status(false)
+	clear_interactions()

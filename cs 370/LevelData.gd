@@ -17,9 +17,7 @@ func _ready():
 	
 	var bossStatus = inventory.get_boss_battle_status()
 	
-	if bossStatus[0]:
-		player.global_position = Vector2(2412.31, 966.9786)
-	elif inventory.get_transport():
+	if inventory.get_transport():
 		player.global_position = inventory.get_player_position()
 		
 	for unlocked_item in inventory.get_level_items():
@@ -27,7 +25,6 @@ func _ready():
 		
 	for unlocked_item in inventory.get_unlocks():
 		lockDisabled.emit(unlocked_item)
-
 
 
 # Update the player's position in the game data

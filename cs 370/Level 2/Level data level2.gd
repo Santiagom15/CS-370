@@ -17,10 +17,18 @@ func _ready():
 	inventory.update_current_level("res://Level 2/Floor 4.tscn")
 	
 	var bossStatus = inventory.get_boss_battle_status()
+	if bossStatus:
+		var coffeeItem = get_node("Collectible items").get_node("Collectible item coffee 0")
+		coffeeItem.visible = true
+		var coffeeCol = coffeeItem.get_child(0).get_node("PlayerDetectionItem").get_child(0)
+		coffeeCol.set_deferred("disabled", false)
+	else:
+		var coffeeItem = get_node("Collectible items").get_node("Collectible item coffee 0")
+		coffeeItem.visible = false
+		var coffeeCol = coffeeItem.get_child(0).get_node("PlayerDetectionItem").get_child(0)
+		coffeeCol.set_deferred("disabled", true)
 	
-	if bossStatus[0]:
-		player.global_position = Vector2(2412.31, 966.9786)
-	elif inventory.get_transport():
+	if inventory.get_transport():
 		player.global_position = inventory.get_player_position()
 		
 	for unlocked_item in inventory.get_level_items():
@@ -28,11 +36,9 @@ func _ready():
 		
 	for unlocked_item in inventory.get_unlocks():
 		lockDisabled.emit(unlocked_item)
+	
 
 
+# Update the player's position in the game data
 func _process(delta):
 	inventory.update_player_position(player.global_position)
-	
-	curr_interactions = inventory.get_interactions()
-	if prev_interactions != curr_interactions:
-		prev_interactions = curr_interactions.duplicate()
