@@ -49114,20 +49114,26 @@ stream = ExtResource("14_6wkkr")
 autoplay = true
 script = ExtResource("15_71giw")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="walls" type="CharacterBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="leftWall" type="CollisionShape2D" parent="walls"]
 position = Vector2(-539.048, 384.385)
 shape = SubResource("RectangleShape2D_u6a2f")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="rightWall" type="CollisionShape2D" parent="walls"]
 position = Vector2(1706.3, 359.763)
 shape = SubResource("RectangleShape2D_u6a2f")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="bottom" type="CollisionShape2D" parent="walls"]
 position = Vector2(539.048, 990.373)
 shape = SubResource("RectangleShape2D_vpdg4")
+
+[node name="deathTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
 
 [connection signal="button_down" from="Buttons/Home" to="Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Buttons/Inventory" to="Buttons" method="_on_inventory_button_down"]
 [connection signal="body_entered" from="Boss to Floor 1/Player Detection" to="Boss to Floor 1" method="_on_player_detection_body_entered"]
+[connection signal="timeout" from="deathTimer" to="." method="_on_death_timer_timeout"]

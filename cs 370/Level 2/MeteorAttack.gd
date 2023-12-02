@@ -4,8 +4,7 @@ extends SantisBossesState
 @onready var timer = $MeteroShoot
 
 
-func transition():
-		pass
+
 		
 func enter():
 	super.enter()
