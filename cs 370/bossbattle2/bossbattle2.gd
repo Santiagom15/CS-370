@@ -34,9 +34,8 @@ func _process(_delta):
 
 func _on_timer_timeout():
 	inventory.set_boss_battle_status(true)
-	get_tree().change_scene_to_file("res://deathscene.tscn")
+	get_tree().change_scene_to_file("res://BossBattleLoseScene.tscn")
 
-	
 
 func spiked():
 	var spikey = spike_node.instantiate()

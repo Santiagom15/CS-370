@@ -71,4 +71,4 @@ func _process(_delta):
 
 func _on_death_timer_timeout():
 	inventory.set_boss_battle_status(false)
-	get_tree().change_scene_to_file("res://DeathScene2.tscn")
+	get_tree().change_scene_to_file("res://BossBattleLoseScene.tscn")
