@@ -10,6 +10,6 @@ To install and play Arrhythmia go to our latest releases page on our GitHub (or 
 - [Alisa Star](https://github.com/starralisa)
 - [Aisha Sajo](https://github.com/asajo12)
 - [Labdhi Mehta](https://github.com/labdhimehta)
-- [Isha Dahiya]()
+- [Isha Dahiya](https://github.com/IshaD13)
 
 
