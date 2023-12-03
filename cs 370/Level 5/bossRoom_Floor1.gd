@@ -14,7 +14,6 @@ func _ready():
 func _process(_delta):
 	timmy.get_time()
 	var t = timmy.time	
-	print(str(healtharr[global_var.hits]))
 	Healthbar.play(str(healtharr[global_var.hits]))
 
 

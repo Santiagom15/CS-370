@@ -9,7 +9,7 @@
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="4_x6qsl"]
 [ext_resource type="Texture2D" uid="uid://b7nlr4nalr1ko" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/18_Jail_16x16.png" id="16_e5k8o"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="17_1ygbm"]
-[ext_resource type="PackedScene" path="res://character/base_noheart.tscn" id="17_eovxo"]
+[ext_resource type="PackedScene" uid="uid://drdru62qqbtpc" path="res://character/base_noheart.tscn" id="17_eovxo"]
 [ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="17_o11fh"]
 [ext_resource type="Texture2D" uid="uid://b8dndk4bcn8ic" path="res://HealthBar/HealthBar0.5.png" id="18_nj3lc"]
 [ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="19_kx70b"]

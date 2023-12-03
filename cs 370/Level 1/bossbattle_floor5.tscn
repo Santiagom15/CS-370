@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://rhgf2vjoui6j" path="res://Level 1/boss.tscn" id="1_1sf1f"]
 [ext_resource type="Script" path="res://Level 1/bossbattle_floor5.gd" id="1_tomha"]
-[ext_resource type="PackedScene" path="res://character/base_noheart.tscn" id="2_36itt"]
+[ext_resource type="PackedScene" uid="uid://drdru62qqbtpc" path="res://character/base_noheart.tscn" id="2_36itt"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="2_mnnjk"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="3_fmn3m"]
 [ext_resource type="Texture2D" uid="uid://boymgm517uh7f" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/16_Grocery_store_Butcher_16x16.png" id="4_vj4tx"]
@@ -18,12 +18,7 @@
 [ext_resource type="Script" path="res://Level 1/Exit boss 1 to level 1.gd" id="14_b7j2q"]
 [ext_resource type="Texture2D" uid="uid://dgbtrhg18j1qo" path="res://HealthBar/HealthBar3.png" id="14_qg4u7"]
 [ext_resource type="Texture2D" uid="uid://dq2iwl0x4ni6v" path="res://Untitled design (3).png" id="16_udx2s"]
-[ext_resource type="Script" path="res://Level 1/Animated glass sliding door locked.gd" id="17_srint"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="18_l4ayp"]
-[ext_resource type="Texture2D" uid="uid://bsw4rdjy5qs8l" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_glass_sliding_32x32_edittedAlisa_locked.png" id="19_wesiw"]
-[ext_resource type="Texture2D" uid="uid://l50lbsccrl8u" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_and_lock.png" id="20_cco37"]
-[ext_resource type="Texture2D" uid="uid://sfrovock16q1" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolted_lock_broken.png" id="21_73amw"]
-[ext_resource type="Texture2D" uid="uid://1f8525nwlko4" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_action.png" id="22_jntq7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kaxt5"]
 texture = ExtResource("2_mnnjk")

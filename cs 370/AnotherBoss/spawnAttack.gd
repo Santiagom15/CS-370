@@ -28,5 +28,5 @@ func _on_body_entered(body):
 	if body.name =="player":
 		global_var.hits =global_var.hits + 1
 		if global_var.hits>=6:
-			get_tree().change_scene_to_file("res://deathscene.tscn")
+				get_tree().change_scene_to_file("res://BossBattleLoseScene.tscn")
 	

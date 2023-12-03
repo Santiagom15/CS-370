@@ -9,7 +9,7 @@ var direction = Vector2.RIGHT
 
 func _process(_delta):
 	direction = (player.position - global_position).normalized()
-	ray_cast.target_position = direction * 200
+	ray_cast.target_position = direction * 400
 	var state =  machine.current_state
 	
 	

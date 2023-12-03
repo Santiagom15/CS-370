@@ -1,6 +1,6 @@
 [gd_scene load_steps=53 format=3 uid="uid://cdxd1bj1r60su"]
 
-[ext_resource type="Script" path="res://Level 2/bossRoom_Floor 4.gd" id="1_ki8jv"]
+[ext_resource type="Script" path="res://Level 2/bossRoom_Floor_4.gd" id="1_ki8jv"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_wehrb"]
 [ext_resource type="Texture2D" uid="uid://bo2twpsc7tthv" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/13_Conference_Hall_16x16.png" id="2_0ur5n"]
 [ext_resource type="PackedScene" uid="uid://dbwyrxq5wypil" path="res://AnotherBoss/bossbattle_santi_2.tscn" id="3_edqkg"]
@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://vqwfho1vro7k" path="res://HealthBar/HealthBar2.png" id="9_ttddv"]
 [ext_resource type="Texture2D" uid="uid://cltf07c5s48jv" path="res://HealthBar/HealthBar2.5.png" id="10_jgi7j"]
 [ext_resource type="Texture2D" uid="uid://dgbtrhg18j1qo" path="res://HealthBar/HealthBar3.png" id="11_cjdv4"]
-[ext_resource type="AudioStream" uid="uid://py6b8yyid6h0" path="res://Level 2/2012-12-30_A_Search_for_the_Hidden_-_David_Fesliyan.mp3" id="15_4xv6l"]
+[ext_resource type="AudioStream" uid="uid://d0fryh41j2rqi" path="res://Music/2012-12-30_A_Search_for_the_Hidden_-_David_Fesliyan_1.mp3" id="15_4xv6l"]
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="16_86rxq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uvk7h"]
@@ -42856,12 +42856,10 @@ script = ExtResource("16_86rxq")
 position = Vector2(1023.5, 1466)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
-visible = false
 position = Vector2(-928, -816.25)
 shape = SubResource("RectangleShape2D_yix8f")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="CharacterBody2D"]
-visible = false
 position = Vector2(-823.5, -408)
 shape = SubResource("RectangleShape2D_yix8f")
 
@@ -42881,6 +42879,12 @@ scale = Vector2(1.94519, 2.29811)
 text = "Touch the boss to start :)
 "
 
+[node name="deathtimer" type="Timer" parent="."]
+wait_time = 74.58
+one_shot = true
+autostart = true
+
 [connection signal="button_down" from="Buttons/Home" to="Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Buttons/Inventory" to="Buttons" method="_on_inventory_button_down"]
 [connection signal="body_entered" from="Boss to Floor 4/Player Detection" to="Boss to Floor 4" method="_on_player_detection_body_entered"]
+[connection signal="timeout" from="deathtimer" to="." method="_on_deathtimer_timeout"]
