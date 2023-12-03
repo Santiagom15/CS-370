@@ -92,7 +92,7 @@ position = Vector2(341, 327)
 scale = Vector2(1.23333, 1.14667)
 sprite_frames = SubResource("SpriteFrames_j2t08")
 animation = &"Idle"
-frame_progress = 0.139855
+frame_progress = 0.353829
 
 [node name="Arrythmia title" type="RichTextLabel" parent="Background graphics"]
 offset_left = 565.0

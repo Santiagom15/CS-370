@@ -1,4 +1,4 @@
-[gd_scene load_steps=538 format=3 uid="uid://cnjgs5qf15yk1"]
+[gd_scene load_steps=539 format=3 uid="uid://cnjgs5qf15yk1"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_hduej"]
 [ext_resource type="Script" path="res://Level 2/Level data level2.gd" id="1_tbxpt"]
@@ -47,6 +47,7 @@
 [ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="28_ecyy1"]
 [ext_resource type="PackedScene" uid="uid://dbsb25h8g4mlo" path="res://Inventory/collectible_item_boltcutter.tscn" id="38_bsaet"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door Need Item.gd" id="39_naqn7"]
+[ext_resource type="PackedScene" uid="uid://cx1yu2ooj02go" path="res://Level Navigation/instructions_page.tscn" id="40_yp23x"]
 [ext_resource type="Texture2D" uid="uid://bsw4rdjy5qs8l" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_glass_sliding_32x32_edittedAlisa_locked.png" id="41_t2thc"]
 [ext_resource type="Texture2D" uid="uid://l50lbsccrl8u" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_and_lock.png" id="42_jyx57"]
 [ext_resource type="Texture2D" uid="uid://sfrovock16q1" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolted_lock_broken.png" id="43_fr53c"]
@@ -94551,6 +94552,18 @@ offset_bottom = -96.0
 text = "Inventory"
 metadata/_edit_use_anchors_ = true
 
+[node name="Instructions" type="Button" parent="Player/Buttons"]
+offset_left = 318.0
+offset_top = -72.0
+offset_right = 501.0
+offset_bottom = 8.0
+text = "Instructions"
+metadata/_edit_use_anchors_ = true
+
+[node name="Instructions page" parent="Player/Buttons" instance=ExtResource("40_yp23x")]
+visible = false
+position = Vector2(-570, -314)
+
 [node name="Locked interactable objects" type="Node2D" parent="."]
 
 [node name="Animated glass sliding door 1" type="CharacterBody2D" parent="Locked interactable objects"]
@@ -95463,6 +95476,7 @@ shape = SubResource("RectangleShape2D_46vu2")
 [connection signal="body_exited" from="NPCs/Guard/PlayerDetection" to="NPCs/Guard" method="_on_player_detection_body_exited"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
+[connection signal="button_down" from="Player/Buttons/Instructions" to="Player/Buttons" method="_on_instructions_button_down"]
 [connection signal="frame_changed" from="Locked interactable objects/Animated glass sliding door 1/AnimatedSlideDoor" to="Locked interactable objects/Animated glass sliding door 1" method="_on_animated_slide_door_frame_changed"]
 [connection signal="animation_finished" from="Locked interactable objects/Animated glass sliding door 1/AnimatedLockOpen" to="Locked interactable objects/Animated glass sliding door 1" method="_on_animated_lock_open_animation_finished"]
 [connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionLayering" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDectectionLayering_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=191 format=3 uid="uid://ct1o7yij42v38"]
+[gd_scene load_steps=192 format=3 uid="uid://ct1o7yij42v38"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_jxkdu"]
 [ext_resource type="Script" path="res://LevelData.gd" id="1_vngvv"]
@@ -9,13 +9,14 @@
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door.gd" id="10_8r4cu"]
 [ext_resource type="Texture2D" uid="uid://byyti5evxrayp" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_lock1.png" id="10_yy56h"]
 [ext_resource type="Texture2D" uid="uid://cd0nbgye3yh7u" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_right_1.png" id="11_r6vb1"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_unlock.png" id="12_1q0ug"]
+[ext_resource type="Texture2D" uid="uid://bnlln117petdg" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_unlock.png" id="12_1q0ug"]
 [ext_resource type="Texture2D" uid="uid://ba0onicitg6jt" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_vertical_left_1.png" id="12_6omkf"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="12_t14l1"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door Need Item.gd" id="13_ga0jk"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="13_pubki"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="14_hojp3"]
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="14_whdub"]
+[ext_resource type="PackedScene" uid="uid://cx1yu2ooj02go" path="res://Level Navigation/instructions_page.tscn" id="15_xh5po"]
 [ext_resource type="Script" path="res://Level 5/Floor1 to Boss.gd" id="16_6emu4"]
 [ext_resource type="PackedScene" uid="uid://uxeft12nwgge" path="res://Inventory/collectible_item_frog.tscn" id="16_te3xe"]
 [ext_resource type="PackedScene" uid="uid://dnu6a2albhgs2" path="res://Inventory/collectible_item_candle.tscn" id="17_b0g3y"]
@@ -62814,6 +62815,18 @@ offset_bottom = -96.0
 text = "Inventory"
 metadata/_edit_use_anchors_ = true
 
+[node name="Instructions" type="Button" parent="Player/Buttons"]
+offset_left = 318.0
+offset_top = -72.0
+offset_right = 501.0
+offset_bottom = 8.0
+text = "Instructions"
+metadata/_edit_use_anchors_ = true
+
+[node name="Instructions page" parent="Player/Buttons" instance=ExtResource("15_xh5po")]
+visible = false
+position = Vector2(-570, -314)
+
 [node name="Animated door horizontal and sliding node" type="Node2D" parent="."]
 
 [node name="Animated glass sliding door 0" type="CharacterBody2D" parent="Animated door horizontal and sliding node"]
@@ -63000,6 +63013,7 @@ shape = SubResource("RectangleShape2D_c7b7j")
 [connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 1/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 1" method="_on_PlayerDetectionFromRight_body_exited"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
+[connection signal="button_down" from="Player/Buttons/Instructions" to="Player/Buttons" method="_on_instructions_button_down"]
 [connection signal="frame_changed" from="Animated door horizontal and sliding node/Animated glass sliding door 0/AnimatedSlideDoor" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_animated_slide_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectionLayering" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding node/Animated glass sliding door 0/PlayerDetectionLayering" to="Animated door horizontal and sliding node/Animated glass sliding door 0" method="_on_PlayerDetectionLayering_body_exited"]

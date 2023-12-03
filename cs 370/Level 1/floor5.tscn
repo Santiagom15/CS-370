@@ -1,4 +1,4 @@
-[gd_scene load_steps=466 format=3 uid="uid://bgkfmqsltr2aj"]
+[gd_scene load_steps=467 format=3 uid="uid://bgkfmqsltr2aj"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
 [ext_resource type="Script" path="res://LevelData.gd" id="1_nmc80"]
@@ -49,6 +49,7 @@
 [ext_resource type="Texture2D" uid="uid://1f8525nwlko4" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_action.png" id="40_44drb"]
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
 [ext_resource type="Script" path="res://Level 1/Floor 5 to Boss.gd" id="46_72ot2"]
+[ext_resource type="PackedScene" uid="uid://cx1yu2ooj02go" path="res://Level Navigation/instructions_page.tscn" id="46_eka5q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acfsb"]
 texture = ExtResource("1_mqcgy")
@@ -68488,6 +68489,8 @@ position = Vector2(704, -183)
 scale = Vector2(4.90234, 4.79167)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
+frame = 2
+frame_progress = 0.257497
 
 [node name="Animated blood splatter 13" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
@@ -68713,6 +68716,7 @@ animation = &"Idle"
 [node name="Animated door vertical nodes" type="Node2D" parent="."]
 
 [node name="Animated door vertical right 0" type="CharacterBody2D" parent="Animated door vertical nodes"]
+visible = false
 position = Vector2(12, 3)
 script = ExtResource("23_2yr2n")
 metadata/_edit_group_ = true
@@ -69060,7 +69064,7 @@ shape = SubResource("RectangleShape2D_g1uk3")
 [node name="Collectible items" type="Node2D" parent="."]
 
 [node name="Collectible item key 0" parent="Collectible items" instance=ExtResource("30_ycgyi")]
-position = Vector2(558, -381)
+position = Vector2(495, -275)
 
 [node name="Collectible item boltcutter 0" parent="Collectible items" instance=ExtResource("29_j1icn")]
 position = Vector2(1764, 952)
@@ -69286,7 +69290,7 @@ shape = SubResource("RectangleShape2D_hrxam")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(1829, 1143)
+position = Vector2(1917, 1198)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -69309,6 +69313,18 @@ offset_right = 501.0
 offset_bottom = -96.0
 text = "Inventory"
 metadata/_edit_use_anchors_ = true
+
+[node name="Instructions" type="Button" parent="Player/Buttons"]
+offset_left = 318.0
+offset_top = -72.0
+offset_right = 501.0
+offset_bottom = 8.0
+text = "Instructions"
+metadata/_edit_use_anchors_ = true
+
+[node name="Instructions page" parent="Player/Buttons" instance=ExtResource("46_eka5q")]
+visible = false
+position = Vector2(-570, -314)
 
 [node name="Doorway" type="TileMap" parent="."]
 scale = Vector2(3, 3.013)
@@ -69981,6 +69997,7 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionAnimation" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDetectionAnimation_body_exited"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
+[connection signal="button_down" from="Player/Buttons/Instructions" to="Player/Buttons" method="_on_instructions_button_down"]
 [connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/AnimatedDoor" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_animated_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectionLayering_body_exited"]

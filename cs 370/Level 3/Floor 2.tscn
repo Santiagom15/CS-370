@@ -1,10 +1,11 @@
-[gd_scene load_steps=39 format=3 uid="uid://b7chfudtedjhi"]
+[gd_scene load_steps=40 format=3 uid="uid://b7chfudtedjhi"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_82f1x"]
 [ext_resource type="Script" path="res://Level 3/Floor 2 to Boss.gd" id="2_mt760"]
 [ext_resource type="Script" path="res://Level 3/Floor 2 to Floor 1.gd" id="2_peh34"]
 [ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="3_dpc47"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="4_ed8wx"]
+[ext_resource type="PackedScene" uid="uid://cx1yu2ooj02go" path="res://Level Navigation/instructions_page.tscn" id="5_x1bqk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jmkv3"]
 texture = ExtResource("1_82f1x")
@@ -57421,6 +57422,18 @@ offset_bottom = -96.0
 text = "Inventory"
 metadata/_edit_use_anchors_ = true
 
+[node name="Instructions" type="Button" parent="Player/Buttons"]
+offset_left = 318.0
+offset_top = -72.0
+offset_right = 501.0
+offset_bottom = 8.0
+text = "Instructions"
+metadata/_edit_use_anchors_ = true
+
+[node name="Instructions page" parent="Player/Buttons" instance=ExtResource("5_x1bqk")]
+visible = false
+position = Vector2(-570, -314)
+
 [node name="Floor 2 to Boss" type="CharacterBody2D" parent="."]
 script = ExtResource("2_mt760")
 
@@ -57433,4 +57446,5 @@ shape = SubResource("RectangleShape2D_1q3v5")
 [connection signal="body_entered" from="Floor 2 to Floor 1/Player Detection" to="Floor 2 to Floor 1" method="_on_player_detection_body_entered"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
+[connection signal="button_down" from="Player/Buttons/Instructions" to="Player/Buttons" method="_on_instructions_button_down"]
 [connection signal="body_entered" from="Floor 2 to Boss/Player Detection" to="Floor 2 to Boss" method="_on_player_detection_body_entered"]

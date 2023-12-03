@@ -1,0 +1,177 @@
+[gd_scene load_steps=23 format=3 uid="uid://d22ni8rigrnvs"]
+
+[ext_resource type="Script" path="res://Level Navigation/story_introduction_page.gd" id="1_1hkp3"]
+[ext_resource type="Texture2D" uid="uid://cwwrrxj3bpw4o" path="res://assets/Logo/Hospital background.png" id="1_n1waw"]
+[ext_resource type="Texture2D" uid="uid://wdglwbmcy4r1" path="res://assets/Logo/Arrythmia Game Logo animation.png" id="2_qw6vw"]
+[ext_resource type="Texture2D" uid="uid://by6naca75rlb2" path="res://assets/aisha/More_aishastuff/Sprites-teehee.PNG" id="3_ep8hx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gprsy"]
+atlas = ExtResource("2_qw6vw")
+region = Rect2(0, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgpn7"]
+atlas = ExtResource("2_qw6vw")
+region = Rect2(600, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ow21"]
+atlas = ExtResource("2_qw6vw")
+region = Rect2(1200, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2n43y"]
+atlas = ExtResource("2_qw6vw")
+region = Rect2(4800, 0, 600, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1ot0l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gprsy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgpn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ow21")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2n43y")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 3.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rop65"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(0, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0c5tt"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(226, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bx3ln"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(452, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ku8lu"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(678, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xpcm"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(904, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bft36"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(1130, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb4ih"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(0, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ssqop"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(226, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjjpq"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(452, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqx4d"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(678, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_acq5o"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(904, 0, 226, 226)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2p7y"]
+atlas = ExtResource("3_ep8hx")
+region = Rect2(1130, 0, 226, 226)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b41ae"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rop65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0c5tt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bx3ln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ku8lu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xpcm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bft36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yb4ih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ssqop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjjpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqx4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_acq5o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t2p7y")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Story introduction page" type="Node2D"]
+script = ExtResource("1_1hkp3")
+
+[node name="HospitalBackground" type="Sprite2D" parent="."]
+modulate = Color(0.576471, 0.576471, 0.576471, 0.788235)
+position = Vector2(512.75, 330)
+scale = Vector2(0.838446, 0.646161)
+texture = ExtResource("1_n1waw")
+
+[node name="Arrythmia logo animation" type="AnimatedSprite2D" parent="."]
+position = Vector2(245, 233)
+scale = Vector2(0.82806, 0.7122)
+sprite_frames = SubResource("SpriteFrames_1ot0l")
+animation = &"Idle"
+frame_progress = 0.363212
+
+[node name="Player" type="AnimatedSprite2D" parent="."]
+position = Vector2(202, 457)
+scale = Vector2(3.14602, 2.62832)
+sprite_frames = SubResource("SpriteFrames_b41ae")
+animation = &"Idle"
+frame_progress = 0.358771
+
+[node name="Description text" type="RichTextLabel" parent="."]
+offset_left = 483.0
+offset_top = 38.0
+offset_right = 1041.0
+offset_bottom = 381.0
+theme_override_font_sizes/normal_font_size = 35
+bbcode_enabled = true
+text = "[center]You've awoken in a mysterious hospital. Explore the hospital floors and defeat many strange enemies along the way to your escape. 
+Can you survive a night of Arrythmia?"
+
+[node name="Continue button" type="Button" parent="."]
+offset_left = 602.0
+offset_top = 495.0
+offset_right = 900.0
+offset_bottom = 613.0
+theme_override_font_sizes/font_size = 40
+text = "Continue"
+
+[connection signal="button_down" from="Continue button" to="." method="_on_continue_button_button_down"]
