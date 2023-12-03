@@ -5,11 +5,11 @@ Arrhythmia is a horror-themed rhythm game that combines exploration and musical 
 To install and play Arrhythmia go to our latest releases page on our GitHub (or simply click this link:https://github.com/Santiagom15/CS-370/releases/tag/v0.0.1-alpha). Under assets, you will find two executables for Windows and Mac. Download the appropriate version of the game for your computer, run the file, and have fun.
 
 # Contributers
-[Santiago Martinez](https://github.com/Santiagom15)
-[Allison Ng](https://github.com/ngxallison)
-[Alisa Star](https://github.com/starralisa)
-[Aisha Sajo](https://github.com/asajo12)
-[Labdhi Mehta](https://github.com/labdhimehta)
-[Isha Dahiya]()
+- [Santiago Martinez](https://github.com/Santiagom15)
+- [Allison Ng](https://github.com/ngxallison)
+- [Alisa Star](https://github.com/starralisa)
+- [Aisha Sajo](https://github.com/asajo12)
+- [Labdhi Mehta](https://github.com/labdhimehta)
+- [Isha Dahiya]()
 
 
