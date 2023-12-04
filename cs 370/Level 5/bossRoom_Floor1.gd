@@ -29,5 +29,3 @@ func _on_death_timer_timeout():
 	leftwall.set_deferred("disabled", true)
 	rightwall.set_deferred("disabled", true)
 	bottom.set_deferred("disabled", true)
-	#inventory.set_boss_battle_status(false)
-	#get_tree().change_scene_to_file("res://BossBattleLoseScene.tscn")

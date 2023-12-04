@@ -86,13 +86,6 @@ animations = [{
 [node name="BossbattleSanti2" type="CharacterBody2D"]
 script = ExtResource("1_n3td2")
 
-[node name="debug" type="Label" parent="."]
-visible = false
-offset_left = -97.0
-offset_top = -72.0
-offset_right = 61.0
-offset_bottom = -41.0
-
 [node name="RayCast2D" type="RayCast2D" parent="."]
 
 [node name="FiniteState" type="Node2D" parent="."]

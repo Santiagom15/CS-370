@@ -63977,35 +63977,35 @@ size = Vector2(59, 7)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x08dl"]
 size = Vector2(59, 7)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_v8bqo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_177hc"]
 atlas = ExtResource("26_eu261")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cgrh4"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5u07"]
 atlas = ExtResource("26_eu261")
 region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bnapw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_js3fv"]
 atlas = ExtResource("26_eu261")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xd23m"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0ujc"]
 atlas = ExtResource("26_eu261")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kf81k"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mhaee"]
 atlas = ExtResource("26_eu261")
 region = Rect2(128, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gmp0u"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8uua"]
 atlas = ExtResource("26_eu261")
 region = Rect2(160, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8ywgk"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b1vw"]
 atlas = ExtResource("26_eu261")
 region = Rect2(192, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_q3bna"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1g6x"]
 atlas = ExtResource("26_eu261")
 region = Rect2(224, 0, 32, 32)
 
@@ -64013,28 +64013,28 @@ region = Rect2(224, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_v8bqo")
+"texture": SubResource("AtlasTexture_177hc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cgrh4")
+"texture": SubResource("AtlasTexture_m5u07")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bnapw")
+"texture": SubResource("AtlasTexture_js3fv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xd23m")
+"texture": SubResource("AtlasTexture_u0ujc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kf81k")
+"texture": SubResource("AtlasTexture_mhaee")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gmp0u")
+"texture": SubResource("AtlasTexture_e8uua")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8ywgk")
+"texture": SubResource("AtlasTexture_5b1vw")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_q3bna")
+"texture": SubResource("AtlasTexture_c1g6x")
 }],
 "loop": false,
 "name": &"SlideOpen",
@@ -64377,6 +64377,102 @@ size = Vector2(248, 109)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hrxam"]
 size = Vector2(246, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcvg8"]
+size = Vector2(154, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_856oc"]
+size = Vector2(105.5, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jb6pp"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a18w3"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecty4"]
+size = Vector2(154, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ixbn"]
+size = Vector2(105.5, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ei1ol"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bylhy"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u4n5"]
+size = Vector2(174, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rj3tj"]
+size = Vector2(154.875, 204)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awjkv"]
+size = Vector2(160, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuc5o"]
+size = Vector2(156, 34)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urwkt"]
+size = Vector2(118, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqxj5"]
+size = Vector2(82, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3sld"]
+size = Vector2(52, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3i8u"]
+size = Vector2(12, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwlwr"]
+size = Vector2(174, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg2eu"]
+size = Vector2(118, 193)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ibfs"]
+size = Vector2(122, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oy8l"]
+size = Vector2(138, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lqyg"]
+size = Vector2(133, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjs67"]
+size = Vector2(126.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wqd7e"]
+size = Vector2(102.75, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6j0a"]
+size = Vector2(90, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxvug"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbnk2"]
+size = Vector2(53.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm3aa"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vuxav"]
+size = Vector2(11.75, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54wqa"]
+size = Vector2(276, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8l43d"]
+size = Vector2(245, 139.375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgqmf"]
+size = Vector2(248, 104.125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqypt"]
+size = Vector2(246, 40)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_412cn"]
 texture = ExtResource("1_mqcgy")
@@ -68154,102 +68250,6 @@ texture = ExtResource("1_mqcgy")
 [sub_resource type="TileSet" id="TileSet_uv57d"]
 sources/0 = SubResource("TileSetAtlasSource_412cn")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcvg8"]
-size = Vector2(154, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_856oc"]
-size = Vector2(105.5, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jb6pp"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a18w3"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecty4"]
-size = Vector2(154, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ixbn"]
-size = Vector2(105.5, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ei1ol"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bylhy"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u4n5"]
-size = Vector2(174, 54)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rj3tj"]
-size = Vector2(154.875, 204)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_awjkv"]
-size = Vector2(160, 100)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuc5o"]
-size = Vector2(156, 34)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_urwkt"]
-size = Vector2(118, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqxj5"]
-size = Vector2(82, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3sld"]
-size = Vector2(52, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3i8u"]
-size = Vector2(12, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwlwr"]
-size = Vector2(174, 44)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg2eu"]
-size = Vector2(118, 193)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ibfs"]
-size = Vector2(122, 65)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oy8l"]
-size = Vector2(138, 31)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lqyg"]
-size = Vector2(133, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjs67"]
-size = Vector2(126.5, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wqd7e"]
-size = Vector2(102.75, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6j0a"]
-size = Vector2(90, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxvug"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbnk2"]
-size = Vector2(53.5, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm3aa"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vuxav"]
-size = Vector2(11.75, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_54wqa"]
-size = Vector2(276, 54)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8l43d"]
-size = Vector2(245, 139.375)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgqmf"]
-size = Vector2(248, 104.125)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqypt"]
-size = Vector2(246, 40)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oewjx"]
 size = Vector2(72.5833, 21.0861)
 
@@ -69327,12 +69327,6 @@ metadata/_edit_use_anchors_ = true
 visible = false
 position = Vector2(-570, -314)
 
-[node name="Doorway" type="TileMap" parent="."]
-scale = Vector2(3, 3.013)
-tile_set = SubResource("TileSet_uv57d")
-format = 2
-layer_0/tile_data = PackedInt32Array(1179658, 2162688, 2, 1114122, 2162688, 2, 1048586, 2162688, 2, 1179664, 2293760, 2, 1114128, 2293760, 2, 1048592, 2293760, 2, 458768, 2293760, 2, 524304, 2293760, 2, 589840, 2293760, 2, 393226, 2162688, 2, 458762, 2162688, 2, 524298, 2162688, 2, -131056, 2293760, 2, -65520, 2293760, 2, 16, 2293760, 2, 2097168, 2162688, 2, 2162704, 2162688, 2, 2228240, 2162688, 2, 2031668, 2162688, 2, 2097204, 2162688, 2, 2162740, 2162688, 2, 1114161, 1966080, 1, 1114165, 1900544, 1, 1114162, 2228224, 1, 1114163, 2228224, 1, 1114164, 2228224, 1, 1769500, 1966080, 1, 1769504, 1900544, 1, 1769503, 2228224, 1, 1769502, 2228224, 1, 1769501, 2228224, 1, 1769490, 2228224, 1, 1769491, 2228224, 1, 1769492, 2228224, 1, 1769493, 1900544, 1, 1769489, 1966080, 1, 2424839, 1966080, 1, 2424840, 2228224, 1, 2424841, 1900544, 1, 2293779, 1900544, 1, 2293778, 1966080, 1, 2293787, 1966080, 1, 2293788, 1900544, 1, 2293796, 1966080, 1, 2293797, 1900544, 1, 2293806, 1900544, 1, 2293805, 1966080, 1, 2818101, 2686976, 1, 2818102, 2949120, 1, 2818103, 2621440, 1)
-
 [node name="Animated door horizontal and sliding nodes" type="Node2D" parent="."]
 
 [node name="Animated door horizontal wider 0" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
@@ -69812,6 +69806,7 @@ debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 [node name="Animated glass sliding door 1" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
 position = Vector2(524, 1)
 script = ExtResource("26_xyf23")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1"]
 position = Vector2(940, 1374.37)
@@ -69931,6 +69926,12 @@ debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
 position = Vector2(941, 1435)
 shape = SubResource("RectangleShape2D_oqypt")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
+
+[node name="Doorway" type="TileMap" parent="."]
+scale = Vector2(3, 3.013)
+tile_set = SubResource("TileSet_uv57d")
+format = 2
+layer_0/tile_data = PackedInt32Array(1179658, 2162688, 2, 1114122, 2162688, 2, 1048586, 2162688, 2, 1179664, 2293760, 2, 1114128, 2293760, 2, 1048592, 2293760, 2, 458768, 2293760, 2, 524304, 2293760, 2, 589840, 2293760, 2, 393226, 2162688, 2, 458762, 2162688, 2, 524298, 2162688, 2, -131056, 2293760, 2, -65520, 2293760, 2, 16, 2293760, 2, 2097168, 2162688, 2, 2162704, 2162688, 2, 2228240, 2162688, 2, 2031668, 2162688, 2, 2097204, 2162688, 2, 2162740, 2162688, 2, 1114161, 1966080, 1, 1114165, 1900544, 1, 1114162, 2228224, 1, 1114163, 2228224, 1, 1114164, 2228224, 1, 1769500, 1966080, 1, 1769504, 1900544, 1, 1769503, 2228224, 1, 1769502, 2228224, 1, 1769501, 2228224, 1, 1769490, 2228224, 1, 1769491, 2228224, 1, 1769492, 2228224, 1, 1769493, 1900544, 1, 1769489, 1966080, 1, 2424839, 1966080, 1, 2424840, 2228224, 1, 2424841, 1900544, 1, 2293779, 1900544, 1, 2293778, 1966080, 1, 2293787, 1966080, 1, 2293788, 1900544, 1, 2293796, 1966080, 1, 2293797, 1900544, 1, 2293806, 1900544, 1, 2293805, 1966080, 1, 2818101, 2686976, 1, 2818102, 2949120, 1, 2818103, 2621440, 1)
 
 [node name="Floor 5 to Boss" type="CharacterBody2D" parent="."]
 script = ExtResource("46_72ot2")

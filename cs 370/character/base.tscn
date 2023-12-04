@@ -439,6 +439,7 @@ script = ExtResource("5_vqr6i")
 [node name="press" type="Node2D" parent="Camera2D"]
 
 [node name="Heart" type="AnimatedSprite2D" parent="Camera2D/press"]
+visible = false
 position = Vector2(-503, 255)
 scale = Vector2(7.54412, 7.33823)
 sprite_frames = SubResource("SpriteFrames_wbl4x")
@@ -449,14 +450,6 @@ frame_progress = 0.0978615
 process_callback = 0
 wait_time = 0.5
 autostart = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-custom_minimum_size = Vector2(20000, 20000)
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(0.00392157, 0.0941176, 0.168627, 0.345098)
 
 [connection signal="frame_changed" from="Camera2D/press/Heart" to="." method="_on_heart_frame_changed"]
 [connection signal="timeout" from="Camera2D/press/Timer" to="." method="_on_timer_timeout"]

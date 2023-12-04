@@ -1,9 +1,8 @@
-[gd_scene load_steps=52 format=3 uid="uid://b26cbygyls8na"]
+[gd_scene load_steps=51 format=3 uid="uid://b26cbygyls8na"]
 
 [ext_resource type="Texture2D" uid="uid://cgxvwm7nsmtns" path="res://assets/Solaria Demo Update 01.png" id="1_wg576"]
 [ext_resource type="Script" path="res://Level 5/bossRoom_Floor1.gd" id="1_xtj6b"]
 [ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="2_y74dr"]
-[ext_resource type="Script" path="res://character/PlayerButtons.gd" id="3_c36xr"]
 [ext_resource type="PackedScene" uid="uid://c0ugxeq3qvt1l" path="res://Level 2/boss_abttle.tscn" id="3_xc7mn"]
 [ext_resource type="Script" path="res://Level 5/Boss to Floor 1.gd" id="4_2em1r"]
 [ext_resource type="Texture2D" uid="uid://b8dndk4bcn8ic" path="res://HealthBar/HealthBar0.5.png" id="5_0hrke"]
@@ -49069,26 +49068,6 @@ sprite_frames = SubResource("SpriteFrames_8jm02")
 animation = &"0"
 autoplay = "3"
 
-[node name="Buttons" type="Node2D" parent="."]
-position = Vector2(510.244, -190.141)
-script = ExtResource("3_c36xr")
-
-[node name="Home" type="Button" parent="Buttons"]
-offset_left = 900.0
-offset_top = 31.0
-offset_right = 1087.0
-offset_bottom = 111.0
-text = "Level Menu"
-metadata/_edit_use_anchors_ = true
-
-[node name="Inventory" type="Button" parent="Buttons"]
-offset_left = 903.9
-offset_top = 151.839
-offset_right = 1088.9
-offset_bottom = 234.839
-text = "Inventory"
-metadata/_edit_use_anchors_ = true
-
 [node name="player" parent="." instance=ExtResource("2_y74dr")]
 position = Vector2(585.683, 671.648)
 metadata/_edit_group_ = true
@@ -49133,7 +49112,5 @@ wait_time = 73.3
 one_shot = true
 autostart = true
 
-[connection signal="button_down" from="Buttons/Home" to="Buttons" method="_on_home_button_down"]
-[connection signal="button_down" from="Buttons/Inventory" to="Buttons" method="_on_inventory_button_down"]
 [connection signal="body_entered" from="Boss to Floor 1/Player Detection" to="Boss to Floor 1" method="_on_player_detection_body_entered"]
 [connection signal="timeout" from="deathTimer" to="." method="_on_death_timer_timeout"]

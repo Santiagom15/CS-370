@@ -3,7 +3,6 @@ class_name State1
 
 #Abstract class
 @onready var ray_cast = owner.find_child("RayCast2D")
-@onready var debug = owner.find_child("debug")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -20,4 +19,3 @@ func transition():
 	
 func _physics_process(_delta):
 	transition()
-	debug.text = name

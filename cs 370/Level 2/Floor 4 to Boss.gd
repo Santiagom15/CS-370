@@ -13,4 +13,4 @@ func _ready():
 func _on_player_detection_body_entered(body):
 	if body.name == "Player":
 		inventory.update_player_position(Vector2(259, 1672))
-		get_tree().change_scene_to_file("res://bossbattle2/bossbattle2.tscn")
+		get_tree().change_scene_to_file("res://Level 2/bossRoom_Floor 4.tscn")

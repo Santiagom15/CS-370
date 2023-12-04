@@ -1,4 +1,4 @@
-[gd_scene load_steps=595 format=3 uid="uid://cnjgs5qf15yk1"]
+[gd_scene load_steps=594 format=3 uid="uid://cnjgs5qf15yk1"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_hduej"]
 [ext_resource type="Script" path="res://Level 2/Level data level2.gd" id="1_tbxpt"]
@@ -11,15 +11,15 @@
 [ext_resource type="Script" path="res://Inventory/Initial info.gd" id="8_0gg5n"]
 [ext_resource type="Texture2D" uid="uid://bc7yomw0w3532" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_sink_new_2_3-10 loop.png" id="8_3bsre"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="8_nnol0"]
-[ext_resource type="Texture2D" uid="uid://crxc402nu2akv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_control_room_facebook_scrolling.PNG" id="9_cbluv"]
+[ext_resource type="Texture2D" uid="uid://crxc402nu2akv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_control_room_facebook_scrolling.png" id="9_cbluv"]
 [ext_resource type="Script" path="res://Level 2/NPC interaction.gd" id="9_gmmtw"]
 [ext_resource type="Texture2D" uid="uid://36ft47es1epo" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/speech_bubble_box_edittedAlisa.png" id="9_nwh1a"]
 [ext_resource type="Script" path="res://Level 2/Floor 4 to Boss.gd" id="9_yofu8"]
 [ext_resource type="Texture2D" uid="uid://ndktihjqojtc" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_idle_edittedAlisa_blink.png" id="10_0omn8"]
 [ext_resource type="Script" path="res://Level 2/NPC interaction Bathroom.gd" id="10_7cwh1"]
-[ext_resource type="Texture2D" uid="uid://drwktpy78de3r" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_control_room_server.PNG" id="10_h8dl2"]
+[ext_resource type="Texture2D" uid="uid://drwktpy78de3r" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_control_room_server.png" id="10_h8dl2"]
 [ext_resource type="Texture2D" uid="uid://wvop8bvvwff0" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle_edittedAlisa_blink.png" id="10_pwum8"]
-[ext_resource type="Texture2D" uid="uid://76whjosdmek3" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_control_room_screens.PNG" id="11_1himi"]
+[ext_resource type="Texture2D" uid="uid://76whjosdmek3" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_control_room_screens.png" id="11_1himi"]
 [ext_resource type="Script" path="res://Level 2/NPC interaction Office.gd" id="11_24bi3"]
 [ext_resource type="Texture2D" uid="uid://5hvj80c35unr" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_2_idle_edittedAlisa_blink.png" id="11_jg4kl"]
 [ext_resource type="Texture2D" uid="uid://0s4xprpcpi14" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_idle.png" id="11_n7ncu"]
@@ -49,7 +49,6 @@
 [ext_resource type="Texture2D" uid="uid://46c5w48i6nhv" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_coffee.png" id="22_giawu"]
 [ext_resource type="Texture2D" uid="uid://hpkhmvmo11mx" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/Money_edittedAlisa_idle.png" id="22_m50ag"]
 [ext_resource type="Texture2D" uid="uid://djae2nnvxq1ww" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/19_Hospital_flower_edittedAlisa_idle.png" id="22_q4lnm"]
-[ext_resource type="PackedScene" uid="uid://beeb46oe8nkn2" path="res://Inventory/collectible_item_coffee.tscn" id="27_ndy2v"]
 [ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="28_ecyy1"]
 [ext_resource type="PackedScene" uid="uid://dbsb25h8g4mlo" path="res://Inventory/collectible_item_boltcutter.tscn" id="38_bsaet"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door Need Item.gd" id="39_naqn7"]
@@ -94957,9 +94956,6 @@ metadata/_edit_group_ = true
 [node name="Collectible item money 0" parent="Collectible items" instance=ExtResource("21_44lul")]
 position = Vector2(2738, 2740)
 
-[node name="Collectible item coffee 0" parent="Collectible items" instance=ExtResource("27_ndy2v")]
-position = Vector2(168, 1494)
-
 [node name="Collectible item boltcutter 0" parent="Collectible items" instance=ExtResource("38_bsaet")]
 position = Vector2(3054, 1571)
 metadata/_edit_group_ = true
@@ -94999,7 +94995,7 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("11_ox552")]
-position = Vector2(2303, 3049)
+position = Vector2(361, 1554)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -95858,6 +95854,12 @@ script = ExtResource("9_yofu8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 4 to Boss/PlayerDetection"]
 position = Vector2(268.812, 1886)
 shape = SubResource("RectangleShape2D_46vu2")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Collectible item boltcutter 1" parent="Node2D" instance=ExtResource("38_bsaet")]
+position = Vector2(157, 1533)
+metadata/_edit_group_ = true
 
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]
