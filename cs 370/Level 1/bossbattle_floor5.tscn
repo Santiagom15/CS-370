@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://df1f4wch2uy0c"]
+[gd_scene load_steps=80 format=3 uid="uid://df1f4wch2uy0c"]
 
 [ext_resource type="PackedScene" uid="uid://rhgf2vjoui6j" path="res://Level 1/boss.tscn" id="1_1sf1f"]
 [ext_resource type="Script" path="res://Level 1/bossbattle_floor5.gd" id="1_tomha"]
@@ -9,7 +9,6 @@
 [ext_resource type="Script" path="res://Level 1/Boss battle floor 5 level elements.gd" id="5_m8arg"]
 [ext_resource type="Texture2D" uid="uid://c4psf6kv0mxg5" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/11_Halloween_16x16.png" id="5_swwfx"]
 [ext_resource type="Texture2D" uid="uid://b7nlr4nalr1ko" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/18_Jail_16x16.png" id="6_b0xwd"]
-[ext_resource type="AudioStream" uid="uid://b877gjg3cn5hh" path="res://Music/bossbattlemusic1 (1).mp3" id="8_7cap3"]
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="9_2t6jl"]
 [ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="11_1tntx"]
 [ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="12_5372v"]
@@ -21463,7 +21462,6 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-458746, 524288, 0, -393210, 524288, 0, -327674, 524288, 0, -262138, 524288, 0, -196602, 524288, 0, -131066, 524288, 0, -65530, 524288, 0, 6, 524288, 0, 65542, 524288, 0, 131078, 524288, 0, 196614, 524288, 0, 262150, 524288, 0, 327686, 524288, 0, 393222, 524288, 0, 589830, 524288, 0, -458750, 524288, 0, -393214, 524288, 0, -327678, 524288, 0, -262142, 524288, 0, -196606, 524288, 0, -131070, 524288, 0, -65534, 524288, 0, 2, 524288, 0, 65538, 524288, 0, 131074, 524288, 0, 196610, 524288, 0, 262146, 524288, 0, 327682, 524288, 0, 393218, 524288, 0, 589826, 524288, 0)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_7cap3")
 autoplay = true
 script = ExtResource("9_2t6jl")
 
