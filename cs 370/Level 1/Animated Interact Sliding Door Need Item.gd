@@ -52,6 +52,7 @@ var lockIdx : int
 @onready var animRattle = $AnimatedDoorRattle
 @onready var animLockOpen = $AnimatedLockOpen
 @onready var animBoltCut = $AnimatedBoltCutterOpen
+@onready var animBoltCutNeed = $AnimatedBoltCutter
 
 
 # As soon as scene loads, disable the collision shapes for when door is open 
@@ -64,12 +65,15 @@ func _ready():
 	animRattle.set_frame(0)
 	animLockOpen.set_frame(0)
 	animBoltCut.set_frame(0)
+	animBoltCutNeed.set_frame(0)
 	
 	animLock.show()
 	anim.hide()
 	animRattle.show()
 	animLockOpen.hide()
 	animBoltCut.hide()
+	animBoltCutNeed.hide()
+	animBoltCutNeed.z_index = 1
 	
 	levelRoot.lockDisabled.connect(_on_lock_disabled)
 
@@ -98,6 +102,7 @@ func _process(delta):
 				animRattle.hide()
 				animLockOpen.show()
 				animBoltCut.show()
+				animBoltCutNeed.hide()
 				
 				animLockOpen.play("LockOpen")
 				animBoltCut.play("BoltCutter")
@@ -123,11 +128,14 @@ func _process(delta):
 			animRattle.show()
 			animLock.play("Bolt")
 			animRattle.play("DoorRattle")
+			animBoltCutNeed.show()
+			animBoltCutNeed.play("BoltCutter")
 
 
 func _on_animated_lock_open_animation_finished():
 	animLockOpen.hide()
 	animBoltCut.hide()
+	animBoltCutNeed.hide()
 	
 	play_close = true
 		
@@ -140,6 +148,10 @@ func _on_animated_lock_open_animation_finished():
 		anim.set_frame(curr_frame)
 
 
+func _on_animated_bolt_cutter_animation_finished():
+	animBoltCutNeed.hide()
+
+
 func _on_lock_disabled(lockIdx):
 	# It is assumed that locked door node names will end in a int > 0 to identify/distinguish all locked doors in a scene
 	if lockIdx == "Door" + doorName[-1]:
@@ -147,6 +159,7 @@ func _on_lock_disabled(lockIdx):
 		animLock.hide()
 		anim.show()
 		animRattle.hide()
+		animBoltCutNeed.hide()
 
 
 # GoDot note: this signal function is called when a frame in the animation has changed to the next frame

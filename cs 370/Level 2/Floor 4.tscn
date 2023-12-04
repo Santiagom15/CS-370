@@ -1,4 +1,4 @@
-[gd_scene load_steps=595 format=3 uid="uid://cnjgs5qf15yk1"]
+[gd_scene load_steps=601 format=3 uid="uid://cnjgs5qf15yk1"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_hduej"]
 [ext_resource type="Script" path="res://Level 2/Level data level2.gd" id="1_tbxpt"]
@@ -89744,6 +89744,67 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_pn72m"]
+atlas = ExtResource("44_gcu0l")
+region = Rect2(0, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rstkk"]
+atlas = ExtResource("44_gcu0l")
+region = Rect2(49, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0k7q"]
+atlas = ExtResource("44_gcu0l")
+region = Rect2(98, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sl26o"]
+atlas = ExtResource("44_gcu0l")
+region = Rect2(147, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mioc"]
+atlas = ExtResource("44_gcu0l")
+region = Rect2(196, 0, 49, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fvwln"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn72m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rstkk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0k7q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sl26o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mioc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn72m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rstkk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0k7q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sl26o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn72m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rstkk")
+}],
+"loop": false,
+"name": &"BoltCutter",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i1x4o"]
 size = Vector2(133, 13)
 
@@ -94998,7 +95059,7 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("11_ox552")]
-position = Vector2(2311, 3025)
+position = Vector2(274, 1496)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -95071,6 +95132,12 @@ position = Vector2(910, 1390)
 rotation = 0.218166
 scale = Vector2(1.70153, 3.125)
 sprite_frames = SubResource("SpriteFrames_mu1ix")
+animation = &"BoltCutter"
+
+[node name="AnimatedBoltCutter" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+position = Vector2(954, 1319)
+scale = Vector2(2.74362, 3.67188)
+sprite_frames = SubResource("SpriteFrames_fvwln")
 animation = &"BoltCutter"
 
 [node name="CollDoor1" type="CharacterBody2D" parent="Locked interactable objects/Animated glass sliding door 1"]
@@ -95850,16 +95917,18 @@ position = Vector2(4418, 2036)
 shape = SubResource("RectangleShape2D_0vrvx")
 
 [node name="Floor 4 to Boss" type="CharacterBody2D" parent="."]
+position = Vector2(0, 24)
 script = ExtResource("9_yofu8")
 
 [node name="PlayerDetection" type="Area2D" parent="Floor 4 to Boss"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 4 to Boss/PlayerDetection"]
-position = Vector2(267, 1847)
+position = Vector2(265, 1846)
 shape = SubResource("RectangleShape2D_46vu2")
 
 [node name="Speech" type="Node2D" parent="Floor 4 to Boss"]
-position = Vector2(-3647, 222)
+position = Vector2(-3475, 206)
+metadata/_edit_group_ = true
 
 [node name="Speech bubble" type="TextureRect" parent="Floor 4 to Boss/Speech"]
 offset_left = 3655.0
@@ -95882,7 +95951,7 @@ text = "[center] You're entering a boss battle room. Avoid the the boss's attack
 metadata/_edit_use_anchors_ = true
 
 [node name="Block player" type="CollisionShape2D" parent="Floor 4 to Boss"]
-position = Vector2(269, 1853)
+position = Vector2(269, 1836)
 shape = SubResource("RectangleShape2D_05gtt")
 
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
@@ -95943,6 +96012,7 @@ shape = SubResource("RectangleShape2D_05gtt")
 [connection signal="button_down" from="Player/Buttons/Instructions" to="Player/Buttons" method="_on_instructions_button_down"]
 [connection signal="frame_changed" from="Locked interactable objects/Animated glass sliding door 1/AnimatedSlideDoor" to="Locked interactable objects/Animated glass sliding door 1" method="_on_animated_slide_door_frame_changed"]
 [connection signal="animation_finished" from="Locked interactable objects/Animated glass sliding door 1/AnimatedLockOpen" to="Locked interactable objects/Animated glass sliding door 1" method="_on_animated_lock_open_animation_finished"]
+[connection signal="animation_finished" from="Locked interactable objects/Animated glass sliding door 1/AnimatedBoltCutter" to="Locked interactable objects/Animated glass sliding door 1" method="_on_animated_bolt_cutter_animation_finished"]
 [connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionLayering" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionLayering" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDetectionLayering_body_exited"]
 [connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectAnimCloseTop" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDetectAnimCloseTop_body_entered"]

@@ -165,7 +165,6 @@ func _on_animated_key_frame_changed():
 		if animKey.get_frame() == total_num_key_frames-1:
 			animKey.hide()
 			animKey.modulate.a = 1
-			#has_key = true
 
 
 # Update door state when player enters the left detection shape

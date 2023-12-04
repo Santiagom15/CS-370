@@ -13,7 +13,7 @@ var healtharr = [3, 2.5, 2, 1.5, 1, 0.5, 0]# Called when the node enters the sce
 @onready var inventory = get_node("/root/Inventory")
 signal itemDisabled(itemIdx)
 # Item to be collected to open the door once the boss is beaten
-@onready var collectibleItem = get_node("Locked interactable objects").get_node("Collectible item candle 0")
+@onready var collectibleItem = get_node("Locked interactable objects").get_node("Collectible item key 0")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -9,8 +9,8 @@
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="4_x6qsl"]
 [ext_resource type="Script" path="res://bossbattle2/Boss battle floor 2 level elements.gd" id="8_iemda"]
 [ext_resource type="Script" path="res://bossbattle2/Exit boss 3 to level 3.gd" id="9_owdsy"]
+[ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="10_0n15a"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="11_5h3ol"]
-[ext_resource type="PackedScene" uid="uid://dnu6a2albhgs2" path="res://Inventory/collectible_item_candle.tscn" id="12_1kn21"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="12_2hxgg"]
 [ext_resource type="Texture2D" uid="uid://b7nlr4nalr1ko" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/18_Jail_16x16.png" id="16_e5k8o"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="17_1ygbm"]
@@ -17617,9 +17617,8 @@ position = Vector2(269.75, -62.4375)
 shape = SubResource("RectangleShape2D_ryp4j")
 debug_color = Color(0.505882, 0.568627, 0.337255, 0.419608)
 
-[node name="Collectible item candle 0" parent="Locked interactable objects" instance=ExtResource("12_1kn21")]
-position = Vector2(-1347, -941)
-metadata/_edit_group_ = true
+[node name="Collectible item key 0" parent="Locked interactable objects" instance=ExtResource("10_0n15a")]
+position = Vector2(-1369, -914)
 
 [node name="Animated glass sliding door 0" type="CharacterBody2D" parent="Locked interactable objects"]
 position = Vector2(-674, -1358)

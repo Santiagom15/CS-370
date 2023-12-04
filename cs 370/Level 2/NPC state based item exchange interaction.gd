@@ -35,7 +35,6 @@ var text_progress = 0
 # Detection collision shape for detecting player for collecting the wanted item
 @onready var node_item_give = "Collectible item " + item_give.to_lower() + " 0"
 @onready var detectItem = get_parent().get_parent().get_node("Collectible items").get_node(node_item_give).get_child(0).get_node("PlayerDetectionItem").get_child(0)
-@onready var detectItem1 = get_parent().get_parent().get_node("Collectible items").get_node(node_item_give).get_child(0).get_node("PlayerDetectionItem")
 
 # The dialogue options based on the specific NPC interaction
 var descriptions: Dictionary = {}
