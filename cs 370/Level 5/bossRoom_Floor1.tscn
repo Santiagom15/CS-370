@@ -45816,7 +45816,7 @@ position = Vector2(539.048, 990.373)
 shape = SubResource("RectangleShape2D_vpdg4")
 
 [node name="deathTimer" type="Timer" parent="."]
-wait_time = 73.3
+wait_time = 10.0
 one_shot = true
 autostart = true
 

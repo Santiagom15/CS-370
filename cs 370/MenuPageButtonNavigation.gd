@@ -8,8 +8,11 @@ extends Node2D
 # Parent node to all of the idle animations in the scene
 @onready var idleAnims = get_node("Idle animation nodes")
 
-# Instance of the instructions page scene. Toggle visibility when user presses the "Inventory" button
+# Instance of the instructions page scene. Toggle visibility when user presses the "Instructions" button
 @onready var instructionsPage = get_node("Instructions page")
+
+# Retrieve the game wide inventory, used to store data between scenes
+@onready var inventory = get_node("/root/Inventory")
 
 func _ready():
 	# Turn off the visibility on the debug level buttons so they cannot be easily accessed
@@ -45,8 +48,10 @@ func _on_level_3_button_down():
 func _on_level_5_button_down():
 	get_tree().change_scene_to_file("res://Level 5/Floor 1.tscn")
 
-# Button to change the scene to the inventory page
+# Change the scene to the inventory page when the "Inventory" button is pressed
 func _on_inventory_button_down():
+	var pathname = get_scene_file_path()
+	inventory.set_prev_page(pathname)
 	get_tree().change_scene_to_file("res://Inventory/Inventory.tscn")
 
 # Button to change the scene to the level navigation page
@@ -59,4 +64,5 @@ func _on_play_button_down():
 
 # Button to open the instructions page. Turn on visibility on the instantiation node for the instruction scene
 func _on_instructions_button_down():
+	instructionsPage.z_index = 4
 	instructionsPage.visible = true

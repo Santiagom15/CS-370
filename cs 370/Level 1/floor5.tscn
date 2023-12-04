@@ -1,7 +1,7 @@
-[gd_scene load_steps=467 format=3 uid="uid://bgkfmqsltr2aj"]
+[gd_scene load_steps=468 format=3 uid="uid://bgkfmqsltr2aj"]
 
+[ext_resource type="Script" path="res://Level 1/Level data level1.gd" id="1_a8vt7"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
-[ext_resource type="Script" path="res://LevelData.gd" id="1_nmc80"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
 [ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="3_eevib"]
 [ext_resource type="Texture2D" uid="uid://b0nawqlma58gn" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_butchershop_carcass.png" id="4_nvu84"]
@@ -68251,7 +68251,10 @@ texture = ExtResource("1_mqcgy")
 sources/0 = SubResource("TileSetAtlasSource_412cn")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oewjx"]
-size = Vector2(72.5833, 21.0861)
+size = Vector2(72.5833, 29.4611)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjr1b"]
+size = Vector2(342.5, 27.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2oco"]
 size = Vector2(149, 64)
@@ -68260,7 +68263,7 @@ size = Vector2(149, 64)
 size = Vector2(144, 49)
 
 [node name="Floor 5" type="Node2D"]
-script = ExtResource("1_nmc80")
+script = ExtResource("1_a8vt7")
 
 [node name="Floor" type="TileMap" parent="."]
 scale = Vector2(6, 6)
@@ -68716,7 +68719,6 @@ animation = &"Idle"
 [node name="Animated door vertical nodes" type="Node2D" parent="."]
 
 [node name="Animated door vertical right 0" type="CharacterBody2D" parent="Animated door vertical nodes"]
-visible = false
 position = Vector2(12, 3)
 script = ExtResource("23_2yr2n")
 metadata/_edit_group_ = true
@@ -69033,6 +69035,7 @@ layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 1
 [node name="Initial info" type="Node2D" parent="NPC"]
 position = Vector2(-2067, -3013)
 script = ExtResource("29_0kbd1")
+metadata/_edit_group_ = true
 
 [node name="Speech" type="Node2D" parent="NPC/Initial info"]
 position = Vector2(-1602, 1294)
@@ -69291,7 +69294,7 @@ shape = SubResource("RectangleShape2D_hrxam")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(163, -30)
+position = Vector2(1815, 1186)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -69940,8 +69943,46 @@ script = ExtResource("46_72ot2")
 scale = Vector2(3, 3.013)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 5 to Boss/PlayerDetection"]
-position = Vector2(823.333, 278.792)
+position = Vector2(823.667, 275.346)
 shape = SubResource("RectangleShape2D_oewjx")
+
+[node name="Speech" type="Node2D" parent="Floor 5 to Boss"]
+position = Vector2(-1438, -729)
+
+[node name="Speech bubble" type="TextureRect" parent="Floor 5 to Boss/Speech"]
+offset_left = 3655.0
+offset_top = 1370.0
+offset_right = 4168.0
+offset_bottom = 1808.0
+texture = ExtResource("30_nk7s1")
+flip_h = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Speech text" type="RichTextLabel" parent="Floor 5 to Boss/Speech"]
+offset_left = 3780.0
+offset_top = 1437.0
+offset_right = 4031.0
+offset_bottom = 1640.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center] You're entering a boss battle room. Avoid the the boss's attacks without losing all your lives to be able to collect the item! ▶"
+metadata/_edit_use_anchors_ = true
+
+[node name="Press space text" type="RichTextLabel" parent="Floor 5 to Boss/Speech/Speech text"]
+layout_mode = 0
+offset_left = 181.0
+offset_top = 137.0
+offset_right = 253.0
+offset_bottom = 193.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 12
+text = "Press space to continue"
+metadata/_edit_use_anchors_ = true
+
+[node name="Block player" type="CollisionShape2D" parent="Floor 5 to Boss"]
+position = Vector2(2490, 806)
+shape = SubResource("RectangleShape2D_wjr1b")
 
 [node name="Exit level 1 to level 2" type="CharacterBody2D" parent="."]
 script = ExtResource("44_s8vro")
@@ -70056,5 +70097,6 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door 1" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door 1" method="_on_PlayerDetectionAnimation_body_exited"]
 [connection signal="body_entered" from="Floor 5 to Boss/PlayerDetection" to="Floor 5 to Boss" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="Floor 5 to Boss/PlayerDetection" to="Floor 5 to Boss" method="_on_player_detection_body_exited"]
 [connection signal="body_entered" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_exited"]

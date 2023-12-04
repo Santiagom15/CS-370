@@ -1,4 +1,4 @@
-[gd_scene load_steps=594 format=3 uid="uid://cnjgs5qf15yk1"]
+[gd_scene load_steps=595 format=3 uid="uid://cnjgs5qf15yk1"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_hduej"]
 [ext_resource type="Script" path="res://Level 2/Level data level2.gd" id="1_tbxpt"]
@@ -93850,6 +93850,9 @@ size = Vector2(194.75, 76.75)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_46vu2"]
 size = Vector2(259.625, 76)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05gtt"]
+size = Vector2(342.5, 27.5)
+
 [node name="Floor 4" type="Node2D"]
 script = ExtResource("1_tbxpt")
 
@@ -95852,8 +95855,35 @@ script = ExtResource("9_yofu8")
 [node name="PlayerDetection" type="Area2D" parent="Floor 4 to Boss"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 4 to Boss/PlayerDetection"]
-position = Vector2(268.812, 1886)
+position = Vector2(267, 1847)
 shape = SubResource("RectangleShape2D_46vu2")
+
+[node name="Speech" type="Node2D" parent="Floor 4 to Boss"]
+position = Vector2(-3647, 222)
+
+[node name="Speech bubble" type="TextureRect" parent="Floor 4 to Boss/Speech"]
+offset_left = 3655.0
+offset_top = 1370.0
+offset_right = 4168.0
+offset_bottom = 1808.0
+texture = ExtResource("9_nwh1a")
+flip_h = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Speech text" type="RichTextLabel" parent="Floor 4 to Boss/Speech"]
+offset_left = 3784.0
+offset_top = 1419.0
+offset_right = 4035.0
+offset_bottom = 1622.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center] You're entering a boss battle room. Avoid the the boss's attacks (which will spawn from your body) without losing all your lives to be able to collect the item! ▶"
+metadata/_edit_use_anchors_ = true
+
+[node name="Block player" type="CollisionShape2D" parent="Floor 4 to Boss"]
+position = Vector2(269, 1853)
+shape = SubResource("RectangleShape2D_05gtt")
 
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]

@@ -1,11 +1,10 @@
-[gd_scene load_steps=97 format=3 uid="uid://dtw6fofokn6ui"]
+[gd_scene load_steps=95 format=3 uid="uid://dtw6fofokn6ui"]
 
 [ext_resource type="Script" path="res://Level 2/bossRoom_Floor_4.gd" id="1_ki8jv"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_wehrb"]
 [ext_resource type="Texture2D" uid="uid://bo2twpsc7tthv" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/13_Conference_Hall_16x16.png" id="2_0ur5n"]
 [ext_resource type="PackedScene" uid="uid://dbwyrxq5wypil" path="res://AnotherBoss/bossbattle_santi_2.tscn" id="3_edqkg"]
 [ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="3_rmuu1"]
-[ext_resource type="Script" path="res://Level 2/Boss to Floor 4.gd" id="5_dbsv1"]
 [ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="5_g1gun"]
 [ext_resource type="Texture2D" uid="uid://b8dndk4bcn8ic" path="res://HealthBar/HealthBar0.5.png" id="6_nahaa"]
 [ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="7_arb0p"]
@@ -42824,11 +42823,8 @@ size = Vector2(248, 104.125)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bobgt"]
 size = Vector2(246, 40)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_88j2w"]
-size = Vector2(93.5, 77.5)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yix8f"]
-size = Vector2(132.75, 1168)
+size = Vector2(132.75, 1238)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_16p13"]
 size = Vector2(233.5, 1100.25)
@@ -43115,16 +43111,6 @@ debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 position = Vector2(204, 196)
 metadata/_edit_group_ = true
 
-[node name="Boss to Floor 4" type="CharacterBody2D" parent="."]
-script = ExtResource("5_dbsv1")
-
-[node name="Player Detection" type="Area2D" parent="Boss to Floor 4"]
-position = Vector2(195, 20)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boss to Floor 4/Player Detection"]
-position = Vector2(-102, 40.75)
-shape = SubResource("RectangleShape2D_88j2w")
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_4xv6l")
 autoplay = true
@@ -43136,7 +43122,7 @@ script = ExtResource("16_86rxq")
 position = Vector2(1023.5, 1466)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision shapes/Battle collisions"]
-position = Vector2(-943.875, -781.001)
+position = Vector2(-943.875, -816)
 shape = SubResource("RectangleShape2D_yix8f")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Collision shapes/Battle collisions"]
@@ -43221,7 +43207,7 @@ text = "Click on the boss to start
 "
 
 [node name="deathtimer" type="Timer" parent="."]
-wait_time = 74.0
+wait_time = 10.0
 one_shot = true
 autostart = true
 
@@ -43235,5 +43221,4 @@ autostart = true
 [connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
 [connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectionAnimation" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectionAnimation" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_exited"]
-[connection signal="body_entered" from="Boss to Floor 4/Player Detection" to="Boss to Floor 4" method="_on_player_detection_body_entered"]
 [connection signal="timeout" from="deathtimer" to="." method="_on_deathtimer_timeout"]

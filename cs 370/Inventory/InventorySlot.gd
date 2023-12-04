@@ -21,9 +21,7 @@ var curr_text = ""
 
 var descriptions: Dictionary = {}
 
-
 func _ready():
-	
 	# Define the list of descriptions for all possible collectible items in the game
 	# The appropriate description will be shown when an item in inventory is pressed
 	descriptions["Key"] = "Key unlocks locked doors"

@@ -37,6 +37,7 @@ func _on_timer_timeout():
 
 	collectibleItem.show()
 	inventory.set_boss_battle_status(true)
+	$HealthBar.visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

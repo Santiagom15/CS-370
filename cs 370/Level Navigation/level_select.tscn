@@ -28181,7 +28181,7 @@ position = Vector2(732, -377)
 scale = Vector2(6.21875, 4.125)
 sprite_frames = SubResource("SpriteFrames_idufr")
 animation = &"Idle"
-frame_progress = 0.254746
+frame_progress = 0.903468
 script = ExtResource("2_puo28")
 
 [node name="Elevator number level 3" type="AnimatedSprite2D" parent="Idle animation nodes infront furniture"]

@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b5hugsiudonq3" path="res://bossbattle2/blacktile.png" id="4_qktlm"]
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="4_x6qsl"]
 [ext_resource type="Script" path="res://bossbattle2/Boss battle floor 2 level elements.gd" id="8_iemda"]
-[ext_resource type="Script" path="res://Level 2/Exit boss 2 to level 2.gd" id="9_u8tcf"]
+[ext_resource type="Script" path="res://bossbattle2/Exit boss 3 to level 3.gd" id="9_owdsy"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="11_5h3ol"]
 [ext_resource type="PackedScene" uid="uid://dnu6a2albhgs2" path="res://Inventory/collectible_item_candle.tscn" id="12_1kn21"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="12_2hxgg"]
@@ -17595,7 +17595,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-196608, 2555905, 44, -131073, 2555905, 44, -196607, 2555905, 44, -196606, 2555905, 44, -196605, 2555905, 44, -196604, 2555905, 44, -196610, 2555905, 44, -262146, 2555905, 44, -196603, 2555905, 44, -262139, 2555905, 44, -131074, 2555905, 44, -327675, 2555905, 44, -262152, 2555905, 44, -262153, 2555905, 44, -327674, 2555905, 44, -327673, 2555905, 44, -327672, 2555905, 44, -327671, 2555905, 44, -327670, 2555905, 44, -327669, 2555905, 44, -327668, 2555905, 44, -327667, 2555905, 44, -196616, 2555905, 44, -196617, 2555905, 44, -262138, 2555905, 44, -262137, 2555905, 44, -262136, 2555905, 44, -262135, 2555905, 44, -262134, 2555905, 44, -262132, 2555905, 44, -262131, 2555905, 44, -262133, 2555905, 44)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 60.0
+wait_time = 10.0
 one_shot = true
 autostart = true
 
@@ -17610,7 +17610,7 @@ position = Vector2(-41, 40)
 script = ExtResource("8_iemda")
 
 [node name="Exit boss 2 to level 2" type="Area2D" parent="Locked interactable objects"]
-script = ExtResource("9_u8tcf")
+script = ExtResource("9_owdsy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Exit boss 2 to level 2"]
 position = Vector2(269.75, -62.4375)

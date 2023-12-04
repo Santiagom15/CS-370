@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var inventory = get_node("/root/Inventory")
 
-# Instance of the instructions page scene. Toggle visibility when user presses the "Inventory" button
+# Instance of the instructions page scene. Toggle visibility when user enters the "Insutrctions" doorway/detection shape
 @onready var instructionsPage = get_parent().get_node("Player").get_node("Instructions page")
 
 func _ready():
@@ -25,6 +25,9 @@ func _on_home_page_body_entered(body):
 
 func _on_inventory_page_body_entered(body):
 	if body.name == "Player":
+		# Set the previous scene to the current scene so that we can return here after opening the Inventory scene
+		var pathname = get_parent().get_scene_file_path()
+		inventory.set_prev_page(pathname)
 		get_tree().change_scene_to_file("res://Inventory/Inventory.tscn")
 
 
@@ -54,4 +57,5 @@ func _on_level_4_body_entered(body):
 
 func _on_instructions_body_entered(body):
 	if body.name == "Player":
+		instructionsPage.z_index = 4
 		instructionsPage.visible = true

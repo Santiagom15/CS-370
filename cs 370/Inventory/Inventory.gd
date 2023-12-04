@@ -40,6 +40,8 @@ var bossBattleWinStatus = false
 #	value: an integer >= 0 that represents the state of the interaction
 var interactionStates = {}
 
+# Store the previous page scene. This includes menu page, level navigation, and exploration scenes, but does not include instructions page, start page, or boss battle scenes
+var prevPage = ""
 
 # Function to get the singleton instance
 func _get_instance():
@@ -187,3 +189,13 @@ func clear_level_data():
 	clear_level_unlocks()
 	set_boss_battle_status(false)
 	clear_interactions()
+
+# Set the path of the previous page (will be done on the current to be used by the inventory inorder to return to the correct page)
+func set_prev_page(path):
+	prevPage = path
+	print("-set prevpage: ", prevPage)
+
+# Get the previous page path
+func get_prev_page():
+	print("-get prevpage: ", prevPage)
+	return prevPage

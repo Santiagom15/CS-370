@@ -13,7 +13,7 @@ signal lockDisabled(lockIdx)
 
 # If the player was prematurely moved from current scene, place them where they were previously
 func _ready():
-	inventory.update_current_level("res://Level 1/floor5.tscn")
+	inventory.update_current_level("res://Level 5/Floor 1.tscn")
 	
 	var bossStatus = inventory.get_boss_battle_status()
 	

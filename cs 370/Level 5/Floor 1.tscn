@@ -1,7 +1,7 @@
-[gd_scene load_steps=195 format=3 uid="uid://ct1o7yij42v38"]
+[gd_scene load_steps=196 format=3 uid="uid://ct1o7yij42v38"]
 
+[ext_resource type="Script" path="res://Level 5/Level data level4.gd" id="1_jau0w"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_jxkdu"]
-[ext_resource type="Script" path="res://LevelData.gd" id="1_vngvv"]
 [ext_resource type="Texture2D" uid="uid://cgxvwm7nsmtns" path="res://assets/Solaria Demo Update 01.png" id="2_r72m1"]
 [ext_resource type="Script" path="res://Level 5/Animated Interact Vertical Door Collect All Items.gd" id="8_5q0yo"]
 [ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="9_8eos6"]
@@ -62349,8 +62349,11 @@ sources/0 = SubResource("TileSetAtlasSource_pbgo0")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c7b7j"]
 size = Vector2(40.5, 129)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_psqan"]
+size = Vector2(134.25, 232.75)
+
 [node name="Floor 1" type="Node2D"]
-script = ExtResource("1_vngvv")
+script = ExtResource("1_jau0w")
 
 [node name="Floors" type="TileMap" parent="."]
 scale = Vector2(6, 6)
@@ -62977,6 +62980,33 @@ script = ExtResource("16_6emu4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1 to Boss/PlayerDetection"]
 position = Vector2(2044, 509)
 shape = SubResource("RectangleShape2D_c7b7j")
+
+[node name="Speech" type="Node2D" parent="Floor1 to Boss"]
+position = Vector2(-1841, -1004)
+
+[node name="Speech bubble" type="TextureRect" parent="Floor1 to Boss/Speech"]
+offset_left = 3655.0
+offset_top = 1370.0
+offset_right = 4168.0
+offset_bottom = 1808.0
+texture = ExtResource("17_ujmhk")
+flip_h = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Speech text" type="RichTextLabel" parent="Floor1 to Boss/Speech"]
+offset_left = 3787.0
+offset_top = 1429.0
+offset_right = 4038.0
+offset_bottom = 1632.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 22
+bbcode_enabled = true
+text = "[center] You're entering a boss battle room. Avoid the the boss's attacks without losing all your lives to escape the hospital! ▶"
+metadata/_edit_use_anchors_ = true
+
+[node name="Block player" type="CollisionShape2D" parent="Floor1 to Boss"]
+position = Vector2(1970.88, 524.375)
+shape = SubResource("RectangleShape2D_psqan")
 
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]

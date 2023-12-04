@@ -1,4 +1,4 @@
-[gd_scene load_steps=209 format=3 uid="uid://b7chfudtedjhi"]
+[gd_scene load_steps=210 format=3 uid="uid://b7chfudtedjhi"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_82f1x"]
 [ext_resource type="Script" path="res://Level 3/Level data level3.gd" id="1_ijpn3"]
@@ -61897,6 +61897,9 @@ sources/0 = SubResource("TileSetAtlasSource_4u6ma")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1q3v5"]
 size = Vector2(244.094, 86.6875)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2pei"]
+size = Vector2(342.5, 27.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_doqln"]
 size = Vector2(140.188, 101)
 
@@ -63066,6 +63069,33 @@ script = ExtResource("2_mt760")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 2 to Boss/PlayerDetection"]
 position = Vector2(650.953, 962.344)
 shape = SubResource("RectangleShape2D_1q3v5")
+
+[node name="Speech" type="Node2D" parent="Floor 2 to Boss"]
+position = Vector2(-3264, -668)
+
+[node name="Speech bubble" type="TextureRect" parent="Floor 2 to Boss/Speech"]
+offset_left = 3655.0
+offset_top = 1370.0
+offset_right = 4168.0
+offset_bottom = 1808.0
+texture = ExtResource("17_jy1rq")
+flip_h = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Speech text" type="RichTextLabel" parent="Floor 2 to Boss/Speech"]
+offset_left = 3784.0
+offset_top = 1439.0
+offset_right = 4035.0
+offset_bottom = 1642.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 17
+bbcode_enabled = true
+text = "[center] You're entering a boss battle room. Avoid the the boss's attacks without losing all your lives to be able to collect the item! Watch out for attacks from the boss AND from spikes on the ground!▶"
+metadata/_edit_use_anchors_ = true
+
+[node name="Block player" type="CollisionShape2D" parent="Floor 2 to Boss"]
+position = Vector2(652, 963)
+shape = SubResource("RectangleShape2D_t2pei")
 
 [node name="Floor 2 to Floor 1" type="CharacterBody2D" parent="."]
 script = ExtResource("2_peh34")
