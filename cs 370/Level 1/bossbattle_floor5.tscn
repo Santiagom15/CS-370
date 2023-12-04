@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://df1f4wch2uy0c"]
+[gd_scene load_steps=81 format=3 uid="uid://df1f4wch2uy0c"]
 
 [ext_resource type="PackedScene" uid="uid://rhgf2vjoui6j" path="res://Level 1/boss.tscn" id="1_1sf1f"]
 [ext_resource type="Script" path="res://Level 1/bossbattle_floor5.gd" id="1_tomha"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://vqwfho1vro7k" path="res://HealthBar/HealthBar2.png" id="13_l77iv"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="13_mp3uf"]
 [ext_resource type="Script" path="res://Level 1/Exit boss 1 to level 1.gd" id="14_b7j2q"]
+[ext_resource type="AudioStream" uid="uid://v72v17qk3oe4" path="res://Music/bossbattlemusic1 (1).mp3" id="14_ppeim"]
 [ext_resource type="Texture2D" uid="uid://dgbtrhg18j1qo" path="res://HealthBar/HealthBar3.png" id="14_qg4u7"]
 [ext_resource type="Texture2D" uid="uid://dq2iwl0x4ni6v" path="res://Untitled design (3).png" id="16_udx2s"]
 [ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="18_l4ayp"]
@@ -21462,6 +21463,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-458746, 524288, 0, -393210, 524288, 0, -327674, 524288, 0, -262138, 524288, 0, -196602, 524288, 0, -131066, 524288, 0, -65530, 524288, 0, 6, 524288, 0, 65542, 524288, 0, 131078, 524288, 0, 196614, 524288, 0, 262150, 524288, 0, 327686, 524288, 0, 393222, 524288, 0, 589830, 524288, 0, -458750, 524288, 0, -393214, 524288, 0, -327678, 524288, 0, -262142, 524288, 0, -196606, 524288, 0, -131070, 524288, 0, -65534, 524288, 0, 2, 524288, 0, 65538, 524288, 0, 131074, 524288, 0, 196610, 524288, 0, 262146, 524288, 0, 327682, 524288, 0, 393218, 524288, 0, 589826, 524288, 0)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_ppeim")
 autoplay = true
 script = ExtResource("9_2t6jl")
 
@@ -21524,7 +21526,7 @@ scale = Vector2(0.999999, 1)
 shape = SubResource("RectangleShape2D_erots")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 22.142
+wait_time = 92.0
 one_shot = true
 autostart = true
 
