@@ -74,8 +74,6 @@ func _process(delta):
 		
 		# Case whenplayer has collected all items in level 1 exploration portion
 		var items_collected = inventory.get_level_items()
-		print("-items collect: ", items_collected)
-		print("-items collected count: ", items_collected.size())
 		if items_collected.size() >= 39|| unlocked == true:
 		
 			# If the player still has the key, remove it from inventory and use it here

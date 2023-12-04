@@ -69291,7 +69291,7 @@ shape = SubResource("RectangleShape2D_hrxam")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(1917, 1198)
+position = Vector2(163, -30)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]

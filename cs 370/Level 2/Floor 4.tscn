@@ -94995,7 +94995,7 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("11_ox552")]
-position = Vector2(361, 1554)
+position = Vector2(2311, 3025)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -95854,12 +95854,6 @@ script = ExtResource("9_yofu8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 4 to Boss/PlayerDetection"]
 position = Vector2(268.812, 1886)
 shape = SubResource("RectangleShape2D_46vu2")
-
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="Collectible item boltcutter 1" parent="Node2D" instance=ExtResource("38_bsaet")]
-position = Vector2(157, 1533)
-metadata/_edit_group_ = true
 
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]

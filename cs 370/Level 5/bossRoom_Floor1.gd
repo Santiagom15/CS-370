@@ -20,12 +20,12 @@ func _process(_delta):
 func _on_death_timer_timeout():
 	$bossBattle2.queue_free()
 	
-	
-	var walls = get_node("walls")
-	var leftwall = walls.get_node("leftWall")
-	var rightwall = walls.get_node("rightWall")
-	var bottom = walls.get_node("bottom")
-	
-	leftwall.set_deferred("disabled", true)
-	rightwall.set_deferred("disabled", true)
-	bottom.set_deferred("disabled", true)
+	Healthbar.hide()
+	var fenceTilemap = get_node("End game").get_node("Fencing")
+	fenceTilemap.hide()
+	var fenceCollisions = get_node("End game").get_node("Fencing collision shapes")
+	for child_idx in range(fenceCollisions.get_child_count()):
+		var currCol = fenceCollisions.get_child(child_idx)
+		currCol.set_deferred("disabled", true)
+	var arrowGraphic = get_node("End game").get_node("Arrow")
+	arrowGraphic.show()
