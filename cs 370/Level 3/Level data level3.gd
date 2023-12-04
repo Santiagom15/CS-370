@@ -7,8 +7,10 @@ extends Node2D
 
 @onready var player = $Player 
 
+@onready var collectible_items = get_node("Collectible items")
 @onready var interactable_objects = get_node("Locked interactable objects")
 
+signal itemDisabled(itemIdx)
 signal lockDisabled(lockIdx)
 
 func _ready():
@@ -17,8 +19,12 @@ func _ready():
 	if inventory.get_transport():
 		player.global_position = inventory.get_player_position()
 		
+	for unlocked_item in inventory.get_level_items():
+		itemDisabled.emit(unlocked_item)
+		
 	for unlocked_item in inventory.get_unlocks():
 		lockDisabled.emit(unlocked_item)
+
 
 # Update the player's position in the game data
 func _process(delta):

@@ -95873,6 +95873,7 @@ metadata/_edit_group_ = true
 [connection signal="body_exited" from="Vertical Doors/Animated door vertical right 2/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 2" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 2/PlayerDetectionFromRight" to="Vertical Doors/Animated door vertical right 2" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Vertical Doors/Animated door vertical right 2/PlayerDetectionFromRight" to="Vertical Doors/Animated door vertical right 2" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="body_entered" from="NPCs/Initial info/PlayerDetection" to="NPCs/Initial info" method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="NPCs/Initial info/PlayerDetection" to="NPCs/Initial info" method="_on_player_detection_body_exited"]
 [connection signal="body_entered" from="NPCs/Room 1/Idle interaction/PlayerDetectionLeft" to="NPCs/Room 1/Idle interaction" method="_on_player_detection_left_body_entered"]
 [connection signal="body_exited" from="NPCs/Room 1/Idle interaction/PlayerDetectionLeft" to="NPCs/Room 1/Idle interaction" method="_on_player_detection_left_body_exited"]

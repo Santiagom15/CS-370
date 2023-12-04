@@ -45,7 +45,7 @@ func _on_area_2d_body_entered(body):
 			global_var.hits2 = global_var.hits2 + 1
 			$Hit.visible = true
 			if(global_var.hits2 >= 6):
-				get_tree().change_scene_to_file("res://deathscene.tscn")
+				get_tree().change_scene_to_file("res://BossBattleLoseScene.tscn")
 			#curr_health = curr_health - 1
 			print(global_var.hits2)
 		global_var.flag = true

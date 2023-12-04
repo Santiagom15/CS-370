@@ -69980,6 +69980,7 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="body_entered" from="NPC/Initial info/PlayerDetection" to="NPC/Initial info" method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="NPC/Initial info/PlayerDetection" to="NPC/Initial info" method="_on_player_detection_body_exited"]
 [connection signal="animation_finished" from="Locked interactable objects/Animated door vertical right locked 0/AnimatedSparkle" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_animated_sparkle_animation_finished"]
 [connection signal="frame_changed" from="Locked interactable objects/Animated door vertical right locked 0/AnimatedKey" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_animated_key_frame_changed"]

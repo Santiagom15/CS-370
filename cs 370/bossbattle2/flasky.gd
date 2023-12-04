@@ -32,7 +32,7 @@ func _on_hit_box_body_entered(body):
 		if(explodeTimer.is_stopped()):
 			explodeTimer.start()
 		if(global_var.hits2 >= 6):
-			get_tree().change_scene_to_file("res://deathscene.tscn")
+			get_tree().change_scene_to_file("res://BossBattleLoseScene.tscn")
 			
 					
 		
