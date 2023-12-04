@@ -73,14 +73,14 @@ func _ready():
 for the
 
 Here is your"""
-	descriptions["Office 20"] = "Hello human, would you like this lovely"
+	descriptions["Office 20"] = "Hello human, would you like this lovely ▶"
 	descriptions["Office 21"] = """In exchange... 
 Fetch us a human.  	------ Yours seems -------  nice, but any -----     will do""" 
 	descriptions["Office 10"] = """Oh, you want
  this strange
  green plant
  do you?
- Perhaps..."""
+ Perhaps... ▶"""
 	descriptions["Office 11"] = """In exchange, fetch us a blue flower. We 
 			 need one more
 			 to have one 
@@ -88,12 +88,12 @@ Fetch us a human.  	------ Yours seems -------  nice, but any -----     will do"
 	descriptions["Room 30"] = """Nice hat
  hmmm?
  I think you 
-could like it, let's make a deal?"""
+could like it, let's make a deal? ▶"""
 	descriptions["Room 31"] = """          I'm trying to use
 		  the vending 
 		  machine, 
 		  got any cash?"""
-	descriptions["Room 10"] = """Trying to break into a room huh? This could be helpful..."""
+	descriptions["Room 10"] = """Trying to break into a room huh? This could be helpful... ▶"""
 	descriptions["Room 11"] = """That green
  frog stole
  my hat, get it back human, and I'll give you what you want."""
@@ -122,7 +122,8 @@ could like it, let's make a deal?"""
 func _process(delta):
 	if inventory.get_interaction_state(interaction_name) == 3: return
 	
-	if inventory.has_item(item_want):
+	if inventory.has_item(item_want) && inventory.get_interaction_state("Guard") > 0:
+		detectItem.set_deferred("disabled", false)
 		inventory.set_interaction(interaction_name, 2)
 	elif inventory.get_interaction_state("Guard") > 0:
 		inventory.set_interaction(interaction_name, 1)
@@ -130,6 +131,14 @@ func _process(delta):
 	curr_state = inventory.get_interaction_state(interaction_name)
 	
 	if play_interaction && Input.is_action_just_released("ui_accept"):
+		if curr_state == 0:
+			speechText.clear()
+			speechText.append_text("Go talk to the frog by the stairs, human, then come back...")
+			speechBubble.show()
+			speechText.show()
+			speechItemWant.hide()
+			speechItemGive.hide()
+		
 		if curr_state == 1:
 			if text_progress == 0:
 				speechText.clear()
@@ -154,38 +163,24 @@ func _process(delta):
 				text_progress = 0
 		
 		elif curr_state == 2:
-			if text_progress == 0:
-				speechText.clear()
-				speechText.append_text(descriptions["Thanks"])
-				speechBubble.show()
-				speechText.show()
-				speechItemGive.position = descriptionPositions[str(interaction_name + "2")]
-				speechItemWant.position = descriptionPositions[str(interaction_name + "3")]
-				speechItemWant.show()
-				speechItemGive.show()
-					
-				text_progress = 1
-				detectItem.set_deferred("disabled", false)
-					
-			elif text_progress == 1:
-				
-				speechText.hide()
-				speechBubble.hide()
-				speechText.hide()
-				speechItemWant.hide()
-				speechItemGive.hide()
-				
-				text_progress = 0
-				
-				inventory.update_interaction(interaction_name)
-				inventory.remove_item(item_want)
-				
-				detectInteraction.set_deferred("disbaled", true)
-				itemRetrieved.show()
-				itemRetrieved.play("Idle")
-				itemSparkle.show()
-				itemSparkle.play("Idle")
-				itemSparkle.set_frame(0)
+			speechText.clear()
+			speechText.append_text(descriptions["Thanks"])
+			speechBubble.show()
+			speechText.show()
+			speechItemGive.position = descriptionPositions[str(interaction_name + "2")]
+			speechItemWant.position = descriptionPositions[str(interaction_name + "3")]
+			speechItemWant.show()
+			speechItemGive.show()
+			
+			inventory.update_interaction(interaction_name)
+			inventory.remove_item(item_want)
+			
+			detectInteraction.set_deferred("disbaled", true)
+			itemRetrieved.show()
+			itemRetrieved.play("Idle")
+			itemSparkle.show()
+			itemSparkle.play("Idle")
+			itemSparkle.set_frame(0)
 
 
 

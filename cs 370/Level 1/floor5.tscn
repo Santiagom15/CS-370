@@ -69074,6 +69074,7 @@ position = Vector2(1764, 952)
 [node name="Animated door vertical right locked 0" type="CharacterBody2D" parent="Locked interactable objects"]
 position = Vector2(2030, 1205)
 script = ExtResource("28_s0rtn")
+metadata/_edit_group_ = true
 
 [node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(530, 348)
