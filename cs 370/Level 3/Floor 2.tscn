@@ -57283,7 +57283,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_8aont")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jilc3"]
-size = Vector2(756.5, 49)
+size = Vector2(756.5, 31.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_agr52"]
 atlas = ExtResource("4_bi77u")
@@ -62551,7 +62551,7 @@ layer_1/tile_data = PackedInt32Array(1507380, 3473409, 59, 1572916, 3473409, 59,
 [node name="Collision shapes" type="CharacterBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Collision shapes"]
-position = Vector2(445.75, 1186.5)
+position = Vector2(446, 1201)
 shape = SubResource("RectangleShape2D_jilc3")
 debug_color = Color(0.847059, 0.345098, 0.415686, 0.419608)
 
@@ -62895,7 +62895,7 @@ autostart = true
 script = ExtResource("17_l4jjc")
 
 [node name="Collectible item boltcutter 0" parent="Collectible items and random spawning" instance=ExtResource("12_6jb1g")]
-position = Vector2(193, 1103)
+position = Vector2(190, 1109)
 
 [node name="Collectible item boltcutter 1" parent="Collectible items and random spawning" instance=ExtResource("12_6jb1g")]
 position = Vector2(93, 1699)
