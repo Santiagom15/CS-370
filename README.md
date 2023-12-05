@@ -16,22 +16,22 @@ To install and play Arrhythmia go to our latest releases page on our GitHub (or 
 
 
 Character:
-Mana Seed:  https://seliel-the-shaper.itch.io/character-base
+- Mana Seed:  https://seliel-the-shaper.itch.io/character-base
 
 Map Assets:
-LimeZu: https://limezu.itch.io/
-SorceressGameLab: https://sorceressgamelab.itch.io/animated-rpg-items
-Jamie Brownhill: https://jamiebrownhill.itch.io/solaria-demo 
+- LimeZu: https://limezu.itch.io/
+- SorceressGameLab: https://sorceressgamelab.itch.io/animated-rpg-items
+- Jamie Brownhill: https://jamiebrownhill.itch.io/solaria-demo 
 
 
 Animations:
-Viktor Hahn: https://rpgmaker.net/resources/383/
-NYKNCK: https://nyknck.itch.io/falling-star, https://nyknck.itch.io/fx084 
+- Viktor Hahn: https://rpgmaker.net/resources/383/
+- NYKNCK: https://nyknck.itch.io/falling-star, https://nyknck.itch.io/fx084 
 
 Music:
-Level 1 - https://www.fesliyanstudios.com/royalty-free-music/download/fear/351
-Level 2 - https://www.fesliyanstudios.com/royalty-free-music/download/a-search-for-the-hidden/64 
-Level 3 - https://www.fesliyanstudios.com/royalty-free-music/download/horror-chase-chapter-1/1703 
-Level 4 https://pixabay.com/music/epic-classical-return-of-the-gods-dark-epic-free-soundtrack-2471/ 
+- Level 1 - https://www.fesliyanstudios.com/royalty-free-music/download/fear/351
+- Level 2 - https://www.fesliyanstudios.com/royalty-free-music/download/a-search-for-the-hidden/64 
+- Level 3 - https://www.fesliyanstudios.com/royalty-free-music/download/horror-chase-chapter-1/1703 
+- Level 4 https://pixabay.com/music/epic-classical-return-of-the-gods-dark-epic-free-soundtrack-2471/ 
 
 
