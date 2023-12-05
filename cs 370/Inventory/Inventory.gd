@@ -4,7 +4,15 @@
 
 # Inventory is implemented with a dictionary object and items are defined by string names.
 # Current inventory items:
-#      "Key"
+#   "Key"
+#	"Frog"
+#	"Candle"
+#	"Hat"
+#	"BoltCutter"
+#	"Brain"
+#	"Coffee"
+#	"Flower"
+#	"Money"
 
 # Additionally, inventory singleton stores a string containing the path of the current level scene
 # or previous level if player is in a non-level scene (like home or inventory page).
