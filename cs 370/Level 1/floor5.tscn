@@ -1,4 +1,4 @@
-[gd_scene load_steps=474 format=3 uid="uid://bgkfmqsltr2aj"]
+[gd_scene load_steps=475 format=3 uid="uid://bgkfmqsltr2aj"]
 
 [ext_resource type="Script" path="res://Level 1/Level data level1.gd" id="1_a8vt7"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
@@ -50,6 +50,7 @@
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
 [ext_resource type="Script" path="res://Level 1/Floor 5 to Boss.gd" id="46_72ot2"]
 [ext_resource type="PackedScene" uid="uid://cx1yu2ooj02go" path="res://Level Navigation/instructions_page.tscn" id="46_eka5q"]
+[ext_resource type="AudioStream" uid="uid://bhw1uh585gxhi" path="res://Music/Arrhythmia.mp3" id="51_sea2g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acfsb"]
 texture = ExtResource("1_mqcgy")
@@ -70069,6 +70070,11 @@ shape = SubResource("RectangleShape2D_f2oco")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Exit level 1 to level 2/Player detection"]
 position = Vector2(2616, 2088)
 shape = SubResource("RectangleShape2D_aueg4")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("51_sea2g")
+autoplay = true
+max_distance = 100000.0
 
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=288 format=3 uid="uid://b7chfudtedjhi"]
+[gd_scene load_steps=289 format=3 uid="uid://b7chfudtedjhi"]
 
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_82f1x"]
 [ext_resource type="Script" path="res://Level 3/Level data level3.gd" id="1_ijpn3"]
@@ -30,6 +30,7 @@
 [ext_resource type="Script" path="res://Level 3/Collectible items exploration hunt.gd" id="17_l4jjc"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="18_bg1q3"]
 [ext_resource type="Texture2D" uid="uid://cr3fimws2554f" path="res://Room_Builder_16x16.png" id="20_4dpd3"]
+[ext_resource type="AudioStream" uid="uid://bhw1uh585gxhi" path="res://Music/Arrhythmia.mp3" id="31_qqhkk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jmkv3"]
 texture = ExtResource("1_82f1x")
@@ -63779,6 +63780,11 @@ script = ExtResource("2_peh34")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 2 to Floor 1/Player Detection"]
 position = Vector2(3711, 2407)
 shape = SubResource("RectangleShape2D_doqln")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("31_qqhkk")
+autoplay = true
+max_distance = 100000.0
 
 [connection signal="body_entered" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Vertical Doors/Animated door vertical right 0/PlayerDetectionFromLeft" to="Vertical Doors/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=196 format=3 uid="uid://ct1o7yij42v38"]
+[gd_scene load_steps=197 format=3 uid="uid://ct1o7yij42v38"]
 
 [ext_resource type="Script" path="res://Level 5/Level data level4.gd" id="1_jau0w"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_jxkdu"]
@@ -29,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://betwh3svq3j6d" path="res://Inventory/collectible_item_flower.tscn" id="26_i1y8c"]
 [ext_resource type="PackedScene" uid="uid://c4kup6hkiq7y8" path="res://Inventory/collectible_item_hat.tscn" id="27_p2xdg"]
 [ext_resource type="PackedScene" uid="uid://b8cb80ab7spo8" path="res://Inventory/collectible_item_money.tscn" id="28_uol5r"]
+[ext_resource type="AudioStream" uid="uid://bhw1uh585gxhi" path="res://Music/Arrhythmia.mp3" id="30_rp80h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ojpds"]
 texture = ExtResource("1_jxkdu")
@@ -63007,6 +63008,11 @@ metadata/_edit_use_anchors_ = true
 [node name="Block player" type="CollisionShape2D" parent="Floor1 to Boss"]
 position = Vector2(1970.88, 524.375)
 shape = SubResource("RectangleShape2D_psqan")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("30_rp80h")
+autoplay = true
+max_distance = 100000.0
 
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://rhgf2vjoui6j"]
 
 [ext_resource type="Script" path="res://Level 1/boss.gd" id="1_k1qbu"]
-[ext_resource type="Texture2D" path="res://doctor.png" id="2_nkgjw"]
+[ext_resource type="Texture2D" uid="uid://isjesotk5ain" path="res://doctor.png" id="2_nkgjw"]
 [ext_resource type="Script" path="res://Level 1/FiniteStateMachine.gd" id="3_qsjdb"]
 [ext_resource type="Script" path="res://Level 1/Idle.gd" id="4_i5e1q"]
 [ext_resource type="Script" path="res://Level 1/Shoot.gd" id="5_sb548"]
