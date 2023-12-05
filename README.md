@@ -3,13 +3,16 @@ Arrhythmia is a horror-themed rhythm game that combines exploration and musical 
 
 - [Video](https://drive.google.com/file/d/1es0NWRLbT2HpYf7BTEYSNKFwQyGdfjs4/view?usp=sharing)
 
+# Gameplay
+Explore each level to collect items and unlock interactions. Beat the boss battle on the way to escape the level through the exit stairs! Use the ARROW KEYS to move. Press the SPACEBAR to interact with objects. This includes interactions, like opening doors, talking to NPCs, and collecting items like keys or flowers. For the boss battles, dodge the attacks and obstacles until the song ends to win the battle and collect the necessary items to move on to the next level. 
+
 # installation
 To install and play Arrhythmia go to our latest releases page on our GitHub (or simply click this link: https://github.com/Santiagom15/CS-370/releases/tag/v1.0. Under assets, you will find two executables for Windows and Mac. Download the appropriate version of the game for your computer, run the file, and have fun.
 
 # Contributers
 - [Santiago Martinez](https://github.com/Santiagom15)
 - [Allison Ng](https://github.com/ngxallison)
-- [Alisa Star](https://github.com/starralisa)
+- [Alisa Starr](https://github.com/starralisa)
 - [Aisha Sajo](https://github.com/asajo12)
 - [Labdhi Mehta](https://github.com/labdhimehta)
 - [Isha Dahiya](https://github.com/IshaD13)
