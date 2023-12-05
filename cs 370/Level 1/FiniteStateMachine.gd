@@ -12,6 +12,7 @@ func _ready():
 	current_state.enter()
 	
 
+#Method to change between states
 func change_state(state):
 	current_state = find_child(state) as State
 	current_state.enter()

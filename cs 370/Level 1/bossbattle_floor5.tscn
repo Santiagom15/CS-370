@@ -21532,7 +21532,7 @@ autostart = true
 
 [node name="HealthBar" type="AnimatedSprite2D" parent="."]
 top_level = true
-position = Vector2(904, 135)
+position = Vector2(188, 145)
 scale = Vector2(0.163158, 0.149441)
 sprite_frames = SubResource("SpriteFrames_ha3rg")
 animation = &"3"
