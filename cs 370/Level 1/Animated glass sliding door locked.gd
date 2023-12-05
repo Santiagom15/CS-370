@@ -9,7 +9,7 @@ extends CharacterBody2D
 # GoDot note: @onready means this line is called when the scene loads and only then
 # Retrieve the animated door and character body Player nodes
 @onready var anim = get_node("AnimatedSlideDoor")
-@onready var player = get_parent().get_parent().get_node("Player")
+@onready var player = get_parent().get_parent().get_node("player")
 
 # Value of 0 mean no collision boxes for this door have been entered
 # Value of 1 means either PlayerDetectionAnimCloseTop or PlayerDetectionAnimCloseBottom has been entered
@@ -71,7 +71,7 @@ func _ready():
 	animLockOpen.hide()
 	animBoltCut.hide()
 	
-	#levelRoot.lockDisabled.connect(_on_lock_disabled)
+	levelRoot.lockDisabled.connect(_on_lock_disabled)
 
 
 # GoDot note: the _process function is called every frame as soon as the scene has loaded
@@ -142,7 +142,6 @@ func _on_animated_lock_open_animation_finished():
 
 func _on_lock_disabled(lockIdx):
 	# It is assumed that locked door node names will end in a int > 0 to identify/distinguish all locked doors in a scene
-	print("LOCK DISABLED")
 	if lockIdx == "Door" + doorName[-1]:
 		unlocked = true
 		animLock.hide()

@@ -60,8 +60,6 @@ sprite_frames = SubResource("SpriteFrames_8vqb0")
 animation = &"explode"
 autoplay = "normal"
 
-[node name="Timer" type="Timer" parent="."]
-
 [node name="explodeTimer" type="Timer" parent="."]
 wait_time = 0.1
 

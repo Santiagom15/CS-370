@@ -1,30 +1,43 @@
 extends CharacterBody2D
-# Detect when the player has reached the end of the stairs in Level 1
-# and automatically change scenes to Level 2
 
 @onready var inventory = get_node("/root/Inventory")
 @onready var player = get_parent().get_node("Player")
 @onready var bossStatus = []
 
+@onready var speechBubble = get_node("Speech").get_node("Speech bubble")
+@onready var speechText = get_node("Speech").get_node("Speech text")
+@onready var blockPlayerCol = get_node("Block player")
+
+@onready var inDetectArea = false
+
 func _ready():
 	bossStatus = inventory.get_boss_battle_status()
-	print("Floor 5 to Boss ready, bossStatus: ", bossStatus)
-
-	var detect = get_child(0).get_child(0)
-	if bossStatus[1]:
+	var detect = get_node("PlayerDetection").get_child(0)
+	if bossStatus:
 		detect.set_deferred("disabled", true)
-		inventory.set_entering_from_boss_battle_false()
-#	else:
-#		detect.set_deferred("disabled", false)
-#		inventory.set_entering_from_boss_battle_false()
+		blockPlayerCol.set_deferred("disabled", true)
+	
+	speechBubble.z_index = 2
+	speechText.z_index = 2
+	speechBubble.hide()
+	speechText.hide()
 
-## Detect when the player comes into/collides with the "Player detection"
-## collision shape
-func _on_player_detection_body_entered(body):
-#	# Check if the body/node that has collided with Player decection
-#	#  shape is named "Player"
-	bossStatus = inventory.get_boss_battle_status()
-	if !bossStatus[0] && body.name == "Player":
-		# Change the scene to the next floor
+
+func _process(delta):
+	if inDetectArea && Input.is_action_just_released("ui_accept"):
+		inventory.update_player_position(Vector2(2412.31, 966.9786))
 		get_tree().change_scene_to_file("res://Level 1/bossbattle_floor5.tscn")
 
+
+func _on_player_detection_body_entered(body):
+	if body.name == "Player":
+		inDetectArea = true
+		speechBubble.show()
+		speechText.show()
+
+
+func _on_player_detection_body_exited(body):
+	if body.name == "Player":
+		inDetectArea = false
+		speechBubble.hide()
+		speechText.hide()

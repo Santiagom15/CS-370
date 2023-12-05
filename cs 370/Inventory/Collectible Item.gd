@@ -40,7 +40,7 @@ func _ready():
 func _process(_delta):
 	
 	# Collect the item when player is in the item detection shape and presses the space bar
-	if player_detected == true && item_collected == false && Input.is_action_pressed("ui_accept"):
+	if player_detected == true && item_collected == false && Input.is_action_just_released("ui_accept"):
 		
 		item_collected = true 
 		
@@ -69,13 +69,15 @@ func _on_animated_item_animation_finished():
 
 # Update detection flag to true when player has entered the item detection shape 
 func _on_player_detection_item_body_entered(body):
-	if body.name == "Player":
+	var body_name = body.name
+	if body_name.to_lower() == "player":
 		player_detected = true
 
 
 # Update detection flag to false when player has exited the item detection shape 
 func _on_player_detection_item_body_exited(body):
-	if body.name == "Player":
+	var body_name = body.name
+	if body_name.to_lower() == "player":
 		player_detected = false
 
 

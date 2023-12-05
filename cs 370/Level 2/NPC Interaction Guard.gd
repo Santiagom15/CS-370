@@ -79,7 +79,7 @@ func _process(delta):
 				
 				if text_progress == 0:
 					speechText.clear()
-					speechText.append_text("[center]Oh, you want me to move? Hmm you'll need to do something for me in exchange...")
+					speechText.append_text("[center]Oh, you want me to move? Hmm you'll need to do something for me in exchange...▶")
 					speechBubble.show()
 					speechText.show()
 					speechItem.hide()

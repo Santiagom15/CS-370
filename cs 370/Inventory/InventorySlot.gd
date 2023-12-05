@@ -21,9 +21,7 @@ var curr_text = ""
 
 var descriptions: Dictionary = {}
 
-
 func _ready():
-	
 	# Define the list of descriptions for all possible collectible items in the game
 	# The appropriate description will be shown when an item in inventory is pressed
 	descriptions["Key"] = "Key unlocks locked doors"
@@ -43,19 +41,31 @@ func _ready():
 		textInfoDisplay.append_text("[center]Looking empty in here, try collecting something")
 	
 	else: 
-		# Get and iterate through all child nodes
-		# for child in get_children():
-		for key in inventory_contents.keys():
-			items_ordered.append(key)
+		# Based on the size of the BoltCutter item, place it first in the inventory if it's been collected
+		if inventory.has_item("BoltCutter"):
+			items_ordered.append("BoltCutter")
 			
 			slot = get_child(used_slot_idx)
 			slot.visible = true
 			item = ItemClass.instantiate()
 			slot.add_child(item)
-			item._on_item_current(key)
+			item._on_item_current("BoltCutter")
 			item.itemAnimLooped.connect(_item_anim_looped)
 			
 			used_slot_idx += 1
+		
+		for key in inventory_contents.keys():
+			if key != "BoltCutter":
+				items_ordered.append(key)
+				
+				slot = get_child(used_slot_idx)
+				slot.visible = true
+				item = ItemClass.instantiate()
+				slot.add_child(item)
+				item._on_item_current(key)
+				item.itemAnimLooped.connect(_item_anim_looped)
+				
+				used_slot_idx += 1
 		
 		for idx in range(get_child_count(false)):
 			slot = get_child(idx)
@@ -83,7 +93,6 @@ func _on_panel_clicked(panelIdx):
 			slot.z_index = 0
 		
 		curr_item = items_ordered[panelIdx - 1]
-		#textInfoDisplay.text = "" + curr_item + ": " + str(inventory.get_item_count(curr_item))
 		curr_text = "[center]" + curr_item + ": " + str(inventory.get_item_count(curr_item)) + "\n" + descriptions[curr_item] + "[/center]"
 		textInfoDisplay.clear()
 		textInfoDisplay.append_text("[shake rate=8.0]" + curr_text + "[/shake]")

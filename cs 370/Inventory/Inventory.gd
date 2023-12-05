@@ -32,15 +32,19 @@ var levelItems = []
 # Array storing the item_id of unlocked interactible items in current scene
 var levelUnlocks = []
 
-# Boolean array with flag: true if player entering current scene from boss battle, else otherwise
-#						   true if player won the boss battle they are entering from, false otherwise
-var bossBattleToLevel = [false, false]
+# Logical flag for if player won the boss battle for current level, true if player won the boss battle they are entering from, false otherwise
+var bossBattleWinStatus = false
 
 # Dictionary storing the state of all major collectible or NPC based interactions in the current scene
 # 	key: name of the interaction (ex. "Room 1")
 #	value: an integer >= 0 that represents the state of the interaction
 var interactionStates = {}
 
+# Store the previous page scene. This includes menu page, level navigation, and exploration scenes, but does not include instructions page, start page, or boss battle scenes
+var prevPage = ""
+
+# Store the number of the highest level unlocked/reached
+var highestLevelUnlocked = 1
 
 # Function to get the singleton instance
 func _get_instance():
@@ -73,6 +77,10 @@ func get_item_count(item_id):
 # Function to return the dictionary of items and counts
 func get_inventory():
 	return inventory
+
+# Function to clear all items in the inventory
+func clear_inventory():
+	inventory = {}
 
 # Function to update the path of the current level (or previous level, if player is in inventory)
 func update_current_level(curr_path):
@@ -133,25 +141,13 @@ func get_unlocks():
 func clear_level_unlocks():
 	levelUnlocks = []
 
-# Set entering from a boss battle to true, retain current win status
-func set_entering_from_boss_battle_true():
-	bossBattleToLevel = [true, bossBattleToLevel[1]]
+# Set boss battle win status to input status
+func set_boss_battle_status(status):
+	bossBattleWinStatus = status
 
-# Set entering from a boss battle to false, retain current win status
-func set_entering_from_boss_battle_false():
-	bossBattleToLevel = [false, bossBattleToLevel[1]]
-
-# Set boss battle win status to true
-func set_boss_battle_win():
-	bossBattleToLevel = [bossBattleToLevel[0], true]
-
-# Set boss battle win status to false
-func set_boss_battle_loss():
-	bossBattleToLevel = [bossBattleToLevel[0], false]
-
-# Return entered from boss battle and boss battle win status
+# Return boss battle win status
 func get_boss_battle_status():
-	return bossBattleToLevel
+	return bossBattleWinStatus
 
 # Function to add an interaction to interactionStates or update/increase state of existing element
 func update_interaction(item_id):
@@ -192,4 +188,28 @@ func get_interactions():
 func clear_interactions():
 	interactionStates = {}
 
+# Function to clear all relevant information for the current level
+# Used when transitioning between one scene to the next after completion, or switching between scenes in level navigiation scene
+func clear_level_data():
+	clear_inventory()
+	update_transport(false)
+	clear_level_items()
+	clear_level_unlocks()
+	set_boss_battle_status(false)
+	clear_interactions()
 
+# Set the path of the previous page (will be done on the current to be used by the inventory inorder to return to the correct page)
+func set_prev_page(path):
+	prevPage = path
+
+# Get the previous page path
+func get_prev_page():
+	return prevPage
+
+# Get the number of the highest level currently unlocked
+func get_level_number_unlocked():
+	return highestLevelUnlocked
+
+# Update the number of the highest level unlocked
+func update_level_number_unlocked(level_idx):
+	highestLevelUnlocked = level_idx

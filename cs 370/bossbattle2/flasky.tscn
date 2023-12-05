@@ -32,7 +32,6 @@ animations = [{
 }]
 
 [node name="flasky" type="Node2D"]
-top_level = true
 script = ExtResource("1_vha05")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -57,8 +56,6 @@ visible = false
 position = Vector2(-12.4, -14.4)
 scale = Vector2(0.1, 0.1)
 polygon = PackedVector2Array(-20, -70, 120, -100, 290, -60, 370, 70, 380, 170, 360, 250, 320, 290, 190, 360, 30, 350, -90, 300, -120, 190, -100, 100, -90, 60, -90, 20, -100, -20, -100, -70)
-
-[node name="Timer" type="Timer" parent="."]
 
 [node name="explodeTimer" type="Timer" parent="."]
 wait_time = 1.5

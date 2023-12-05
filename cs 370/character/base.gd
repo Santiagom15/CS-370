@@ -20,8 +20,8 @@ func _ready():
 	heart.set_frame(0)
 	
 	# Disable CanvasLayer node for now because it being layered above other nodes in a scene means mouse clicks won't register on things like buttons
-	var layer = get_node("CanvasLayer")
-	layer.visible = false 
+#	var layer = get_node("CanvasLayer")
+#	layer.visible = false 
 
 		
 func isSpacePressed()->bool:
@@ -34,12 +34,10 @@ func isSpacePressed()->bool:
 		
 func _on_heart_frame_changed():
 	pass
-	#print("Moving: ",moving," space: ",isSpacePressed()," stat: ",state)
-	#if getState() and isSpacePressed():
-		#print("State: ",getState(), " Space: ",isSpacePressed())
+
 	
 func test():
-	print("Moving: ",moving," space: ",isSpacePressed()," stat: ",state)
+	pass
 	
 	
 func get_input():
@@ -95,9 +93,9 @@ func _on_timer_timeout():
 
 func calcAccuracy(accuracy:float):
 	var minAccToDarken = 0.0
-	#should change from self.molduate to the scene but idk
-	if accuracy < minAccToDarken:
-		var darkenColor = Color(0,0,0,1 - accuracy)
-		background.modulate = darkenColor
-	else:
-		background.modulate = Color(1,1,1,1)
+#	#should change from self.molduate to the scene but idk
+#	if accuracy < minAccToDarken:
+#		var darkenColor = Color(0,0,0,1 - accuracy)
+#		background.modulate = darkenColor
+#	else:
+#		background.modulate = Color(1,1,1,1)

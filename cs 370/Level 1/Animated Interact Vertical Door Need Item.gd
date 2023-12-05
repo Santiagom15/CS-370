@@ -50,6 +50,7 @@ var lockIdx : int
 
 # As soon as scene loads, disable the collision shapes for when door is open 
 func _ready():
+	animKey.z_index = 2
 	animKey.hide()
 	animRight.show()
 	animLeft.show()
@@ -121,7 +122,6 @@ func _process(delta):
 		# Play key floating animation when player tries to open door without having the key
 		elif !animKey.is_playing():
 			animKey.show()
-			animKey.z_index = 1
 			animKey.play("Key")
 
 
@@ -165,7 +165,6 @@ func _on_animated_key_frame_changed():
 		if animKey.get_frame() == total_num_key_frames-1:
 			animKey.hide()
 			animKey.modulate.a = 1
-			#has_key = true
 
 
 # Update door state when player enters the left detection shape

@@ -1,15 +1,20 @@
-[gd_scene load_steps=33 format=3 uid="uid://bnmwtvmgpppjm"]
+[gd_scene load_steps=69 format=3 uid="uid://bnmwtvmgpppjm"]
 
 [ext_resource type="Script" path="res://bossbattle2/bossbattle2.gd" id="1_4kwuv"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_orxrf"]
-[ext_resource type="PackedScene" path="res://bossbattle2/boss2.tscn" id="2_jylx7"]
+[ext_resource type="PackedScene" uid="uid://5bl1xdmqwumo" path="res://bossbattle2/boss2.tscn" id="2_jylx7"]
 [ext_resource type="Texture2D" uid="uid://cr3fimws2554f" path="res://Room_Builder_16x16.png" id="3_1g6k7"]
 [ext_resource type="AudioStream" uid="uid://d3tqm5uif5vmc" path="res://Music/Music - bossbattle2.mp3" id="3_c3x0e"]
 [ext_resource type="Texture2D" uid="uid://b5hugsiudonq3" path="res://bossbattle2/blacktile.png" id="4_qktlm"]
 [ext_resource type="Script" path="res://Level 1/syncaudio.gd" id="4_x6qsl"]
-[ext_resource type="PackedScene" uid="uid://datyj1ghnmx25" path="res://character/character_body_2d.tscn" id="5_qyuws"]
+[ext_resource type="Script" path="res://bossbattle2/Boss battle floor 2 level elements.gd" id="8_iemda"]
+[ext_resource type="Script" path="res://bossbattle2/Exit boss 3 to level 3.gd" id="9_owdsy"]
+[ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="10_0n15a"]
+[ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="11_5h3ol"]
+[ext_resource type="Texture2D" uid="uid://b4b5mk2r5ww75" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_sliding_glass.png" id="12_2hxgg"]
 [ext_resource type="Texture2D" uid="uid://b7nlr4nalr1ko" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/18_Jail_16x16.png" id="16_e5k8o"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="17_1ygbm"]
+[ext_resource type="PackedScene" uid="uid://drdru62qqbtpc" path="res://character/base_noheart.tscn" id="17_eovxo"]
 [ext_resource type="Texture2D" uid="uid://c0ftfloaetk8t" path="res://HealthBar/HealthBar0.png" id="17_o11fh"]
 [ext_resource type="Texture2D" uid="uid://b8dndk4bcn8ic" path="res://HealthBar/HealthBar0.5.png" id="18_nj3lc"]
 [ext_resource type="Texture2D" uid="uid://bvnlfwloi6nws" path="res://HealthBar/HealthBar1.png" id="19_kx70b"]
@@ -7622,6 +7627,133 @@ texture = ExtResource("3_1g6k7")
 [sub_resource type="TileSet" id="TileSet_p284p"]
 sources/1 = SubResource("TileSetAtlasSource_7lcsa")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryp4j"]
+size = Vector2(252.5, 80.875)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8bqo"]
+atlas = ExtResource("12_2hxgg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgrh4"]
+atlas = ExtResource("12_2hxgg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnapw"]
+atlas = ExtResource("12_2hxgg")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xd23m"]
+atlas = ExtResource("12_2hxgg")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kf81k"]
+atlas = ExtResource("12_2hxgg")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmp0u"]
+atlas = ExtResource("12_2hxgg")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ywgk"]
+atlas = ExtResource("12_2hxgg")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3bna"]
+atlas = ExtResource("12_2hxgg")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_te74w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8bqo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgrh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnapw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xd23m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kf81k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmp0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ywgk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3bna")
+}],
+"loop": false,
+"name": &"SlideOpen",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8d4ff"]
+size = Vector2(133, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qvqyd"]
+size = Vector2(126.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hhasv"]
+size = Vector2(102.75, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nvakr"]
+size = Vector2(90, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0vm3h"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7r6hm"]
+size = Vector2(53.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_spw47"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c18jv"]
+size = Vector2(11.75, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lepxj"]
+size = Vector2(133, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ixnc0"]
+size = Vector2(126.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2net2"]
+size = Vector2(102.75, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wrx6s"]
+size = Vector2(90, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xdt45"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_haa1w"]
+size = Vector2(53.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hb3jq"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gx54h"]
+size = Vector2(11.75, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oeke3"]
+size = Vector2(276, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_go4lx"]
+size = Vector2(245, 139.375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sl5a5"]
+size = Vector2(248, 104.125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ue1xb"]
+size = Vector2(246, 40)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_l332g"]
 animations = [{
 "frames": [{
@@ -7688,7 +7820,10 @@ size = Vector2(485.24, 731.758)
 size = Vector2(1516, 118)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p8iir"]
-size = Vector2(408, 184)
+size = Vector2(417, 125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aogux"]
+size = Vector2(248, 52)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1g1cm"]
 texture = ExtResource("16_e5k8o")
@@ -17445,6 +17580,7 @@ position = Vector2(554, 65)
 scale = Vector2(0.222548, 0.225679)
 
 [node name="Floor" type="TileMap" parent="."]
+show_behind_parent = true
 position = Vector2(457.061, 307.552)
 scale = Vector2(3.19736, 3.78441)
 tile_set = SubResource("TileSet_deqjy")
@@ -17456,52 +17592,207 @@ position = Vector2(457.061, 307.552)
 scale = Vector2(3.19736, 3.78441)
 tile_set = SubResource("TileSet_p284p")
 format = 2
-layer_0/tile_data = PackedInt32Array(-196608, 2555905, 44, -131073, 2555905, 44, -196607, 2555905, 44, -196606, 2555905, 44, -196605, 2555905, 44, -196604, 2555905, 44, -196610, 2555905, 44, -262146, 2555905, 44, -196603, 2555905, 44, -262139, 2555905, 44, -131074, 2555905, 44, -327675, 2555905, 44)
+layer_0/tile_data = PackedInt32Array(-196608, 2555905, 44, -131073, 2555905, 44, -196607, 2555905, 44, -196606, 2555905, 44, -196605, 2555905, 44, -196604, 2555905, 44, -196610, 2555905, 44, -262146, 2555905, 44, -196603, 2555905, 44, -262139, 2555905, 44, -131074, 2555905, 44, -327675, 2555905, 44, -262152, 2555905, 44, -262153, 2555905, 44, -327674, 2555905, 44, -327673, 2555905, 44, -327672, 2555905, 44, -327671, 2555905, 44, -327670, 2555905, 44, -327669, 2555905, 44, -327668, 2555905, 44, -327667, 2555905, 44, -196616, 2555905, 44, -196617, 2555905, 44, -262138, 2555905, 44, -262137, 2555905, 44, -262136, 2555905, 44, -262135, 2555905, 44, -262134, 2555905, 44, -262132, 2555905, 44, -262131, 2555905, 44, -262133, 2555905, 44)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 60.0
+wait_time = 70.0
 one_shot = true
 autostart = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, 7)
 stream = ExtResource("3_c3x0e")
 autoplay = true
 script = ExtResource("4_x6qsl")
 
-[node name="player" parent="." instance=ExtResource("5_qyuws")]
-top_level = true
-position = Vector2(607, 343)
+[node name="Locked interactable objects" type="Node2D" parent="."]
+position = Vector2(-41, 40)
+script = ExtResource("8_iemda")
+
+[node name="Exit boss 2 to level 2" type="Area2D" parent="Locked interactable objects"]
+script = ExtResource("9_owdsy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Exit boss 2 to level 2"]
+position = Vector2(269.75, -62.4375)
+shape = SubResource("RectangleShape2D_ryp4j")
+debug_color = Color(0.505882, 0.568627, 0.337255, 0.419608)
+
+[node name="Collectible item key 0" parent="Locked interactable objects" instance=ExtResource("10_0n15a")]
+position = Vector2(-1369, -914)
+
+[node name="Animated glass sliding door 0" type="CharacterBody2D" parent="Locked interactable objects"]
+position = Vector2(-674, -1358)
+script = ExtResource("11_5h3ol")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 0"]
+position = Vector2(940, 1374.37)
+scale = Vector2(7.8125, 4.66407)
+sprite_frames = SubResource("SpriteFrames_te74w")
+animation = &"SlideOpen"
+
+[node name="CollDoor1" type="CharacterBody2D" parent="Locked interactable objects/Animated glass sliding door 0"]
+
+[node name="Coll0a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor1"]
+position = Vector2(872, 1439.5)
+shape = SubResource("RectangleShape2D_8d4ff")
+debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
+
+[node name="Coll0b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor1"]
+position = Vector2(1005.5, 1439)
+shape = SubResource("RectangleShape2D_qvqyd")
+debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
+
+[node name="Coll2a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor1"]
+position = Vector2(860, 1439.5)
+shape = SubResource("RectangleShape2D_hhasv")
+debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
+
+[node name="Coll2b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor1"]
+position = Vector2(1020, 1439.5)
+shape = SubResource("RectangleShape2D_nvakr")
+debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
+
+[node name="Coll4a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor1"]
+position = Vector2(842.5, 1439.5)
+shape = SubResource("RectangleShape2D_0vm3h")
+debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
+
+[node name="Coll4b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor1"]
+position = Vector2(1037.5, 1439.5)
+shape = SubResource("RectangleShape2D_7r6hm")
+debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
+
+[node name="Coll6a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor1"]
+position = Vector2(821.375, 1439.5)
+shape = SubResource("RectangleShape2D_spw47")
+debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
+
+[node name="Coll6b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor1"]
+position = Vector2(1058.12, 1439.5)
+shape = SubResource("RectangleShape2D_c18jv")
+debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
+
+[node name="CollDoor2" type="CharacterBody2D" parent="Locked interactable objects/Animated glass sliding door 0"]
+position = Vector2(0, -60)
+
+[node name="Coll0a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor2"]
+position = Vector2(874.5, 1439)
+shape = SubResource("RectangleShape2D_lepxj")
+debug_color = Color(0.941176, 0.215686, 0.321569, 0.419608)
+
+[node name="Coll0b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor2"]
+position = Vector2(1003.25, 1439)
+shape = SubResource("RectangleShape2D_ixnc0")
+debug_color = Color(0.901961, 0.270588, 0.380392, 0.419608)
+
+[node name="Coll2a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor2"]
+position = Vector2(859.625, 1439)
+shape = SubResource("RectangleShape2D_2net2")
+debug_color = Color(0.933333, 0.243137, 0.215686, 0.419608)
+
+[node name="Coll2b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor2"]
+position = Vector2(1020, 1439)
+shape = SubResource("RectangleShape2D_wrx6s")
+debug_color = Color(0.913725, 0.282353, 0.239216, 0.419608)
+
+[node name="Coll4a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor2"]
+position = Vector2(846.25, 1439)
+shape = SubResource("RectangleShape2D_xdt45")
+debug_color = Color(0.815686, 0.392157, 0.294118, 0.419608)
+
+[node name="Coll4b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor2"]
+position = Vector2(1033.75, 1439)
+shape = SubResource("RectangleShape2D_haa1w")
+debug_color = Color(0.87451, 0.333333, 0.270588, 0.419608)
+
+[node name="Coll6a" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor2"]
+position = Vector2(823, 1439)
+shape = SubResource("RectangleShape2D_hb3jq")
+debug_color = Color(0.890196, 0.294118, 0.352941, 0.419608)
+
+[node name="Coll6b" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/CollDoor2"]
+position = Vector2(1058, 1439)
+shape = SubResource("RectangleShape2D_gx54h")
+debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
+
+[node name="PlayerDetectionLayering" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/PlayerDetectionLayering"]
+position = Vector2(953, 1473)
+shape = SubResource("RectangleShape2D_oeke3")
+debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
+
+[node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/PlayerDetectAnimCloseTop"]
+position = Vector2(939.5, 1313.31)
+shape = SubResource("RectangleShape2D_go4lx")
+debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
+
+[node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/PlayerDetectAnimCloseBottom"]
+position = Vector2(939, 1498.06)
+shape = SubResource("RectangleShape2D_sl5a5")
+debug_color = Color(0.870588, 0.141176, 0.776471, 0.419608)
+
+[node name="PlayerDetectionAnimation" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 0/PlayerDetectionAnimation"]
+position = Vector2(939, 1438)
+shape = SubResource("RectangleShape2D_ue1xb")
+debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="HealthBar" type="AnimatedSprite2D" parent="."]
-position = Vector2(975, 147)
+position = Vector2(172, 127)
 scale = Vector2(0.188657, 0.173177)
 sprite_frames = SubResource("SpriteFrames_l332g")
 animation = &"3"
 autoplay = "3"
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Collision shapes" type="CharacterBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision shapes"]
 position = Vector2(-77, 434)
 scale = Vector2(-0.316703, -1.43742)
 shape = SubResource("RectangleShape2D_c11k8")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision shapes"]
 position = Vector2(1198, 181)
 scale = Vector2(0.100301, 2.06619)
 shape = SubResource("RectangleShape2D_c11k8")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Collision shapes"]
 position = Vector2(624, 717)
 shape = SubResource("RectangleShape2D_l6yq1")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Collision shapes"]
 position = Vector2(613, -56)
 shape = SubResource("RectangleShape2D_l6yq1")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(560, 93)
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Collision shapes"]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(557.5, 65.5)
 shape = SubResource("RectangleShape2D_p8iir")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Collision shapes"]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(973, 7)
+shape = SubResource("RectangleShape2D_p8iir")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Collision shapes"]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-110, -1)
+shape = SubResource("RectangleShape2D_p8iir")
+
+[node name="Blocking door until item collected" type="CollisionShape2D" parent="Collision shapes"]
+position = Vector2(226, 38)
+shape = SubResource("RectangleShape2D_aogux")
+debug_color = Color(0.137255, 0.631373, 0.396078, 0.776471)
 
 [node name="warningDots" type="TileMap" parent="."]
 modulate = Color(0.745098, 0.227451, 0.101961, 0.415686)
@@ -17518,4 +17809,17 @@ tile_set = SubResource("TileSet_ks67w")
 format = 2
 layer_0/tile_data = PackedInt32Array(851985, 4128768, 85, 2097169, 4128768, 85, 1376289, 4128768, 85, 852023, 4128768, 85, 2097210, 4128768, 85, 2555937, 4128768, 85, 1638401, 4128768, 85, 1572932, 4128768, 85, 393223, 4128768, 85)
 
+[node name="player" parent="." instance=ExtResource("17_eovxo")]
+position = Vector2(555, 466)
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Locked interactable objects/Exit boss 2 to level 2" to="Locked interactable objects/Exit boss 2 to level 2" method="_on_body_entered"]
+[connection signal="frame_changed" from="Locked interactable objects/Animated glass sliding door 0/AnimatedSlideDoor" to="Locked interactable objects/Animated glass sliding door 0" method="_on_animated_slide_door_frame_changed"]
+[connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectionLayering" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDectectionLayering_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectionLayering" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectionLayering_body_exited"]
+[connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectAnimCloseTop" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseTop_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectAnimCloseTop" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectionAnimCloseTop_body_exited"]
+[connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectAnimCloseBottom" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
+[connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectionAnimation" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_entered"]
+[connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 0/PlayerDetectionAnimation" to="Locked interactable objects/Animated glass sliding door 0" method="_on_PlayerDetectionAnimation_body_exited"]

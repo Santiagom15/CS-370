@@ -2458,8 +2458,14 @@ texture_margin_bottom = 3.0
 modulate_color = Color(15.88, 0, 0.75, 0.73)
 
 [node name="Inventory" type="Node2D"]
+metadata/_edit_group_ = true
 
 [node name="Inventory background" type="Node2D" parent="."]
+
+[node name="Background 0" type="ColorRect" parent="Inventory background"]
+offset_right = 1162.0
+offset_bottom = 649.0
+color = Color(0.72549, 0.662745, 0.658824, 1)
 
 [node name="Background 1" type="TextureRect" parent="Inventory background"]
 modulate = Color(0.8, 0.713726, 0.713726, 1)
@@ -2467,22 +2473,6 @@ offset_left = 120.0
 offset_top = -44.0
 offset_right = 1373.0
 offset_bottom = 612.0
-texture = ExtResource("1_kyrdk")
-
-[node name="Background 2" type="TextureRect" parent="Inventory background"]
-modulate = Color(0.8, 0.713726, 0.713726, 1)
-offset_left = -1096.0
-offset_top = -17.0
-offset_right = 130.0
-offset_bottom = 661.0
-texture = ExtResource("1_kyrdk")
-
-[node name="Background 3" type="TextureRect" parent="Inventory background"]
-modulate = Color(0.8, 0.713726, 0.713726, 1)
-offset_left = 75.0
-offset_top = 611.0
-offset_right = 1301.0
-offset_bottom = 1289.0
 texture = ExtResource("1_kyrdk")
 
 [node name="Inventory title" type="RichTextLabel" parent="."]
@@ -2534,23 +2524,17 @@ layer_3/z_index = 0
 layer_3/tile_data = PackedInt32Array(196619, 0, 38, 262155, 65536, 34, 327691, 65536, 35, 393227, 65536, 36, 131083, 0, 37)
 
 [node name="Bottons" type="Node2D" parent="."]
-position = Vector2(-796, 395)
+position = Vector2(-796, 380)
 script = ExtResource("4_pb3f3")
 metadata/_edit_group_ = true
 
-[node name="Level" type="Button" parent="Bottons"]
-offset_left = 937.0
-offset_top = 35.0
-offset_right = 1081.0
-offset_bottom = 112.0
-text = "Return to level"
-
-[node name="Home" type="Button" parent="Bottons"]
+[node name="Close" type="Button" parent="Bottons"]
 offset_left = 935.0
 offset_top = 137.0
 offset_right = 1081.0
 offset_bottom = 219.0
-text = "Home Page"
+theme_override_font_sizes/font_size = 40
+text = "Close"
 
 [node name="GridContainer" type="GridContainer" parent="."]
 offset_left = 465.0
@@ -2619,8 +2603,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_cngfd")
 script = ExtResource("3_d56ge")
 
-[connection signal="button_down" from="Bottons/Level" to="Bottons" method="_on_level_button_down"]
-[connection signal="button_down" from="Bottons/Home" to="Bottons" method="_on_home_button_down"]
+[connection signal="button_down" from="Bottons/Close" to="Bottons" method="_on_close_button_down"]
 [connection signal="gui_input" from="GridContainer/Slot1" to="GridContainer/Slot1" method="_on_slot_gui_input"]
 [connection signal="gui_input" from="GridContainer/Slot2" to="GridContainer/Slot2" method="_on_slot_gui_input"]
 [connection signal="gui_input" from="GridContainer/Slot3" to="GridContainer/Slot3" method="_on_slot_gui_input"]

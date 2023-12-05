@@ -1,7 +1,7 @@
 extends Area2D
 
 var direction = Vector2.RIGHT
-var speed = 100
+var speed = 600
 @onready var animation = $AnimatedSprite2D
 @onready var global_var = get_node("/root/Global")
 
@@ -23,6 +23,8 @@ func _on_body_entered(body):
 	if body.name =="player":
 		global_var.hits =global_var.hits + 1
 		if global_var.hits>=6:
-			get_tree().change_scene_to_file("res://deathscene.tscn")
+			var inventory = get_node("/root/Inventory")
+			inventory.set_boss_battle_status(false)
+			get_tree().change_scene_to_file("res://BossBattleLoseScene.tscn")
 			
 		

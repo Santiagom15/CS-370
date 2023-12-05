@@ -1,7 +1,7 @@
-[gd_scene load_steps=463 format=3 uid="uid://bgkfmqsltr2aj"]
+[gd_scene load_steps=475 format=3 uid="uid://bgkfmqsltr2aj"]
 
+[ext_resource type="Script" path="res://Level 1/Level data level1.gd" id="1_a8vt7"]
 [ext_resource type="Texture2D" uid="uid://cv1e6201m8a7g" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/Room_Builder_16x16.png" id="1_mqcgy"]
-[ext_resource type="Script" path="res://LevelData.gd" id="1_nmc80"]
 [ext_resource type="Texture2D" uid="uid://b2adiw2j5i8aq" path="res://assets/Modern_Interiors_Free_v41.4/Rooms and furniture/19_Hospital_16x16.png" id="2_hj83g"]
 [ext_resource type="PackedScene" uid="uid://b7m4t88h8sa1f" path="res://character/base.tscn" id="3_eevib"]
 [ext_resource type="Texture2D" uid="uid://b0nawqlma58gn" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_grocery_store_butchershop_carcass.png" id="4_nvu84"]
@@ -11,12 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://dv2q0p67lrydp" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_painting_doll_1.png" id="5_yt6uo"]
 [ext_resource type="Texture2D" uid="uid://ckb4ja5ocbgnm" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_full.png" id="6_c3omn"]
 [ext_resource type="Texture2D" uid="uid://drbvmbors5uxv" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_right.png" id="6_i8hy6"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_blood_drip_edittedAlisa.png" id="6_ov5sj"]
+[ext_resource type="Texture2D" uid="uid://btml02hilic6v" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_blood_drip_edittedAlisa.png" id="6_ov5sj"]
 [ext_resource type="Texture2D" uid="uid://b4q0knbvu7wf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_xraymachine_screen.png" id="6_tku2f"]
 [ext_resource type="Texture2D" uid="uid://cwl7odqgh6i5x" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror.png" id="6_vbod5"]
 [ext_resource type="Texture2D" uid="uid://bye32i8ybd7m6" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_cabinet_blue_empty.png" id="6_wqapt"]
 [ext_resource type="Texture2D" uid="uid://bc7yomw0w3532" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathroom_sink_new_2_3-10 loop.png" id="6_yuj1v"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_blood_splatter_edittedAlisa.png" id="7_1708x"]
+[ext_resource type="Texture2D" uid="uid://dage1b20td5od" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_blood_splatter_edittedAlisa.png" id="7_1708x"]
 [ext_resource type="Texture2D" uid="uid://bote30ouq70j" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_bathtub_2.png" id="7_ovnr8"]
 [ext_resource type="Texture2D" uid="uid://d3ng0ce47d54y" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_fridge_white_vertical_left.png" id="8_0cefy"]
 [ext_resource type="Texture2D" uid="uid://4xcd7q6v2co6" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_old_tv.png" id="8_n8eh6"]
@@ -29,24 +29,28 @@
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door.gd" id="26_xyf23"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Horizontal Door.gd" id="28_pc87l"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Vertical Door Need Item.gd" id="28_s0rtn"]
+[ext_resource type="Script" path="res://Inventory/Initial info.gd" id="29_0kbd1"]
 [ext_resource type="Texture2D" uid="uid://bdw58iw7s5jvd" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_condominium.png" id="29_0ygv0"]
 [ext_resource type="Texture2D" uid="uid://difda4krhim5h" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_big_1.png" id="29_adnfa"]
-[ext_resource type="PackedScene" path="res://Inventory/collectible_item_boltcutter.tscn" id="29_j1icn"]
+[ext_resource type="PackedScene" uid="uid://dbsb25h8g4mlo" path="res://Inventory/collectible_item_boltcutter.tscn" id="29_j1icn"]
 [ext_resource type="Texture2D" uid="uid://c7sgfmp54til7" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa.png" id="29_nb3ye"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_lock1.png" id="30_a6tw1"]
+[ext_resource type="Texture2D" uid="uid://byyti5evxrayp" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_lock1.png" id="30_a6tw1"]
+[ext_resource type="Texture2D" uid="uid://36ft47es1epo" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/speech_bubble_box_edittedAlisa.png" id="30_nk7s1"]
 [ext_resource type="PackedScene" uid="uid://c48wkl7td47ao" path="res://Inventory/collectible_item_key.tscn" id="30_ycgyi"]
 [ext_resource type="Script" path="res://character/PlayerButtons.gd" id="32_62thx"]
 [ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="32_83m24"]
 [ext_resource type="Script" path="res://Level 1/Animated Interact Sliding Door Need Item.gd" id="34_so8o3"]
 [ext_resource type="Texture2D" uid="uid://df4ksnwncongf" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_hospital_screen_color.png" id="35_otugg"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_unlock.png" id="35_s5vr5"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_and_lock.png" id="36_4b83o"]
-[ext_resource type="Texture2D" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_glass_sliding_32x32_edittedAlisa_locked.png" id="36_k7kwh"]
+[ext_resource type="Texture2D" uid="uid://bnlln117petdg" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_unlock.png" id="35_s5vr5"]
+[ext_resource type="Texture2D" uid="uid://l50lbsccrl8u" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_and_lock.png" id="36_4b83o"]
+[ext_resource type="Texture2D" uid="uid://bsw4rdjy5qs8l" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_door_glass_sliding_32x32_edittedAlisa_locked.png" id="36_k7kwh"]
 [ext_resource type="Texture2D" uid="uid://blurtqdn6gseh" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_haunted_mirror_2.png" id="38_gqg6y"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolted_lock_broken.png" id="38_pdkwt"]
-[ext_resource type="Texture2D" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_action.png" id="40_44drb"]
+[ext_resource type="Texture2D" uid="uid://sfrovock16q1" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolted_lock_broken.png" id="38_pdkwt"]
+[ext_resource type="Texture2D" uid="uid://1f8525nwlko4" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_edittedAlisa_bolt_cutters_action.png" id="40_44drb"]
 [ext_resource type="Script" path="res://Level 1/Exit level 1 to level 2.gd" id="44_s8vro"]
 [ext_resource type="Script" path="res://Level 1/Floor 5 to Boss.gd" id="46_72ot2"]
+[ext_resource type="PackedScene" uid="uid://cx1yu2ooj02go" path="res://Level Navigation/instructions_page.tscn" id="46_eka5q"]
+[ext_resource type="AudioStream" uid="uid://bhw1uh585gxhi" path="res://Music/Arrhythmia.mp3" id="51_sea2g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acfsb"]
 texture = ExtResource("1_mqcgy")
@@ -63635,6 +63639,9 @@ texture = ExtResource("1_mqcgy")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_duku6")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1uk3"]
+size = Vector2(430, 257)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_y0drv"]
 atlas = ExtResource("32_83m24")
 region = Rect2(0, 0, 32, 32)
@@ -63971,35 +63978,35 @@ size = Vector2(59, 7)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x08dl"]
 size = Vector2(59, 7)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a01e6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_177hc"]
 atlas = ExtResource("26_eu261")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_k8pmd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5u07"]
 atlas = ExtResource("26_eu261")
 region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kksbg"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_js3fv"]
 atlas = ExtResource("26_eu261")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_06j70"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0ujc"]
 atlas = ExtResource("26_eu261")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1m32u"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mhaee"]
 atlas = ExtResource("26_eu261")
 region = Rect2(128, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gudsr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8uua"]
 atlas = ExtResource("26_eu261")
 region = Rect2(160, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ldcgb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b1vw"]
 atlas = ExtResource("26_eu261")
 region = Rect2(192, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2hna0"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1g6x"]
 atlas = ExtResource("26_eu261")
 region = Rect2(224, 0, 32, 32)
 
@@ -64007,28 +64014,28 @@ region = Rect2(224, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a01e6")
+"texture": SubResource("AtlasTexture_177hc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_k8pmd")
+"texture": SubResource("AtlasTexture_m5u07")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kksbg")
+"texture": SubResource("AtlasTexture_js3fv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_06j70")
+"texture": SubResource("AtlasTexture_u0ujc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1m32u")
+"texture": SubResource("AtlasTexture_mhaee")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gudsr")
+"texture": SubResource("AtlasTexture_e8uua")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ldcgb")
+"texture": SubResource("AtlasTexture_5b1vw")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2hna0")
+"texture": SubResource("AtlasTexture_c1g6x")
 }],
 "loop": false,
 "name": &"SlideOpen",
@@ -64312,6 +64319,67 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_pn72m"]
+atlas = ExtResource("40_44drb")
+region = Rect2(0, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rstkk"]
+atlas = ExtResource("40_44drb")
+region = Rect2(49, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0k7q"]
+atlas = ExtResource("40_44drb")
+region = Rect2(98, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sl26o"]
+atlas = ExtResource("40_44drb")
+region = Rect2(147, 0, 49, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mioc"]
+atlas = ExtResource("40_44drb")
+region = Rect2(196, 0, 49, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_08xb3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn72m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rstkk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0k7q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sl26o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mioc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn72m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rstkk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0k7q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sl26o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn72m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rstkk")
+}],
+"loop": false,
+"name": &"BoltCutter",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wx6pd"]
 size = Vector2(133, 13)
 
@@ -64371,6 +64439,102 @@ size = Vector2(248, 109)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hrxam"]
 size = Vector2(246, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcvg8"]
+size = Vector2(154, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_856oc"]
+size = Vector2(105.5, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jb6pp"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a18w3"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecty4"]
+size = Vector2(154, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ixbn"]
+size = Vector2(105.5, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ei1ol"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bylhy"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u4n5"]
+size = Vector2(174, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rj3tj"]
+size = Vector2(154.875, 204)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awjkv"]
+size = Vector2(160, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuc5o"]
+size = Vector2(156, 34)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urwkt"]
+size = Vector2(118, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqxj5"]
+size = Vector2(82, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3sld"]
+size = Vector2(52, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3i8u"]
+size = Vector2(12, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwlwr"]
+size = Vector2(174, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg2eu"]
+size = Vector2(118, 193)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ibfs"]
+size = Vector2(122, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oy8l"]
+size = Vector2(138, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lqyg"]
+size = Vector2(133, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjs67"]
+size = Vector2(126.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wqd7e"]
+size = Vector2(102.75, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6j0a"]
+size = Vector2(90, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxvug"]
+size = Vector2(63.75, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbnk2"]
+size = Vector2(53.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm3aa"]
+size = Vector2(23, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vuxav"]
+size = Vector2(11.75, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54wqa"]
+size = Vector2(276, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8l43d"]
+size = Vector2(245, 139.375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgqmf"]
+size = Vector2(248, 104.125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqypt"]
+size = Vector2(246, 40)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_412cn"]
 texture = ExtResource("1_mqcgy")
@@ -68148,104 +68312,11 @@ texture = ExtResource("1_mqcgy")
 [sub_resource type="TileSet" id="TileSet_uv57d"]
 sources/0 = SubResource("TileSetAtlasSource_412cn")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcvg8"]
-size = Vector2(154, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_856oc"]
-size = Vector2(105.5, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jb6pp"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a18w3"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecty4"]
-size = Vector2(154, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ixbn"]
-size = Vector2(105.5, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ei1ol"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bylhy"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u4n5"]
-size = Vector2(174, 54)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rj3tj"]
-size = Vector2(154.875, 204)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_awjkv"]
-size = Vector2(160, 100)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuc5o"]
-size = Vector2(156, 34)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_urwkt"]
-size = Vector2(118, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqxj5"]
-size = Vector2(82, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3sld"]
-size = Vector2(52, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3i8u"]
-size = Vector2(12, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwlwr"]
-size = Vector2(174, 44)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg2eu"]
-size = Vector2(118, 193)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ibfs"]
-size = Vector2(122, 65)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oy8l"]
-size = Vector2(138, 31)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lqyg"]
-size = Vector2(133, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjs67"]
-size = Vector2(126.5, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wqd7e"]
-size = Vector2(102.75, 12.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6j0a"]
-size = Vector2(90, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxvug"]
-size = Vector2(63.75, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbnk2"]
-size = Vector2(53.5, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm3aa"]
-size = Vector2(23, 12)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vuxav"]
-size = Vector2(11.75, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_54wqa"]
-size = Vector2(276, 54)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8l43d"]
-size = Vector2(245, 139.375)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgqmf"]
-size = Vector2(248, 104.125)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqypt"]
-size = Vector2(246, 40)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oewjx"]
-size = Vector2(72.5833, 21.0861)
+size = Vector2(72.5833, 29.4611)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjr1b"]
+size = Vector2(342.5, 27.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2oco"]
 size = Vector2(149, 64)
@@ -68254,7 +68325,7 @@ size = Vector2(149, 64)
 size = Vector2(144, 49)
 
 [node name="Floor 5" type="Node2D"]
-script = ExtResource("1_nmc80")
+script = ExtResource("1_a8vt7")
 
 [node name="Floor" type="TileMap" parent="."]
 scale = Vector2(6, 6)
@@ -68483,6 +68554,8 @@ position = Vector2(704, -183)
 scale = Vector2(4.90234, 4.79167)
 sprite_frames = SubResource("SpriteFrames_4pkle")
 animation = &"Idle"
+frame = 2
+frame_progress = 0.257497
 
 [node name="Animated blood splatter 13" type="CharacterBody2D" parent="Idle animation nodes behind furniture"]
 position = Vector2(-276, 384)
@@ -69019,19 +69092,54 @@ tile_set = SubResource("TileSet_y4lxy")
 format = 2
 layer_0/tile_data = PackedInt32Array(131088, 3473409, 55, 131089, 3604481, 56, 131090, 3604481, 56, 131091, 3604481, 56, 131092, 3604481, 56, 131093, 3604481, 56, 131094, 3604481, 56, 131095, 3604481, 56, 131096, 3604481, 56, 131097, 3604481, 56, 131098, 3801089, 55, 655360, 3473409, 55, 655361, 3604481, 56, 655363, 3604481, 56, 655364, 3604481, 56, 655365, 3604481, 56, 655366, 3604481, 56, 655367, 3604481, 56, 655368, 3604481, 56, 655369, 3604481, 56, 655370, 3801089, 55, 720912, 3473409, 55, 720913, 3604481, 56, 720914, 3604481, 56, 720915, 3604481, 56, 720916, 3604481, 56, 720917, 3604481, 56, 720918, 3604481, 56, 720919, 3604481, 56, 720920, 3604481, 56, 720921, 3604481, 56, 720922, 3801089, 55, 1769473, 3604481, 56, 1769474, 3604481, 56, 1769475, 3604481, 56, 1769476, 3604481, 56, 1769477, 3604481, 56, 1769478, 3604481, 56, 1769479, 3604481, 56, 1769480, 3604481, 56, 1769495, 3604481, 56, 1769484, 3604481, 56, 1769485, 3604481, 56, 1769486, 3604481, 56, 1769487, 3604481, 56, 1769481, 3604481, 56, 1769482, 3604481, 56, 1769483, 3604481, 56, 655362, 3604481, 56, 2424832, 3473409, 55, 2424833, 3604481, 56, 2424835, 3604481, 56, 2424836, 3604481, 56, 2424837, 3604481, 56, 2424843, 3145729, 101, 2424844, 3604481, 56, 2424845, 3145729, 101, 2424846, 3145729, 101, 2424847, 3604481, 56, 2424848, 3801089, 55, 1769496, 3145729, 101, 1769497, 3145729, 101, 1769498, 3735553, 59, 1769499, 3145729, 101, 1769505, 3145729, 101, 1769506, 3145729, 101, 1769507, 3145729, 101, 1769508, 3145729, 101, 1769509, 3145729, 101, 1769510, 3145729, 101, 1769511, 3145729, 101, 1769512, 3145729, 101, 1769513, 3145729, 101, 1769514, 3145729, 101, 1769515, 3145729, 101, 1769516, 3145729, 101, 1769517, 3145729, 101, 1769518, 3145729, 101, 1769519, 3145729, 101, 1769520, 3145729, 101, 1769521, 3145729, 101, 1769522, 3145729, 101, 1769523, 3735553, 59, 2424834, 3604481, 56, 2293784, 3604481, 56, 2293789, 3604481, 56, 2293790, 3604481, 56, 2293791, 3604481, 56, 2293792, 3604481, 56, 2293793, 3604481, 56, 2293798, 3604481, 56, 2293799, 3604481, 56, 2293800, 3604481, 56, 2293801, 3604481, 56, 2293802, 3604481, 56, 2293807, 3604481, 56, 2293808, 3604481, 56, 2293809, 3604481, 56, 2293810, 3604481, 56, 2293811, 3670017, 56, 2293794, 3801089, 55, 2293803, 3801089, 55, 2293780, 3145729, 101, 2293781, 3145729, 101, 2818065, 3145729, 101, 2818067, 3145729, 101, 2818068, 3145729, 101, 2818069, 3145729, 101, 2818070, 3145729, 101, 2818071, 3145729, 101, 2818072, 3145729, 101, 2818080, 3145729, 101, 2818079, 3145729, 101, 2818078, 3145729, 101, 2818077, 3145729, 101, 2818076, 3145729, 101, 2818088, 3145729, 101, 2818089, 3145729, 101, 2818090, 3145729, 101, 2818094, 3145729, 101, 2818095, 3145729, 101, 2818096, 3145729, 101, 2818097, 3145729, 101, 2818098, 3145729, 101, 2818099, 3735553, 59, 2621474, 3735553, 56, 2687010, 3735553, 56, 2752546, 3735553, 56, 2555938, 3735553, 56, 2490402, 3735553, 56, 2818087, 3145729, 101, 2818086, 3145729, 101, 2818085, 3145729, 101, 2818083, 3145729, 101, 2818082, 3735553, 59, 2818081, 3145729, 101, 2818084, 3145729, 101, 2818091, 3735553, 59, 2818092, 3145729, 101, 2818093, 3145729, 101, 2818075, 3145729, 101, 2818073, 3735553, 59, 2818063, 3145729, 101, 2818062, 3145729, 101, 2818061, 3145729, 101, 2818060, 3145729, 101, 2818059, 3145729, 101, 2818058, 3145729, 101, 2818057, 3145729, 101, 2818056, 3145729, 101, 2818055, 3145729, 101, 2818054, 3145729, 101, 2818053, 3145729, 101, 2818052, 3145729, 101, 2818051, 3145729, 101, 2818050, 3145729, 101, 2818049, 3145729, 101, 2818074, 3670017, 59, 1507354, 3735553, 56, 1572890, 3735553, 56, 1638426, 3735553, 56, 1703962, 3735553, 56, 1441818, 3801089, 57, 1376282, 3801089, 56, 1310746, 3801089, 55, 1114139, 3145729, 101, 1114140, 3145729, 101, 1114141, 3145729, 101, 1114142, 3145729, 101, 1114143, 3145729, 101, 1114144, 3145729, 101, 1114145, 3145729, 101, 1114146, 3145729, 101, 1114147, 3145729, 101, 1114148, 3145729, 101, 1114149, 3145729, 101, 1114150, 3145729, 101, 1114151, 3145729, 101, 1114152, 3145729, 101, 1114153, 3145729, 101, 1114154, 3145729, 101, 1114155, 3145729, 101, 1114156, 3145729, 101, 1114157, 3145729, 101, 1114158, 3145729, 101, 1114159, 3145729, 101, 1114160, 3014657, 101, 2818064, 3735553, 59, 2818066, 3670017, 59, 2818048, 3538945, 59, 1769472, 3538945, 59, -458741, 3604481, 59, -458740, 3604481, 59, -458739, 3604481, 59, -458738, 3604481, 59, -458735, 3604481, 59, -458734, 3604481, 59, -458733, 3604481, 59, -458732, 3604481, 59, -458731, 3604481, 59, -458730, 3604481, 59, -458729, 3604481, 59, -458728, 3604481, 59, -458727, 3604481, 59, -458743, 3604481, 59, -458744, 3604481, 59, -458745, 3604481, 59, -458746, 3604481, 59, -458747, 3604481, 59, -458748, 3604481, 59, -458749, 3604481, 59, -458750, 3604481, 59, -458751, 3604481, 59, -458752, 3538945, 59, -458736, 3538945, 59, -458726, 3735553, 59, -458742, 3735553, 59)
 
+[node name="NPC" type="Node2D" parent="."]
+
+[node name="Initial info" type="Node2D" parent="NPC"]
+position = Vector2(-2067, -3013)
+script = ExtResource("29_0kbd1")
+metadata/_edit_group_ = true
+
+[node name="Speech" type="Node2D" parent="NPC/Initial info"]
+position = Vector2(-1602, 1294)
+
+[node name="Speech bubble" type="TextureRect" parent="NPC/Initial info/Speech"]
+offset_left = 3681.0
+offset_top = 1377.0
+offset_right = 4129.0
+offset_bottom = 1785.0
+texture = ExtResource("30_nk7s1")
+flip_h = true
+
+[node name="Speech text" type="RichTextLabel" parent="NPC/Initial info/Speech"]
+offset_left = 3789.0
+offset_top = 1437.0
+offset_right = 4013.0
+offset_bottom = 1640.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 38
+bbcode_enabled = true
+text = "[center] Find the stairs to escape"
+
+[node name="PlayerDetection" type="Area2D" parent="NPC/Initial info"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/Initial info/PlayerDetection"]
+position = Vector2(2329, 2935.5)
+shape = SubResource("RectangleShape2D_g1uk3")
+
 [node name="Collectible items" type="Node2D" parent="."]
 
 [node name="Collectible item key 0" parent="Collectible items" instance=ExtResource("30_ycgyi")]
-position = Vector2(558, -381)
+position = Vector2(495, -275)
 
 [node name="Collectible item boltcutter 0" parent="Collectible items" instance=ExtResource("29_j1icn")]
-position = Vector2(1588, 1021)
+position = Vector2(1764, 952)
 
 [node name="Locked interactable objects" type="Node2D" parent="."]
 
 [node name="Animated door vertical right locked 0" type="CharacterBody2D" parent="Locked interactable objects"]
 position = Vector2(2030, 1205)
 script = ExtResource("28_s0rtn")
+metadata/_edit_group_ = true
 
 [node name="AnimatedDoorRight" type="AnimatedSprite2D" parent="Locked interactable objects/Animated door vertical right locked 0"]
 position = Vector2(530, 348)
@@ -69100,7 +69208,6 @@ debug_color = Color(0.270588, 0.615686, 0.407843, 0.419608)
 [node name="Animated glass sliding door 1" type="CharacterBody2D" parent="Locked interactable objects"]
 position = Vector2(1531, -481)
 script = ExtResource("34_so8o3")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 1"]
 position = Vector2(940, 1374.37)
@@ -69133,6 +69240,14 @@ rotation = 0.218166
 scale = Vector2(1.70153, 3.125)
 sprite_frames = SubResource("SpriteFrames_lvvpu")
 animation = &"BoltCutter"
+
+[node name="AnimatedBoltCutter" type="AnimatedSprite2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+position = Vector2(954, 1319)
+scale = Vector2(2.74362, 3.67188)
+sprite_frames = SubResource("SpriteFrames_08xb3")
+animation = &"BoltCutter"
+frame = 4
+frame_progress = 1.0
 
 [node name="CollDoor1" type="CharacterBody2D" parent="Locked interactable objects/Animated glass sliding door 1"]
 
@@ -69220,6 +69335,7 @@ shape = SubResource("RectangleShape2D_rlhdr")
 debug_color = Color(0.882353, 0.317647, 0.305882, 0.419608)
 
 [node name="PlayerDetectionLayering" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionLayering"]
 position = Vector2(940, 1481)
@@ -69227,6 +69343,7 @@ shape = SubResource("RectangleShape2D_loqqa")
 debug_color = Color(0.870588, 0.709804, 0.152941, 0.419608)
 
 [node name="PlayerDetectAnimCloseTop" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/PlayerDetectAnimCloseTop"]
 position = Vector2(942, 1311.84)
@@ -69234,6 +69351,7 @@ shape = SubResource("RectangleShape2D_t7r2b")
 debug_color = Color(0.713726, 0.294118, 0.94902, 0.419608)
 
 [node name="PlayerDetectAnimCloseBottom" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/PlayerDetectAnimCloseBottom"]
 position = Vector2(941, 1499.5)
@@ -69241,6 +69359,7 @@ shape = SubResource("RectangleShape2D_wnbd4")
 debug_color = Color(0.835294, 0.356863, 0.419608, 0.419608)
 
 [node name="PlayerDetectionAnimation" type="Area2D" parent="Locked interactable objects/Animated glass sliding door 1"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionAnimation"]
 position = Vector2(941, 1437)
@@ -69248,7 +69367,7 @@ shape = SubResource("RectangleShape2D_hrxam")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Player" parent="." instance=ExtResource("3_eevib")]
-position = Vector2(186, -47)
+position = Vector2(213, -22)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -69272,11 +69391,17 @@ offset_bottom = -96.0
 text = "Inventory"
 metadata/_edit_use_anchors_ = true
 
-[node name="Doorway" type="TileMap" parent="."]
-scale = Vector2(3, 3.013)
-tile_set = SubResource("TileSet_uv57d")
-format = 2
-layer_0/tile_data = PackedInt32Array(1179658, 2162688, 2, 1114122, 2162688, 2, 1048586, 2162688, 2, 1179664, 2293760, 2, 1114128, 2293760, 2, 1048592, 2293760, 2, 458768, 2293760, 2, 524304, 2293760, 2, 589840, 2293760, 2, 393226, 2162688, 2, 458762, 2162688, 2, 524298, 2162688, 2, -131056, 2293760, 2, -65520, 2293760, 2, 16, 2293760, 2, 2097168, 2162688, 2, 2162704, 2162688, 2, 2228240, 2162688, 2, 2031668, 2162688, 2, 2097204, 2162688, 2, 2162740, 2162688, 2, 1114161, 1966080, 1, 1114165, 1900544, 1, 1114162, 2228224, 1, 1114163, 2228224, 1, 1114164, 2228224, 1, 1769500, 1966080, 1, 1769504, 1900544, 1, 1769503, 2228224, 1, 1769502, 2228224, 1, 1769501, 2228224, 1, 1769490, 2228224, 1, 1769491, 2228224, 1, 1769492, 2228224, 1, 1769493, 1900544, 1, 1769489, 1966080, 1, 2424839, 1966080, 1, 2424840, 2228224, 1, 2424841, 1900544, 1, 2293779, 1900544, 1, 2293778, 1966080, 1, 2293787, 1966080, 1, 2293788, 1900544, 1, 2293796, 1966080, 1, 2293797, 1900544, 1, 2293806, 1900544, 1, 2293805, 1966080, 1, 2818101, 2686976, 1, 2818102, 2949120, 1, 2818103, 2621440, 1)
+[node name="Instructions" type="Button" parent="Player/Buttons"]
+offset_left = 318.0
+offset_top = -72.0
+offset_right = 501.0
+offset_bottom = 8.0
+text = "Instructions"
+metadata/_edit_use_anchors_ = true
+
+[node name="Instructions page" parent="Player/Buttons" instance=ExtResource("46_eka5q")]
+visible = false
+position = Vector2(-570, -314)
 
 [node name="Animated door horizontal and sliding nodes" type="Node2D" parent="."]
 
@@ -69757,6 +69882,7 @@ debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 [node name="Animated glass sliding door 1" type="CharacterBody2D" parent="Animated door horizontal and sliding nodes"]
 position = Vector2(524, 1)
 script = ExtResource("26_xyf23")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSlideDoor" type="AnimatedSprite2D" parent="Animated door horizontal and sliding nodes/Animated glass sliding door 1"]
 position = Vector2(940, 1374.37)
@@ -69877,15 +70003,60 @@ position = Vector2(941, 1435)
 shape = SubResource("RectangleShape2D_oqypt")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
+[node name="Doorway" type="TileMap" parent="."]
+scale = Vector2(3, 3.013)
+tile_set = SubResource("TileSet_uv57d")
+format = 2
+layer_0/tile_data = PackedInt32Array(1179658, 2162688, 2, 1114122, 2162688, 2, 1048586, 2162688, 2, 1179664, 2293760, 2, 1114128, 2293760, 2, 1048592, 2293760, 2, 458768, 2293760, 2, 524304, 2293760, 2, 589840, 2293760, 2, 393226, 2162688, 2, 458762, 2162688, 2, 524298, 2162688, 2, -131056, 2293760, 2, -65520, 2293760, 2, 16, 2293760, 2, 2097168, 2162688, 2, 2162704, 2162688, 2, 2228240, 2162688, 2, 2031668, 2162688, 2, 2097204, 2162688, 2, 2162740, 2162688, 2, 1114161, 1966080, 1, 1114165, 1900544, 1, 1114162, 2228224, 1, 1114163, 2228224, 1, 1114164, 2228224, 1, 1769500, 1966080, 1, 1769504, 1900544, 1, 1769503, 2228224, 1, 1769502, 2228224, 1, 1769501, 2228224, 1, 1769490, 2228224, 1, 1769491, 2228224, 1, 1769492, 2228224, 1, 1769493, 1900544, 1, 1769489, 1966080, 1, 2424839, 1966080, 1, 2424840, 2228224, 1, 2424841, 1900544, 1, 2293779, 1900544, 1, 2293778, 1966080, 1, 2293787, 1966080, 1, 2293788, 1900544, 1, 2293796, 1966080, 1, 2293797, 1900544, 1, 2293806, 1900544, 1, 2293805, 1966080, 1, 2818101, 2686976, 1, 2818102, 2949120, 1, 2818103, 2621440, 1)
+
 [node name="Floor 5 to Boss" type="CharacterBody2D" parent="."]
 script = ExtResource("46_72ot2")
+metadata/_edit_group_ = true
 
-[node name="Player Detection" type="Area2D" parent="Floor 5 to Boss"]
+[node name="PlayerDetection" type="Area2D" parent="Floor 5 to Boss"]
 scale = Vector2(3, 3.013)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 5 to Boss/Player Detection"]
-position = Vector2(823.333, 278.792)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor 5 to Boss/PlayerDetection"]
+position = Vector2(823.667, 275.346)
 shape = SubResource("RectangleShape2D_oewjx")
+
+[node name="Speech" type="Node2D" parent="Floor 5 to Boss"]
+position = Vector2(-1438, -729)
+
+[node name="Speech bubble" type="TextureRect" parent="Floor 5 to Boss/Speech"]
+offset_left = 3655.0
+offset_top = 1370.0
+offset_right = 4168.0
+offset_bottom = 1808.0
+texture = ExtResource("30_nk7s1")
+flip_h = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Speech text" type="RichTextLabel" parent="Floor 5 to Boss/Speech"]
+offset_left = 3780.0
+offset_top = 1437.0
+offset_right = 4031.0
+offset_bottom = 1640.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center] You're entering a boss battle room. Avoid the the boss's attacks without losing all your lives to be able to collect the item! ▶"
+metadata/_edit_use_anchors_ = true
+
+[node name="Press space text" type="RichTextLabel" parent="Floor 5 to Boss/Speech/Speech text"]
+layout_mode = 0
+offset_left = 181.0
+offset_top = 137.0
+offset_right = 253.0
+offset_bottom = 193.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 12
+text = "Press space to continue"
+metadata/_edit_use_anchors_ = true
+
+[node name="Block player" type="CollisionShape2D" parent="Floor 5 to Boss"]
+position = Vector2(2490, 806)
+shape = SubResource("RectangleShape2D_wjr1b")
 
 [node name="Exit level 1 to level 2" type="CharacterBody2D" parent="."]
 script = ExtResource("44_s8vro")
@@ -69899,6 +70070,11 @@ shape = SubResource("RectangleShape2D_f2oco")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Exit level 1 to level 2/Player detection"]
 position = Vector2(2616, 2088)
 shape = SubResource("RectangleShape2D_aueg4")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("51_sea2g")
+autoplay = true
+max_distance = 100000.0
 
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 0/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 0" method="_on_PlayerDetectionFromLeft_body_exited"]
@@ -69924,6 +70100,8 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromLeft" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromLeft_body_exited"]
 [connection signal="body_entered" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromRight_body_entered"]
 [connection signal="body_exited" from="Animated door vertical nodes/Animated door vertical right 5/PlayerDetectionFromRight" to="Animated door vertical nodes/Animated door vertical right 5" method="_on_PlayerDetectionFromRight_body_exited"]
+[connection signal="body_entered" from="NPC/Initial info/PlayerDetection" to="NPC/Initial info" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="NPC/Initial info/PlayerDetection" to="NPC/Initial info" method="_on_player_detection_body_exited"]
 [connection signal="animation_finished" from="Locked interactable objects/Animated door vertical right locked 0/AnimatedSparkle" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_animated_sparkle_animation_finished"]
 [connection signal="frame_changed" from="Locked interactable objects/Animated door vertical right locked 0/AnimatedKey" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_animated_key_frame_changed"]
 [connection signal="body_entered" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromLeft" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromLeft_body_entered"]
@@ -69932,6 +70110,7 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Locked interactable objects/Animated door vertical right locked 0/PlayerDetectionFromRight" to="Locked interactable objects/Animated door vertical right locked 0" method="_on_PlayerDetectionFromRight_body_exited"]
 [connection signal="frame_changed" from="Locked interactable objects/Animated glass sliding door 1/AnimatedSlideDoor" to="Locked interactable objects/Animated glass sliding door 1" method="_on_animated_slide_door_frame_changed"]
 [connection signal="animation_finished" from="Locked interactable objects/Animated glass sliding door 1/AnimatedLockOpen" to="Locked interactable objects/Animated glass sliding door 1" method="_on_animated_lock_open_animation_finished"]
+[connection signal="animation_finished" from="Locked interactable objects/Animated glass sliding door 1/AnimatedBoltCutter" to="Locked interactable objects/Animated glass sliding door 1" method="_on_animated_bolt_cutter_animation_finished"]
 [connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionLayering" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionLayering" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDetectionLayering_body_exited"]
 [connection signal="body_entered" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectAnimCloseTop" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDetectAnimCloseTop_body_entered"]
@@ -69942,6 +70121,7 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Locked interactable objects/Animated glass sliding door 1/PlayerDetectionAnimation" to="Locked interactable objects/Animated glass sliding door 1" method="_on_PlayerDetectionAnimation_body_exited"]
 [connection signal="button_down" from="Player/Buttons/Home" to="Player/Buttons" method="_on_home_button_down"]
 [connection signal="button_down" from="Player/Buttons/Inventory" to="Player/Buttons" method="_on_inventory_button_down"]
+[connection signal="button_down" from="Player/Buttons/Instructions" to="Player/Buttons" method="_on_instructions_button_down"]
 [connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/AnimatedDoor" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_animated_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDectectionLayering_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated door horizontal wider 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated door horizontal wider 0" method="_on_PlayerDetectionLayering_body_exited"]
@@ -69996,6 +70176,7 @@ shape = SubResource("RectangleShape2D_aueg4")
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectAnimCloseBottom" to="Animated door horizontal and sliding nodes/Animated glass sliding door 1" method="_on_PlayerDetectAnimCloseBottom_body_exited"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door 1" method="_on_PlayerDetectionAnimation_body_entered"]
 [connection signal="body_exited" from="Animated door horizontal and sliding nodes/Animated glass sliding door 1/PlayerDetectionAnimation" to="Animated door horizontal and sliding nodes/Animated glass sliding door 1" method="_on_PlayerDetectionAnimation_body_exited"]
-[connection signal="body_entered" from="Floor 5 to Boss/Player Detection" to="Floor 5 to Boss" method="_on_player_detection_body_entered"]
+[connection signal="body_entered" from="Floor 5 to Boss/PlayerDetection" to="Floor 5 to Boss" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="Floor 5 to Boss/PlayerDetection" to="Floor 5 to Boss" method="_on_player_detection_body_exited"]
 [connection signal="body_entered" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="Exit level 1 to level 2/Player detection" to="Exit level 1 to level 2" method="_on_player_detection_body_exited"]

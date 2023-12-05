@@ -6,7 +6,6 @@ var previous_state: SantisBossesState
 
 
 func _ready():
-	print(get_child(0).to_string())
 	current_state = get_child(0) as SantisBossesState 
 	previous_state = current_state
 	current_state.enter()

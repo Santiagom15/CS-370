@@ -1,39 +1,170 @@
-[gd_scene load_steps=5 format=3 uid="uid://djgirt4513m8p"]
+[gd_scene load_steps=14 format=3 uid="uid://djgirt4513m8p"]
 
-[ext_resource type="Script" path="res://Start.gd" id="1_poiht"]
-[ext_resource type="Script" path="res://Button2.gd" id="1_qt705"]
-[ext_resource type="Texture2D" uid="uid://c3lxttphkgl5g" path="res://assets/BackGrounds/StartScrene.png" id="3_qhcsj"]
+[ext_resource type="Script" path="res://Opening scene.gd" id="1_dml2s"]
+[ext_resource type="Texture2D" uid="uid://wdglwbmcy4r1" path="res://assets/Logo/Arrythmia Game Logo animation.png" id="2_l33kk"]
 [ext_resource type="Script" path="res://Inventory/Inventory.gd" id="4_m55eg"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_gprsy"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(0, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgpn7"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(600, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ow21"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(1200, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vm1cg"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(1800, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpx0e"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(2400, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlfvd"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(3000, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rpcx"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(3600, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7m5ny"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(4200, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2n43y"]
+atlas = ExtResource("2_l33kk")
+region = Rect2(4800, 0, 600, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j2t08"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gprsy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgpn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ow21")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vm1cg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpx0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlfvd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4rpcx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7m5ny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2n43y")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
 [node name="MyWorld" type="Node2D"]
+script = ExtResource("1_dml2s")
 
-[node name="Start" type="Button" parent="."]
-offset_left = 455.0
-offset_top = 201.0
-offset_right = 635.0
-offset_bottom = 326.0
-text = "Start"
-script = ExtResource("1_poiht")
+[node name="Background graphics" type="Node2D" parent="."]
 
-[node name="Exit" type="Button" parent="."]
-offset_left = 456.0
-offset_top = 424.0
-offset_right = 644.0
-offset_bottom = 539.0
-text = "Exit"
-script = ExtResource("1_qt705")
+[node name="ColorRect background" type="ColorRect" parent="Background graphics"]
+offset_left = -12.0
+offset_top = -17.0
+offset_right = 1166.0
+offset_bottom = 672.0
+color = Color(0.0509804, 0.0117647, 0.0196078, 1)
 
-[node name="TextureRect" type="TextureRect" parent="."]
-z_index = -1
-offset_top = -5.0
-offset_right = 1148.0
-offset_bottom = 646.0
-mouse_filter = 2
-texture = ExtResource("3_qhcsj")
-expand_mode = 1
+[node name="Arrythmia logo animation" type="AnimatedSprite2D" parent="Background graphics"]
+position = Vector2(341, 327)
+scale = Vector2(1.23333, 1.14667)
+sprite_frames = SubResource("SpriteFrames_j2t08")
+animation = &"Idle"
+frame_progress = 0.353829
+
+[node name="Arrythmia title" type="RichTextLabel" parent="Background graphics"]
+offset_left = 565.0
+offset_top = 55.0
+offset_right = 1161.0
+offset_bottom = 198.0
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+text = "[center][shake]Arrythmia"
 
 [node name="Inventory" type="Node2D" parent="."]
 script = ExtResource("4_m55eg")
 
-[connection signal="button_down" from="Start" to="Start" method="_on_button_down"]
-[connection signal="button_down" from="Exit" to="Exit" method="_on_button_down"]
+[node name="Start" type="Node2D" parent="."]
+position = Vector2(-67, 89)
+metadata/_edit_group_ = true
+
+[node name="ColorRect start button" type="ColorRect" parent="Start"]
+offset_left = 800.0
+offset_top = 138.0
+offset_right = 1033.0
+offset_bottom = 286.0
+color = Color(0.992157, 0.976471, 0.980392, 1)
+
+[node name="Arrythmia start" type="RichTextLabel" parent="Start"]
+offset_left = 844.0
+offset_top = 180.0
+offset_right = 992.0
+offset_bottom = 250.0
+theme_override_colors/default_color = Color(0.00392157, 0.00392157, 0.00392157, 1)
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center][shake]Start"
+
+[node name="Start" type="Button" parent="Start"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 798.0
+offset_top = 138.0
+offset_right = 1035.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+
+[node name="Quit" type="Node2D" parent="."]
+position = Vector2(-73, 74)
+metadata/_edit_group_ = true
+
+[node name="ColorRect quit button" type="ColorRect" parent="Quit"]
+offset_left = 806.0
+offset_top = 349.0
+offset_right = 1039.0
+offset_bottom = 497.0
+color = Color(0.988235, 0.972549, 0.972549, 1)
+
+[node name="Arrythmia quit" type="RichTextLabel" parent="Quit"]
+offset_left = 848.0
+offset_top = 389.0
+offset_right = 996.0
+offset_bottom = 459.0
+theme_override_colors/default_color = Color(0.00392157, 0.00392157, 0.00392157, 1)
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center][shake]Quit"
+
+[node name="Exit" type="Button" parent="Quit"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 806.0
+offset_top = 346.0
+offset_right = 1037.0
+offset_bottom = 500.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+
+[connection signal="button_down" from="Start/Start" to="." method="_on_start_button_down"]
+[connection signal="button_down" from="Quit/Exit" to="." method="_on_exit_button_down"]
