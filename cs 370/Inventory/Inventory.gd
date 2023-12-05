@@ -43,6 +43,9 @@ var interactionStates = {}
 # Store the previous page scene. This includes menu page, level navigation, and exploration scenes, but does not include instructions page, start page, or boss battle scenes
 var prevPage = ""
 
+# Store the number of the highest level unlocked/reached
+var highestLevelUnlocked = 1
+
 # Function to get the singleton instance
 func _get_instance():
 	if instance == null:
@@ -74,6 +77,10 @@ func get_item_count(item_id):
 # Function to return the dictionary of items and counts
 func get_inventory():
 	return inventory
+
+# Function to clear all items in the inventory
+func clear_inventory():
+	inventory = {}
 
 # Function to update the path of the current level (or previous level, if player is in inventory)
 func update_current_level(curr_path):
@@ -184,6 +191,7 @@ func clear_interactions():
 # Function to clear all relevant information for the current level
 # Used when transitioning between one scene to the next after completion, or switching between scenes in level navigiation scene
 func clear_level_data():
+	clear_inventory()
 	update_transport(false)
 	clear_level_items()
 	clear_level_unlocks()
@@ -193,9 +201,15 @@ func clear_level_data():
 # Set the path of the previous page (will be done on the current to be used by the inventory inorder to return to the correct page)
 func set_prev_page(path):
 	prevPage = path
-	print("-set prevpage: ", prevPage)
 
 # Get the previous page path
 func get_prev_page():
-	print("-get prevpage: ", prevPage)
 	return prevPage
+
+# Get the number of the highest level currently unlocked
+func get_level_number_unlocked():
+	return highestLevelUnlocked
+
+# Update the number of the highest level unlocked
+func update_level_number_unlocked(level_idx):
+	highestLevelUnlocked = level_idx

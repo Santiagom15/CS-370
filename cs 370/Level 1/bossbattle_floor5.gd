@@ -44,7 +44,6 @@ func _on_timer_timeout():
 func _process(_delta):
 	$AudioStreamPlayer2D.get_time()
 	var t = timmy.time
-	print(t) 
 	
 	if(global_hit.hits == 1):
 		$HealthBar.play("2")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=218 format=3 uid="uid://bft8gh4vv1seh"]
+[gd_scene load_steps=224 format=3 uid="uid://bft8gh4vv1seh"]
 
 [ext_resource type="Texture2D" uid="uid://dugkrqfe5mkxe" path="res://assets/Collectible_Items_Pico8Colors/Misc/Elevator floor level 1.png" id="1_due02"]
 [ext_resource type="Script" path="res://Level 1/Animated Idle.gd" id="2_njudl"]
@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://bwvbr2y3xksbo" path="res://assets/Collectible_Items_Pico8Colors/Misc/Elevator floor level 3.png" id="15_txika"]
 [ext_resource type="Script" path="res://Level Navigation/Level changes.gd" id="16_2qoa6"]
 [ext_resource type="Texture2D" uid="uid://b81afl3p2j43n" path="res://assets/Collectible_Items_Pico8Colors/Misc/Elevator floor level 4.png" id="16_g7dvc"]
+[ext_resource type="Texture2D" uid="uid://36ft47es1epo" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/speech_bubble_box_edittedAlisa.png" id="18_600tq"]
+[ext_resource type="Script" path="res://Level Navigation/Accessing locked levels and warning messages.gd" id="18_pwr3g"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wexdo"]
 load_path = "res://.godot/imported/Room_Builder_16x16.png-f7a84be3b4a4985a47ead70f11ee8e83.ctex"
@@ -27260,10 +27262,10 @@ size = Vector2(112.5, 75)
 size = Vector2(114.625, 75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flpnx"]
-size = Vector2(250.5, 75)
+size = Vector2(250.5, 76.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_akh6l"]
-size = Vector2(250.5, 75)
+size = Vector2(250.5, 69.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ce5xo"]
 size = Vector2(250.5, 75)
@@ -27273,6 +27275,18 @@ size = Vector2(250.5, 75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tdmqc"]
 size = Vector2(109, 121)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ik4si"]
+size = Vector2(249.5, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i5gbh"]
+size = Vector2(246.5, 107.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4qy1s"]
+size = Vector2(249.5, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8kinv"]
+size = Vector2(249.5, 29)
 
 [node name="Level select" type="Node2D"]
 
@@ -28122,7 +28136,7 @@ shape = SubResource("RectangleShape2D_i55ck")
 debug_color = Color(0.137255, 0.580392, 0.768627, 0.419608)
 
 [node name="Player" parent="." instance=ExtResource("7_bmtc2")]
-position = Vector2(-247, -136)
+position = Vector2(-180, -109)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -28216,19 +28230,19 @@ shape = SubResource("RectangleShape2D_hb7b7")
 [node name="Level 1" type="Area2D" parent="Level changes"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level changes/Level 1"]
-position = Vector2(311, -337)
+position = Vector2(311, -329.25)
 shape = SubResource("RectangleShape2D_flpnx")
 
 [node name="Level 2" type="Area2D" parent="Level changes"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level changes/Level 2"]
-position = Vector2(741, -325)
+position = Vector2(740, -330.75)
 shape = SubResource("RectangleShape2D_akh6l")
 
 [node name="Level 3" type="Area2D" parent="Level changes"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level changes/Level 3"]
-position = Vector2(1181, -325)
+position = Vector2(1182, -331)
 shape = SubResource("RectangleShape2D_ce5xo")
 
 [node name="Level 4" type="Area2D" parent="Level changes"]
@@ -28242,6 +28256,123 @@ shape = SubResource("RectangleShape2D_orc7j")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level changes/Instructions"]
 position = Vector2(-254, -291)
 shape = SubResource("RectangleShape2D_tdmqc")
+
+[node name="Locked levels and warning messages" type="Node2D" parent="."]
+
+[node name="Level 2" type="Node2D" parent="Locked levels and warning messages"]
+script = ExtResource("18_pwr3g")
+
+[node name="ParentCol" type="CharacterBody2D" parent="Locked levels and warning messages/Level 2"]
+
+[node name="Collision" type="CollisionShape2D" parent="Locked levels and warning messages/Level 2/ParentCol"]
+position = Vector2(742, -275)
+shape = SubResource("RectangleShape2D_ik4si")
+debug_color = Color(0.145098, 0.639216, 0.227451, 0.419608)
+
+[node name="Locked speech" type="Node2D" parent="Locked levels and warning messages/Level 2"]
+position = Vector2(-3147, -2257)
+
+[node name="Speech bubble" type="TextureRect" parent="Locked levels and warning messages/Level 2/Locked speech"]
+offset_left = 3708.0
+offset_top = 1787.0
+offset_right = 4055.0
+offset_bottom = 2114.0
+texture = ExtResource("18_600tq")
+flip_h = true
+
+[node name="Speech text" type="RichTextLabel" parent="Locked levels and warning messages/Level 2/Locked speech"]
+offset_left = 3782.0
+offset_top = 1830.0
+offset_right = 3986.0
+offset_bottom = 1992.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 26
+bbcode_enabled = true
+text = "[center] Unlock previous levels to access this level!"
+
+[node name="PlayerDetection" type="Area2D" parent="Locked levels and warning messages/Level 2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked levels and warning messages/Level 2/PlayerDetection"]
+position = Vector2(739, -284)
+shape = SubResource("RectangleShape2D_i5gbh")
+debug_color = Color(0.913725, 0.203922, 0.517647, 0.419608)
+
+[node name="Level 3" type="Node2D" parent="Locked levels and warning messages"]
+script = ExtResource("18_pwr3g")
+
+[node name="ParentCol" type="CharacterBody2D" parent="Locked levels and warning messages/Level 3"]
+
+[node name="Collision" type="CollisionShape2D" parent="Locked levels and warning messages/Level 3/ParentCol"]
+position = Vector2(1177, -275)
+shape = SubResource("RectangleShape2D_4qy1s")
+debug_color = Color(0.145098, 0.639216, 0.227451, 0.419608)
+
+[node name="Locked speech" type="Node2D" parent="Locked levels and warning messages/Level 3"]
+position = Vector2(-2712, -2256)
+
+[node name="Speech bubble" type="TextureRect" parent="Locked levels and warning messages/Level 3/Locked speech"]
+offset_left = 3713.0
+offset_top = 1783.0
+offset_right = 4056.0
+offset_bottom = 2128.0
+texture = ExtResource("18_600tq")
+flip_h = true
+
+[node name="Speech text" type="RichTextLabel" parent="Locked levels and warning messages/Level 3/Locked speech"]
+offset_left = 3782.0
+offset_top = 1830.0
+offset_right = 3986.0
+offset_bottom = 1992.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 26
+bbcode_enabled = true
+text = "[center] Unlock previous levels to access this level!"
+
+[node name="PlayerDetection" type="Area2D" parent="Locked levels and warning messages/Level 3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked levels and warning messages/Level 3/PlayerDetection"]
+position = Vector2(1177, -288)
+shape = SubResource("RectangleShape2D_i5gbh")
+debug_color = Color(0.913725, 0.203922, 0.517647, 0.419608)
+
+[node name="Level 4" type="Node2D" parent="Locked levels and warning messages"]
+script = ExtResource("18_pwr3g")
+
+[node name="ParentCol" type="CharacterBody2D" parent="Locked levels and warning messages/Level 4"]
+
+[node name="Collision" type="CollisionShape2D" parent="Locked levels and warning messages/Level 4/ParentCol"]
+position = Vector2(1610, -281)
+shape = SubResource("RectangleShape2D_8kinv")
+debug_color = Color(0.145098, 0.639216, 0.227451, 0.419608)
+
+[node name="Locked speech" type="Node2D" parent="Locked levels and warning messages/Level 4"]
+position = Vector2(-2279, -2253)
+metadata/_edit_group_ = true
+
+[node name="Speech bubble" type="TextureRect" parent="Locked levels and warning messages/Level 4/Locked speech"]
+offset_left = 3706.0
+offset_top = 1784.0
+offset_right = 4058.0
+offset_bottom = 2134.0
+texture = ExtResource("18_600tq")
+flip_h = true
+
+[node name="Speech text" type="RichTextLabel" parent="Locked levels and warning messages/Level 4/Locked speech"]
+offset_left = 3782.0
+offset_top = 1830.0
+offset_right = 3986.0
+offset_bottom = 1992.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 26
+bbcode_enabled = true
+text = "[center] Unlock previous levels to access this level!"
+
+[node name="PlayerDetection" type="Area2D" parent="Locked levels and warning messages/Level 4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Locked levels and warning messages/Level 4/PlayerDetection"]
+position = Vector2(1609, -293)
+shape = SubResource("RectangleShape2D_i5gbh")
+debug_color = Color(0.913725, 0.203922, 0.517647, 0.419608)
 
 [connection signal="frame_changed" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/AnimatedSlideDoor" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_animated_slide_door_frame_changed"]
 [connection signal="body_entered" from="Animated door horizontal and sliding nodes/Animated glass sliding door 0/PlayerDetectionLayering" to="Animated door horizontal and sliding nodes/Animated glass sliding door 0" method="_on_PlayerDectectionLayering_body_entered"]
@@ -28304,3 +28435,9 @@ shape = SubResource("RectangleShape2D_tdmqc")
 [connection signal="body_entered" from="Level changes/Level 3" to="Level changes" method="_on_level_3_body_entered"]
 [connection signal="body_entered" from="Level changes/Level 4" to="Level changes" method="_on_level_4_body_entered"]
 [connection signal="body_entered" from="Level changes/Instructions" to="Level changes" method="_on_instructions_body_entered"]
+[connection signal="body_entered" from="Locked levels and warning messages/Level 2/PlayerDetection" to="Locked levels and warning messages/Level 2" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="Locked levels and warning messages/Level 2/PlayerDetection" to="Locked levels and warning messages/Level 2" method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="Locked levels and warning messages/Level 3/PlayerDetection" to="Locked levels and warning messages/Level 3" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="Locked levels and warning messages/Level 3/PlayerDetection" to="Locked levels and warning messages/Level 3" method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="Locked levels and warning messages/Level 4/PlayerDetection" to="Locked levels and warning messages/Level 4" method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="Locked levels and warning messages/Level 4/PlayerDetection" to="Locked levels and warning messages/Level 4" method="_on_player_detection_body_exited"]

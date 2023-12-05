@@ -19,15 +19,10 @@ func _on_screen_exited():
 
 func _on_hit_box_body_entered(body):
 	if body.name == "player":
-		print("hit")
 		global_var.hits2 = global_var.hits2 + 1
 		$AnimatedSprite2D.play("spill")
 		$"hit box/spillCollision".visible = true
-		if ($"hit box/spillCollision".visible == true):
-				print("spill visible: ")
 		$"hit box/throwCollision".visible = false
-		if ($"hit box/spillCollision".visible == true):
-				print("throw not visible: ")
 		speed = 0
 		if(explodeTimer.is_stopped()):
 			explodeTimer.start()
@@ -37,7 +32,6 @@ func _on_hit_box_body_entered(body):
 					
 		
 	if body.name == "Lane collision2":
-		print("hit edge")
 		queue_free()
 
 

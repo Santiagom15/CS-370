@@ -43207,7 +43207,7 @@ text = "Click on the boss to start
 "
 
 [node name="deathtimer" type="Timer" parent="."]
-wait_time = 10.0
+wait_time = 74.0
 one_shot = true
 autostart = true
 

@@ -19,9 +19,7 @@ func isSpacePressed()->bool:
 		
 func _on_heart_frame_changed():
 	pass
-	#print("Moving: ",moving," space: ",isSpacePressed()," stat: ",state)
-	#if getState() and isSpacePressed():
-		#print("State: ",getState(), " Space: ",isSpacePressed())
+
 
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")	

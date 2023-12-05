@@ -5471,31 +5471,23 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array(327681, 131073, 75, 262146, 196609, 75, 327682, 196609, 75, 393217, 131073, 76, 393218, 196609, 76, 262149, 1, 65, 327685, 1, 66, 393221, 1, 67, 262150, 65537, 65, 327686, 65537, 66, 393222, 65537, 67)
 
 [node name="Page navigation buttons" type="Node2D" parent="."]
-position = Vector2(29, -1)
-
-[node name="Play" type="Button" parent="Page navigation buttons"]
-offset_left = 783.0
-offset_top = 54.0
-offset_right = 1082.0
-offset_bottom = 141.0
-theme_override_font_sizes/font_size = 58
-text = "PLAY"
-
-[node name="Instructions" type="Button" parent="Page navigation buttons"]
-offset_left = 782.0
-offset_top = 162.0
-offset_right = 1085.0
-offset_bottom = 249.0
-theme_override_font_sizes/font_size = 34
-text = "Instructions"
+position = Vector2(19, -32)
 
 [node name="LevelMenu" type="Button" parent="Page navigation buttons"]
-offset_left = 781.0
-offset_top = 280.0
-offset_right = 1081.0
-offset_bottom = 371.0
-theme_override_font_sizes/font_size = 34
+offset_left = 775.0
+offset_top = 116.0
+offset_right = 1075.0
+offset_bottom = 267.0
+theme_override_font_sizes/font_size = 50
 text = "Level Menu"
+
+[node name="Instructions" type="Button" parent="Page navigation buttons"]
+offset_left = 778.0
+offset_top = 293.0
+offset_right = 1081.0
+offset_bottom = 380.0
+theme_override_font_sizes/font_size = 34
+text = "Instructions"
 
 [node name="Inventory" type="Button" parent="Page navigation buttons"]
 offset_left = 782.0
@@ -5516,10 +5508,10 @@ text = "Return to start"
 
 [node name="Unlock debug buttons" type="Button" parent="Page navigation buttons"]
 modulate = Color(1, 1, 1, 0.133333)
-offset_left = 174.0
-offset_top = 253.0
-offset_right = 235.0
-offset_bottom = 295.0
+offset_left = 184.0
+offset_top = 283.0
+offset_right = 245.0
+offset_bottom = 325.0
 
 [node name="Idle animation nodes" type="Node2D" parent="."]
 
@@ -5600,9 +5592,8 @@ text = "Level 4"
 [node name="Instructions page" parent="." instance=ExtResource("6_1drlc")]
 visible = false
 
-[connection signal="button_down" from="Page navigation buttons/Play" to="." method="_on_play_button_down"]
-[connection signal="button_down" from="Page navigation buttons/Instructions" to="." method="_on_instructions_button_down"]
 [connection signal="button_down" from="Page navigation buttons/LevelMenu" to="." method="_on_level_menu_button_down"]
+[connection signal="button_down" from="Page navigation buttons/Instructions" to="." method="_on_instructions_button_down"]
 [connection signal="button_down" from="Page navigation buttons/Inventory" to="." method="_on_inventory_button_down"]
 [connection signal="button_down" from="Page navigation buttons/BacktoHome" to="." method="_on_backto_home_button_down"]
 [connection signal="button_down" from="Page navigation buttons/Unlock debug buttons" to="." method="_on_unlock_debug_buttons_button_down"]

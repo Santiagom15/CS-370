@@ -24,6 +24,9 @@ func _ready():
 		
 	for unlocked_item in inventory.get_unlocks():
 		lockDisabled.emit(unlocked_item)
+	
+	if inventory.get_level_number_unlocked() < 2:
+		inventory.update_level_number_unlocked(2)
 
 
 # Update the player's position in the game data

@@ -26,6 +26,7 @@ func _ready():
 
 # Button to make the debug level buttons visible. This will allow someone to play all levels irregardless of completing previous levels
 func _on_unlock_debug_buttons_button_down():
+	inventory.update_level_number_unlocked(4)
 	debugButtons.visible = true
 
 # Button to change the scene to the home/initial game page

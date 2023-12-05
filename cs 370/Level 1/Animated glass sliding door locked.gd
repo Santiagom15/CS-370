@@ -142,7 +142,6 @@ func _on_animated_lock_open_animation_finished():
 
 func _on_lock_disabled(lockIdx):
 	# It is assumed that locked door node names will end in a int > 0 to identify/distinguish all locked doors in a scene
-	print("LOCK DISABLED")
 	if lockIdx == "Door" + doorName[-1]:
 		unlocked = true
 		animLock.hide()

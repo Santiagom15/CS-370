@@ -20,7 +20,6 @@ func _on_screen_exited():
 
 func _on_hit_box_body_entered(body):
 	if body.name == "player":
-		print("hit")
 		global_hit.hits = global_hit.hits + 1
 		$Sprite2D.play("explode")
 		speed = 0
@@ -29,7 +28,6 @@ func _on_hit_box_body_entered(body):
 			
 		
 	if body.name == "Lane collision2":
-		print("hit edge")
 		queue_free()
 
 

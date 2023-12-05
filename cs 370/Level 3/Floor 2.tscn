@@ -62924,7 +62924,7 @@ position = Vector2(1723, 847)
 position = Vector2(1915, 1916)
 
 [node name="Player" parent="." instance=ExtResource("3_dpc47")]
-position = Vector2(874, 1110)
+position = Vector2(2754, 2309)
 metadata/_edit_group_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
@@ -63736,6 +63736,7 @@ layer_0/tile_data = PackedInt32Array(1245199, 2949120, 1, 1245198, 2949120, 1, 1
 
 [node name="Floor 2 to Boss" type="CharacterBody2D" parent="."]
 script = ExtResource("2_mt760")
+metadata/_edit_group_ = true
 
 [node name="PlayerDetection" type="Area2D" parent="Floor 2 to Boss"]
 

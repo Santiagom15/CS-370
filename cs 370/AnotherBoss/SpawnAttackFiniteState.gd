@@ -16,7 +16,6 @@ func change_state(state): # lets you change the state
 	current_state = find_child(state) as SantisBossesState
 	previous_state.exit()
 	current_state.enter()
-	print("Current State: ",current_state," Previous State: ", previous_state)
 	
 	
 func get_StateInString():# 

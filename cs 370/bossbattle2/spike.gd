@@ -16,22 +16,10 @@ func _ready():
 func _process(delta):
 	if(spikeTimer.is_stopped()):
 		spikeTimer.start()
-	#if(spikeTimer.is_stopped()):
-	#	spikeTimer.start()
 
 
 func _on_timer_timeout():
 	queue_free()
-	
-
-
-#func _on_area_2d_body_entered(body): 
-		#if body.name == "player":
-		#	print("hit")
-		#	global_hit.hits2 = global_hit.hits2 + 1
-		#	print(global_hit.hits2)
-
-
 
 
 func _on_area_2d_body_exited(body):

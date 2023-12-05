@@ -1,8 +1,8 @@
 [gd_scene load_steps=26 format=3 uid="uid://uxeft12nwgge"]
 
 [ext_resource type="Script" path="res://Inventory/Collectible Item.gd" id="1_3kerh"]
-[ext_resource type="Texture2D" uid="uid://bmayfqtxqqpmq" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_idle.png" id="2_c271o"]
-[ext_resource type="Texture2D" uid="uid://dsiyjqy5ea5eg" path="res://assets/Modern_Interiors_Free_v41.4/Animated objects/animated_frog_3_edittedAlisa_jump.png" id="3_ggiu8"]
+[ext_resource type="Texture2D" uid="uid://bmayfqtxqqpmq" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_idle.png" id="2_c271o"]
+[ext_resource type="Texture2D" uid="uid://dsiyjqy5ea5eg" path="res://assets/Modern_Interiors_Free_v41.4/Editted Animations/animated_frog_3_edittedAlisa_jump.png" id="3_ggiu8"]
 [ext_resource type="Texture2D" uid="uid://cqr0tji1iipur" path="res://assets/Collectible_Items_Pico8Colors/Keys/Yellow/Key1_Sparkle_edittedAlisa.png" id="3_lv6lu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_05qh2"]
